@@ -1,0 +1,27 @@
+{{- $siteDescription := .Site.Params.description -}}
+{{- $description := .Params.description | default .Summary | default $siteDescription -}}
+{{- $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) -}}
+{{- $author := .Params.author | default .Site.Params.author -}}
+{{- $articleSections := slice "articles" "web3" "stocks" "guides" -}}
+{{- $isArticle := and .IsPage (in $articleSections .Section) -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description | plainify }}">
+<meta name="author" content="{{ $author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Site.Language.Locale }}" href="{{ .Permalink }}">
+{{ end }}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+<meta property="og:type" content="{{ if $isArticle }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.cover }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta name="twitter:card" content="{{ if .Params.cover }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description | plainify }}">
+{{ with .Params.cover }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{ partial "jsonld-article.html" . }}

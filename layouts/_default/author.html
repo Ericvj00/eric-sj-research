@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $authorName := .Params.name | default .Title }}
+{{ $authorPages := where .Site.RegularPages "Params.author" $authorName }}
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Author</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container author-layout">
+    <article class="author-profile">
+      {{ .Content }}
+      {{ with .Params.research_focus }}
+        <div class="hub-points">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+      {{ with .Params.x_url }}
+        <a class="button secondary" href="{{ . }}" rel="me noopener" target="_blank">X账号入口</a>
+      {{ end }}
+    </article>
+
+    <aside class="author-article-list">
+      <h2>作者文章</h2>
+      {{ range $authorPages.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}">
+          <span>{{ with .Params.categories }}{{ delimit . " / " }}{{ else }}{{ .Section }}{{ end }}</span>
+          <strong>{{ .Title }}</strong>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </a>
+      {{ else }}
+        <p>暂无文章。</p>
+      {{ end }}
+    </aside>
+  </div>
+</section>
+{{ end }}

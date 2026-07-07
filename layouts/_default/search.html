@@ -1,0 +1,69 @@
+{{ define "main" }}
+{{ $pages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") }}
+{{ $items := slice }}
+{{ range $pages.ByDate.Reverse }}
+  {{ $items = $items | append (dict
+    "title" .Title
+    "url" .RelPermalink
+    "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
+    "tags" (delimit (.Params.tags | default slice) " ")
+    "categories" (delimit (.Params.categories | default slice) " ")
+    "date" (.Date.Format "2006-01-02")
+  ) }}
+{{ end }}
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Search</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container search-layout">
+    <label class="search-box">
+      <span>搜索研究内容</span>
+      <input id="research-search" type="search" placeholder="输入标题、摘要或标签" autocomplete="off">
+    </label>
+    <div id="search-results" class="latest-research-list" aria-live="polite"></div>
+  </div>
+</section>
+
+<script type="application/json" id="search-index">{{ $items | jsonify | safeJS }}</script>
+<script>
+const input = document.getElementById("research-search");
+const results = document.getElementById("search-results");
+const index = JSON.parse(document.getElementById("search-index").textContent);
+
+function render(items) {
+  if (!items.length) {
+    results.innerHTML = '<p class="empty-state">没有找到匹配内容。</p>';
+    return;
+  }
+  results.innerHTML = items.map(item => `
+    <article class="latest-research-item">
+      <a href="${item.url}">
+        <div>
+          <div class="card-kicker"><span>${item.categories || "Research"}</span></div>
+          <h3>${item.title}</h3>
+          <p>${item.summary}</p>
+        </div>
+        <time>${item.date}</time>
+      </a>
+    </article>
+  `).join("");
+}
+
+render(index.slice(0, 10));
+input.addEventListener("input", () => {
+  const query = input.value.trim().toLowerCase();
+  if (!query) {
+    render(index.slice(0, 10));
+    return;
+  }
+  render(index.filter(item => {
+    return [item.title, item.summary, item.tags, item.categories].join(" ").toLowerCase().includes(query);
+  }));
+});
+</script>
+{{ end }}

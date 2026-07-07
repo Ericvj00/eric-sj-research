@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="site-brand" href="{{ .Site.Home.RelPermalink }}" aria-label="Eric SJ Research">
+      <span class="brand-mark">ESJ</span>
+      <span>Eric SJ Research</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="{{ "articles/" | relLangURL }}">研究</a>
+      <a href="{{ "web3/" | relLangURL }}">Web3</a>
+      <a href="{{ "stocks/" | relLangURL }}">美股</a>
+      <a href="{{ "guides/" | relLangURL }}">指南</a>
+      <a href="{{ "about/" | relLangURL }}">关于</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Language switcher">
+      {{ range .AllTranslations }}
+        <a class="{{ if eq .Lang $.Lang }}is-active{{ end }}" href="{{ .RelPermalink }}">{{ .Site.Language.Label }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>

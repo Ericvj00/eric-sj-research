@@ -1,0 +1,169 @@
+{{ define "main" }}
+{{ $manual := slice }}
+{{ with .Params.related }}
+  {{ range . }}
+    {{ with $.Site.GetPage . }}{{ $manual = $manual | append . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $auto := .Site.RegularPages.Related . | first 5 }}
+{{ $related := first 5 (union $manual $auto) }}
+{{ $toc := .TableOfContents }}
+{{ $showDisclaimer := or (eq .Section "stocks") (eq .Section "guides") (in (delimit (.Params.categories | default slice) " " | lower) "stocks") (in (delimit (.Params.categories | default slice) " " | lower) "guides") (in (delimit (.Params.categories | default slice) " " | lower) "美股") (in (delimit (.Params.categories | default slice) " " | lower) "指南") }}
+<article class="article-page">
+  <header class="article-header">
+    <div class="container narrow">
+      <h1>{{ .Title }}</h1>
+      <dl class="article-info-grid">
+        <div>
+          <dt>作者</dt>
+          <dd>{{ .Params.author | default .Site.Params.author }}</dd>
+        </div>
+        {{ with .Date }}
+          <div>
+            <dt>发布时间</dt>
+            <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></dd>
+          </div>
+        {{ end }}
+        {{ with .Lastmod }}
+          <div>
+            <dt>更新时间</dt>
+            <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></dd>
+          </div>
+        {{ end }}
+        <div>
+          <dt>阅读时间</dt>
+          <dd>{{ with .Params.reading_time }}{{ . }}{{ else }}{{ .ReadingTime }}分钟{{ end }}</dd>
+        </div>
+      </dl>
+      {{ with .Params.categories }}
+        <div class="article-tax-row">
+          <span>分类：</span>
+          <div class="article-category-list">
+            {{ range . }}<span>{{ . }}</span>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+      {{ with .Params.tags }}
+        <div class="article-tax-row">
+          <span>标签：</span>
+          <div class="tag-list">
+            {{ range . }}<span>{{ . }}</span>{{ end }}
+          </div>
+        </div>
+      {{ end }}
+      {{ with .Params.description }}<p class="article-summary">{{ . }}</p>{{ end }}
+      {{ with .Params.cover }}
+        <figure class="article-cover">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
+        </figure>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="container article-layout">
+    <aside class="article-toc-sidebar" aria-label="Article table of contents">
+      {{ if gt (len $toc) 32 }}
+        <section class="toc-panel desktop-toc">
+          <h2>目录</h2>
+          {{ $toc }}
+        </section>
+      {{ end }}
+    </aside>
+
+    <div class="article-content">
+      {{ if gt (len $toc) 32 }}
+        <details class="mobile-toc">
+          <summary>目录</summary>
+          {{ $toc }}
+        </details>
+      {{ end }}
+
+      {{ with .Params.summary }}
+        <section class="summary-box">
+          <h2>一句话总结</h2>
+          <p>{{ . }}</p>
+        </section>
+      {{ end }}
+
+      {{ .Content }}
+
+      {{ with .Params.source }}
+        {{ if or .name .url }}
+          <section class="source-box">
+            <h2>数据来源</h2>
+            {{ with .name }}<p>数据来源：{{ . }}</p>{{ end }}
+            {{ with .url }}<p>来源链接：<a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></p>{{ end }}
+          </section>
+        {{ end }}
+      {{ end }}
+
+      {{ with .Params.updated_note }}
+        <section class="source-box">
+          <h2>更新说明</h2>
+          <p>{{ . }}</p>
+        </section>
+      {{ end }}
+
+      {{ with .Params.key_points }}
+        <section class="insight-box">
+          <h2>Key Points</h2>
+          <ul>
+            {{ range . }}
+              {{ if . }}<li>{{ . }}</li>{{ end }}
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+      {{ with .Params.faq }}
+        <section class="faq-section">
+          <h2>FAQ</h2>
+          {{ range . }}
+            {{ if reflect.IsMap . }}
+              {{ if or .question .answer }}
+                <details>
+                  <summary>{{ .question }}</summary>
+                  <p>{{ .answer }}</p>
+                </details>
+              {{ end }}
+            {{ else if . }}
+              <details>
+                <summary>{{ . }}</summary>
+                <p>答案将在文章定稿时补充。</p>
+              </details>
+            {{ end }}
+          {{ end }}
+        </section>
+      {{ end }}
+
+      {{ if $showDisclaimer }}
+        <section class="disclaimer-box">
+          <p>{{ .Params.disclaimer | default "本文仅用于研究和投资者教育，不构成投资建议、交易建议或任何形式的收益承诺。请根据自身情况独立判断，并注意市场风险。" }}</p>
+        </section>
+      {{ end }}
+
+      {{ partial "cta.html" . }}
+    </div>
+
+    <aside class="article-sidebar" aria-label="Article sidebar">
+      <section class="author-panel">
+        <h2>作者信息</h2>
+        <p><strong>{{ .Params.author | default .Site.Params.author }}</strong></p>
+        <p>持续记录 Web3 与美股市场研究，关注商业模式、行业结构和投资者教育。</p>
+      </section>
+
+      {{ if gt (len $related) 0 }}
+        <section class="related-panel">
+          <h2>Related Research</h2>
+          {{ range $related }}
+            <a href="{{ .RelPermalink }}">
+              <span>{{ with .Params.categories }}{{ delimit . " / " }}{{ else }}{{ .Section }}{{ end }}</span>
+              <strong>{{ .Title }}</strong>
+            </a>
+          {{ end }}
+        </section>
+      {{ end }}
+    </aside>
+  </div>
+</article>
+{{ end }}

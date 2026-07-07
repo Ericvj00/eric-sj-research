@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section class="page-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Index</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p class="page-description">{{ . }}</p>{{ end }}
+    {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+  </div>
+</section>
+
+<section class="section">
+  <div class="container term-grid">
+    {{ range .Data.Terms.ByCount }}
+      <a class="term-card" href="{{ .Page.RelPermalink }}">
+        <span>{{ .Count }} 篇</span>
+        <strong>{{ .Page.Title }}</strong>
+      </a>
+    {{ else }}
+      <p class="empty-state">暂无标签或分类。</p>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

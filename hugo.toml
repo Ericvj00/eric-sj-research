@@ -1,0 +1,69 @@
+baseURL = "https://ericsjresearch.com/"
+title = "Eric SJ Research"
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+summaryLength = 140
+
+[params]
+  description = "Eric SJ Research 是一个专注 Web3 与美股市场研究、商业模式分析和投资者教育的中文研究网站。"
+  author = "Eric SJ"
+  siteName = "Eric SJ Research"
+  keywords = ["Web3研究", "美股研究", "投资者教育", "交易所指南", "商业模式分析"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[permalinks]
+  articles = "/articles/:slug/"
+  web3 = "/web3/:slug/"
+  stocks = "/stocks/:slug/"
+  guides = "/guides/:slug/"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.6
+  filename = "sitemap.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "date"
+    weight = 10
+
+[languages]
+  [languages.zh-cn]
+    locale = "zh-CN"
+    label = "简体中文"
+    weight = 1
+    contentDir = "content/zh-cn"
+    title = "Eric SJ Research"
+    [languages.zh-cn.params]
+      description = "Web3 与美股市场研究、商业模式分析与投资者教育。"
+  [languages.zh-tw]
+    locale = "zh-TW"
+    label = "繁體中文"
+    weight = 2
+    contentDir = "content/zh-tw"
+    title = "Eric SJ Research"
+    [languages.zh-tw.params]
+      description = "Web3 與美股市場研究、商業模式分析與投資者教育。"

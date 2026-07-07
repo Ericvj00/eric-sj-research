@@ -1,0 +1,46 @@
+{{- $articleSections := slice "articles" "web3" "stocks" "guides" -}}
+{{- if and .IsPage (in $articleSections .Section) -}}
+{{- $author := .Params.author | default .Site.Params.author -}}
+{{- $description := .Params.description | default .Summary | default .Site.Params.description -}}
+{{- $image := "" -}}
+{{- with .Params.cover -}}
+  {{- $image = . | absURL -}}
+{{- end -}}
+{{- $data := dict
+  "@context" "https://schema.org"
+  "@type" "Article"
+  "headline" .Title
+  "description" ($description | plainify)
+  "author" (dict "@type" "Person" "name" $author)
+  "publisher" (dict "@type" "Organization" "name" .Site.Title)
+  "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "mainEntityOfPage" .Permalink
+-}}
+{{- with .Params.summary -}}
+  {{- $data = merge $data (dict "abstract" (. | plainify)) -}}
+{{- end -}}
+{{- with .Params.key_points -}}
+  {{- $points := slice -}}
+  {{- range . }}{{ if . }}{{ $points = $points | append . }}{{ end }}{{ end -}}
+  {{- if gt (len $points) 0 }}{{ $data = merge $data (dict "about" $points) }}{{ end -}}
+{{- end -}}
+{{- if $image -}}
+  {{- $data = merge $data (dict "image" $image) -}}
+{{- end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- with .Params.faq -}}
+  {{- $entities := slice -}}
+  {{- range . -}}
+    {{- if reflect.IsMap . -}}
+      {{- if and .question .answer -}}
+        {{- $entities = $entities | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" .answer)) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if gt (len $entities) 0 -}}
+    {{- $faq := dict "@context" "https://schema.org" "@type" "FAQPage" "mainEntity" $entities -}}
+<script type="application/ld+json">{{ $faq | jsonify | safeJS }}</script>
+  {{- end -}}
+{{- end -}}
+{{- end -}}

@@ -1,0 +1,20 @@
+<section class="section-hero">
+  <div class="container section-hero-grid">
+    <div>
+      <p class="eyebrow">{{ .Params.section_label | default .Title }}</p>
+      <h1>{{ .Params.hero_title | default .Title }}</h1>
+    </div>
+    <div class="section-hero-copy">
+      {{ with .Params.hero_description }}
+        <p>{{ . }}</p>
+      {{ else with .Params.description }}
+        <p>{{ . }}</p>
+      {{ end }}
+      {{ with .Params.focus_items }}
+        <div class="section-tags" aria-label="Research focus">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

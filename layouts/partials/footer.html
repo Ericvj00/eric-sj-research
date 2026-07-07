@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  {{ $isTW := eq .Site.Language.Lang "zh-tw" }}
+  <div class="container footer-grid">
+    <div>
+      <strong>Eric SJ Research</strong>
+      <p>Copyright {{ now.Format "2006" }} Eric SJ Research. All rights reserved.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="{{ "disclosure/" | relLangURL }}">{{ if $isTW }}免責聲明{{ else }}免责声明{{ end }}</a>
+      <a href="{{ "privacy/" | relLangURL }}">{{ if $isTW }}隱私政策{{ else }}隐私政策{{ end }}</a>
+    </nav>
+  </div>
+</footer>

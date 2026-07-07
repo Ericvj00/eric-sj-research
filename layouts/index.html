@@ -1,0 +1,146 @@
+{{ define "main" }}
+{{ $researchPages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") }}
+{{ $publishedResearch := where $researchPages "Draft" false }}
+{{ $featuredResearch := where $publishedResearch "Params.featured" true }}
+<section class="home-hero">
+  <div class="container home-hero-grid">
+    <div class="home-hero-copy">
+      <p class="eyebrow">Independent Market Research</p>
+      <h1>Eric SJ Research</h1>
+      <p class="hero-positioning">Crypto + US Stocks Research</p>
+      <p class="hero-subtitle">研究Web3基础设施、RWA、稳定币、美股企业价值。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="{{ "articles/" | relLangURL }}">进入研究库</a>
+        <a class="button secondary" href="{{ "guides/" | relLangURL }}">查看交易指南</a>
+      </div>
+    </div>
+    <aside class="research-brief" aria-label="Research brief">
+      <span>Coverage</span>
+      <dl>
+        <div>
+          <dt>Web3</dt>
+          <dd>基础设施、RWA、稳定币、交易平台</dd>
+        </div>
+        <div>
+          <dt>美股</dt>
+          <dd>企业质量、财报、行业结构</dd>
+        </div>
+        <div>
+          <dt>指南</dt>
+          <dd>交易平台、工具、投资入门</dd>
+        </div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section home-categories">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Research Categories</p>
+        <h2>研究入口</h2>
+      </div>
+      <p>用研究机构式栏目承载长期主题、报告和指南内容。</p>
+    </div>
+    <div class="entry-grid">
+      <article class="entry-card">
+        <span>Web3</span>
+        <h3>Web3 Research</h3>
+        <p>研究区块链基础设施、稳定币、RWA、DeFi 与加密商业模式。</p>
+        <a class="button secondary" href="{{ "web3/" | relLangURL }}">Explore Research</a>
+      </article>
+      <article class="entry-card">
+        <span>Stocks</span>
+        <h3>US Stocks Research</h3>
+        <p>研究美国上市公司、AI产业链、财报与长期商业模式。</p>
+        <a class="button secondary" href="{{ "stocks/" | relLangURL }}">Explore Research</a>
+      </article>
+      <article class="entry-card">
+        <span>Guides</span>
+        <h3>Crypto Guides</h3>
+        <p>交易所、工具、钱包和链上基础设施使用指南。</p>
+        <a class="button secondary" href="{{ "guides/" | relLangURL }}">Explore Research</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Featured Research</p>
+        <h2>精选研究</h2>
+      </div>
+      <a href="{{ "articles/" | relLangURL }}">View all</a>
+    </div>
+    <div class="home-featured-grid">
+      {{ range first 3 $featuredResearch }}
+        <article class="home-featured-card">
+          <a href="{{ .RelPermalink }}">
+            <div class="card-kicker">
+              {{ with .Params.categories }}
+                <span>{{ delimit . " / " }}</span>
+              {{ else }}
+                <span>{{ .Section }}</span>
+              {{ end }}
+            </div>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+            <div class="card-meta">
+              {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+            </div>
+          </a>
+        </article>
+      {{ else }}
+        <p class="empty-state">精选研究正在准备中。</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section latest-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Latest Research</p>
+        <h2>最新研究</h2>
+      </div>
+      <a href="{{ "articles/" | relLangURL }}">View all</a>
+    </div>
+    <div class="latest-research-list">
+      {{ range first 6 $publishedResearch.ByDate.Reverse }}
+        <article class="latest-research-item">
+          <a href="{{ .RelPermalink }}">
+            <div>
+              <div class="card-kicker">
+                {{ with .Params.categories }}
+                  <span>{{ delimit . " / " }}</span>
+                {{ else }}
+                  <span>{{ .Section }}</span>
+                {{ end }}
+              </div>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+            </div>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          </a>
+        </article>
+      {{ else }}
+        <p class="empty-state">最新研究正在准备中。</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section about-section">
+  <div class="container about-panel">
+    <div>
+      <p class="eyebrow">About Eric SJ</p>
+      <h2>About Eric SJ</h2>
+    </div>
+    <p>Eric SJ Research 是一个中文 Web3 + 美股研究网站，长期沉淀公开研究、商业模式分析和投资者教育内容，服务于搜索、问答引擎引用和读者的系统化学习。</p>
+  </div>
+</section>
+{{ end }}

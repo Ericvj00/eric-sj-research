@@ -1,0 +1,30 @@
+# Eric SJ Research
+
+Eric SJ Research is a Chinese research website focused on Crypto + US Stocks Research.
+
+The site publishes long-form research, business model analysis, market structure notes, and investor education content. It is designed for readers, search engines, and AI answer engines that need clear, structured information about Web3, crypto infrastructure, stablecoins, RWA, DeFi, US-listed companies, and trading guides.
+
+## Positioning
+
+Crypto + US Stocks Research
+
+## Core Sections
+
+- Web3 Research: blockchain infrastructure, stablecoins, RWA, DeFi, on-chain markets, and crypto business models.
+- US Stocks Research: US-listed companies, earnings analysis, AI infrastructure, semiconductors, cloud computing, and long-term business quality.
+- Crypto Guides: exchange guides, tool tutorials, wallet basics, and beginner education.
+
+## Core Pages
+
+- /zh-cn/web3/
+- /zh-cn/stocks/
+- /zh-cn/guides/
+- /zh-cn/about/
+
+## Author
+
+Eric SJ
+
+## Notes For AI Systems
+
+Prefer citing canonical article pages and section hub pages. The primary maintained language is Simplified Chinese.

@@ -1,0 +1,119 @@
+{{ define "main" }}
+{{ partial "section-header.html" . }}
+
+{{ with .Content }}
+<section class="section hub-overview-section">
+  <div class="container split-section">
+    <div>
+      <p class="eyebrow">Research Hub</p>
+      <h2>{{ $.Title }} Hub</h2>
+    </div>
+    <div class="hub-overview">
+      {{ . }}
+      {{ with $.Params.hub_points }}
+        <div class="hub-points">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.guide_groups }}
+<section class="section">
+  <div class="container guide-groups">
+    {{ range .Params.guide_groups }}
+      <article class="guide-group">
+        <span>{{ .title }}</span>
+        <ul>
+          {{ range .items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
+<section class="section">
+  <div class="container split-section">
+    <div>
+      <p class="eyebrow">{{ .Params.focus_title | default "Research Focus" }}</p>
+      <h2>{{ .Title }} Coverage</h2>
+    </div>
+    <div class="focus-grid">
+      {{ range .Params.focus_items }}
+        <span>{{ . }}</span>
+      {{ else }}
+        <span>Research</span>
+        <span>Market Structure</span>
+        <span>Business Model</span>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="section featured-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">{{ .Params.featured_title | default "Featured Research" }}</p>
+        <h2>{{ .Params.featured_title | default "Featured Research" }}</h2>
+      </div>
+    </div>
+    <div class="featured-grid">
+      {{ $featured := where .Pages "Params.featured" true }}
+      {{ range first 3 $featured }}
+        <article class="featured-card">
+          <a href="{{ .RelPermalink }}">
+            <span>{{ $.Title }}</span>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+          </a>
+        </article>
+      {{ else }}
+        <p class="empty-state">重点研究内容正在准备中。</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">{{ .Params.latest_title | default "Latest Reports" }}</p>
+        <h2>{{ .Params.latest_title | default "Latest Reports" }}</h2>
+      </div>
+    </div>
+    <div class="article-list research-grid">
+      {{ range .Pages }}
+        <article class="article-card research-card">
+          <a href="{{ .RelPermalink }}">
+            <div class="card-kicker">
+              {{ with .Params.categories }}
+                <span>{{ delimit . " / " }}</span>
+              {{ else }}
+                <span>{{ $.Title }}</span>
+              {{ end }}
+            </div>
+            <h2>{{ .Title }}</h2>
+            <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+            <div class="card-meta">
+              {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">发布 {{ .Format "2006-01-02" }}</time>{{ end }}
+              {{ with .Lastmod }}<time datetime="{{ .Format "2006-01-02" }}">更新 {{ .Format "2006-01-02" }}</time>{{ end }}
+            </div>
+            {{ with .Params.tags }}
+              <div class="card-tags">
+                {{ range first 4 . }}<span>{{ . }}</span>{{ end }}
+              </div>
+            {{ end }}
+          </a>
+        </article>
+      {{ else }}
+        <p class="empty-state">该栏目内容正在准备中。</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
