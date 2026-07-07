@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ericsjresearch.com/sitemap.xml
+Sitemap: https://ericsj.xyz/sitemap.xml
