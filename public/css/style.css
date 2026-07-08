@@ -276,6 +276,10 @@ h3 {
   color: #fff;
 }
 
+.button.primary .x-logo {
+  filter: invert(1);
+}
+
 .button.secondary {
   background: transparent;
 }
