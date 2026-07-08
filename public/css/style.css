@@ -276,8 +276,11 @@ h3 {
   color: #fff;
 }
 
-.button.primary .x-logo {
-  filter: invert(1);
+.button.primary .x-logo,
+.button.primary.icon-button .x-logo,
+.article-follow-card .button.primary .x-logo,
+.x-panel .button.primary .x-logo {
+  filter: brightness(0) invert(1) !important;
 }
 
 .button.secondary {
