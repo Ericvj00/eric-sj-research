@@ -1,5 +1,6 @@
 baseURL = "https://ericsj.xyz/"
 title = "Eric SJ Research"
+googleAnalytics = "G-HTL683LKHM"
 defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = true
 enableRobotsTXT = true

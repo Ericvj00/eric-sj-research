@@ -1,0 +1,12 @@
+{{- $gaID := .Site.Config.Services.GoogleAnalytics.ID -}}
+{{- if and hugo.IsProduction $gaID -}}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ $gaID }}');
+</script>
+{{- end -}}

@@ -25,3 +25,4 @@
 {{ with .Params.cover }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 {{ partial "jsonld-article.html" . }}
+{{ partial "analytics.html" . }}
