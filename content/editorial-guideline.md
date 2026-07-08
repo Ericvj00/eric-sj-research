@@ -66,7 +66,7 @@ static/images/charts/
 Logo：
 
 ```text
-static/images/logos/
+static/images/
 ```
 
 文章封面写法：

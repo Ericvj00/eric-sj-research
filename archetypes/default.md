@@ -5,6 +5,9 @@ lastmod = "{{ .Date }}"
 author = "Eric SJ"
 description = ""
 tags = []
+# categories 用于自动归入专题页。
+# Web3 可选：["Web3", "板块研究"] / ["Web3", "链上财报"] / ["Web3", "项目分析"] / ["Web3", "逻辑拆解"]
+# 美股可选：["美股", "财报分析"] / ["美股", "个股研究"] / ["美股", "产业报告"]
 categories = []
 summary = ""
 cover = ""

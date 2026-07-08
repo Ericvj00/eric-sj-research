@@ -1,5 +1,16 @@
 {{ define "main" }}
 {{ partial "section-header.html" . }}
+{{ $sectionPages := .RegularPagesRecursive }}
+{{ with .Params.topic_category }}
+  {{ $topic := . }}
+  {{ $matched := slice }}
+  {{ range where $.Site.RegularPages "Section" $.Section }}
+    {{ if in (.Params.categories | default slice) $topic }}
+      {{ $matched = $matched | append . }}
+    {{ end }}
+  {{ end }}
+  {{ $sectionPages = $matched }}
+{{ end }}
 
 {{ with .Content }}
 <section class="section hub-overview-section">
@@ -62,7 +73,7 @@
       </div>
     </div>
     <div class="featured-grid">
-      {{ $featured := where .Pages "Params.featured" true }}
+      {{ $featured := where $sectionPages "Params.featured" true }}
       {{ range first 3 $featured }}
         <article class="featured-card">
           <a href="{{ .RelPermalink }}">
@@ -87,7 +98,7 @@
       </div>
     </div>
     <div class="article-list research-grid">
-      {{ range .Pages }}
+      {{ range sort $sectionPages "Date" "desc" }}
         <article class="article-card research-card">
           <a href="{{ .RelPermalink }}">
             <div class="card-kicker">

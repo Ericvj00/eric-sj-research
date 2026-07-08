@@ -5,14 +5,31 @@
     {{ with $.Site.GetPage . }}{{ $manual = $manual | append . }}{{ end }}
   {{ end }}
 {{ end }}
+{{ $articleSections := slice "articles" "web3" "stocks" "guides" }}
+{{ $currentCategories := .Params.categories | default slice }}
+{{ $sameCategory := slice }}
+{{ range where .Site.RegularPages "Section" "in" $articleSections }}
+  {{ if and (ne .Permalink $.Permalink) (gt (len (intersect (.Params.categories | default slice) $currentCategories)) 0) }}
+    {{ $sameCategory = $sameCategory | append . }}
+  {{ end }}
+{{ end }}
 {{ $auto := .Site.RegularPages.Related . | first 5 }}
-{{ $related := first 5 (union $manual $auto) }}
+{{ $related := first 5 (union $manual (union $sameCategory $auto)) }}
 {{ $toc := .TableOfContents }}
 {{ $showDisclaimer := or (eq .Section "stocks") (eq .Section "guides") (in (delimit (.Params.categories | default slice) " " | lower) "stocks") (in (delimit (.Params.categories | default slice) " " | lower) "guides") (in (delimit (.Params.categories | default slice) " " | lower) "美股") (in (delimit (.Params.categories | default slice) " " | lower) "指南") }}
+{{ $categoryText := delimit $currentCategories " " | lower }}
+{{ $isWeb3Article := or (eq .Section "web3") (in $categoryText "web3") }}
+{{ $isStocksArticle := or (eq .Section "stocks") (in $categoryText "stocks") (in $categoryText "美股") }}
 <article class="article-page">
   <header class="article-header">
     <div class="container narrow">
+      {{ with .Params.categories }}
+        <div class="article-category-list article-top-kicker">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
       <h1>{{ .Title }}</h1>
+      <p class="article-summary">{{ .Params.summary | default .Params.description | default .Summary }}</p>
       <dl class="article-info-grid">
         <div>
           <dt>作者</dt>
@@ -35,11 +52,20 @@
           <dd>{{ with .Params.reading_time }}{{ . }}{{ else }}{{ .ReadingTime }}分钟{{ end }}</dd>
         </div>
       </dl>
-      {{ with .Params.categories }}
-        <div class="article-tax-row">
-          <span>分类：</span>
+      {{ if or $isWeb3Article $isStocksArticle }}
+        <div class="article-tax-row article-research-tags">
+          <span>研究分类：</span>
           <div class="article-category-list">
-            {{ range . }}<span>{{ . }}</span>{{ end }}
+            {{ if $isWeb3Article }}
+              <span>板块研究</span>
+              <span>链上财报</span>
+              <span>项目分析</span>
+              <span>逻辑拆解</span>
+            {{ else if $isStocksArticle }}
+              <span>财报分析</span>
+              <span>个股研究</span>
+              <span>产业报告</span>
+            {{ end }}
           </div>
         </div>
       {{ end }}
@@ -51,7 +77,6 @@
           </div>
         </div>
       {{ end }}
-      {{ with .Params.description }}<p class="article-summary">{{ . }}</p>{{ end }}
       {{ with .Params.cover }}
         <figure class="article-cover">
           <img src="{{ . | relURL }}" alt="{{ $.Title }}">
@@ -143,6 +168,17 @@
       {{ end }}
 
       {{ partial "cta.html" . }}
+      <section class="article-follow-card">
+        <div>
+          <p class="cta-label">Follow</p>
+          <h2>关注 Eric SJ 最新研究</h2>
+          <p>Crypto + US Stock Research</p>
+        </div>
+        <a class="button primary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="关注 Eric SJ 的 X">
+          <img class="x-logo" src="/images/x-logo.png" alt="X">
+          <span>关注</span>
+        </a>
+      </section>
     </div>
 
     <aside class="article-sidebar" aria-label="Article sidebar">
@@ -154,7 +190,7 @@
 
       {{ if gt (len $related) 0 }}
         <section class="related-panel">
-          <h2>Related Research</h2>
+          <h2>相关文章</h2>
           {{ range $related }}
             <a href="{{ .RelPermalink }}">
               <span>{{ with .Params.categories }}{{ delimit . " / " }}{{ else }}{{ .Section }}{{ end }}</span>

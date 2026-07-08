@@ -90,6 +90,60 @@ draft = false
 +++
 ```
 
+## 专题页自动归类规则
+
+文章通过 `categories` 自动进入对应专题页。
+
+### Web3
+
+文章推荐放在：
+
+```text
+content/zh-cn/web3/
+```
+
+分类填写：
+
+```toml
+categories = ["Web3", "板块研究"]
+categories = ["Web3", "链上财报"]
+categories = ["Web3", "项目分析"]
+categories = ["Web3", "逻辑拆解"]
+```
+
+对应专题页：
+
+```text
+/zh-cn/web3/sector/
+/zh-cn/web3/onchain-financials/
+/zh-cn/web3/projects/
+/zh-cn/web3/thesis/
+```
+
+### 美股
+
+文章推荐放在：
+
+```text
+content/zh-cn/stocks/
+```
+
+分类填写：
+
+```toml
+categories = ["美股", "财报分析"]
+categories = ["美股", "个股研究"]
+categories = ["美股", "产业报告"]
+```
+
+对应专题页：
+
+```text
+/zh-cn/stocks/earnings/
+/zh-cn/stocks/company/
+/zh-cn/stocks/industry/
+```
+
 ## content_type 可选值
 
 - `web3`
@@ -114,7 +168,7 @@ static/images/charts/
 Logo 放在：
 
 ```text
-static/images/logos/
+static/images/
 ```
 
 文章封面写法：
