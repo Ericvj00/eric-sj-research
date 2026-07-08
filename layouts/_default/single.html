@@ -1,33 +1,9 @@
 {{ define "main" }}
-{{ $manual := slice }}
-{{ with .Params.related }}
-  {{ range . }}
-    {{ with $.Site.GetPage . }}{{ $manual = $manual | append . }}{{ end }}
-  {{ end }}
-{{ end }}
-{{ $articleSections := slice "articles" "web3" "stocks" "guides" }}
 {{ $currentCategories := .Params.categories | default slice }}
-{{ $sameCategory := slice }}
-{{ range where .Site.RegularPages "Section" "in" $articleSections }}
-  {{ if and (ne .Permalink $.Permalink) (gt (len (intersect (.Params.categories | default slice) $currentCategories)) 0) }}
-    {{ $sameCategory = $sameCategory | append . }}
-  {{ end }}
-{{ end }}
-{{ $auto := .Site.RegularPages.Related . | first 5 }}
-{{ $related := first 5 (union $manual (union $sameCategory $auto)) }}
 {{ $toc := .TableOfContents }}
-{{ $showDisclaimer := or (eq .Section "stocks") (eq .Section "guides") (in (delimit (.Params.categories | default slice) " " | lower) "stocks") (in (delimit (.Params.categories | default slice) " " | lower) "guides") (in (delimit (.Params.categories | default slice) " " | lower) "美股") (in (delimit (.Params.categories | default slice) " " | lower) "指南") }}
-{{ $categoryText := delimit $currentCategories " " | lower }}
-{{ $isWeb3Article := or (eq .Section "web3") (in $categoryText "web3") }}
-{{ $isStocksArticle := or (eq .Section "stocks") (in $categoryText "stocks") (in $categoryText "美股") }}
 <article class="article-page">
   <header class="article-header">
     <div class="container narrow">
-      {{ with .Params.categories }}
-        <div class="article-category-list article-top-kicker">
-          {{ range . }}<span>{{ . }}</span>{{ end }}
-        </div>
-      {{ end }}
       <h1>{{ .Title }}</h1>
       <p class="article-summary">{{ .Params.summary | default .Params.description | default .Summary }}</p>
       <dl class="article-info-grid">
@@ -52,28 +28,11 @@
           <dd>{{ with .Params.reading_time }}{{ . }}{{ else }}{{ .ReadingTime }}分钟{{ end }}</dd>
         </div>
       </dl>
-      {{ if or $isWeb3Article $isStocksArticle }}
-        <div class="article-tax-row article-research-tags">
+      {{ with $currentCategories }}
+        <div class="article-tax-row">
           <span>研究分类：</span>
           <div class="article-category-list">
-            {{ if $isWeb3Article }}
-              <span>板块研究</span>
-              <span>链上财报</span>
-              <span>项目分析</span>
-              <span>逻辑拆解</span>
-            {{ else if $isStocksArticle }}
-              <span>财报分析</span>
-              <span>个股研究</span>
-              <span>产业报告</span>
-            {{ end }}
-          </div>
-        </div>
-      {{ end }}
-      {{ with .Params.tags }}
-        <div class="article-tax-row">
-          <span>标签：</span>
-          <div class="tag-list">
-            {{ range . }}<span>{{ . }}</span>{{ end }}
+            <span>{{ delimit . " / " }}</span>
           </div>
         </div>
       {{ end }}
@@ -103,71 +62,8 @@
         </details>
       {{ end }}
 
-      {{ with .Params.summary }}
-        <section class="summary-box">
-          <h2>一句话总结</h2>
-          <p>{{ . }}</p>
-        </section>
-      {{ end }}
-
       {{ .Content }}
 
-      {{ with .Params.source }}
-        {{ if or .name .url }}
-          <section class="source-box">
-            <h2>数据来源</h2>
-            {{ with .name }}<p>数据来源：{{ . }}</p>{{ end }}
-            {{ with .url }}<p>来源链接：<a href="{{ . }}" rel="noopener" target="_blank">{{ . }}</a></p>{{ end }}
-          </section>
-        {{ end }}
-      {{ end }}
-
-      {{ with .Params.updated_note }}
-        <section class="source-box">
-          <h2>更新说明</h2>
-          <p>{{ . }}</p>
-        </section>
-      {{ end }}
-
-      {{ with .Params.key_points }}
-        <section class="insight-box">
-          <h2>Key Points</h2>
-          <ul>
-            {{ range . }}
-              {{ if . }}<li>{{ . }}</li>{{ end }}
-            {{ end }}
-          </ul>
-        </section>
-      {{ end }}
-
-      {{ with .Params.faq }}
-        <section class="faq-section">
-          <h2>FAQ</h2>
-          {{ range . }}
-            {{ if reflect.IsMap . }}
-              {{ if or .question .answer }}
-                <details>
-                  <summary>{{ .question }}</summary>
-                  <p>{{ .answer }}</p>
-                </details>
-              {{ end }}
-            {{ else if . }}
-              <details>
-                <summary>{{ . }}</summary>
-                <p>答案将在文章定稿时补充。</p>
-              </details>
-            {{ end }}
-          {{ end }}
-        </section>
-      {{ end }}
-
-      {{ if $showDisclaimer }}
-        <section class="disclaimer-box">
-          <p>{{ .Params.disclaimer | default "本文仅用于研究和投资者教育，不构成投资建议、交易建议或任何形式的收益承诺。请根据自身情况独立判断，并注意市场风险。" }}</p>
-        </section>
-      {{ end }}
-
-      {{ partial "cta.html" . }}
       <section class="article-follow-card">
         <div>
           <p class="cta-label">Follow</p>
@@ -187,18 +83,6 @@
         <p><strong>{{ .Params.author | default .Site.Params.author }}</strong></p>
         <p>持续记录 Web3 与美股市场研究，关注商业模式、行业结构和投资者教育。</p>
       </section>
-
-      {{ if gt (len $related) 0 }}
-        <section class="related-panel">
-          <h2>相关文章</h2>
-          {{ range $related }}
-            <a href="{{ .RelPermalink }}">
-              <span>{{ with .Params.categories }}{{ delimit . " / " }}{{ else }}{{ .Section }}{{ end }}</span>
-              <strong>{{ .Title }}</strong>
-            </a>
-          {{ end }}
-        </section>
-      {{ end }}
     </aside>
   </div>
 </article>

@@ -107,10 +107,10 @@ h3 {
 .brand-mark {
   display: inline-grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
   border: 1px solid var(--ink);
-  border-radius: 6px;
+  border-radius: 50%;
   overflow: hidden;
   background: var(--surface);
 }
@@ -268,8 +268,8 @@ h3 {
 
 .x-logo {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -281,17 +281,7 @@ h3 {
 }
 
 .personal-hero h1 {
-  font-size: clamp(4.4rem, 11vw, 9rem);
-}
-
-.hero-avatar {
-  display: block;
-  width: 48px;
-  height: 48px;
-  margin: 22px 0 18px;
-  border: 1px solid var(--ink);
-  border-radius: 7px;
-  object-fit: cover;
+  font-size: clamp(3.4rem, 8vw, 6.6rem);
 }
 
 .hero-note dd {
@@ -987,7 +977,7 @@ h3 {
 
 .article-header h1 {
   margin-top: 16px;
-  font-size: clamp(2.2rem, 4.5vw, 4.6rem);
+  font-size: clamp(1.55rem, 3.15vw, 3.2rem);
 }
 
 .page-description,
@@ -1250,6 +1240,11 @@ h3 {
 .article-follow-card h2 {
   margin: 0;
   font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+}
+
+.article-follow-card .x-logo {
+  width: 32px;
+  height: 32px;
 }
 
 .article-follow-card p:last-child {
