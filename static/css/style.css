@@ -119,6 +119,38 @@ h3 {
   font-size: 0.95rem;
 }
 
+.nav-group {
+  position: relative;
+  padding: 22px 0;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: none;
+  min-width: 132px;
+  transform: translateX(-50%);
+  border: 1px solid var(--line);
+  background: rgba(250, 245, 240, 0.98);
+  box-shadow: 0 18px 38px rgba(17, 17, 17, 0.08);
+  padding: 10px;
+  z-index: 30;
+}
+
+.nav-group:hover .nav-submenu,
+.nav-group:focus-within .nav-submenu {
+  display: grid;
+  gap: 6px;
+}
+
+.nav-submenu span {
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding: 5px 8px;
+}
+
 .site-nav a:hover,
 .footer-links a:hover,
 .section-heading a:hover,
@@ -1185,6 +1217,23 @@ h3 {
 
   .site-nav {
     justify-content: flex-start;
+  }
+
+  .nav-group {
+    padding: 0;
+  }
+
+  .nav-submenu {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-width: 0;
+    transform: none;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
   }
 
   .article-list {
