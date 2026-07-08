@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: {{ "sitemap.xml" | absURL }}
+Sitemap: {{ "zh-cn/sitemap.xml" | absURL }}
+Sitemap: {{ "zh-tw/sitemap.xml" | absURL }}

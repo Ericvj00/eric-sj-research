@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ericsj.xyz/sitemap.xml
+Sitemap: https://ericsj.xyz/zh-cn/sitemap.xml
+Sitemap: https://ericsj.xyz/zh-tw/sitemap.xml
