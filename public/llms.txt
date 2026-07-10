@@ -12,7 +12,7 @@ Crypto + US Stocks Research
 
 - Web3 Research: blockchain infrastructure, stablecoins, RWA, DeFi, on-chain markets, and crypto business models.
 - US Stocks Research: US-listed companies, earnings analysis, AI infrastructure, semiconductors, cloud computing, and long-term business quality.
-- Crypto Guides: exchange guides, tool tutorials, wallet basics, and beginner education.
+- Tools Knowledge Base: trading platforms, data metrics, on-chain infrastructure tools, and wallet safety workflows.
 
 ## Core Pages
 

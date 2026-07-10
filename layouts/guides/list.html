@@ -1,0 +1,85 @@
+{{ define "main" }}
+{{ $tools := .Params.tools | default slice }}
+{{ $filters := .Params.filters | default (slice "交易平台" "数据指标" "其他工具") }}
+<section class="section-hero tools-hero">
+  <div class="container section-hero-grid">
+    <div>
+      <p class="eyebrow">{{ .Params.section_label | default "Tools" }}</p>
+      <h1>{{ .Params.hero_title | default .Title }}</h1>
+    </div>
+    <div class="section-hero-copy">
+      {{ with .Params.hero_description }}<p>{{ . }}</p>{{ end }}
+      <div class="tool-filter-group" aria-label="工具分类筛选">
+        <button class="tool-filter is-active" type="button" data-filter="all">全部</button>
+        {{ range $filters }}
+          <button class="tool-filter" type="button" data-filter="{{ . }}">{{ . }}</button>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tools-section">
+  <div class="container">
+    <div class="tools-list" id="tools-list">
+      {{ range $tools }}
+        <details class="tool-item" data-category="{{ .category }}">
+          <summary>
+            <span class="tool-arrow" aria-hidden="true"></span>
+            <span class="tool-title">{{ .title }}</span>
+            <span class="tool-category">{{ .category }}</span>
+          </summary>
+          <div class="tool-content">
+            {{ with .description }}<p class="tool-description">{{ . }}</p>{{ end }}
+            <div class="tool-content-grid">
+              <section>
+                <h2>{{ .title | replaceRE "使用指南|基础使用指南|指标使用方法|数据查询指南|链上指标入门|检查清单" "" }}是什么</h2>
+                <p>{{ .what }}</p>
+              </section>
+              <section>
+                <h2>适合用户</h2>
+                <ul>{{ range .users }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+              <section>
+                <h2>核心功能</h2>
+                <ul>{{ range .features }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+              <section>
+                <h2>使用教程</h2>
+                <ol>{{ range .steps }}<li>{{ . }}</li>{{ end }}</ol>
+              </section>
+              <section class="tool-notes">
+                <h2>注意事项</h2>
+                <ul>{{ range .notes }}<li>{{ . }}</li>{{ end }}</ul>
+              </section>
+            </div>
+          </div>
+        </details>
+      {{ else }}
+        <p class="empty-state">工具内容正在整理中。</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<script>
+(() => {
+  const filters = document.querySelectorAll(".tool-filter");
+  const items = document.querySelectorAll(".tool-item");
+
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.filter;
+      filters.forEach(item => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+
+      items.forEach(item => {
+        const visible = filter === "all" || item.dataset.category === filter;
+        item.hidden = !visible;
+        if (!visible) item.open = false;
+      });
+    });
+  });
+})();
+</script>
+{{ end }}
