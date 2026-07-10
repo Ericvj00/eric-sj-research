@@ -10,15 +10,22 @@
       {{ else with .Params.description }}
         <p>{{ . }}</p>
       {{ end }}
-      {{ with .Params.focus_items }}
-        <div class="section-tags" aria-label="Research focus">
-          {{ range . }}<span>{{ . }}</span>{{ end }}
-        </div>
-      {{ end }}
-      {{ with .Params.focus_links }}
-        <div class="section-tags" aria-label="Research focus">
-          {{ range . }}<a href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
-        </div>
+      {{ if .Params.topic_category }}
+        <label class="section-search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="section-search" type="search" placeholder="搜索当前专题文章" autocomplete="off">
+        </label>
+      {{ else }}
+        {{ with .Params.focus_items }}
+          <div class="section-tags" aria-label="Research focus">
+            {{ range . }}<span>{{ . }}</span>{{ end }}
+          </div>
+        {{ end }}
+        {{ with .Params.focus_links }}
+          <div class="section-tags" aria-label="Research focus">
+            {{ range . }}<a href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
+          </div>
+        {{ end }}
       {{ end }}
     </div>
   </div>

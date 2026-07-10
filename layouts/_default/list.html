@@ -11,6 +11,8 @@
   {{ end }}
   {{ $sectionPages = $matched }}
 {{ end }}
+{{ $sortedSectionPages := sort $sectionPages "Date" "desc" }}
+{{ $isTopicPage := isset .Params "topic_category" }}
 
 {{ if and .Content (not (in (slice "web3" "stocks") .Section)) }}
 <section class="section hub-overview-section">
@@ -64,41 +66,45 @@
 </section>
 {{ end }}
 
-<section class="section featured-section">
-  <div class="container">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">{{ .Params.featured_title | default "Featured Research" }}</p>
-        <h2>{{ .Params.featured_title | default "Featured Research" }}</h2>
+{{ if not $isTopicPage }}
+  <section class="section featured-section">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">{{ .Params.featured_title | default "Featured Research" }}</p>
+          <h2>{{ .Params.featured_title | default "Featured Research" }}</h2>
+        </div>
+      </div>
+      <div class="featured-grid">
+        {{ $featured := where $sectionPages "Params.featured" true }}
+        {{ range first 3 $featured }}
+          <article class="featured-card">
+            <a href="{{ .RelPermalink }}">
+              <span>{{ $.Title }}</span>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+            </a>
+          </article>
+        {{ else }}
+          <p class="empty-state">重点研究内容正在准备中。</p>
+        {{ end }}
       </div>
     </div>
-    <div class="featured-grid">
-      {{ $featured := where $sectionPages "Params.featured" true }}
-      {{ range first 3 $featured }}
-        <article class="featured-card">
-          <a href="{{ .RelPermalink }}">
-            <span>{{ $.Title }}</span>
-            <h3>{{ .Title }}</h3>
-            <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
-          </a>
-        </article>
-      {{ else }}
-        <p class="empty-state">重点研究内容正在准备中。</p>
-      {{ end }}
-    </div>
-  </div>
-</section>
+  </section>
+{{ end }}
 
 <section class="section">
   <div class="container">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">{{ .Params.latest_title | default "Latest Reports" }}</p>
         <h2>{{ .Params.latest_title | default "Latest Reports" }}</h2>
       </div>
+      {{ if $isTopicPage }}
+        <a href="{{ printf "categories/%s/" .Params.topic_category | relLangURL }}">查看更多</a>
+      {{ end }}
     </div>
-    <div class="article-list research-grid">
-      {{ range sort $sectionPages "Date" "desc" }}
+    <div id="{{ if $isTopicPage }}section-results{{ end }}" class="article-list research-grid">
+      {{ range first 10 $sortedSectionPages }}
         <article class="article-card research-card">
           <a href="{{ .RelPermalink }}">
             <div class="card-kicker">
@@ -127,4 +133,83 @@
     </div>
   </div>
 </section>
+{{ if $isTopicPage }}
+  {{ $items := slice }}
+  {{ range $sortedSectionPages }}
+    {{ $items = $items | append (dict
+      "title" .Title
+      "url" .RelPermalink
+      "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
+      "tags" (.Params.tags | default slice)
+      "categories" (.Params.categories | default slice)
+      "content" (.Plain | plainify)
+      "date" (.Date.Format "2006-01-02")
+      "lastmod" (.Lastmod.Format "2006-01-02")
+    ) }}
+  {{ end }}
+  <script type="application/json" id="section-search-index">{{ $items | jsonify | safeJS }}</script>
+  <script>
+  (() => {
+    const input = document.getElementById("section-search");
+    const results = document.getElementById("section-results");
+    const indexNode = document.getElementById("section-search-index");
+    if (!input || !results || !indexNode) return;
+
+    const index = JSON.parse(indexNode.textContent || "[]");
+    const normalize = value => String(value || "").toLowerCase().trim();
+
+    function render(items) {
+      if (!items.length) {
+        results.innerHTML = '<p class="empty-state">没有找到匹配内容。</p>';
+        return;
+      }
+
+      results.innerHTML = items.map(item => {
+        const categories = (item.categories || []).join(" / ") || "Research";
+        const updated = item.lastmod ? `<time datetime="${item.lastmod}">更新 ${item.lastmod}</time>` : "";
+        return `
+          <article class="article-card research-card">
+            <a href="${item.url}">
+              <div class="card-kicker"><span>${categories}</span></div>
+              <h2>${item.title}</h2>
+              <p>${item.summary || ""}</p>
+              <div class="card-meta">
+                <time datetime="${item.date || ""}">发布 ${item.date || ""}</time>
+                ${updated}
+              </div>
+            </a>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function score(item, terms) {
+      const haystack = [
+        item.title,
+        item.summary,
+        (item.tags || []).join(" "),
+        (item.categories || []).join(" "),
+        item.content
+      ].map(normalize).join(" ");
+
+      return terms.reduce((total, term) => total + (haystack.includes(term) ? 1 : 0), 0);
+    }
+
+    input.addEventListener("input", () => {
+      const terms = normalize(input.value).split(/\s+/).filter(Boolean);
+      if (!terms.length) {
+        render(index.slice(0, 10));
+        return;
+      }
+
+      render(index
+        .map(item => ({ item, rank: score(item, terms) }))
+        .filter(result => result.rank > 0)
+        .sort((a, b) => b.rank - a.rank)
+        .map(result => result.item)
+        .slice(0, 10));
+    });
+  })();
+  </script>
+{{ end }}
 {{ end }}
