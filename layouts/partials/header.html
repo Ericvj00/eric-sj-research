@@ -7,7 +7,7 @@
       <a class="brand-name" href="{{ .Site.Home.RelPermalink }}" aria-label="Eric SJ Research homepage">Eric SJ Research</a>
     </div>
     <nav class="site-nav" aria-label="Main navigation">
-      <details class="nav-group">
+      <details class="nav-group" data-href="{{ "web3/" | relLangURL }}">
         <summary>Web3</summary>
         <div class="nav-submenu" aria-label="Web3 categories">
           <a href="{{ "web3/sector/" | relLangURL }}">板块研究</a>
@@ -16,7 +16,7 @@
           <a href="{{ "web3/thesis/" | relLangURL }}">逻辑拆解</a>
         </div>
       </details>
-      <details class="nav-group">
+      <details class="nav-group" data-href="{{ "stocks/" | relLangURL }}">
         <summary>美股</summary>
         <div class="nav-submenu" aria-label="Stocks categories">
           <a href="{{ "stocks/earnings/" | relLangURL }}">财报分析</a>
@@ -26,6 +26,7 @@
       </details>
       <a href="{{ "guides/" | relLangURL }}">自用工具</a>
       <a href="{{ "about/" | relLangURL }}">关于</a>
+      <a href="{{ "search/" | relLangURL }}">搜索</a>
     </nav>
     <nav class="language-switcher" aria-label="Language switcher">
       {{ range .AllTranslations }}
@@ -34,3 +35,13 @@
     </nav>
   </div>
 </header>
+<script>
+document.querySelectorAll(".nav-group > summary").forEach(summary => {
+  summary.addEventListener("click", event => {
+    const group = summary.parentElement;
+    if (!window.matchMedia("(max-width: 900px)").matches || !group.open) return;
+    event.preventDefault();
+    window.location.href = group.dataset.href;
+  });
+});
+</script>

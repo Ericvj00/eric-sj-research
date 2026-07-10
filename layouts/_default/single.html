@@ -1,11 +1,8 @@
 {{ define "main" }}
-{{ $currentCategories := .Params.categories | default slice }}
-{{ $toc := .TableOfContents }}
 <article class="article-page">
   <header class="article-header">
     <div class="container narrow">
       <h1>{{ .Title }}</h1>
-      <p class="article-summary">{{ .Params.summary | default .Params.description | default .Summary }}</p>
       <dl class="article-info-grid">
         <div>
           <dt>作者</dt>
@@ -23,19 +20,7 @@
             <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></dd>
           </div>
         {{ end }}
-        <div>
-          <dt>阅读时间</dt>
-          <dd>{{ with .Params.reading_time }}{{ . }}{{ else }}{{ .ReadingTime }}分钟{{ end }}</dd>
-        </div>
       </dl>
-      {{ with $currentCategories }}
-        <div class="article-tax-row">
-          <span>研究分类：</span>
-          <div class="article-category-list">
-            <span>{{ delimit . " / " }}</span>
-          </div>
-        </div>
-      {{ end }}
       {{ with .Params.cover }}
         <figure class="article-cover">
           <img src="{{ . | relURL }}" alt="{{ $.Title }}">
@@ -45,36 +30,8 @@
   </header>
 
   <div class="container article-layout">
-    <aside class="article-toc-sidebar" aria-label="Article table of contents">
-      {{ if gt (len $toc) 32 }}
-        <section class="toc-panel desktop-toc">
-          <h2>目录</h2>
-          {{ $toc }}
-        </section>
-      {{ end }}
-    </aside>
-
     <div class="article-content">
-      {{ if gt (len $toc) 32 }}
-        <details class="mobile-toc">
-          <summary>目录</summary>
-          {{ $toc }}
-        </details>
-      {{ end }}
-
       {{ .Content }}
-
-      <section class="article-follow-card">
-        <div>
-          <p class="cta-label">Follow</p>
-          <h2>关注 Eric SJ 最新研究</h2>
-          <p>Crypto + US Stock Research</p>
-        </div>
-        <a class="button primary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="关注 Eric SJ 的 X">
-          <img class="x-logo" src="/images/x-logo.png" alt="X" width="32" height="32">
-          <span>关注</span>
-        </a>
-      </section>
     </div>
 
     <aside class="article-sidebar" aria-label="Article sidebar">

@@ -15,6 +15,11 @@
           {{ range . }}<span>{{ . }}</span>{{ end }}
         </div>
       {{ end }}
+      {{ with .Params.focus_links }}
+        <div class="section-tags" aria-label="Research focus">
+          {{ range . }}<a href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
+        </div>
+      {{ end }}
     </div>
   </div>
 </section>

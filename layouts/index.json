@@ -1,0 +1,16 @@
+{{- $pages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") -}}
+{{- $items := slice -}}
+{{- range $pages.ByDate.Reverse -}}
+  {{- if not .Draft -}}
+    {{- $items = $items | append (dict
+      "title" .Title
+      "url" .RelPermalink
+      "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
+      "tags" (.Params.tags | default slice)
+      "categories" (.Params.categories | default slice)
+      "content" (.Plain | plainify)
+      "date" (.Date.Format "2006-01-02")
+    ) -}}
+  {{- end -}}
+{{- end -}}
+{{- $items | jsonify -}}

@@ -1,16 +1,14 @@
 +++
 title = "Web3 Research"
-description = "研究区块链基础设施、稳定币、RWA、DeFi 与加密商业模式。"
-section_label = "Web3 Research"
+description = "聚焦加密市场的基础设施、资产发行、应用协议与商业模式，服务于长期主题研究和项目分析。"
+section_label = "专题入口"
 hero_title = "Web3 Research"
-hero_description = "研究区块链基础设施、稳定币、RWA、DeFi 与加密商业模式。"
-focus_title = "研究方向"
-focus_items = [
-  "L1/L2 Infrastructure",
-  "Stablecoin",
-  "RWA",
-  "DeFi",
-  "Crypto Business Model",
+hero_description = "聚焦加密市场的基础设施、资产发行、应用协议与商业模式，服务于长期主题研究和项目分析。"
+focus_links = [
+  { label = "板块研究", url = "web3/sector/" },
+  { label = "链上财报", url = "web3/onchain-financials/" },
+  { label = "项目分析", url = "web3/projects/" },
+  { label = "逻辑拆解", url = "web3/thesis/" },
 ]
 hub_points = [
   "赛道研究",

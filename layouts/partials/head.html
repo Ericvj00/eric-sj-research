@@ -9,6 +9,8 @@
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $description | plainify }}">
 <meta name="author" content="{{ $author }}">
+<link rel="icon" type="image/png" href="{{ "images/avatar.png" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "images/avatar.png" | relURL }}">
 <link rel="canonical" href="{{ .Permalink }}">
 {{ range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Site.Language.Locale }}" href="{{ .Permalink }}">
@@ -23,6 +25,6 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description | plainify }}">
 {{ with .Params.cover }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v=20260708-x-logo-contrast">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v=20260710-ui-search">
 {{ partial "jsonld-article.html" . }}
 {{ partial "analytics.html" . }}

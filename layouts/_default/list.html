@@ -12,7 +12,7 @@
   {{ $sectionPages = $matched }}
 {{ end }}
 
-{{ with .Content }}
+{{ if and .Content (not (in (slice "web3" "stocks") .Section)) }}
 <section class="section hub-overview-section">
   <div class="container split-section">
     <div>
@@ -44,7 +44,7 @@
     {{ end }}
   </div>
 </section>
-{{ else }}
+{{ else if not (in (slice "web3" "stocks") .Section) }}
 <section class="section">
   <div class="container split-section">
     <div>

@@ -1,16 +1,13 @@
 +++
 title = "US Stocks Research"
-description = "研究美国上市公司、AI产业链、财报与长期商业模式。"
-section_label = "US Stocks Research"
+description = "聚焦美股上市公司与产业链，通过财报与商业模式分析理解企业的长期价值。"
+section_label = "专题入口"
 hero_title = "US Stocks Research"
-hero_description = "研究美国上市公司、AI产业链、财报与长期商业模式。"
-focus_title = "研究方向"
-focus_items = [
-  "AI Infrastructure",
-  "Semiconductor",
-  "Cloud Computing",
-  "Consumer",
-  "Financial Technology",
+hero_description = "聚焦美股上市公司与产业链，通过财报与商业模式分析理解企业的长期价值。"
+focus_links = [
+  { label = "财报分析", url = "stocks/earnings/" },
+  { label = "个股研究", url = "stocks/company/" },
+  { label = "产业报告", url = "stocks/industry/" },
 ]
 hub_points = [
   "公司研究",

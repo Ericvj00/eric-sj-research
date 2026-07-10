@@ -7,6 +7,9 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 summaryLength = 140
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   description = "Eric SJ Research 是一个专注 Web3 与美股市场研究、商业模式分析和投资者教育的中文研究网站。"
   author = "Eric SJ"
