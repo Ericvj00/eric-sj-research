@@ -14,12 +14,6 @@
             <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></dd>
           </div>
         {{ end }}
-        {{ with .Lastmod }}
-          <div>
-            <dt>更新时间</dt>
-            <dd><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time></dd>
-          </div>
-        {{ end }}
       </dl>
       {{ with .Params.cover }}
         <figure class="article-cover">

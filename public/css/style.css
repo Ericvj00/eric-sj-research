@@ -723,6 +723,14 @@ h3 {
   align-items: start;
 }
 
+.latest-research-cover {
+  width: 148px;
+  height: 92px;
+  flex: 0 0 148px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
 .latest-research-item h3 {
   margin: 8px 0 10px;
   font-size: 1.25rem;

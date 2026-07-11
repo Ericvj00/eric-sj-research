@@ -7,7 +7,7 @@
 <a href=/zh-cn/stocks/industry/>产业报告</a></div></details><a href=/zh-cn/guides/>自用工具</a>
 <a href=/zh-cn/#about>关于</a>
 <a href=/zh-cn/search/>搜索</a></nav><nav class=language-switcher aria-label="Language switcher"><a class=is-active href=/zh-cn/web3/projects/>简体中文</a></nav></div></header><script>document.querySelectorAll(".nav-group > summary").forEach(e=>{e.addEventListener("click",t=>{const n=e.parentElement;if(!window.matchMedia("(max-width: 900px)").matches||!n.open)return;t.preventDefault(),window.location.href=n.dataset.href})})</script><main id=main><section class=section-hero><div class="container section-hero-grid"><div><p class=eyebrow>Web3 Research</p><h1>项目分析</h1></div><div class=section-hero-copy><p>拆解 Web3 项目的产品定位、商业模式、竞争优势和风险因素。</p><label class=section-search-box><span aria-hidden=true>⌕</span>
-<input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%a1%b9%e7%9b%ae%e5%88%86%e6%9e%90/>查看更多</a></div><div id=section-results class="article-list research-grid"><p class=empty-state>该栏目内容正在准备中。</p></div></div></section><script type=application/json id=section-search-index>[]</script><script>(()=>{const e=document.getElementById("section-search"),t=document.getElementById("section-results"),n=document.getElementById("section-search-index");if(!e||!t||!n)return;const s=JSON.parse(n.textContent||"[]"),o=e=>String(e||"").toLowerCase().trim();function i(e){if(!e.length){t.innerHTML='<p class="empty-state">没有找到匹配内容。</p>';return}t.innerHTML=e.map(e=>{const t=(e.categories||[]).join(" / ")||"Research",n=e.lastmod?`<time datetime="${e.lastmod}">更新 ${e.lastmod}</time>`:"";return`
+<input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%a1%b9%e7%9b%ae%e5%88%86%e6%9e%90/>查看更多</a></div><div id=section-results class="article-list research-grid"><p class=empty-state>该栏目内容正在准备中。</p></div></div></section><script type=application/json id=section-search-index>[]</script><script>(()=>{const e=document.getElementById("section-search"),t=document.getElementById("section-results"),n=document.getElementById("section-search-index");if(!e||!t||!n)return;const s=JSON.parse(n.textContent||"[]"),o=e=>String(e||"").toLowerCase().trim();function i(e){if(!e.length){t.innerHTML='<p class="empty-state">没有找到匹配内容。</p>';return}t.innerHTML=e.map(e=>{const t=(e.categories||[]).join(" / ")||"Research";return`
           <article class="article-card research-card">
             <a href="${e.url}">
               <div class="card-kicker"><span>${t}</span></div>
@@ -15,7 +15,6 @@
               <p>${e.summary||""}</p>
               <div class="card-meta">
                 <time datetime="${e.date||""}">发布 ${e.date||""}</time>
-                ${n}
               </div>
             </a>
           </article>

@@ -78,7 +78,7 @@ function runSearch() {
   render(searchIndex
     .map(item => ({ item, rank: score(item, terms) }))
     .filter(result => result.rank > 0)
-    .sort((a, b) => b.rank - a.rank)
+    .sort((a, b) => String(b.item.date || "").localeCompare(String(a.item.date || "")))
     .map(result => result.item));
 }
 

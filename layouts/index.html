@@ -2,7 +2,7 @@
 {{ $researchPages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") }}
 {{ $publishedResearch := where $researchPages "Draft" false }}
 {{ $featuredResearch := where $publishedResearch "Params.featured" true }}
-{{ $homeResearch := union $featuredResearch $publishedResearch.ByDate.Reverse }}
+{{ $homeResearch := sort (union $featuredResearch $publishedResearch) "Date" "desc" }}
 <section class="home-hero personal-hero">
   <div class="container personal-hero-grid">
     <div class="home-hero-copy">
@@ -87,6 +87,9 @@
       {{ range first 6 $homeResearch }}
         <article class="latest-research-item">
           <a href="{{ .RelPermalink }}">
+            {{ with .Params.cover }}
+              <img class="latest-research-cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+            {{ end }}
             <div>
               <div class="card-kicker">
                 {{ with .Params.categories }}
