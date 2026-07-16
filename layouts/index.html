@@ -85,23 +85,7 @@
     </div>
     <div class="latest-research-list featured-list home-research-grid">
       {{ range first 6 $homeResearch }}
-        <article class="latest-research-item">
-          <a href="{{ .RelPermalink }}">
-            {{ with .Params.cover }}
-              <div class="latest-research-media">
-                <img class="latest-research-cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
-              </div>
-            {{ end }}
-            <div class="latest-research-copy">
-              <div class="card-kicker">
-                <span>{{ partial "category-label.html" . }}</span>
-              </div>
-              <h3>{{ .Title }}</h3>
-              <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            </div>
-          </a>
-        </article>
+        {{ partial "article-card.html" . }}
       {{ else }}
         <p class="empty-state">精选文章正在准备中。</p>
       {{ end }}

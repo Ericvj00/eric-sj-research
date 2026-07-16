@@ -15,21 +15,7 @@
   <div class="container">
     <div class="article-database-grid">
       {{ range $paginator.Pages }}
-        <article class="database-card">
-          <a href="{{ .RelPermalink }}">
-            {{ with .Params.cover }}
-              <div class="database-card-media">
-                <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
-              </div>
-            {{ end }}
-            <div class="database-card-body">
-              <div class="card-kicker"><span>{{ partial "category-label.html" . }}</span></div>
-              <h2>{{ .Title }}</h2>
-              <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            </div>
-          </a>
-        </article>
+        {{ partial "article-card.html" . }}
       {{ else }}
         <p class="empty-state">暂无文章。</p>
       {{ end }}

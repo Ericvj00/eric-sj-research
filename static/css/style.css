@@ -1124,6 +1124,89 @@ h3 {
   gap: 18px;
 }
 
+/* Shared article card: homepage, section pages, topic pages and article database. */
+.research-article-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.research-article-card[hidden] {
+  display: none !important;
+}
+
+.research-article-card > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.research-article-card-media {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 5 / 2;
+  overflow: hidden;
+  flex: 0 0 auto;
+  border-bottom: 1px solid var(--line);
+  background: var(--soft);
+}
+
+.research-article-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.research-article-card-body {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.research-article-card h2 {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  line-height: 1.38;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.research-article-card p {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.research-article-card time {
+  margin-top: auto;
+  color: var(--muted);
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+.research-article-card:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.research-article-card:hover h2 {
+  color: var(--accent);
+}
+
 .database-card {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.62);
@@ -1790,6 +1873,21 @@ h3 {
 
   .article-database-grid {
     grid-template-columns: 1fr;
+  }
+
+  .research-article-card-body {
+    padding: 12px 14px 14px;
+  }
+
+  .research-article-card h2 {
+    font-size: 0.98rem;
+  }
+
+  .research-article-card p {
+    margin-bottom: 10px;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    -webkit-line-clamp: 2;
   }
 
   .database-card-body {

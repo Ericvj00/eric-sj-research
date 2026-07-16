@@ -1,0 +1,20 @@
+{{- $page := . -}}
+{{- $category := partial "category-label.html" $page -}}
+{{- $summary := $page.Params.summary | default $page.Params.description | default $page.Summary -}}
+{{- $tags := $page.Params.tags | default slice -}}
+{{- $searchText := printf "%s %s %s %s %s" $page.Title $summary $category (delimit $tags " ") $page.Plain | plainify | lower -}}
+<article class="research-article-card" data-search="{{ $searchText }}">
+  <a href="{{ $page.RelPermalink }}">
+    <div class="research-article-card-media">
+      {{ with $page.Params.cover }}
+        <img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy">
+      {{ end }}
+    </div>
+    <div class="research-article-card-body">
+      <div class="card-kicker"><span>{{ $category }}</span></div>
+      <h2>{{ $page.Title }}</h2>
+      <p>{{ $summary }}</p>
+      <time datetime="{{ $page.Date.Format "2006-01-02" }}">{{ $page.Date.Format "2006-01-02" }}</time>
+    </div>
+  </a>
+</article>
