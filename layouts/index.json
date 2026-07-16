@@ -7,7 +7,7 @@
       "url" .RelPermalink
       "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
       "tags" (.Params.tags | default slice)
-      "categories" (.Params.categories | default slice)
+      "categories" (slice (partial "category-label.html" .))
       "content" (.Plain | plainify)
       "date" (.Date.Format "2006-01-02")
     ) -}}

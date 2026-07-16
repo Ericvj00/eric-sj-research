@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{ $researchPages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks") }}
+{{ $publishedResearch := where $researchPages "Draft" false }}
+{{ $sortedPages := sort $publishedResearch "Date" "desc" }}
+{{ $paginator := .Paginate $sortedPages 20 }}
+<section class="page-hero article-database-hero">
+  <div class="container narrow">
+    <p class="eyebrow">Research Database</p>
+    <h1>全部文章</h1>
+    <p class="page-description">Eric SJ Research 内容数据库，按原始发布时间归档 Web3 与美股研究。</p>
+  </div>
+</section>
+
+<section class="section article-database-section">
+  <div class="container">
+    <div class="article-database-grid">
+      {{ range $paginator.Pages }}
+        <article class="database-card">
+          <a href="{{ .RelPermalink }}">
+            {{ with .Params.cover }}
+              <div class="database-card-media">
+                <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+              </div>
+            {{ end }}
+            <div class="database-card-body">
+              <div class="card-kicker"><span>{{ partial "category-label.html" . }}</span></div>
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            </div>
+          </a>
+        </article>
+      {{ else }}
+        <p class="empty-state">暂无文章。</p>
+      {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+      <nav class="pagination" aria-label="文章分页">
+        {{ with $paginator.Prev }}<a href="{{ .URL }}">上一页</a>{{ end }}
+        <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+        {{ with $paginator.Next }}<a href="{{ .URL }}">下一页</a>{{ end }}
+      </nav>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

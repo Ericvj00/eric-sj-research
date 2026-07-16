@@ -80,7 +80,7 @@
         {{ range first 3 $featured }}
           <article class="featured-card">
             <a href="{{ .RelPermalink }}">
-              <span>{{ $.Title }}</span>
+              <span>{{ partial "category-label.html" . }}</span>
               <h3>{{ .Title }}</h3>
               <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
             </a>
@@ -107,12 +107,14 @@
       {{ range first 10 $sortedSectionPages }}
         <article class="article-card research-card">
           <a href="{{ .RelPermalink }}">
+            {{ $page := . }}
+            {{ with .Params.cover }}
+              <div class="article-card-media">
+                <img src="{{ . | relURL }}" alt="{{ $page.Title }}" loading="lazy">
+              </div>
+            {{ end }}
             <div class="card-kicker">
-              {{ with .Params.categories }}
-                <span>{{ delimit . " / " }}</span>
-              {{ else }}
-                <span>{{ $.Title }}</span>
-              {{ end }}
+              <span>{{ partial "category-label.html" . }}</span>
             </div>
             <h2>{{ .Title }}</h2>
             <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
@@ -140,7 +142,8 @@
       "url" .RelPermalink
       "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
       "tags" (.Params.tags | default slice)
-      "categories" (.Params.categories | default slice)
+      "categories" (slice (partial "category-label.html" .))
+      "cover" (.Params.cover | default "")
       "content" (.Plain | plainify)
       "date" (.Date.Format "2006-01-02")
     ) }}
@@ -167,6 +170,7 @@
         return `
           <article class="article-card research-card">
             <a href="${item.url}">
+              ${item.cover ? `<div class="article-card-media"><img src="${item.cover}" alt="${item.title}" loading="lazy"></div>` : ""}
               <div class="card-kicker"><span>${categories}</span></div>
               <h2>${item.title}</h2>
               <p>${item.summary || ""}</p>

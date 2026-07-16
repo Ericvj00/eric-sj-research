@@ -27,7 +27,7 @@
       <h2>作者文章</h2>
       {{ range $authorPages.ByDate.Reverse }}
         <a href="{{ .RelPermalink }}">
-          <span>{{ with .Params.categories }}{{ delimit . " / " }}{{ else }}{{ .Section }}{{ end }}</span>
+          <span>{{ partial "category-label.html" . }}</span>
           <strong>{{ .Title }}</strong>
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
         </a>

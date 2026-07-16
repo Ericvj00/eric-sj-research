@@ -33,6 +33,15 @@ CATEGORY_ROUTES = {
     "未分类": ("articles", ""),
 }
 
+SUBSECTION_CATEGORY_LABELS = {
+    "sector": "板块研究",
+    "thesis": "逻辑拆解",
+    "company": "个股研究",
+    "earnings": "财报分析",
+}
+
+DEFAULT_CATEGORY_ROUTE = ("articles", "", "未分类")
+
 STOPWORDS = {
     "一个",
     "不是",
@@ -110,6 +119,7 @@ class ArticleParser(HTMLParser):
         self.current = None
         self.links = []
         self.images = []
+        self.strong_depth = 0
 
     def finish(self):
         if not self.current:
@@ -129,6 +139,9 @@ class ArticleParser(HTMLParser):
         elif tag == "a" and self.current:
             self.links.append(attrs.get("href", ""))
             self.current[1].append("[")
+        elif tag in {"strong", "b"} and self.current:
+            self.current[1].append("**")
+            self.strong_depth += 1
         elif tag == "img":
             self.finish()
             src = attrs.get("src", "")
@@ -142,6 +155,9 @@ class ArticleParser(HTMLParser):
         elif tag == "a" and self.current and self.links:
             href = self.links.pop()
             self.current[1].append(f"]({href})" if href else "]")
+        elif tag in {"strong", "b"} and self.current and self.strong_depth:
+            self.current[1].append("**")
+            self.strong_depth -= 1
 
     def handle_data(self, data):
         if self.current:
@@ -201,6 +217,110 @@ def save_data_image(data_uri, path):
     path.write_bytes(base64.b64decode(encoded))
 
 
+def data_image_extension(data_uri):
+    match = re.match(r"data:image/([a-zA-Z0-9.+-]+)", data_uri)
+    if not match:
+        return ".png"
+    extension = match.group(1).lower().replace("jpeg", "jpg")
+    return f".{extension}"
+
+
+def data_image_bytes(data_uri):
+    header, encoded = data_uri.split(",", 1)
+    if ";base64" not in header:
+        return b""
+    return base64.b64decode(encoded)
+
+
+def image_dimensions(data):
+    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data.startswith(b"\xff\xd8"):
+        index = 2
+        while index + 9 < len(data):
+            if data[index] != 0xFF:
+                index += 1
+                continue
+            marker = data[index + 1]
+            index += 2
+            if marker in {0xD8, 0xD9}:
+                continue
+            if index + 2 > len(data):
+                break
+            size = int.from_bytes(data[index:index + 2], "big")
+            if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF} and index + 7 <= len(data):
+                return int.from_bytes(data[index + 5:index + 7], "big"), int.from_bytes(data[index + 3:index + 5], "big")
+            index += max(size, 2)
+    return 0, 0
+
+
+def img_attrs(tag):
+    attrs = {}
+    pattern = r"([:\w-]+)(?:\s*=\s*(\"[^\"]*\"|'[^']*'|[^\s>]+))?"
+    for key, value in re.findall(pattern, tag):
+        value = value or ""
+        if len(value) >= 2 and value[0] in {"'", '"'} and value[-1] == value[0]:
+            value = value[1:-1]
+        attrs[key.lower()] = html_module.unescape(value)
+    return attrs
+
+
+def is_noise_image(attrs, src):
+    marker = " ".join([attrs.get("alt", ""), attrs.get("class", ""), attrs.get("aria-label", ""), src[:120]]).lower()
+    if src.startswith("data:image/svg"):
+        return True
+    return any(word in marker for word in (
+        "avatar",
+        "logo",
+        "binance square",
+        "language",
+        "icon",
+        "certified",
+        "switch",
+        "profile",
+        "emoji",
+    ))
+
+
+def numeric_attr(value):
+    match = re.search(r"\d+", value or "")
+    return int(match.group(0)) if match else 0
+
+
+def find_top_cover_candidate(html, title, article_start):
+    title_pos = html.find(title) if title else -1
+    if title_pos < 0:
+        title_pos = 0
+    start = title_pos + (len(title) if title else 0)
+    if article_start <= start:
+        return None
+    segment = html[start:article_start]
+    for match in re.finditer(r"<img\b[^>]*>", segment, flags=re.I):
+        attrs = img_attrs(match.group(0))
+        src = attrs.get("src") or attrs.get("data-src") or ""
+        if not src or is_noise_image(attrs, src):
+            continue
+        width = numeric_attr(attrs.get("width", ""))
+        height = numeric_attr(attrs.get("height", ""))
+        if src.startswith("data:image/"):
+            data = data_image_bytes(src)
+            detected_width, detected_height = image_dimensions(data)
+            width = detected_width or width
+            height = detected_height or height
+        elif not src.startswith(("http://", "https://")):
+            continue
+
+        if not width or not height:
+            continue
+        ratio = width / height
+        if width < 480 or height < 180:
+            continue
+        if ratio < 1.25:
+            continue
+        return {"src": src}
+    return None
+
+
 def yaml_string(value):
     return json.dumps(value or "", ensure_ascii=False)
 
@@ -219,7 +339,9 @@ def render_markdown(parser, image_urls):
     output = []
     for kind, value in parser.blocks:
         if kind == "img":
-            output.append(f"![文章配图]({image_urls[int(value)]})")
+            image_url = image_urls[int(value)]
+            if image_url:
+                output.append(f"![文章配图]({image_url})")
         elif kind in {"h1", "h2", "h3", "h4"}:
             level = max(2, int(kind[1]))
             output.append(f"{'#' * level} {value}")
@@ -234,12 +356,42 @@ def render_markdown(parser, image_urls):
 
 
 def strip_binance_links(markdown):
-    return re.sub(
+    markdown = re.sub(
         r"\[([^\]]+)\]\(https?://[^\s)]*binance\.com[^\s)]*\)",
         r"\1",
         markdown,
         flags=re.I,
     )
+    return re.sub(r"https?://[^\s)]*binance\.com[^\s)]*", "", markdown, flags=re.I)
+
+
+def clean_generated_text(value):
+    value = strip_binance_links(value or "")
+    value = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", value)
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
+
+
+def standard_article_body(summary, key_points, body_markdown):
+    cleaned_summary = clean_generated_text(summary)
+    cleaned_points = [clean_generated_text(point) for point in key_points if clean_generated_text(point)]
+    cleaned_body = strip_binance_links(body_markdown).strip()
+    lines = [
+        "## 文章摘要",
+        "",
+        cleaned_summary,
+        "",
+        "## 核心观点",
+        "",
+    ]
+    lines.extend(f"- {point}" for point in cleaned_points[:5])
+    lines.extend([
+        "",
+        "## 正文",
+        "",
+        cleaned_body,
+    ])
+    return "\n".join(lines).strip()
 
 
 def slugify(title):
@@ -327,6 +479,41 @@ def summary_from_blocks(title, blocks):
     return f"{title} 的核心观点与数据归档。"
 
 
+def generated_summary_from_signals(title, blocks, category="", tags=None):
+    tags = tags or []
+    haystack = clean_text("\n".join([title, category, " ".join(tags), *blocks])).lower()
+    title_text = clean_text(title)
+    title_haystack = title_text.lower()
+
+    if any(word in title_haystack for word in ["nike", "nke", "直营", "直營", "分销", "分銷"]):
+        return "Nike正由直营扩张转向渠道再平衡，收入结构、分销效率与品牌溢价将共同决定复苏空间。"
+
+    if any(word in title_haystack for word in ["美光", "micron", "$mu", "mu"]):
+        return "美光正由传统周期存储股转向AI算力资产，收入弹性、利润率修复与HBM需求构成重估主线。"
+
+    if any(word in title_haystack for word in ["spacex", "马斯克", "火箭", "星链"]):
+        return "SpaceX估值分歧持续放大，商业模式兑现、现金流潜力与马斯克信仰溢价决定其定价边界。"
+
+    if any(word in title_haystack for word in ["coinbase", "base"]):
+        return "Base的核心优势并非单纯技术领先，Coinbase入口、分发效率与生态转化才是护城河关键。"
+
+    if any(word in title_haystack for word in ["perp dex", "perp", "永续", "衍生品"]):
+        return "Perp DEX竞争已进入新阶段，流动性深度、交易体验与费用结构正在重塑下一代交易所格局。"
+
+    if any(word in title_haystack for word in ["rwa", "real world asset"]):
+        return "RWA正从概念叙事迈向真实采用，资产上链、稳定币需求与可持续收益共同驱动新增长周期。"
+
+    if any(word in title_haystack for word in ["solana"]):
+        return "Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。"
+
+    if any(word in title_haystack for word in ["web3", "稳定币", "穩定幣", "商业模式", "商業模式", "现金流", "現金流"]):
+        return "Web3收入模型正在接受现金流检验，交易费、稳定币与基础设施收入决定商业模式的质量和壁垒。"
+
+    keywords = [tag for tag in tags if tag not in {"Web3", "美股"}][:3]
+    focus = "、".join(keywords) if keywords else title_text
+    return f"{focus}正处于关键变化阶段，商业模式、竞争格局与市场预期将共同决定其长期价值和发展空间。"
+
+
 def key_points_from_blocks(blocks):
     candidates = []
     for block in blocks:
@@ -379,6 +566,17 @@ def mirror_to_static(source, static_dir):
     shutil.copy2(source, static_dir / source.name)
 
 
+def route_from_existing_content(site, date_prefix, slug):
+    filename = f"{date_prefix}-{slug}.md"
+    content_root = site / "content/zh-cn"
+    for path in content_root.glob(f"**/{filename}"):
+        subsection = path.parent.name
+        section = path.parent.parent.name
+        if subsection in SUBSECTION_CATEGORY_LABELS and section in {"web3", "stocks"}:
+            return section, subsection, SUBSECTION_CATEGORY_LABELS[subsection]
+    return DEFAULT_CATEGORY_ROUTE
+
+
 def import_one(html_file, site_root, import_date, dry_run=False):
     html = html_file.read_text(encoding="utf-8")
     title = clean_text(meta(html, "og:title") or re.sub(r"\s*\|.*$", "", meta(html, "twitter:title")))
@@ -390,26 +588,33 @@ def import_one(html_file, site_root, import_date, dry_run=False):
     date_text = published.isoformat(timespec="seconds") if published else ""
     date_prefix = published.date().isoformat() if published else "undated"
 
+    article_html = find_article_html(html)
+    article_start = html.find("class=richtext-container")
+    cover_candidate = find_top_cover_candidate(html, title, article_start)
+
     parser = ArticleParser()
-    parser.feed(find_article_html(html))
+    parser.feed(article_html)
     parser.finish()
+    slug = slugify(title)
+    site = site_root.resolve()
+    section, subsection, category = route_from_existing_content(site, date_prefix, slug)
     blocks = plain_blocks(parser)
     joined_text = "\n".join(blocks)
-    category = classify_article(title, joined_text)
-    section, subsection = CATEGORY_ROUTES[category]
-    slug = slugify(title)
     tags = keywords_from_text(title, joined_text)
     if section == "web3" and "Web3" not in tags:
         tags.insert(0, "Web3")
     if section == "stocks" and "美股" not in tags:
         tags.insert(0, "美股")
-    summary = summary_from_blocks(title, blocks)
+    summary = generated_summary_from_signals(title, blocks, category, tags)
     meta_description = meta_description_from_blocks(blocks)
     key_points = key_points_from_blocks(blocks)
     seo_keywords = tags[:10]
     faqs = faq_from_content(title, category, tags, summary)
+    summary = clean_generated_text(summary)
+    meta_description = clean_generated_text(meta_description)
+    key_points = [clean_generated_text(point) for point in key_points if clean_generated_text(point)]
+    faqs = [(clean_generated_text(question), clean_generated_text(answer)) for question, answer in faqs]
 
-    site = site_root.resolve()
     posts_dir = site / "assets/images/posts"
     covers_dir = site / "assets/images/covers"
     static_posts_dir = site / "static/images/posts"
@@ -422,41 +627,43 @@ def import_one(html_file, site_root, import_date, dry_run=False):
         covers_dir.mkdir(parents=True, exist_ok=True)
         content_dir.mkdir(parents=True, exist_ok=True)
 
-    image_urls = []
+    cover_data_uri = cover_candidate["src"] if cover_candidate and cover_candidate["src"].startswith("data:image/") else ""
+    image_urls = [None] * len(parser.images)
     saved_body_images = []
-    for index, (data_uri, _) in enumerate(parser.images, 1):
-        extension = re.match(r"data:image/([a-zA-Z0-9.+-]+)", data_uri).group(1).replace("jpeg", "jpg")
-        filename = f"{date_prefix}-{slug}-image-{index:02d}.{extension}"
+    body_image_count = 0
+    for original_index, (data_uri, _) in enumerate(parser.images):
+        if cover_data_uri and data_uri == cover_data_uri:
+            continue
+        body_image_count += 1
+        extension = data_image_extension(data_uri).lstrip(".")
+        filename = f"{date_prefix}-{slug}-image-{body_image_count:02d}.{extension}"
         destination = posts_dir / filename
         if not dry_run:
             save_data_image(data_uri, destination)
             mirror_to_static(destination, static_posts_dir)
         saved_body_images.append(destination)
-        image_urls.append(f"/images/posts/{filename}")
+        image_urls[original_index] = f"/images/posts/{filename}"
 
     cover_path = ""
-    if cover_url:
+    if cover_candidate:
+        cover_src = cover_candidate["src"]
+        extension = data_image_extension(cover_src) if cover_src.startswith("data:image/") else Path(urlparse(cover_src).path).suffix or ".png"
+        filename = f"{date_prefix}-{slug}-cover{extension}"
+        destination = covers_dir / filename
+        if not dry_run:
+            if cover_src.startswith("data:image/"):
+                save_data_image(cover_src, destination)
+            elif not destination.exists():
+                download_file(cover_src, destination)
+            mirror_to_static(destination, static_covers_dir)
+        cover_path = f"/images/covers/{filename}"
+    elif cover_url:
         extension = Path(urlparse(cover_url).path).suffix or ".png"
         filename = f"{date_prefix}-{slug}-cover{extension}"
         destination = covers_dir / filename
         if not dry_run:
-            try:
-                if not destination.exists():
-                    download_file(cover_url, destination)
-                mirror_to_static(destination, static_covers_dir)
-            except Exception:
-                if saved_body_images:
-                    shutil.copy2(saved_body_images[0], destination)
-                    mirror_to_static(destination, static_covers_dir)
-                else:
-                    raise
-        cover_path = f"/images/covers/{filename}"
-    elif saved_body_images:
-        extension = saved_body_images[0].suffix
-        filename = f"{date_prefix}-{slug}-cover{extension}"
-        destination = covers_dir / filename
-        if not dry_run:
-            shutil.copy2(saved_body_images[0], destination)
+            if not destination.exists():
+                download_file(cover_url, destination)
             mirror_to_static(destination, static_covers_dir)
         cover_path = f"/images/covers/{filename}"
 
@@ -475,6 +682,7 @@ def import_one(html_file, site_root, import_date, dry_run=False):
         'source: "Binance Square"',
         f"source_url: {yaml_string(source_url)}",
         f"meta_description: {yaml_string(meta_description)}",
+        f"description: {yaml_string(meta_description)}",
         f"summary: {yaml_string(summary)}",
         "key_points:",
         *[f"  - {yaml_string(point)}" for point in key_points],
@@ -487,17 +695,7 @@ def import_one(html_file, site_root, import_date, dry_run=False):
     lines += [
         "---",
         "",
-        render_markdown(parser, image_urls),
-        "",
-        "---",
-        "",
-        "更多 Crypto、Web3 与美股研究更新，欢迎关注我的 X：",
-        "",
-        "@sjbtc9",
-        "",
-        "[前往 X 主页](https://x.com/sjbtc9)",
-        "",
-        "---",
+        standard_article_body(summary, key_points, render_markdown(parser, image_urls)),
         "",
     ]
 
@@ -512,7 +710,7 @@ def import_one(html_file, site_root, import_date, dry_run=False):
         category=category,
         tags=tags,
         cover=cover_path,
-        body_images=len(parser.images),
+        body_images=body_image_count,
     )
 
 

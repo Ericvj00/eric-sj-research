@@ -3,6 +3,11 @@
   <header class="article-header">
     <div class="container narrow">
       <h1>{{ .Title }}</h1>
+      <div class="article-tax-row">
+        <div class="article-category-list">
+          <span>{{ partial "category-label.html" . }}</span>
+        </div>
+      </div>
       <dl class="article-info-grid">
         <div>
           <dt>作者</dt>
@@ -30,7 +35,13 @@
 
     <aside class="article-sidebar" aria-label="Article sidebar">
       <section class="author-panel">
-        <h2>作者信息</h2>
+        <div class="author-panel-heading">
+          <h2>作者信息</h2>
+          <a class="author-x-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="在 X 关注 Eric SJ">
+            <span class="author-x-mark" aria-hidden="true">X</span>
+            <span>关注</span>
+          </a>
+        </div>
         <p><strong>{{ .Params.author | default .Site.Params.author }}</strong></p>
         <p>持续记录 Web3 与美股市场研究，关注商业模式、行业结构和投资者教育。</p>
       </section>

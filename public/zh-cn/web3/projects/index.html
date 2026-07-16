@@ -10,6 +10,7 @@
 <input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%a1%b9%e7%9b%ae%e5%88%86%e6%9e%90/>查看更多</a></div><div id=section-results class="article-list research-grid"><p class=empty-state>该栏目内容正在准备中。</p></div></div></section><script type=application/json id=section-search-index>[]</script><script>(()=>{const e=document.getElementById("section-search"),t=document.getElementById("section-results"),n=document.getElementById("section-search-index");if(!e||!t||!n)return;const s=JSON.parse(n.textContent||"[]"),o=e=>String(e||"").toLowerCase().trim();function i(e){if(!e.length){t.innerHTML='<p class="empty-state">没有找到匹配内容。</p>';return}t.innerHTML=e.map(e=>{const t=(e.categories||[]).join(" / ")||"Research";return`
           <article class="article-card research-card">
             <a href="${e.url}">
+              ${e.cover?`<div class="article-card-media"><img src="${e.cover}" alt="${e.title}" loading="lazy"></div>`:""}
               <div class="card-kicker"><span>${t}</span></div>
               <h2>${e.title}</h2>
               <p>${e.summary||""}</p>

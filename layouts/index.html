@@ -83,25 +83,23 @@
       </div>
       <a href="{{ "articles/" | relLangURL }}">全部文章</a>
     </div>
-    <div class="latest-research-list featured-list">
+    <div class="latest-research-list featured-list home-research-grid">
       {{ range first 6 $homeResearch }}
         <article class="latest-research-item">
           <a href="{{ .RelPermalink }}">
             {{ with .Params.cover }}
-              <img class="latest-research-cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+              <div class="latest-research-media">
+                <img class="latest-research-cover" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+              </div>
             {{ end }}
-            <div>
+            <div class="latest-research-copy">
               <div class="card-kicker">
-                {{ with .Params.categories }}
-                  <span>{{ delimit . " / " }}</span>
-                {{ else }}
-                  <span>{{ .Section }}</span>
-                {{ end }}
+                <span>{{ partial "category-label.html" . }}</span>
               </div>
               <h3>{{ .Title }}</h3>
               <p>{{ .Params.summary | default .Params.description | default .Summary }}</p>
+              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
             </div>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
           </a>
         </article>
       {{ else }}
