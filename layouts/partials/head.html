@@ -25,6 +25,6 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description | plainify }}">
 {{ with .Params.cover }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v=20260710-ui-search">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}?v=20260716-responsive-articles-v2">
 {{ partial "jsonld-article.html" . }}
 {{ partial "analytics.html" . }}

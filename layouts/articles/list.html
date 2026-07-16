@@ -35,13 +35,28 @@
       {{ end }}
     </div>
 
-    {{ if gt $paginator.TotalPages 1 }}
-      <nav class="pagination" aria-label="文章分页">
-        {{ with $paginator.Prev }}<a href="{{ .URL }}">上一页</a>{{ end }}
-        <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
-        {{ with $paginator.Next }}<a href="{{ .URL }}">下一页</a>{{ end }}
-      </nav>
-    {{ end }}
+    <nav class="pagination" aria-label="文章分页">
+        {{ with $paginator.Prev }}<a class="pagination-direction" href="{{ .URL }}" rel="prev">上一页</a>{{ end }}
+        <div class="pagination-pages">
+          {{ $currentPage := $paginator.PageNumber }}
+          {{ $totalPages := $paginator.TotalPages }}
+          {{ $lastShown := 0 }}
+          {{ range $paginator.Pagers }}
+            {{ $distance := sub .PageNumber $currentPage }}
+            {{ $showPage := or (eq .PageNumber 1) (eq .PageNumber $totalPages) (and (ge $distance -2) (le $distance 2)) }}
+            {{ if $showPage }}
+              {{ if gt (sub .PageNumber $lastShown) 1 }}<span class="pagination-ellipsis" aria-hidden="true">…</span>{{ end }}
+              {{ if eq .PageNumber $currentPage }}
+                <span class="pagination-current" aria-current="page">{{ .PageNumber }}</span>
+              {{ else }}
+                <a href="{{ .URL }}">{{ .PageNumber }}</a>
+              {{ end }}
+              {{ $lastShown = .PageNumber }}
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ with $paginator.Next }}<a class="pagination-direction" href="{{ .URL }}" rel="next">下一页</a>{{ end }}
+    </nav>
   </div>
 </section>
 {{ end }}

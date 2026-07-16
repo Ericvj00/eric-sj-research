@@ -112,6 +112,8 @@ TOPIC_KEYWORDS = [
 
 class ArticleParser(HTMLParser):
     BLOCKS = {"p", "h1", "h2", "h3", "h4", "li", "blockquote"}
+    STRONG_OPEN = "\ue000"
+    STRONG_CLOSE = "\ue001"
 
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -120,18 +122,44 @@ class ArticleParser(HTMLParser):
         self.links = []
         self.images = []
         self.strong_depth = 0
+        self.list_stack = []
+
+    def render_inline(self, parts):
+        text = "".join(parts)
+        strong_pattern = re.compile(
+            re.escape(self.STRONG_OPEN) + r"(.*?)" + re.escape(self.STRONG_CLOSE),
+            flags=re.S,
+        )
+
+        def replace_strong(match):
+            content = match.group(1).strip()
+            return f"**{content}**" if content else ""
+
+        while strong_pattern.search(text):
+            text = strong_pattern.sub(replace_strong, text)
+        return text.replace(self.STRONG_OPEN, "").replace(self.STRONG_CLOSE, "")
 
     def finish(self):
         if not self.current:
             return
-        text = re.sub(r"[ \t]+", " ", "".join(self.current[1])).strip()
+        text = re.sub(r"[ \t]+", " ", self.render_inline(self.current[1])).strip()
         if text:
             self.blocks.append((self.current[0], text))
         self.current = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag in self.BLOCKS:
+        if tag in {"ul", "ol"}:
+            start = numeric_attr(attrs.get("start", "")) if tag == "ol" else 0
+            self.list_stack.append({"tag": tag, "counter": max(start - 1, 0)})
+        elif tag == "li":
+            self.finish()
+            if self.list_stack and self.list_stack[-1]["tag"] == "ol":
+                self.list_stack[-1]["counter"] += 1
+                self.current = [f"ol-li:{self.list_stack[-1]['counter']}", []]
+            else:
+                self.current = ["li", []]
+        elif tag in self.BLOCKS:
             self.finish()
             self.current = [tag, []]
         elif tag == "br" and self.current:
@@ -140,7 +168,7 @@ class ArticleParser(HTMLParser):
             self.links.append(attrs.get("href", ""))
             self.current[1].append("[")
         elif tag in {"strong", "b"} and self.current:
-            self.current[1].append("**")
+            self.current[1].append(self.STRONG_OPEN)
             self.strong_depth += 1
         elif tag == "img":
             self.finish()
@@ -150,13 +178,18 @@ class ArticleParser(HTMLParser):
                 self.blocks.append(("img", str(len(self.images) - 1)))
 
     def handle_endtag(self, tag):
-        if tag in self.BLOCKS:
+        if tag == "li":
+            self.finish()
+        elif tag in {"ul", "ol"}:
+            if self.list_stack:
+                self.list_stack.pop()
+        elif tag in self.BLOCKS:
             self.finish()
         elif tag == "a" and self.current and self.links:
             href = self.links.pop()
             self.current[1].append(f"]({href})" if href else "]")
         elif tag in {"strong", "b"} and self.current and self.strong_depth:
-            self.current[1].append("**")
+            self.current[1].append(self.STRONG_CLOSE)
             self.strong_depth -= 1
 
     def handle_data(self, data):
@@ -347,6 +380,8 @@ def render_markdown(parser, image_urls):
             output.append(f"{'#' * level} {value}")
         elif kind == "li":
             output.append(f"- {value}")
+        elif kind.startswith("ol-li:"):
+            output.append(f"{kind.split(':', 1)[1]}. {value}")
         elif kind == "blockquote":
             output.append(f"> {value}")
         else:

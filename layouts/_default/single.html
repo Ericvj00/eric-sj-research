@@ -30,7 +30,10 @@
 
   <div class="container article-layout">
     <div class="article-content">
-      {{ .Content }}
+      {{ $renderedContent := .Content }}
+      {{ $renderedContent = replaceRE `\*\*\s*([^*<>]+?)\s*\*\*` `<strong>$1</strong>` $renderedContent }}
+      {{ $renderedContent = replaceRE `\*\*` `` $renderedContent }}
+      {{ $renderedContent | safeHTML }}
     </div>
 
     <aside class="article-sidebar" aria-label="Article sidebar">
@@ -38,12 +41,13 @@
         <div class="author-panel-heading">
           <h2>作者信息</h2>
           <a class="author-x-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="在 X 关注 Eric SJ">
-            <span class="author-x-mark" aria-hidden="true">X</span>
             <span>关注</span>
+            <span class="author-x-mark" aria-hidden="true">𝕏</span>
           </a>
         </div>
         <p><strong>{{ .Params.author | default .Site.Params.author }}</strong></p>
-        <p>持续记录 Web3 与美股市场研究，关注商业模式、行业结构和投资者教育。</p>
+        <p>持续分享 Web3 与美股研究，产出链上财报、项目/个股分析、逻辑拆解、产业/板块报告和财报观点。</p>
+        <p class="author-follow-note">本网站仅更新长文观点及报告，点击右上角「关注𝕏」即可获取最新观点动向！</p>
       </section>
     </aside>
   </div>
