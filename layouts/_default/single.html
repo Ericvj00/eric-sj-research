@@ -30,6 +30,31 @@
 
   <div class="container article-layout">
     <div class="article-content">
+      {{- $rawContent := .RawContent -}}
+      {{- $hasBodySummary := gt (len (findRE `(?m)^##\s*文章摘要\s*$` $rawContent)) 0 -}}
+      {{- $hasBodyKeyPoints := gt (len (findRE `(?m)^##\s*核心观点\s*$` $rawContent)) 0 -}}
+      {{- $articleSummary := .Params.summary | default .Params.description | default "" -}}
+
+      {{- if and $articleSummary (not $hasBodySummary) }}
+        <section class="article-structured-summary" aria-labelledby="article-summary-heading">
+          <h2 id="article-summary-heading">文章摘要</h2>
+          <p>{{ $articleSummary }}</p>
+        </section>
+      {{- end }}
+
+      {{- with .Params.key_points }}
+        {{- if and (gt (len .) 0) (not $hasBodyKeyPoints) }}
+          <section class="article-structured-key-points" aria-labelledby="article-key-points-heading">
+            <h2 id="article-key-points-heading">核心观点</h2>
+            <ul>
+              {{- range . }}
+                <li>{{ . | markdownify }}</li>
+              {{- end }}
+            </ul>
+          </section>
+        {{- end }}
+      {{- end }}
+
       {{ $renderedContent := .Content }}
       {{ $renderedContent = replaceRE `\*\*\s*([^*<>]+?)\s*\*\*` `<strong>$1</strong>` $renderedContent }}
       {{ $renderedContent = replaceRE `\*\*` `` $renderedContent }}

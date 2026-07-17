@@ -13,7 +13,7 @@
           <div>
             <div class="card-kicker"><span>${t}</span></div>
             <h3>${e.title}</h3>
-            <p>${e.summary||""}</p>
+            ${e.summary?`<p>${e.summary}</p>`:""}
           </div>
           <time>${e.date||""}</time>
         </a>

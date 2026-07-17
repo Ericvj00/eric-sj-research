@@ -1,11 +1,16 @@
 {{ define "main" }}
 {{ partial "section-header.html" . }}
-{{ $sectionPages := .RegularPagesRecursive }}
+{{ $sectionPages := slice }}
+{{ range .RegularPagesRecursive }}
+  {{ if partial "is-public-page.html" . }}
+    {{ $sectionPages = $sectionPages | append . }}
+  {{ end }}
+{{ end }}
 {{ with .Params.topic_category }}
   {{ $topic := . }}
   {{ $matched := slice }}
   {{ range where $.Site.RegularPages "Section" $.Section }}
-    {{ if in (.Params.categories | default slice) $topic }}
+    {{ if and (partial "is-public-page.html" .) (eq (partial "category-label.html" .) $topic) }}
       {{ $matched = $matched | append . }}
     {{ end }}
   {{ end }}

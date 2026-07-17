@@ -1,11 +1,11 @@
 {{- $pages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") -}}
 {{- $items := slice -}}
 {{- range $pages.ByDate.Reverse -}}
-  {{- if not .Draft -}}
+  {{- if partial "is-public-page.html" . -}}
     {{- $items = $items | append (dict
       "title" .Title
       "url" .RelPermalink
-      "summary" (.Params.summary | default .Params.description | default .Summary | plainify)
+      "summary" (.Params.summary | default .Params.description | default "" | plainify)
       "tags" (.Params.tags | default slice)
       "categories" (slice (partial "category-label.html" .))
       "content" (.Plain | plainify)

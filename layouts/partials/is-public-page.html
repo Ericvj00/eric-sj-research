@@ -1,0 +1,6 @@
+{{- $page := . -}}
+{{- $isPublic := not $page.Draft -}}
+{{- if isset $page.Params "status" -}}
+  {{- $isPublic = and $isPublic (eq $page.Params.status "已发布") -}}
+{{- end -}}
+{{- return $isPublic -}}

@@ -1,7 +1,12 @@
 {{ define "main" }}
 {{ $researchPages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks") }}
-{{ $publishedResearch := where $researchPages "Draft" false }}
-{{ $sortedPages := sort $publishedResearch "Date" "desc" }}
+{{ $publicResearch := slice }}
+{{ range $researchPages }}
+  {{ if partial "is-public-page.html" . }}
+    {{ $publicResearch = $publicResearch | append . }}
+  {{ end }}
+{{ end }}
+{{ $sortedPages := sort $publicResearch "Date" "desc" }}
 {{ $paginator := .Paginate $sortedPages 20 }}
 <section class="page-hero article-database-hero">
   <div class="container narrow">

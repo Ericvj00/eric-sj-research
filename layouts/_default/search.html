@@ -59,7 +59,7 @@ function render(items) {
           <div>
             <div class="card-kicker"><span>${categories}</span></div>
             <h3>${item.title}</h3>
-            <p>${item.summary || ""}</p>
+            ${item.summary ? `<p>${item.summary}</p>` : ""}
           </div>
           <time>${item.date || ""}</time>
         </a>

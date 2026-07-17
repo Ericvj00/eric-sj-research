@@ -1,7 +1,33 @@
 {{- $page := . -}}
 {{- $label := "" -}}
-{{- with $page.Params.category -}}
+{{- $labels := dict
+  "sector" "板块研究"
+  "onchain-earnings" "链上财报"
+  "project" "项目分析"
+  "thesis" "逻辑拆解"
+  "earnings" "财报分析"
+  "company" "个股研究"
+  "industry" "产业报告"
+  "onchain-financials" "链上财报"
+  "projects" "项目分析"
+  "web3" "Web3"
+  "stocks" "美股"
+  "articles" "文章"
+  "guides" "自用工具"
+-}}
+{{- with $page.Params.category_label -}}
   {{- $label = . -}}
+{{- end -}}
+{{- if not $label -}}
+  {{- with $page.Params.category_key -}}
+    {{- $key := printf "%v" . -}}
+    {{- $label = index $labels $key | default $key -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $label -}}
+  {{- with $page.Params.category -}}
+    {{- $label = . -}}
+  {{- end -}}
 {{- end -}}
 {{- if not $label -}}
   {{- with $page.Params.categories -}}
@@ -19,19 +45,6 @@
     {{- $dir := strings.TrimSuffix "/" .Dir -}}
     {{- $slug = path.Base $dir -}}
   {{- end -}}
-  {{- $labels := dict
-    "sector" "板块研究"
-    "thesis" "逻辑拆解"
-    "company" "个股研究"
-    "earnings" "财报分析"
-    "onchain-financials" "链上财报"
-    "projects" "项目分析"
-    "industry" "产业报告"
-    "web3" "Web3"
-    "stocks" "美股"
-    "articles" "文章"
-    "guides" "自用工具"
-  -}}
   {{- $label = index $labels $slug | default $page.Title | default $page.Section -}}
 {{- end -}}
 {{- return $label -}}

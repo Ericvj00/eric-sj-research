@@ -7,5 +7,77 @@
 <a href=/zh-cn/stocks/industry/>产业报告</a></div></details><a href=/zh-cn/guides/>自用工具</a>
 <a href=/zh-cn/#about>关于</a>
 <a href=/zh-cn/search/>搜索</a></nav><nav class=language-switcher aria-label="Language switcher"><a class=is-active href=/zh-cn/web3/onchain-financials/>简体中文</a></nav></div></header><script>document.querySelectorAll(".nav-group > summary").forEach(e=>{e.addEventListener("click",t=>{const n=e.parentElement;if(!window.matchMedia("(max-width: 900px)").matches||!n.open)return;t.preventDefault(),window.location.href=n.dataset.href})})</script><main id=main><section class=section-hero><div class="container section-hero-grid"><div><p class=eyebrow>Web3 Research</p><h1>链上财报</h1></div><div class=section-hero-copy><p>用链上数据观察协议收入、费用结构、用户行为和可持续现金流。</p><label class=section-search-box><span aria-hidden=true>⌕</span>
-<input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%93%be%e4%b8%8a%e8%b4%a2%e6%8a%a5/>查看更多</a></div><div id=section-results class="article-list research-grid"><p class=empty-state>该栏目内容正在准备中。</p></div></div></section><script>(()=>{const t=document.getElementById("section-search"),n=document.getElementById("section-results");if(!t||!n)return;const o=Array.from(n.querySelectorAll(".research-article-card")),s=e=>String(e||"").toLowerCase().trim(),e=document.createElement("p");e.className="empty-state",e.textContent="没有找到匹配内容。",t.addEventListener("input",()=>{const a=s(t.value).split(/\s+/).filter(Boolean);let i=0;o.forEach(e=>{const t=a.every(t=>s(e.dataset.search).includes(t));e.hidden=!t,t&&(i+=1)}),i?e.remove():e.isConnected||n.appendChild(e)})})()</script></main><footer class=site-footer><div class="container footer-grid"><div><strong>Eric SJ Research</strong><p>Copyright 2026 Eric SJ Research. All rights reserved.</p></div><nav class=footer-links aria-label="Footer navigation"><a href=/zh-cn/disclosure/>免责声明</a>
+<input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%93%be%e4%b8%8a%e8%b4%a2%e6%8a%a5/>查看更多</a></div><div id=section-results class="article-list research-grid"><article class=research-article-card data-search="从hyperliquid到tether：web3已验证的5张现金流表 web3 已验证的现金流主要来自交易费、稳定币储备收益、资金利差、区块空间与基础设施服务费。 链上财报 web3 商业模式 现金流 hyperliquid tether usdt usdc ethena aave ethereum 很多人说 web3 没有商业模式。
+这句话只对了一半。
+web3 确实有很多项目，本质上还停留在“代币补贴 + 叙事融资 + 流动性退出”的循环里。
+但如果你把视角从 fdv、空投、上所和叙事里抽出来，去看谁在真实付钱、钱最后流向哪里、协议到底靠什么产生收入，就会发现：
+web3 不是没有商业模式，只是很多商业模式，和代币价格并不存在强绑定关系。
+这也是为什么它们经常被市场忽略。所谓商业模式，本质上在回答四个问题：
+谁付钱？
+为什么愿意付钱？
+最后怎么变成收入和利润？
+这套模式能不能长期持续？
+按照这个标准看，目前 web3 里已经被市场验证的商业模式，大致可以分成五类：
+交易费
+稳定币储备收益
+资金利差
+区块空间出售
+协议级服务费
+这一篇就简单聊这五种模式，到底靠什么赚钱？
+五种已经被验证的现金流 通常一个完整的商业模式都是能够非常简单的解释的，所以以下展开这些模式的每一个例子，篇幅绝对不长，因为它们模式足够清晰。
+第一种：交易费——hyperliquid 先讲交易费，这是行业内最早被验证的商业模式，从cex、dex再到跨链桥，商业模式都是这个模型，差别只是通过什么样的载体实现的而已。
+这类商业模式的优点是收入直接、现金流清晰；缺点是高度周期化，牛市收入爆炸，熊市会迅速萎缩。
+我认为hyperliquid @hyperliquidx 是交易费模式里最好的例子，没有之一。
+原因很简单：第一它当前不靠复杂叙事收费，结构很清晰很简单，最重要的是保持着足够的透明度。
+通过链上的接口能很清晰的看到它的收入结构，defillama对hyperliquid的费用口径包括合约交易费和builder fees(未含现货)，也就是用户开合约、挂单、吃单、做市、使用builder code，都会在不同层面产生费用。
+至于这个费用流向哪里，不是这一节的主题，不展开了，但有些数据需要放在这，告诉大家它的闭环做的有多好：
+所以它的商业模式很直接：交易量越大，手续费越多；手续费越多，收入越多；收入越多，回购越多。
+但交易费模式的问题也很明显：它吃行情，牛市收入会很性感，熊市收入会明显收缩(看图右变化趋势)
+第二种：稳定币储备收益 —— usdt/usdc/usd1 稳定币这一类可以拆成两个维度，一种是传统法币储备型的稳定币，代表有usdt、usdc；另外一种是像ethena这样的，它严格来说不算“储备收益”的类型，吃的是加密市场里的资金费率和基差，不是本段的范畴里。
+usdt和usdc的底层商业模式，本质上都很接近“链上货币市场基金”。
+用户拿1美元换1枚稳定币，发行方拿到底层美元资产，然后配置短债、货币基金、现金等高流动性资产，赚储备收益。
+usd1也是类似逻辑，但有细微差别，据world liberty financial官方文档称，usd1由现金、美国政府货币市场基金和其他现金等价物支持。
+用户拿到的是链上美元使用权，发行方拿到的是底层美元资产收益权。
+这也是为什么稳定币发行商的商业模式非常强。
+它不一定需要用户每天交易，只要稳定币规模在，它就能持续吃到储备端收益，这类商业模式的核心不是“有没有人交易”，而是“有没有足够多的钱愿意留下来”。
+资金一旦沉淀，迁移成本就比交易行为更高。
+第三种：资金利差——ethena/aave 这里要举两个案例，一个是上面提到的ethena @ethena
+它的主打产品也是稳定币，但是和储备收益不同的是，它的稳定币底层是费率收益。
+也就是通过对btc、eth 等现货资产采取中性对冲策略，赚取合约费率和基差收益(也有一小部分的储备收益，是来自以太的节点质押收益)
+而另外一个案例——aave @aave ，是资金利差模式的代表。
+传统银行赚钱的方式很简单：低成本吸收资金，高价格放出资金，中间赚利差； aave 做的事情和银行有相似之处，但它不是自己吸储放贷，而是用智能合约把存款人、借款人、抵押品、利率模型和清算机制组织在一起。
+用户把资产存进aave的资金池，借款人用抵押品借出资产，并支付借款利息，当一个资金池里被借走的钱越多，资金利用率越高，借款利率就会上升；当资金池里闲钱很多、没人借，利率就下降
+这套机制本质上是在给链上资金自动定价。
+而 aave 的协议收入，则来自借款人支付利息中的一部分抽成。也就是说，借款人支付的利息大部分会分给存款人，剩下的一部分会通过储备因子进入协议金库，成为 aave 的协议收入。
+第四种：区块空间出售——ethereum $eth 公链真正卖的不是 tps，而是区块空间.
+ethereum的区块空间收费结构分成了两部分：基础费+优先费，前者是网络依照拥挤程度的自动定价，这一部分会被销毁；后者则是你额外给验证者的小费，用来提高交易被更快打包的吸引力。
+故而它的费用结构为：总 gas 价格 = 基础费 + 优先费
+而一笔交易最终支付的总费用= gas使用量×（基础费 + 优先费）
+除此之外，由于以太是一个整体的生态，有着很多的layer2，所以它卖的是两类空间：
+一类是普通交易执行空间，也就是上面提到的；
+一类是rollup使用的blob数据空间。
+blob是rollup用来上传批量交易数据的临时数据包，也就是在l2上的数据，在打包的过程中被塞入了“blob”提交给以太这个主链，这个blob同样要交一笔blob gas，这是独立于普通交易gas的另外一个定价标准。
+技术性的剖析不是本章的讨论范围，这里就不再展开了，放张图总结一下：
+第五种：基础设施服务费
+除了交易费、稳定币储备收益、资金利差和区块空间出售之外，我认为 web3 还有第五类商业模式正在变得越来越重要：
+基础设施服务费，且很多是以订阅的形式存在
+它不是用户交易一次抽一次水，也不是稳定币发行方拿储备去买短债，而是项目方、应用、链本身为了使用某种关键基础设施，持续支付费用。
+随着时间的推移和原有业务的成熟，web3 里的很多协议，正在从“发币项目”变成“基础设施供应商”。
+1.比如debridge @debridge 作为一个跨链桥，除了本身的跨链交易服务之外，还支持帮b端的各个链搭设跨链桥，本质上卖的是跨链通信能力，项目方要跨链传消息、传指令、传流动性，就需要使用它的协议服务。
+2.又比如op stack @optimism 卖的是开链能力和共享生态网络。superchain成员链享受op stack标准化构建和生态协同，同时把一部分收入回流给optimism collective
+3.再比如 chainlink @chainlink 卖的是预言机和可信数据服务。defi需要价格信息、衍生品需要喂价，跨链需要消息验证，这些都不是一次性需求，而是持续性基础设施需求。
+所以这类模式可以理解成web3版saas，只不过它卖的不是软件账号，而是跨链、开链、预言机、自动化、数据验证这些底层能力。
+这类收入短期看不一定最性感，但长期商业价值很高。因为一旦项目方把自己的业务接进这些基础设施里，迁移成本会很高。
+之后会考虑将1-3个模式单独拎出来讲讲(看本篇的反馈如何)
+最后简单收个尾 如果把这五类商业模式放在一起看，其实会发现一个很明显的变化：
+web3 并不是只有叙事，也开始出现越来越清晰的现金流。
+上文提到的这五类模式不会覆盖web3的全部未来，但至少在当下，它们已经是最容易被验证、最容易被追踪真实现金流的几种商业模式。
+为避免篇幅过长，这一篇聊的是这些模式是靠什么赚钱的，没有展开的是这些钱都流向了哪。
+下一篇会再聊一个更关键的问题：到底什么因素，会影响这些商业模式的质量？
+因为真正好的商业模式，从来不是短期赚到一笔钱，而是能长期、稳定、可解释地把需求变成现金流。
+web3 也是一样。
+更多 crypto、web3 与美股研究更新，欢迎关注我的 x：
+@sjbtc9
+前往 x 主页
+"><a href=/zh-cn/web3/%E4%BB%8Ehyperliquid%E5%88%B0tetherweb3%E5%B7%B2%E9%AA%8C%E8%AF%81%E7%9A%845%E5%BC%A0%E7%8E%B0%E9%87%91%E6%B5%81%E8%A1%A8/><div class=research-article-card-media><img src=/images/covers/2026-07-06-web3-verified-cash-flow-models-cover.png alt=从Hyperliquid到Tether：Web3已验证的5张现金流表 loading=lazy></div><div class=research-article-card-body><div class=card-kicker><span>链上财报</span></div><h2>从Hyperliquid到Tether：Web3已验证的5张现金流表</h2><p>Web3 已验证的现金流主要来自交易费、稳定币储备收益、资金利差、区块空间与基础设施服务费。</p><time datetime=2026-07-06>2026-07-06</time></div></a></article></div></div></section><script>(()=>{const t=document.getElementById("section-search"),n=document.getElementById("section-results");if(!t||!n)return;const o=Array.from(n.querySelectorAll(".research-article-card")),s=e=>String(e||"").toLowerCase().trim(),e=document.createElement("p");e.className="empty-state",e.textContent="没有找到匹配内容。",t.addEventListener("input",()=>{const a=s(t.value).split(/\s+/).filter(Boolean);let i=0;o.forEach(e=>{const t=a.every(t=>s(e.dataset.search).includes(t));e.hidden=!t,t&&(i+=1)}),i?e.remove():e.isConnected||n.appendChild(e)})})()</script></main><footer class=site-footer><div class="container footer-grid"><div><strong>Eric SJ Research</strong><p>Copyright 2026 Eric SJ Research. All rights reserved.</p></div><nav class=footer-links aria-label="Footer navigation"><a href=/zh-cn/disclosure/>免责声明</a>
 <a href=/zh-cn/privacy/>隐私政策</a></nav></div></footer></body></html>

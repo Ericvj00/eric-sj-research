@@ -1,5 +1,5 @@
 {{- $siteDescription := .Site.Params.description -}}
-{{- $description := .Params.description | default .Summary | default $siteDescription -}}
+{{- $description := .Params.summary | default .Params.description | default $siteDescription -}}
 {{- $title := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) -}}
 {{- $author := .Params.author | default .Site.Params.author -}}
 {{- $articleSections := slice "articles" "web3" "stocks" "guides" -}}

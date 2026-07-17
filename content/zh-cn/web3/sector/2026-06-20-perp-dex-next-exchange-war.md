@@ -48,6 +48,11 @@ faq:
     answer: "文章从收入、增长、分发或护城河等角度分析 Base 的长期价值与主要变量。"
   - question: "Base 所在赛道的关键变化是什么？"
     answer: "关键变化主要来自需求结构、竞争格局、商业模式和资金关注度的重新定价。"
+category_key: "sector"
+category_label: "板块研究"
+featured: true
+status: "已发布"
+cover_status: "正常"
 ---
 
 ## 文章摘要

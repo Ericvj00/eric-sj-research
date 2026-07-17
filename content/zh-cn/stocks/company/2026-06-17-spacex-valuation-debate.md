@@ -48,6 +48,11 @@ faq:
     answer: "文章从收入、增长、分发或护城河等角度分析 商业模式 的长期价值与主要变量。"
   - question: "这篇文章关注哪些投资变量？"
     answer: "文章主要关注营收、利润、渠道结构、估值预期和未来增长弹性的变化。"
+category_key: "company"
+category_label: "个股研究"
+featured: true
+status: "已发布"
+cover_status: "正常"
 ---
 
 ## 文章摘要

@@ -47,6 +47,11 @@ faq:
     answer: "文章从收入、增长、分发或护城河等角度分析 Perp DEX 的长期价值与主要变量。"
   - question: "Perp DEX 的护城河主要来自哪里？"
     answer: "护城河通常来自入口、流动性、用户习惯、协议收入、品牌信任或生态网络效应。"
+category_key: "thesis"
+category_label: "逻辑拆解"
+featured: false
+status: "已发布"
+cover_status: "正常"
 ---
 
 ## 文章摘要

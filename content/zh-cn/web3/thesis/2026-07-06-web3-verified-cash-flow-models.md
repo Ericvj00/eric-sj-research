@@ -46,6 +46,15 @@ faq:
     answer: "法币储备型稳定币发行方将底层美元配置于短债、货币基金、现金等高流动性资产，从储备端获取收益。"
   - question: "Ethereum出售的区块空间包括什么？"
     answer: "包括普通交易执行空间，以及 Rollup 提交批量交易数据所使用的 blob 数据空间。"
+category_key: "onchain-earnings"
+category_label: "链上财报"
+featured: true
+status: "已发布"
+description: "Hyperliquid面临的核心问题，是收入增长能否持续转化为现金流。研究范围同时覆盖商业模式、生态增长与业务结构变化，用于判断现有优势是否具有持续性，以及主要风险会如何影响后续表现。"
+author: "Eric SJ"
+content_type: "onchain-earnings"
+seo_geo_status: "已完成"
+cover_status: "正常"
 ---
 
 很多人说 Web3 没有商业模式。
