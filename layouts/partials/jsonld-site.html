@@ -1,0 +1,24 @@
+{{- if .IsHome -}}
+{{- $personID := printf "%s#person-eric-sj" .Site.BaseURL -}}
+{{- $siteID := printf "%s#website" .Site.BaseURL -}}
+{{- $graph := slice
+  (dict
+    "@type" "WebSite"
+    "@id" $siteID
+    "name" "Eric SJ Research"
+    "url" .Site.BaseURL
+    "description" "Crypto + US Stock Research"
+    "creator" (dict "@id" $personID)
+  )
+  (dict
+    "@type" "Person"
+    "@id" $personID
+    "name" "Eric SJ"
+    "url" .Site.BaseURL
+    "sameAs" (slice "https://x.com/sjbtc9")
+    "worksFor" (dict "@id" $siteID)
+  )
+-}}
+{{- $data := dict "@context" "https://schema.org" "@graph" $graph -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end -}}

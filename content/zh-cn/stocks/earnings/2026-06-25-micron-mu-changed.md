@@ -3,7 +3,7 @@ title: "美光($MU)，变了"
 date: "2026-06-25T13:22:13+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "财报分析"
+category: "美股"
 categories:
   - "财报分析"
 tags:
@@ -53,11 +53,12 @@ category_label: "财报分析"
 featured: false
 status: "已发布"
 cover_status: "正常"
+content_id: "065"
+subcategory: "财报分析"
+content_type: "earnings-analysis"
+draft: false
 ---
 
-## 文章摘要
-
-美光正由传统周期存储股转向AI算力资产，收入弹性、利润率修复与HBM需求构成重估主线。
 
 ## 核心观点
 

@@ -4,7 +4,7 @@ date: "2025-03-02T19:20:24+08:00"
 slug: "2025-03-02-nvidia-nvda-gpu"
 category_key: "earnings"
 category_label: "财报分析"
-category: "财报分析"
+category: "美股"
 categories:
   - "财报分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 cover_status: "正常"
 summary_status: "已完成"
 key_points_status: "已完成"
+content_id: "019"
+subcategory: "财报分析"
 ---
+
+## 正文
 
 目前Web3的DePIN随着AI+分布式GPU市场这个赛道的出现，也让市场对英伟达的财报动向需要保持密切的关注
 

@@ -4,7 +4,7 @@ date: "2025-01-22T19:04:02+08:00"
 slug: "2025-01-22-booster-rollup"
 category_key: "sector"
 category_label: "板块研究"
-category: "板块研究"
+category: "Web3"
 categories:
   - "板块研究"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "038"
+subcategory: "板块研究"
 ---
+
+## 正文
 
 $ETH 又TM开始有新的Rollup概念可能要落地了，从Rollup、OP Rollup、ZK Rollup、Based Rollup，反正各种的方案，围绕以太生态的畸形发展仍在持续。
 

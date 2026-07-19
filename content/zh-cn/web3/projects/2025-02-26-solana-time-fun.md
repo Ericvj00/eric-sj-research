@@ -4,7 +4,7 @@ date: "2025-02-26T17:39:00+08:00"
 slug: "2025-02-26-solana-time-fun"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "022"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 1.Time fun并不是一个最近才出来的新平台，它是一个在去年就成立的台子，切的概念是[时间代币化平台]
 

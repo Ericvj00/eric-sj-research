@@ -4,7 +4,7 @@ date: "2025-03-25T18:15:14+08:00"
 slug: "2025-03-25-pharos-rwa"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -47,7 +47,11 @@ faq:
   - question: "文章重点关注哪些关键变量？"
     answer: "但无论如何，性能(TPS、延迟、成本)仍是核心竞争指标，本轮周期我看到的一个迹象是，开始有基础设施在硬件层面做功夫做突破。因此，和其他的拓展方案类似，SPN以及其他框架内的模块化扩容方案，都是用于特定的应用需求的，而不是重复造了一个相对独立的轮子。"
 cover_status: "正常"
+content_id: "008"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 新周期各链依旧在卷性能，后基础设施时代，性能链如何破局？
 

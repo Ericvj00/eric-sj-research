@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NFT on Eric SJ Research</title><link>https://ericsj.xyz/zh-cn/tags/nft/</link><description>Recent content in NFT on Eric SJ Research</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 14 Feb 2025 18:09:50 +0800</lastBuildDate><atom:link href="https://ericsj.xyz/zh-cn/tags/nft/index.xml" rel="self" type="application/rss+xml"/><item><title>[Opensea将要发币，事件背后的正与反]</title><link>https://ericsj.xyz/zh-cn/web3/2025-02-14-opensea/</link><pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate><guid>https://ericsj.xyz/zh-cn/web3/2025-02-14-opensea/</guid><description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>NFT on Eric SJ Research</title>
+		<link>http://localhost:56121/zh-cn/tags/nft/</link>
+		<description>Recent content in NFT on Eric SJ Research</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 14 Feb 2025 18:09:50 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:56121/zh-cn/tags/nft/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>[Opensea将要发币，事件背后的正与反]</title>
+				<link>http://localhost:56121/zh-cn/web3/2025-02-14-opensea/</link>
+				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2025-02-14-opensea/</guid>
+				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
+			</item>
+			<item>
+				<title>解析DePin丨Aethir如何作为赛道基础设施？</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-11-07-depin-aethir/</link>
+				<pubDate>Thu, 07 Nov 2024 19:24:36 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-11-07-depin-aethir/</guid>
+				<description>解析DePin的收入增长正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
+			</item>
+			<item>
+				<title>BTC L2研究报告： L2整体的市值仅有BTC市值的0.1%盘点时下主流解决方案</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-06-01-btc-l2-0-1/</link>
+				<pubDate>Sat, 01 Jun 2024 21:22:41 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-06-01-btc-l2-0-1/</guid>
+				<description>永续合约DEX的竞争焦点正从链上交易能否成立，转向流动性留存、持仓深度与用户长期迁移，交易体验将决定下一阶段格局。</description>
+			</item>
+			<item>
+				<title>Binance新币Portal如何加码全链游戏场景？散户机会在哪？</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-02-24-binance-portal/</link>
+				<pubDate>Sat, 24 Feb 2024 17:36:00 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-02-24-binance-portal/</guid>
+				<description>Binance的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
+			</item>
+	</channel>
+</rss>

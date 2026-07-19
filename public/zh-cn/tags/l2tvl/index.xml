@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>L2TVL on Eric SJ Research</title>
+		<link>http://localhost:56121/zh-cn/tags/l2tvl/</link>
+		<description>Recent content in L2TVL on Eric SJ Research</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 18 Jul 2024 20:13:47 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:56121/zh-cn/tags/l2tvl/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>加密行业半年报(上)：基础设施的新旧更迭趋势</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</link>
+				<pubDate>Thu, 18 Jul 2024 20:13:47 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</guid>
+				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
+			</item>
+	</channel>
+</rss>

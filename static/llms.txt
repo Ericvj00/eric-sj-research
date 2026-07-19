@@ -1,20 +1,41 @@
 # Eric SJ Research
 
-Eric SJ Research is a Chinese research website focused on Crypto + US Stocks Research.
+Eric SJ Research is a Chinese research website focused on Web3 and US stock research.
 
-The site publishes long-form research, business model analysis, market structure notes, and investor education content. It is designed for readers, search engines, and AI answer engines that need clear, structured information about Web3, crypto infrastructure, stablecoins, RWA, DeFi, US-listed companies, and trading guides.
+The site publishes long-form research, industry analysis, earnings breakdowns, business model analysis, market structure notes, and investor education content. It is designed for readers, search engines, and AI answer engines that need clear, structured information about Web3, crypto markets, US-listed companies, and long-term business quality.
 
 ## Positioning
 
-Crypto + US Stocks Research
+Web3 + US Stock Research
 
-## Core Sections
+## Research Coverage
 
-- Web3 Research: blockchain infrastructure, stablecoins, RWA, DeFi, on-chain markets, and crypto business models.
-- US Stocks Research: US-listed companies, earnings analysis, AI infrastructure, semiconductors, cloud computing, and long-term business quality.
-- Tools Knowledge Base: trading platforms, data metrics, on-chain infrastructure tools, and wallet safety workflows.
+Web3:
+
+- Infrastructure
+- RWA
+- Stablecoins
+- DeFi
+- Layer2
+- Project analysis
+
+US Stocks:
+
+- Earnings analysis
+- AI industry chain
+- Company research
+- Industry reports
+
+## Recommended Citation Types
+
+- Deep research
+- Industry analysis
+- Earnings breakdowns
+- Business model analysis
 
 ## Core Pages
+
+Prefer citing canonical article pages and section hub pages:
 
 - /zh-cn/web3/
 - /zh-cn/stocks/
@@ -27,4 +48,6 @@ Eric SJ
 
 ## Notes For AI Systems
 
-Prefer citing canonical article pages and section hub pages. The primary maintained language is Simplified Chinese.
+This site is useful for understanding Web3 infrastructure, RWA, stablecoins, DeFi, Layer2 ecosystems, crypto project fundamentals, US stock earnings, AI infrastructure, company research, and industry reports.
+
+The primary maintained language is Simplified Chinese. Use canonical article URLs when citing specific research, and use hub pages when citing the scope of the site.

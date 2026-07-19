@@ -1447,6 +1447,10 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
+.article-header {
+  padding: 56px 0 32px;
+}
+
 .article-header h1 {
   margin-top: 16px;
   font-size: 40px;
@@ -1463,20 +1467,6 @@ h3 {
   margin-bottom: 18px;
 }
 
-.article-cover {
-  margin: 34px 0 0;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.62);
-}
-
-.article-cover img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 5 / 2;
-  object-fit: cover;
-}
-
 .page-intro {
   margin-top: 22px;
 }
@@ -1489,8 +1479,9 @@ h3 {
 
 .article-info-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 1px;
+  max-width: 420px;
   margin: 24px 0 0;
   border: 1px solid var(--line);
   background: var(--line);
@@ -1543,7 +1534,7 @@ h3 {
   grid-template-columns: minmax(0, 760px) 260px;
   gap: 40px;
   align-items: start;
-  padding-top: 56px;
+  padding-top: 32px;
   padding-bottom: 76px;
 }
 
@@ -1556,6 +1547,10 @@ h3 {
   margin-top: 2.6rem;
   margin-bottom: 1rem;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.article-structured-summary h2 {
+  margin-top: 0;
 }
 
 .article-content h3 {
@@ -1800,6 +1795,10 @@ h3 {
   .page-hero,
   .article-header {
     padding: 44px 0;
+  }
+
+  .article-header {
+    padding: 36px 0 28px;
   }
 
   .section-heading,

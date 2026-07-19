@@ -4,7 +4,7 @@ date: "2025-03-22T01:52:48+08:00"
 slug: "2025-03-22-launchpool-nillion"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "010"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 新的一期币安Launchpool项目是Nillion，我可以保证，除了撸空投的朋友略有耳闻之外，看本篇帖子99%的朋友都没有听说过
 

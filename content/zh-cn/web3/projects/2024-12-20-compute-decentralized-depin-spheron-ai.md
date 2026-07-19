@@ -4,7 +4,7 @@ date: "2024-12-20T19:12:54+08:00"
 slug: "2024-12-20-compute-decentralized-depin-spheron-ai"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "052"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 Depin赛道的基本经济设计其实很好理解，就是基于某一个能源(叙事)去构建一个供需市场。
 

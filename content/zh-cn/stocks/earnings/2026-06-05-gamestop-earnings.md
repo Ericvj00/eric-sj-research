@@ -3,7 +3,7 @@ title: "游戏驿站：历史最高季度净利！但钱从哪里来？"
 date: "2026-06-05T12:49:38+08:00"
 category_key: "earnings"
 category_label: "财报分析"
-category: "财报分析"
+category: "美股"
 categories:
   - "财报分析"
 featured: false
@@ -41,7 +41,12 @@ tags:
 faq: []
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "004"
+subcategory: "财报分析"
+content_type: "earnings-analysis"
 ---
+
+## 正文
 
 游戏驿站Q1财报公布后，各项指标均超出市场预期，尤其盈利暴增近7倍，股价单日涨超7%，直至当前还未有非常明显的颓势（但也有回落）$GME
 

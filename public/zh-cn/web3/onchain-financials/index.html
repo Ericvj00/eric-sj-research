@@ -1,83 +1,685 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>链上财报 | Eric SJ Research</title><meta name=description content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。"><meta name=author content="Eric SJ"><link rel=icon type=image/png href=/images/avatar.png><link rel=apple-touch-icon href=/images/avatar.png><link rel=canonical href=https://ericsj.xyz/zh-cn/web3/onchain-financials/><link rel=alternate hreflang=zh-CN href=https://ericsj.xyz/zh-cn/web3/onchain-financials/><meta property="og:site_name" content="Eric SJ Research"><meta property="og:title" content="链上财报 | Eric SJ Research"><meta property="og:description" content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。"><meta property="og:type" content="website"><meta property="og:url" content="https://ericsj.xyz/zh-cn/web3/onchain-financials/"><meta name=twitter:card content="summary"><meta name=twitter:title content="链上财报 | Eric SJ Research"><meta name=twitter:description content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。"><link rel=stylesheet href="/css/style.css?v=20260716-unified-cover-cards"><script async src="https://www.googletagmanager.com/gtag/js?id=G-HTL683LKHM"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-HTL683LKHM")</script></head><body><header class=site-header><div class="container header-inner"><div class=site-brand aria-label="Eric SJ Research"><a class=brand-mark href=https://x.com/sjbtc9 target=_blank rel="noopener noreferrer" aria-label="Eric SJ on X"><img src=/images/avatar.jpg alt="Eric SJ" width=48 height=48>
-</a><a class=brand-name href=/zh-cn/ aria-label="Eric SJ Research homepage">Eric SJ Research</a></div><nav class=site-nav aria-label="Main navigation"><details class=nav-group data-href=/zh-cn/web3/><summary>Web3</summary><div class=nav-submenu aria-label="Web3 categories"><a href=/zh-cn/web3/sector/>板块研究</a>
-<a href=/zh-cn/web3/onchain-financials/>链上财报</a>
-<a href=/zh-cn/web3/projects/>项目分析</a>
-<a href=/zh-cn/web3/thesis/>逻辑拆解</a></div></details><details class=nav-group data-href=/zh-cn/stocks/><summary>美股</summary><div class=nav-submenu aria-label="Stocks categories"><a href=/zh-cn/stocks/earnings/>财报分析</a>
-<a href=/zh-cn/stocks/company/>个股研究</a>
-<a href=/zh-cn/stocks/industry/>产业报告</a></div></details><a href=/zh-cn/guides/>自用工具</a>
-<a href=/zh-cn/#about>关于</a>
-<a href=/zh-cn/search/>搜索</a></nav><nav class=language-switcher aria-label="Language switcher"><a class=is-active href=/zh-cn/web3/onchain-financials/>简体中文</a></nav></div></header><script>document.querySelectorAll(".nav-group > summary").forEach(e=>{e.addEventListener("click",t=>{const n=e.parentElement;if(!window.matchMedia("(max-width: 900px)").matches||!n.open)return;t.preventDefault(),window.location.href=n.dataset.href})})</script><main id=main><section class=section-hero><div class="container section-hero-grid"><div><p class=eyebrow>Web3 Research</p><h1>链上财报</h1></div><div class=section-hero-copy><p>用链上数据观察协议收入、费用结构、用户行为和可持续现金流。</p><label class=section-search-box><span aria-hidden=true>⌕</span>
-<input id=section-search type=search placeholder=搜索当前专题文章 autocomplete=off></label></div></div></section><section class=section><div class=container><div class=section-heading><div><h2>文章列表</h2></div><a href=/zh-cn/categories/%e9%93%be%e4%b8%8a%e8%b4%a2%e6%8a%a5/>查看更多</a></div><div id=section-results class="article-list research-grid"><article class=research-article-card data-search="从hyperliquid到tether：web3已验证的5张现金流表 web3 已验证的现金流主要来自交易费、稳定币储备收益、资金利差、区块空间与基础设施服务费。 链上财报 web3 商业模式 现金流 hyperliquid tether usdt usdc ethena aave ethereum 很多人说 web3 没有商业模式。
-这句话只对了一半。
-web3 确实有很多项目，本质上还停留在“代币补贴 + 叙事融资 + 流动性退出”的循环里。
-但如果你把视角从 fdv、空投、上所和叙事里抽出来，去看谁在真实付钱、钱最后流向哪里、协议到底靠什么产生收入，就会发现：
-web3 不是没有商业模式，只是很多商业模式，和代币价格并不存在强绑定关系。
-这也是为什么它们经常被市场忽略。所谓商业模式，本质上在回答四个问题：
-谁付钱？
-为什么愿意付钱？
-最后怎么变成收入和利润？
-这套模式能不能长期持续？
-按照这个标准看，目前 web3 里已经被市场验证的商业模式，大致可以分成五类：
-交易费
-稳定币储备收益
-资金利差
-区块空间出售
-协议级服务费
-这一篇就简单聊这五种模式，到底靠什么赚钱？
-五种已经被验证的现金流 通常一个完整的商业模式都是能够非常简单的解释的，所以以下展开这些模式的每一个例子，篇幅绝对不长，因为它们模式足够清晰。
-第一种：交易费——hyperliquid 先讲交易费，这是行业内最早被验证的商业模式，从cex、dex再到跨链桥，商业模式都是这个模型，差别只是通过什么样的载体实现的而已。
-这类商业模式的优点是收入直接、现金流清晰；缺点是高度周期化，牛市收入爆炸，熊市会迅速萎缩。
-我认为hyperliquid @hyperliquidx 是交易费模式里最好的例子，没有之一。
-原因很简单：第一它当前不靠复杂叙事收费，结构很清晰很简单，最重要的是保持着足够的透明度。
-通过链上的接口能很清晰的看到它的收入结构，defillama对hyperliquid的费用口径包括合约交易费和builder fees(未含现货)，也就是用户开合约、挂单、吃单、做市、使用builder code，都会在不同层面产生费用。
-至于这个费用流向哪里，不是这一节的主题，不展开了，但有些数据需要放在这，告诉大家它的闭环做的有多好：
-所以它的商业模式很直接：交易量越大，手续费越多；手续费越多，收入越多；收入越多，回购越多。
-但交易费模式的问题也很明显：它吃行情，牛市收入会很性感，熊市收入会明显收缩(看图右变化趋势)
-第二种：稳定币储备收益 —— usdt/usdc/usd1 稳定币这一类可以拆成两个维度，一种是传统法币储备型的稳定币，代表有usdt、usdc；另外一种是像ethena这样的，它严格来说不算“储备收益”的类型，吃的是加密市场里的资金费率和基差，不是本段的范畴里。
-usdt和usdc的底层商业模式，本质上都很接近“链上货币市场基金”。
-用户拿1美元换1枚稳定币，发行方拿到底层美元资产，然后配置短债、货币基金、现金等高流动性资产，赚储备收益。
-usd1也是类似逻辑，但有细微差别，据world liberty financial官方文档称，usd1由现金、美国政府货币市场基金和其他现金等价物支持。
-用户拿到的是链上美元使用权，发行方拿到的是底层美元资产收益权。
-这也是为什么稳定币发行商的商业模式非常强。
-它不一定需要用户每天交易，只要稳定币规模在，它就能持续吃到储备端收益，这类商业模式的核心不是“有没有人交易”，而是“有没有足够多的钱愿意留下来”。
-资金一旦沉淀，迁移成本就比交易行为更高。
-第三种：资金利差——ethena/aave 这里要举两个案例，一个是上面提到的ethena @ethena
-它的主打产品也是稳定币，但是和储备收益不同的是，它的稳定币底层是费率收益。
-也就是通过对btc、eth 等现货资产采取中性对冲策略，赚取合约费率和基差收益(也有一小部分的储备收益，是来自以太的节点质押收益)
-而另外一个案例——aave @aave ，是资金利差模式的代表。
-传统银行赚钱的方式很简单：低成本吸收资金，高价格放出资金，中间赚利差； aave 做的事情和银行有相似之处，但它不是自己吸储放贷，而是用智能合约把存款人、借款人、抵押品、利率模型和清算机制组织在一起。
-用户把资产存进aave的资金池，借款人用抵押品借出资产，并支付借款利息，当一个资金池里被借走的钱越多，资金利用率越高，借款利率就会上升；当资金池里闲钱很多、没人借，利率就下降
-这套机制本质上是在给链上资金自动定价。
-而 aave 的协议收入，则来自借款人支付利息中的一部分抽成。也就是说，借款人支付的利息大部分会分给存款人，剩下的一部分会通过储备因子进入协议金库，成为 aave 的协议收入。
-第四种：区块空间出售——ethereum $eth 公链真正卖的不是 tps，而是区块空间.
-ethereum的区块空间收费结构分成了两部分：基础费+优先费，前者是网络依照拥挤程度的自动定价，这一部分会被销毁；后者则是你额外给验证者的小费，用来提高交易被更快打包的吸引力。
-故而它的费用结构为：总 gas 价格 = 基础费 + 优先费
-而一笔交易最终支付的总费用= gas使用量×（基础费 + 优先费）
-除此之外，由于以太是一个整体的生态，有着很多的layer2，所以它卖的是两类空间：
-一类是普通交易执行空间，也就是上面提到的；
-一类是rollup使用的blob数据空间。
-blob是rollup用来上传批量交易数据的临时数据包，也就是在l2上的数据，在打包的过程中被塞入了“blob”提交给以太这个主链，这个blob同样要交一笔blob gas，这是独立于普通交易gas的另外一个定价标准。
-技术性的剖析不是本章的讨论范围，这里就不再展开了，放张图总结一下：
-第五种：基础设施服务费
-除了交易费、稳定币储备收益、资金利差和区块空间出售之外，我认为 web3 还有第五类商业模式正在变得越来越重要：
-基础设施服务费，且很多是以订阅的形式存在
-它不是用户交易一次抽一次水，也不是稳定币发行方拿储备去买短债，而是项目方、应用、链本身为了使用某种关键基础设施，持续支付费用。
-随着时间的推移和原有业务的成熟，web3 里的很多协议，正在从“发币项目”变成“基础设施供应商”。
-1.比如debridge @debridge 作为一个跨链桥，除了本身的跨链交易服务之外，还支持帮b端的各个链搭设跨链桥，本质上卖的是跨链通信能力，项目方要跨链传消息、传指令、传流动性，就需要使用它的协议服务。
-2.又比如op stack @optimism 卖的是开链能力和共享生态网络。superchain成员链享受op stack标准化构建和生态协同，同时把一部分收入回流给optimism collective
-3.再比如 chainlink @chainlink 卖的是预言机和可信数据服务。defi需要价格信息、衍生品需要喂价，跨链需要消息验证，这些都不是一次性需求，而是持续性基础设施需求。
-所以这类模式可以理解成web3版saas，只不过它卖的不是软件账号，而是跨链、开链、预言机、自动化、数据验证这些底层能力。
-这类收入短期看不一定最性感，但长期商业价值很高。因为一旦项目方把自己的业务接进这些基础设施里，迁移成本会很高。
-之后会考虑将1-3个模式单独拎出来讲讲(看本篇的反馈如何)
-最后简单收个尾 如果把这五类商业模式放在一起看，其实会发现一个很明显的变化：
-web3 并不是只有叙事，也开始出现越来越清晰的现金流。
-上文提到的这五类模式不会覆盖web3的全部未来，但至少在当下，它们已经是最容易被验证、最容易被追踪真实现金流的几种商业模式。
-为避免篇幅过长，这一篇聊的是这些模式是靠什么赚钱的，没有展开的是这些钱都流向了哪。
-下一篇会再聊一个更关键的问题：到底什么因素，会影响这些商业模式的质量？
-因为真正好的商业模式，从来不是短期赚到一笔钱，而是能长期、稳定、可解释地把需求变成现金流。
-web3 也是一样。
-更多 crypto、web3 与美股研究更新，欢迎关注我的 x：
-@sjbtc9
-前往 x 主页
-"><a href=/zh-cn/web3/%E4%BB%8Ehyperliquid%E5%88%B0tetherweb3%E5%B7%B2%E9%AA%8C%E8%AF%81%E7%9A%845%E5%BC%A0%E7%8E%B0%E9%87%91%E6%B5%81%E8%A1%A8/><div class=research-article-card-media><img src=/images/covers/2026-07-06-web3-verified-cash-flow-models-cover.png alt=从Hyperliquid到Tether：Web3已验证的5张现金流表 loading=lazy></div><div class=research-article-card-body><div class=card-kicker><span>链上财报</span></div><h2>从Hyperliquid到Tether：Web3已验证的5张现金流表</h2><p>Web3 已验证的现金流主要来自交易费、稳定币储备收益、资金利差、区块空间与基础设施服务费。</p><time datetime=2026-07-06>2026-07-06</time></div></a></article></div></div></section><script>(()=>{const t=document.getElementById("section-search"),n=document.getElementById("section-results");if(!t||!n)return;const o=Array.from(n.querySelectorAll(".research-article-card")),s=e=>String(e||"").toLowerCase().trim(),e=document.createElement("p");e.className="empty-state",e.textContent="没有找到匹配内容。",t.addEventListener("input",()=>{const a=s(t.value).split(/\s+/).filter(Boolean);let i=0;o.forEach(e=>{const t=a.every(t=>s(e.dataset.search).includes(t));e.hidden=!t,t&&(i+=1)}),i?e.remove():e.isConnected||n.appendChild(e)})})()</script></main><footer class=site-footer><div class="container footer-grid"><div><strong>Eric SJ Research</strong><p>Copyright 2026 Eric SJ Research. All rights reserved.</p></div><nav class=footer-links aria-label="Footer navigation"><a href=/zh-cn/disclosure/>免责声明</a>
-<a href=/zh-cn/privacy/>隐私政策</a></nav></div></footer></body></html>
+<!doctype html>
+<html lang="zh-CN">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>链上财报 | Eric SJ Research</title>
+<meta name="description" content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。">
+<meta name="author" content="Eric SJ">
+<link rel="icon" type="image/png" href="/images/avatar.png">
+<link rel="apple-touch-icon" href="/images/avatar.png">
+<link rel="canonical" href="http://localhost:1313/zh-cn/web3/onchain-financials/">
+
+<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh-cn/web3/onchain-financials/">
+
+<meta property="og:site_name" content="Eric SJ Research">
+<meta property="og:title" content="链上财报 | Eric SJ Research">
+<meta property="og:description" content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:1313/zh-cn/web3/onchain-financials/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="链上财报 | Eric SJ Research">
+<meta name="twitter:description" content="用链上数据观察协议收入、费用结构、用户行为和可持续现金流。">
+
+<link rel="stylesheet" href="/css/style.css?v=20260716-unified-cover-cards">
+
+
+
+
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="container header-inner">
+    <div class="site-brand" aria-label="Eric SJ Research">
+      <a class="brand-mark" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="Eric SJ on X">
+        <img src="/images/avatar.jpg" alt="Eric SJ" width="48" height="48">
+      </a>
+      <a class="brand-name" href="/zh-cn/" aria-label="Eric SJ Research homepage">Eric SJ Research</a>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <details class="nav-group" data-href="/zh-cn/web3/">
+        <summary>Web3</summary>
+        <div class="nav-submenu" aria-label="Web3 categories">
+          <a href="/zh-cn/web3/sector/">板块研究</a>
+          <a href="/zh-cn/web3/onchain-financials/">链上财报</a>
+          <a href="/zh-cn/web3/projects/">项目分析</a>
+          <a href="/zh-cn/web3/thesis/">逻辑拆解</a>
+        </div>
+      </details>
+      <details class="nav-group" data-href="/zh-cn/stocks/">
+        <summary>美股</summary>
+        <div class="nav-submenu" aria-label="Stocks categories">
+          <a href="/zh-cn/stocks/earnings/">财报分析</a>
+          <a href="/zh-cn/stocks/company/">个股研究</a>
+          <a href="/zh-cn/stocks/industry/">产业报告</a>
+        </div>
+      </details>
+      <a href="/zh-cn/guides/">自用工具</a>
+      <a href="/zh-cn/#about">关于</a>
+      <a href="/zh-cn/search/">搜索</a>
+    </nav>
+    <nav class="language-switcher" aria-label="Language switcher">
+      
+        <a class="is-active" href="/zh-cn/web3/onchain-financials/">简体中文</a>
+      
+    </nav>
+  </div>
+</header>
+<script>
+document.querySelectorAll(".nav-group > summary").forEach(summary => {
+  summary.addEventListener("click", event => {
+    const group = summary.parentElement;
+    if (!window.matchMedia("(max-width: 900px)").matches || !group.open) return;
+    event.preventDefault();
+    window.location.href = group.dataset.href;
+  });
+});
+</script>
+
+    <main id="main">
+      
+<section class="section-hero">
+  <div class="container section-hero-grid">
+    <div>
+      <p class="eyebrow">Web3 Research</p>
+      <h1>链上财报</h1>
+    </div>
+    <div class="section-hero-copy">
+      
+        <p>用链上数据观察协议收入、费用结构、用户行为和可持续现金流。</p>
+      
+      
+        <label class="section-search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="section-search" type="search" placeholder="搜索当前专题文章" autocomplete="off">
+        </label>
+      
+    </div>
+  </div>
+</section>
+
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+  
+  
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <h2>文章列表</h2>
+      </div>
+      
+        <a href="/zh-cn/categories/%e9%93%be%e4%b8%8a%e8%b4%a2%e6%8a%a5/">查看更多</a>
+      
+    </div>
+    <div id="section-results" class="article-list research-grid">
+      
+      
+      
+        <article class="research-article-card" data-search="hyperliquid的73.6%利润率背后，藏着一笔暴增639万美元的成本 hyperliquid的收入增长正在改变原有判断，现金流成为主要驱动因素，而流动性与生态增长仍决定长期表现和价值空间。 链上财报 web3 defi hyperliquid 收入 利润 hype q2 q1 正文 很多人看 hyperliquid，只看三个东西：交易量、市场份额和回购数量
+但如果把它当成一家链上经营实体来分析，还应该看：
+它一个季度赚了多少钱？
+为了赚这些钱付出了多少成本？
+收入来自哪里？
+先放两个本文结论再展开细节：
+“hyperliquid 2026q2 的协议收入环比有所下滑，但整体经营质量依旧很强”&amp;quot;$hype 的季度回购价值足以覆盖因解锁带来的潜在抛压&amp;quot;
+先放数据再做解析，据defillama披露的本季度数据，如下表：
+一、收入变化 hyperliquid q2协议总收入为 2.0183亿美元，相比 q1 的 2.1747亿美元，环比下降约7.2%，分产品来看，环比下降的板块也是主营业务。
+乍看之下，这是一份收入退坡的季度数据。但hyperliquid 的收入和市场交易活跃度高度相关，单季度下滑约7.2%，属于交易周期变化，而不是经营趋势发生了结构性转变。
+另外第二季度产生了1.7871亿美元永续合约手续费，占协议总收入约 88.5%。
+其他收入占比为：
+建设者代码手续费：约 8.1%
+现货手续费：约 2.8%
+unit市场现货手续费：约 0.5%
+所以，hyperliquid的业务结构其实非常清晰，也暴露了一个很现实的问题：hyperliquid虽然在发展生态，但目前依然不是一家多元化金融平台，而是一家以永续合约为绝对核心的高利润交易平台。
+优势在于：hyperliquid已经把一项核心产品做得足够深。
+市场不需要一家平台同时拥有几十种收入来源，只要核心产品足够强，同样可以形成一门非常优秀的生意。
+收入集中，本身并不等于收入质量差。但之前我也说过永续合约收入高度依赖于市场的活跃度。
+行情热的时候，交易平台可以非常赚钱；行情冷下来，收入也可能收缩得很快，它代表的是一门高盈利、但同样高周期的生意。
+二、利润率变化 按照defillama的hyperliquid页面披露的毛利润计算：1.4864亿÷2.0183亿=73.6%
+第一季度对应为：1.6534亿÷2.1747亿=76.0%，环比下降约2.4个百分点。
+这说明在收入下降的同时，成本并没有同比例下降。第二季度收入成本从第一季度的3417万美元升至3677万美元，环比增长约7.6%。
+收入下降，成本上升，最终带来的结果就是：毛利润环比下降约 10.1%，降幅高于收入降幅。
+2.1成本结构hyperliquid第二季度的成本结构为： 这是二季度真正值得关注的变化：
+第二季度新增或显著增加了hip-3部署方分成，从110万美元增加到749万美元，单季度增加639万美元！
+收入端在收缩，新增分成成本却在上升，所以利润降幅自然高于收入降幅。
+但是，开始向hip-3部署方分出更多收入这件事，意味着hip-3市场和第三方部署活动正在扩大，这并不是一项“坏成本”。
+它可能代表：hyperliquid正在牺牲一部分短期利润，换取更多市场、资产和开发者进入生态。
+问题要看后续：如果hip-3分成上升，同时带来更多交易量和新增收入，这属于增长型投入。
+但如果分成持续增加，相关市场却没有带来足够收入，利润率就会继续被侵蚀。
+这个指标可以再观察两个季度再下结论。
+2.2主要成本项有所收缩 在结构表里，原本两个占大头的成本却环比有所下降：建设者代码分成和做市商返佣。
+建设者代码分成达到1638万美元，相比上季度减少了154万美元，做市商返佣为880万美元，相比上季度减少了160万美元
+开发者渠道手续费这一块，是hyperliquid不再只靠自己的前端获客，而是允许其他应用为它带来交易流量的体现。
+更需要关注的是做市商返佣这一块：这个数据说明hyperliquid仍需要通过经济激励维持做市深度和订单簿质量。
+这部分成本不能忽略，因为一家交易平台最核心的产品体验，不只是“能交易”，还有更重要的”流动性深度”问题。
+如果没有足够的流动性，用户不会因为它是链上协议就降低要求。所以，对于交易类协议来说，做市商返佣更像是必要的生产成本。
+但问题不在于有没有这笔支出，而在于：随着规模扩大，做市激励占收入的比例能否下降？
+如果未来收入增长必须依赖更高的返佣，说明流动性仍然是购买来的。如果收入继续增长，而返佣占比下降，才说明流动性网络正在形成自循环。
+目前从季度趋势来看，有这个变化的趋势，但受限于样本，还不是很明显这个变化。
+三、最强的地方仍然是代币价值捕获 hyperliquid第二季度的协议利润为 1.4864亿美元，代币持有者净收入同样为 1.4864亿美元，代币回购也为 1.4864亿美元。
+这三个数字一致，是整份链上季度数据最值得关注的地方。
+因为加密/web3长期以来存在一个非常尴尬的问题：协议有收入，不等于代币有价值。
+有些协议创造了巨额交易量和手续费，但收益主要流向：流动性提供者、项目基金会、节点或者是空投激励
+代币持有者只能得到治理权，或者一份模糊的未来预期。
+hyperliquid走的是另一条路，它不需要市场相信一个五年后、十年后的宏大叙事，而是用当期经营现金流建立代币价值支撑。
+这也是我认为hyperliquid和大部分web3协议最本质的区别。
+很多协议的代币更像融资工具，hype更接近一项能够捕获经营成果的链上资产。
+当然，回购并不自动等于币价上涨，尤其是代币解锁压力这一块，我们可以看一下hyperliquid的季度解锁数据
+4.1代币解锁与实际抛压 单看归属计划，第二季度约有2976万枚hype获得可转让资格，以q2期末价格折算成美元价值2976万枚×65.08美元≈19.37亿美元，这个数量是实际回购数量的十倍以上
+不过这个19.37亿美元是名义解锁价值，不等于实际抛售金额，根据defillama unlock tracker追踪数据估算，q2实际进入核心贡献者钱包的hype数量约为125万—130万枚，占理论计划解锁量约4.2%-4.4%。
+这一数据更代表实际领取规模，但不等同于二级市场卖出规模；
+也就是说q2真实卖盘应当低于约130万枚，回购是完全能够覆盖领取的$hype 的
+我看市场上很多人只看名义解锁，但没有进一步深究实际领取的数量。前者是情绪，后者是事实，对于一个有收入的协议来说，事实是什么比情绪是什么更重要。
+最后 hyperliquid第二季度不是一份完美的经营数据。但我仍然认为，这是一份质量很高的链上经营数据。
+因为它告诉了我们三件事：
+第一，代币的回购能够覆盖实际解锁的量第二，主要成本大头有收缩的迹象第三，协议本身也在拓展更多的分发渠道
+hyperliquid早已经证明了自己能赚钱，下一份答卷是：剥离高交易热度，它是否能够创造其他管道收入。
+">
+  <a href="/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/">
+    <div class="research-article-card-media">
+      
+        <img src="/images/covers/2026-07-18-hyperliquid-73-6-639-cover.png" alt="Hyperliquid的73.6%利润率背后，藏着一笔暴增639万美元的成本" loading="lazy">
+      
+    </div>
+    <div class="research-article-card-body">
+      <div class="card-kicker"><span>链上财报</span></div>
+      <h2>Hyperliquid的73.6%利润率背后，藏着一笔暴增639万美元的成本</h2><p>Hyperliquid的收入增长正在改变原有判断，现金流成为主要驱动因素，而流动性与生态增长仍决定长期表现和价值空间。</p>
+      <time datetime="2026-07-18">2026-07-18</time>
+    </div>
+  </a>
+</article>
+
+      
+        <article class="research-article-card" data-search="web3月度行业复盘~  链上财报  正文 本文是基于binanceresearch最新的月度报告中文翻译，我做了篇总结提炼 从市场表现、板块表现、链上表现到具体标的表现的维度去展开。
+没有华丽、生涩的辞藻堆砌，本篇文章，vitalik他奶奶来看了都能看懂。正文👇🏻
+-月度市场表现🔻 10月的总市值增长了2.8%，一直以来10月在传统金融市场上都是一个市场比较强势的月份，在约540亿的现货 etf 流入的推动下，btc 10月收盘价接近历史高点，时至今日，受到大选的事件推动，已经顺利突破新高。
+下图为上月排名前十的币种月度表现情况：
+（1）狗狗币实现了最高的涨幅，主要的原因和musk助力竞选活动其实有很直接的联系； （2）紧接着就是各个l1标的，其中sol是最为强势的一个标的，实现了将近两位数的涨幅； （3）与telegram/ton相关的市场热度下降，同时伴随着 tap-to-earn上线后的弱势表现，ton创下了月度16.9%的下跌幅度。 telegram更新的政策可能进一步加剧了负面情绪，其中包括将用户的ip地址和电话号码移交给具有有效法律要求的当局； （4）跌幅最大的是瑞波币，这是由于与美国证券交易委员会持续的诉讼导致，当月xrp下跌 20.4%。
+📍10月份 solana、base和 aptos三条链的tvl增长相对出彩，分别为 13.4%、22.2% 和 57.1%。 （1）solana占据了非常强的市场共识，链上的 defi tvl 达到了76亿美元。在链上板块的增长里面，rwa 私人信贷领域，maple finance 和 credix 出现了令人印象深刻的增长，tvl分别增长了366.2% 和168.0% （2）base 的tvl 达到27亿的历史新高。这一增长被原报告归因为 base链上活动的增加，每月交易量超过 1.665亿笔，dex 月交易量大幅上升，达到 268亿美元，整体增长了83.6% 链上的原生dex-aerodrome的tvl增长23.8%， 超过14亿美元，占据 base defi 市场一半以上的市场份额 （3）最近市场注意力开始转向move系，资金大量涌入，aptos 的tvl接近8.7亿美元。 aries markets（借贷）、amnis finance（流动性质押）和 thala（综合性defi应用）等原生defi项目的tvl都经历了显着增长。
+-10月份，nft市场总销售额增长15.8%，达到3.5亿美元大关。这是自 2024 年 3 月以来首次出现增长，在此之前已连续六个月下跌
+另外，这些增长并不来自于头部的l1(eth/sol/btc)，而是来自于mythos、algorand和fantom的nft市场(mythos 链是由知名游戏开发公司 mythical games 推动和构建的去中心化区块链平台，同时也是一条 polkadot 平行链）
+-比特币与标准普尔 500 指数的相关性接近历史最高点🔻 从历史上看，比特币与美指的关系越弱，越是凸显了其作为传统金融市场对冲波动性的吸引力。然而，随着比特币与标准普尔 500 指数的相关性接近历史最高点，这种吸引力正在减少。
+如果比特币与指数的相关性不断加深，最终会降低其作为独立对冲和投资组合多元化工具的有效性。
+-solana创下代币发行的记录🔻 solana的代币发行量始终领先于其他链。自1月份以来，得益于meme币行情的持续和 pump.fun的助力，solana一直在meme或是代币发行上保持着主导地位。
+像pump.fun这样的平台已经使代币创建过程个人化和简易化，通过显着降低用户创建和启动自己的代币的准入门槛，使用户比以往任何时候都更容易参与加密经济。这引发了投机活动的激增，并推动了solana上新代币的激增。
+代币创建的便捷性助长了投机活动的狂热，截至 10 月 21 日当周，solana 占据了创纪录的 90.6% 的每周代币发行量，这是该链的历史新高。
+memecoins在10月份表现依旧是非常强劲，过去30天内表现最好的 5 个代币中有 4 个是 meme，包括市值前十的最高涨幅，也是同属meme赛道的狗狗币。
+memecoin相对于前 50 名山寨币（按市值）的交易量份额也稳步增长，2024年迄今为止已经出现了12%以上的涨幅。在某个最高点这个数字还超过了20%。
+今年meme币的强劲，有两个主要原因需要指出： （1）首先，市场普遍认为它们是“公平的”，特别是与vc支持的代币相比。许多 vc 代币的分配可能会偏向于一些老鼠仓，并且代币解锁周期各异。 meme币基本是全流通的，市场认为这更公平。
+（2）还有可访问性/门槛的问题。许多meme币都专注于某一特定的最新热点，在市场理解门槛方面，与最新的l2或中间件的山寨币形成了明显的对比，这立即创造了更大的潜在目标市场。
+感谢阅读，基本报告的重点就这些，可以持续关注我的本系列内容。
+">
+  <a href="/zh-cn/web3/2024-11-08-web3/">
+    <div class="research-article-card-media">
+      
+        <img src="/images/covers/2024-11-08-web3-cover-placeholder.png" alt="Web3月度行业复盘~" loading="lazy">
+      
+    </div>
+    <div class="research-article-card-body">
+      <div class="card-kicker"><span>链上财报</span></div>
+      <h2>Web3月度行业复盘~</h2>
+      <time datetime="2024-11-08">2024-11-08</time>
+    </div>
+  </a>
+</article>
+
+      
+        <article class="research-article-card" data-search="加密行业半年报(上)：基础设施的新旧更迭趋势 base的核心壁垒并非单纯依赖链上性能，而是coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。 链上财报 web3 defi l1 l2 base 基础设施 btc l2tvl 正文 本篇内容将主要展开l1&amp;amp;l2在过去半年里面，所呈现的一些重点部分，本文大约3200字，值得一读。
+下一篇为生态篇，会于每日完成产出重点披露🗝️
+（1）加密行业总市值年初至今增长37.3%。一季度大幅增长 60.2%，二季度下跌了 14.3%
+（2）大饼 #btc 资金流入140亿左右，l2tvl达430亿，近半年增加了 90%
+（3）arb已于今年在生态系统、日交易量方面落后于op和base链
+1.btc基本盘🔻 大饼生态在各个方面持续加速ordinals协议驱动比特币新时代在token和nft方向上取得进展。
+btc l2同时也随着这股趋势被市场所关注，同时比特币的许多关键指标都有所增长。除了市值显着增加之外，交易量的增加也比较明显。
+在投资表现上，将比特币的表现与其他市场的投资标的进行比较，以太坊和比特币今年迄今分别以 48% 和 43% 的回报率名列前茅。
+alphabet和亚马逊的股票是对照组中唯一年内涨幅超过 25%的品种，主要市场的股市指数表现远远落后，许多指数的回报率为个位数。
+黄金，通常被吹捧的比特币替代品，今年仅上涨了 13%，而原油则上涨了 14% 左右，这组对照展现比特币的潜在多元化优势和强劲表现。
+brc-20 方面，综合市值约为13亿，自今年一月份以来增长了 50%。 $ordi 作为第一个部署的brc-20 代币，仍旧是最受市场青睐的铭文板块代币，当前 $ordi 的市值超过6 亿美元，占brc-20 市场的 50% 以上。
+但是自4月20日推出runes之后，已蚕食了brc-20不小的市场份额(平均占据了比特币衍生代币市场 95% 以上的份额)，纵观当下所有比特币交易，符文交易占比超过 60%。
+今年上半年btc etf获批，这一事件有助于为比特币市场增加新的机构需求来源，与之前的周期相比，这一因素对增量资金的多样性和深度提供了助力。
+现在，从对冲基金到养老基金，各种美国机构投资者都可以通过直接或间接的方式来参与加密市场。
+迄今为止，etf 的累计资金流入已超过147亿美元，总持有量超过86.5万 #btc 这股趋势也蔓延到了其他国家，包括香港已于4 月份批准了比特币和以太坊的现货etf(尽管与美国相比成交量有限)。
+➢趋势展望
+（1）比特币 l2的大批出现
+（2）更多比特币dapp进入市场
+（3）btc etf对标黄金将带来更多的增量资金
+2.其他l1基本盘🔻
+以太坊在许多关键指标上领先于其他 l1，上半年的主要叙事围绕着再质押及其各种相关市场、eip-4844、 defi 以及eth现货etf❖在过去六个月中再抵押占据生态主要叙事地位❖ dencun升级和 eip-4844：dencun 后许多 l2 交易费用下降了 90% 以上，eip-4844引入了“blob”，它为 l2 提供了一种更高效的方式来发布交易数据。
+将要发生？
+❖pectra升级：pectra升级计划于 2025 年第一季度进行，将成为以太坊的下一个重大升级，并将包括对执行层和共识层的一系列不同更新。
+➢bnb
+bnb chain依旧处于领先地位并且在多个方向进行了拓展。上半年的一些领先的发展包括opbnb的进展、通过 bnb greenfield提高其去中心化数据存储容量，以及围绕meme的关注。
+bnb chain在 defi 领域仍处于领导地位，tvl 超过 70 亿美元，稳居第三大defi 链。 pancakeswap 仍然是领先的 defi dapp，其 tvl 约为15亿美元，venus紧随其后，tvl 为14亿美元。
+opbnb的日活账户一直在稳步增长，已超过350 万个，bnb greenfield已拥有约2.15tb 的存储空间，在约35k的总地址上进行了 680 万笔交易。
+➢sol
+solana 在 2024 年表现良好，链上活动不断增加，市场关注度不断提高。solana 一直是meme板块持续增长的核心，其每周的dex交易数据相对于市场其他板块出现了显著增长，虽然这不能完全归因于meme，但无疑是一个关键的增长因素。
+depin属于被视为“只能在 solana 上实现”的赛道，因为其原生的低gas费和高吞吐量(相对于其他网络)。
+译者@eric sj 注：甚至还有一些地区博弈的因素
+solana actions 和blinks：近期solana 还宣布推出 solana blinks（区块链链接的简写）。 actions 是返回 solana 链上交易的 api，而blinks则将任何 solana action 转换为可共享的链接，这意味着在任何可以共享链接的地方，都可以触发链上操作。
+从用户的角度，这意味着用户无需离开原本使用的社交软件就可以铸造 nft、对提案进行投票、捐赠以及交易代币等。
+从本质上讲，blinks允许用户从分享blinks 的任何地方执行区块链交易，从而使 solana dapp 可以从任何可以放置链接的平台访问。
+3.layer2基本盘🔻 l2的增长从2023年一直持续到 2024 年，tvl已经达到430美元且没有收缓的迹象 eip-4844（以太坊dencun升级）的发布使 roll-up 的使用成本比以往任何时候都便宜，升级后l2 交易费用下降了 96.8%，再加上2024年推出的大量的新l2，可能会在年底继续推动 l2 生态系统达到新的高度。
+即使与 solana 和 tron 等最活跃的l1相比，l2也在保持以太坊生态系统与用户活动的紧密相关性方面发挥了重要作用。
+目前，以太坊主网及其所有 l2 的日活地址总数约为 210 万。这一数据与tron 持平，并领先于第二名的 solana，后者的日活地址为 160 万个。
+就以太坊l2本身的竞争而言，optimistic rollup 相对于其他 layer 2牢牢占据领先地位。
+-arb🔻
+虽然 arbitrum 链在 2024 年仍保住了l2链中第一的位置，但由于base的快速增长和blast的推出（两者都基于optimism），生态系统已经落后于 optimism。
+arbitrum 链本身拥有其同类l2中最高的 tvl，保持l2 市场约 33.7% 的份额。目前所有 l2 的总tvl 约为83亿。
+然而，2024年 arbitrum 在日常交易量方面落后于 base(base 最近于 6 月 28 日创下日交易量 350 万的历史新高，并在 2024 年的日交易量上超越了前第二名 zksync era)
+➢base
+base 在 2024 年增长明显，超过op成为第二受欢迎的l2网络， base链作为coinbase的原生l2解决方案，它在2024年上半年的持续增长表明该链的持久力高于甚至超越了最初流行的friend.tech应用程序
+译者@eric sj 注：我认为原文这里的主次关系反了
+主网推出一年后，base 的 tvl 已超过15亿美元，链上生态系统蓬勃发展，拥有超过200 个dapp，其中许多是 l2链原生的。
+❖ 收入最高的 l2：年初至今，base 是收入最高的 l2 链，2024 年上半年收入达 4260 万美元
+❖ solana meme主导地位的有力竞争者：base 上的生态系统一直在不断发展。 memecoins 的总市值目前约为 520亿，其中base上的 memecoin 目前占约4% 这使 base memecoins 排在第三位，仅次于 solana memecoins，后者占 14%(以太坊仍然是最大的 memecoin 的价值捕获地)
+就原生 memecoin 总估值市场份额而言，base 链仅落后于 solana
+➢op mainnet
+尽管op在活力和 tvl 方面输给了base和blast，但这些新来者的快速崛起意味着更广泛的 op超级链生态系统的规模大幅增长。
+虽然arbitrum仍然是 tvl 最高的 l2 链，但最受欢迎的 optimism生态系统 l2（op mainnet、blast、base）的总 tvl 已超过 arbitrum生态系统，目前已达到约 37 亿美元。
+随着optimism的 superchain和arbitrum 的orbit 计划取得进展，评估两者之间的竞争可能越来越需要更综合的去看，而不是评估单独的 l2 链。
+从商业模式和收入来看，optimism在base 指数级增长的支撑下，在 2024 年表现良好。
+➢blast
+blast主网启动所带来的空投激励吸引了价值超过20亿美元，甚至在主网首次亮相之前，资产就已转移到blast桥上。
+2 月 29 日主网上线后，blast 宣布继续开展空投/积分活动，为用户提供更多的空投预期，该活动取得了巨大成功，blast 主网的tvl在6 月份的以太坊rollup中飙升至第二位。
+然而，空投后，blast 的 tvl 开始再次低于 base。
+观察 blast 是否能够在今年内保持其 tvl 和空投后的活动，将表明其初始用户群的粘性。
+➢scroll
+scroll zkevm l2 于 2023 年 10 月推出，今年 tvl 大幅增长。tvl 的增长在很大程度上可归因于“scroll sessions”的启动，即 5 月份开始的 l2 积分活动。
+该活动以 scroll marks 的形式奖励用户将资产桥接到 l2 并与 scroll dapp 进行交互。 scroll的tvl 目前约为4.3 亿美元，仅次于 linea，在其自己的 linea surge 积分和空投活动开始后，tvl 也出现了显着增长。
+scroll 现在捕获了所有 zk-rollup l2 中总 tvl 的 30% 以上。
+➢taiko
+经过近两年的发展和七个测试网，taiko 于今年 5 月 27 日正式上线主网链。在初始阶段，taiko 在以太坊上的汇总协议合约是通过多重签名配置进行管理的。该协议在发布时将需要 sgx 证明，并计划长期过渡到对 50% 的区块使用 zk 证明，以增强扩展性和安全性。
+taiko 的主要区别之一是它作为基础汇总进行操作，并由基础第 1 层（“l1”）驱动排序。与其他汇总不同，taiko 没有集中排序器；相反，以太坊 l1 验证器负责处理排序角色。
+➢polygon zkevm
+polygon zkevm 链本身目前的 tvl 约为 1400 万美元，是构成agglayer的第一条链 今年 3 月，polkadot 生态astar 推出了 zkevm 链，利用polygon的链开发套件（cdk）—一个模块化开源工具包，用于使用零知识（zk）证明构建第 2 层网络.
+astar zkevm是第一个与polygon的agglayer集成的第三方网络，也是继polygon自己的zkevm之后第二个加入agglayer的项目astar zkevm l2 链目前的 tvl 约为 500 万美元.
+最后说明：有关基础设施的内容就大致这些，需要注意的是我本人并没有将原文所有l2的描述放在文中，并做了一定的语言精简化希望可以提高阅读的流畅度
+感谢你的阅读，如果喜欢我的内容产出，三连本文就是最大的支持🙏🏻
+">
+  <a href="/zh-cn/web3/2024-07-18-binance-10963777184553/">
+    <div class="research-article-card-media">
+      
+        <img src="/images/covers/2024-07-18-binance-10963777184553-cover-placeholder.png" alt="加密行业半年报(上)：基础设施的新旧更迭趋势" loading="lazy">
+      
+    </div>
+    <div class="research-article-card-body">
+      <div class="card-kicker"><span>链上财报</span></div>
+      <h2>加密行业半年报(上)：基础设施的新旧更迭趋势</h2><p>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</p>
+      <time datetime="2024-07-18">2024-07-18</time>
+    </div>
+  </a>
+</article>
+
+      
+    </div>
+  </div>
+</section>
+
+  <script>
+  (() => {
+    const input = document.getElementById("section-search");
+    const results = document.getElementById("section-results");
+    if (!input || !results) return;
+    const cards = Array.from(results.querySelectorAll(".research-article-card"));
+    const normalize = value => String(value || "").toLowerCase().trim();
+    const empty = document.createElement("p");
+    empty.className = "empty-state";
+    empty.textContent = "没有找到匹配内容。";
+
+    input.addEventListener("input", () => {
+      const terms = normalize(input.value).split(/\s+/).filter(Boolean);
+      let visible = 0;
+      cards.forEach(card => {
+        const matches = terms.every(term => normalize(card.dataset.search).includes(term));
+        card.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      if (visible) empty.remove();
+      else if (!empty.isConnected) results.appendChild(empty);
+    });
+  })();
+  </script>
+
+
+    </main>
+    <footer class="site-footer">
+  
+  <div class="container footer-grid">
+    <div>
+      <strong>Eric SJ Research</strong>
+      <p>Copyright 2026 Eric SJ Research. All rights reserved.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/zh-cn/disclosure/">免责声明</a>
+      <a href="/zh-cn/privacy/">隐私政策</a>
+    </nav>
+  </div>
+</footer>
+
+  </body>
+</html>

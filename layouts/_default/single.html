@@ -20,22 +20,16 @@
           </div>
         {{ end }}
       </dl>
-      {{ with .Params.cover }}
-        <figure class="article-cover">
-          <img src="{{ . | relURL }}" alt="{{ $.Title }}">
-        </figure>
-      {{ end }}
     </div>
   </header>
 
   <div class="container article-layout">
     <div class="article-content">
       {{- $rawContent := .RawContent -}}
-      {{- $hasBodySummary := gt (len (findRE `(?m)^##\s*文章摘要\s*$` $rawContent)) 0 -}}
       {{- $hasBodyKeyPoints := gt (len (findRE `(?m)^##\s*核心观点\s*$` $rawContent)) 0 -}}
       {{- $articleSummary := .Params.summary | default .Params.description | default "" -}}
 
-      {{- if and $articleSummary (not $hasBodySummary) }}
+      {{- if $articleSummary }}
         <section class="article-structured-summary" aria-labelledby="article-summary-heading">
           <h2 id="article-summary-heading">文章摘要</h2>
           <p>{{ $articleSummary }}</p>

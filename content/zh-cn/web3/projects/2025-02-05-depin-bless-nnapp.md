@@ -4,7 +4,7 @@ date: "2025-02-05T18:46:17+08:00"
 slug: "2025-02-05-depin-bless-nnapp"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "032"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 前面我分享过Grass和Multiple两个插件挂机的项目，今天分享的也是类似模式的DePIN。
 

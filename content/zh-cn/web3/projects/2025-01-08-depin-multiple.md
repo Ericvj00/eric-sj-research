@@ -4,7 +4,7 @@ date: "2025-01-08T19:30:18+08:00"
 slug: "2025-01-08-depin-multiple"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "043"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 Multiple Network作为一个DePIN网络，目前开放了类似于Grass那样的挂机插件，因此本文除了简单介绍一下它是做什么的之外，还做了一个插件挂机的教程，明牌有空投，至于格局能不能像Grass那么大就不确定了。
 

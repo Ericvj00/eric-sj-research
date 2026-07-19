@@ -3,7 +3,7 @@ title: "Perp DEX：下一代交易所“战争”"
 date: "2026-06-20T18:02:56+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "板块研究"
+category: "Web3"
 categories:
   - "板块研究"
 tags:
@@ -53,11 +53,12 @@ category_label: "板块研究"
 featured: true
 status: "已发布"
 cover_status: "正常"
+content_id: "061"
+subcategory: "板块研究"
+content_type: "sector-research"
+draft: false
 ---
 
-## 文章摘要
-
-Perp DEX竞争已进入新阶段，流动性深度、交易体验与费用结构正在重塑下一代交易所格局。
 
 ## 核心观点
 

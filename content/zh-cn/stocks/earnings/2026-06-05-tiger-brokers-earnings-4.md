@@ -4,7 +4,7 @@ date: "2026-06-05T17:45:54+08:00"
 slug: "2026-06-05-tiger-brokers-earnings-4"
 category_key: "earnings"
 category_label: "财报分析"
-category: "财报分析"
+category: "美股"
 categories:
   - "财报分析"
 featured: false
@@ -43,7 +43,11 @@ tags:
   - "财报分析"
 faq: []
 cover_status: "正常"
+content_id: "003"
+subcategory: "财报分析"
 ---
+
+## 正文
 
 打开老虎证券 $TIGR 的走势一看，过去一个月的高低点跌幅近40%。而这，都与一纸禁令和罚款有关，以致于老虎在周二公布的财报中，这笔约5970万美元（约合4.11亿元人民币）的罚款，直接把一季度营收利润给盖过去了，扭盈为亏.......
 

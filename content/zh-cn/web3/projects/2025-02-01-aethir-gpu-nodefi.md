@@ -4,7 +4,7 @@ date: "2025-02-01T19:44:33+08:00"
 slug: "2025-02-01-aethir-gpu-nodefi"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "035"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 上一次写Aethir还是去年11月的时候，年前收到了他们的新年周边顺带看了一下近期进展，新东西不少，官方博客讲的可能太官方了，我把它们白话解读一下。
 

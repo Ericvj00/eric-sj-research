@@ -3,7 +3,7 @@ title: "NIKE直营退潮，分销渠道重新上桌？"
 date: "2026-07-02T12:04:58+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "个股研究"
+category: "美股"
 categories:
   - "个股研究"
 tags:
@@ -53,11 +53,12 @@ category_label: "财报分析"
 featured: false
 status: "已发布"
 cover_status: "正常"
+content_id: "064"
+subcategory: "财报分析"
+content_type: "earnings-analysis"
+draft: false
 ---
 
-## 文章摘要
-
-Nike正由直营扩张转向渠道再平衡，收入结构、分销效率与品牌溢价将共同决定复苏空间。
 
 ## 核心观点
 

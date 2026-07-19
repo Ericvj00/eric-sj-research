@@ -4,7 +4,7 @@ date: "2025-02-28T18:55:01+08:00"
 slug: "2025-02-28-24-myshell-binance"
 category_key: "thesis"
 category_label: "逻辑拆解"
-category: "逻辑拆解"
+category: "Web3"
 categories:
   - "逻辑拆解"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "020"
+subcategory: "逻辑拆解"
 ---
+
+## 正文
 
 昨天Myshell登录币安，这个项目跟我很有渊源了算是，大概在2023年，当时的AI浪潮刚刚被OpenAI掀起来，我就知道了它，因此本篇帖子想讲讲我和它的故事，再展开项目本身
 

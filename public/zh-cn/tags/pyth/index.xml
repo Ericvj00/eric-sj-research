@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>PYTH on Eric SJ Research</title>
+		<link>http://localhost:56121/zh-cn/tags/pyth/</link>
+		<description>Recent content in PYTH on Eric SJ Research</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 04 Feb 2024 17:40:42 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:56121/zh-cn/tags/pyth/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>预言机赛道风再起？LINK真那么容易“杀”吗？</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-02-04-link/</link>
+				<pubDate>Sun, 04 Feb 2024 17:40:42 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-02-04-link/</guid>
+				<description>预言机赛道风再起的商业模式正在改变原有判断，估值成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
+			</item>
+	</channel>
+</rss>

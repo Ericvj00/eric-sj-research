@@ -1,0 +1,73 @@
+---
+title: "聊聊Binance新币挖矿第49期：Ether.Fi"
+content_id: "117"
+date: "2024-03-15T20:19:29+08:00"
+slug: "2024-03-15-binance-49-ether-fi"
+category: "Web3"
+subcategory: "项目分析"
+content_type: "project-analysis"
+category_key: "project"
+category_label: "项目分析"
+categories:
+  - "项目分析"
+featured: false
+status: "已发布"
+draft: false
+author: "Eric SJ"
+source: "Binance Square"
+source_url: "https://www.binance.com/zh-CN/square/post/5434352203330"
+cover: "/images/covers/2024-03-15-binance-49-ether-fi-cover-placeholder.png"
+seo_geo_status: "处理失败"
+summary: ""
+description: ""
+key_points: []
+seo_keywords: []
+tags: []
+faq: []
+---
+
+## 正文
+
+**“具有再质押服务这件事本身，并不存在什么样的项目壁垒，利用再质押这项服务去干什么，才是项目护城河所在~”**
+
+### **-通证分配情况🔻**
+
+这个代币分配我没有在项目的网页及博客上，具体的分配也是在 #Binance 所提供的研报扒下来的。
+
+![文章配图](/images/posts/2024-03-15-binance-49-ether-fi-image-01.png)
+
+可以看出归属于社区的部分其实挺少的，机构占比也不算少，至少我看的那么多项目里面，算比较多的了
+
+**-并且也没有关各部分分配的用途有更进一步的介绍**
+
+所以图中只是放了分配，没有多的观点，需要注意的是，截至明年1月份之前， #ETHFI 的流通都将在20%以下，明年3月之后，释放曲线就开始加速了(该曲线没放，因为更细的时间节点没有)
+
+### **-TVL情况🔻**
+
+这是本章的重点，目前ETHFI的链上质押量已经是TOP1了，占据了此概念了将近一半，这个也许你在其他博主那里也知道这个信息
+
+我想表达的重点是：defillama这个数据网站，将流动性质押、再质押以及流动性再质押3个概念给区分开了
+
+我觉得这是一个非常细节的地方，因为一些数据网站笼统一点甚至会把这三个概念凑一块，也就是将：LIDO、EigenLayer和Ether.Fi放在一块做比较
+
+📍这其实并不严谨，怎么理解？我拿模块化举例子：
+
+（1）Celestia和Manta、Aevo都可以被称作模块化区块链
+
+但是，这仨是一回事么？不是，只能够说Manta和Aevo是使用了Celestia所提供的模块化服务，是Celestia的子集🔺
+
+（2）同理，EigenLayer和ETHFi、ALT都会被市场笼统地归类为再质押概念
+
+但这仨是一个概念么？一样也不是，后两者同样也是使用了EigenLayer再质押服务的项目，是它的子集🔺
+
+（3）所以初步结论是:EigenLayer牛逼！
+
+后面如果上线有机会市值在流通8亿以下的话，稳稳的廉价筹码，都是随便买的存在，二房东干到这一步，真绝了！🔺
+
+（4）最终结论是:有再质押服务这件事，不存在什么壁垒，核心是利用再质押去干嘛，才是项目护城河的关键！
+
+ETH.Fi的再质押，也只是产品蓝图的基础，质押+收益不是重点，解放流动性才是，虽然目前对它的描述仍然是：原生质押+再质押+资产自持
+
+但下一步就是推出收益策略(大约在上市那天)，能够组建质押资产的流动性池，让解放的流动性产生进一步的Defi收益，这才是接下来需要关注的重点🔺
+
+📍质押+再质押本身就是DeFi游戏的一环，但谁能在这个的基础上把DeFi游戏玩出花来，才是真正打出差异化的关键（相信ETHFi有这个潜力）#热门话题

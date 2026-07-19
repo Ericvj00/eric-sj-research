@@ -3,7 +3,7 @@ title: "市场还在把JBL当代工厂，但它可能正在变成人工智能基
 date: "2026-06-18T23:01:47+08:00"
 category_key: "earnings"
 category_label: "财报分析"
-category: "财报分析"
+category: "美股"
 categories:
   - "财报分析"
 featured: false
@@ -40,7 +40,12 @@ tags:
   - "人工智能"
 faq: []
 cover_status: "正常"
+content_id: "002"
+subcategory: "财报分析"
+content_type: "earnings-analysis"
 ---
+
+## 正文
 
 **先说结论：捷普这份财报的重点不是业绩超预期，而是市场可能要重新理解这家公司，它正在从传统代工厂，被市场重新定价成“人工智能基建铲子股”。它不是最”性感”的人工智能公司，但可能是人工智能数据中心扩张里最容易被低估的一类公司。**
 

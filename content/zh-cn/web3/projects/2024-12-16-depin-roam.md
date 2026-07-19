@@ -4,7 +4,7 @@ date: "2024-12-16T19:30:33+08:00"
 slug: "2024-12-16-depin-roam"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 cover_status: "正常"
 summary_status: "已完成"
 key_points_status: "已完成"
+content_id: "058"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 DePIN 作为一个大的板块，包含了非常多的子集，本质上来说，DePIN 是一种利用代币激励从而实现资源众包的经济运作方式。
 

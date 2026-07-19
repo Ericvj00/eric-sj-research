@@ -4,7 +4,7 @@ date: "2025-02-08T16:46:30+08:00"
 slug: "2025-02-08-solana-pump-fun2-0-pumpkin-fun"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "030"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 年初五被一个给安利了一个Solana上的代币 $PKIN ，一开始以为又是什么劳什子Meme，前几天一看才知道是Pump
 

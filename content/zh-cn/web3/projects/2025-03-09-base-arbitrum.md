@@ -4,7 +4,7 @@ date: "2025-03-09T18:49:27+08:00"
 slug: "2025-03-09-base-arbitrum"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -43,7 +43,11 @@ tags:
   - "基础设施"
 faq: []
 cover_status: "正常"
+content_id: "017"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 Base因为昨天出了个热点 $Cocoro 然后大家又觉得EVM又能行了
 

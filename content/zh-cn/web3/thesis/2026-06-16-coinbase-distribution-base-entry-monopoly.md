@@ -3,7 +3,7 @@ title: "Coinbase分发权：Base真正护城河是“入口垄断”"
 date: "2026-06-16T20:41:33+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "逻辑拆解"
+category: "Web3"
 categories:
   - "逻辑拆解"
 tags:
@@ -53,11 +53,12 @@ featured: false
 status: "已发布"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "062"
+subcategory: "项目分析"
+content_type: "project-analysis"
+draft: false
 ---
 
-## 文章摘要
-
-Base的核心优势并非单纯技术领先，Coinbase入口、分发效率与生态转化才是护城河关键。
 
 ## 核心观点
 

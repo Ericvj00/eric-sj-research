@@ -84,6 +84,8 @@ CATEGORY_MAP = {
     },
 }
 
+PRIMARY_CATEGORY_LABELS = {"web3": "Web3", "stocks": "美股"}
+
 ALLOWED_STATUSES = {"待导入", "已发布", "已归档", "处理失败"}
 FEATURED_MAP = {"是": True, "否": False}
 SEO_STATUSES = {"待生成", "已完成", "需重做", "处理失败"}
@@ -144,15 +146,36 @@ def normalize_title(value: str | None) -> str:
     return value.strip()
 
 
-def normalize_status(value: str | None, matched_old: bool) -> str:
+def normalize_status(value: str | None, matched_old: bool | None = None) -> str:
+    """Return the Excel status unchanged after validation.
+
+    ``matched_old`` is retained in the signature for compatibility with the
+    normalization command, but Markdown existence must never change status.
+    """
     raw = clean_text(value)
-    if raw == "已归档":
-        return "已归档"
-    if raw == "已发布":
-        return "已发布"
-    if matched_old:
-        return "已发布"
-    return "待导入"
+    if not raw:
+        return "待导入"
+    if raw not in ALLOWED_STATUSES:
+        raise ValueError(f"无效状态：{raw or '（空）'}")
+    return raw
+
+
+def draft_for_status(status: str) -> bool:
+    """Map the Excel-controlled lifecycle status to Hugo's draft flag."""
+    if status not in ALLOWED_STATUSES:
+        raise ValueError(f"无效状态：{status or '（空）'}")
+    return status != "已发布"
+
+
+def category_frontmatter(category_label: str) -> dict:
+    category = CATEGORY_MAP[category_label]
+    return {
+        "category": PRIMARY_CATEGORY_LABELS[category["section"]],
+        "subcategory": category_label,
+        "content_type": category["content_type"],
+        "category_key": category["key"],
+        "category_label": category_label,
+    }
 
 
 def normalize_featured(value: str | None) -> tuple[str, bool]:
@@ -973,6 +996,13 @@ def render_markdown(parser: ArticleParser, image_urls: list[str | None]) -> str:
     return markdown
 
 
+def render_structured_article_body(
+    original_content: str,
+) -> str:
+    """Add only the body entry heading; templates render SEO/GEO modules."""
+    return f"## 正文\n\n{original_content.strip()}".rstrip()
+
+
 def plain_body_blocks(parser: ArticleParser) -> list[str]:
     blocks = []
     for kind, value in parser.blocks:
@@ -1732,14 +1762,23 @@ def update_frontmatter_only(path: Path, values: dict, dry_run: bool) -> dict[str
 @dataclass
 class ExistingArticle:
     path: Path
+    content_id: str
     title: str
     source_url: str
     frontmatter: str
     body: str
     seo_complete: bool
+    virtual: bool = False
 
 
-def content_index(content_root: Path) -> tuple[dict[str, list[ExistingArticle]], dict[str, list[ExistingArticle]]]:
+def content_index(
+    content_root: Path,
+) -> tuple[
+    dict[str, list[ExistingArticle]],
+    dict[str, list[ExistingArticle]],
+    dict[str, list[ExistingArticle]],
+]:
+    by_id: dict[str, list[ExistingArticle]] = {}
     by_url: dict[str, list[ExistingArticle]] = {}
     by_title: dict[str, list[ExistingArticle]] = {}
     for path in content_root.glob("**/*.md"):
@@ -1750,14 +1789,40 @@ def content_index(content_root: Path) -> tuple[dict[str, list[ExistingArticle]],
             frontmatter, body, _newline = split_frontmatter(text)
         except (UnicodeDecodeError, ValueError):
             continue
+        content_id = clean_text(str(scalar_from_frontmatter(frontmatter, "content_id") or ""))
         title = clean_text(str(scalar_from_frontmatter(frontmatter, "title") or ""))
         source_url = normalize_url(str(scalar_from_frontmatter(frontmatter, "source_url") or ""))
-        article = ExistingArticle(path, title, source_url, frontmatter, body, seo_geo_complete(frontmatter))
+        article = ExistingArticle(
+            path,
+            content_id,
+            title,
+            source_url,
+            frontmatter,
+            body,
+            seo_geo_complete(frontmatter),
+        )
+        if content_id:
+            by_id.setdefault(content_id, []).append(article)
         if source_url:
             by_url.setdefault(source_url, []).append(article)
         if title:
             by_title.setdefault(normalize_title(title), []).append(article)
-    return by_url, by_title
+    return by_id, by_url, by_title
+
+
+def register_article_in_indexes(
+    article: ExistingArticle,
+    by_id: dict[str, list[ExistingArticle]],
+    by_url: dict[str, list[ExistingArticle]],
+    by_title: dict[str, list[ExistingArticle]],
+) -> None:
+    """Update live indexes so dry-run and real runs make identical match decisions."""
+    if article.content_id:
+        by_id.setdefault(article.content_id, []).append(article)
+    if article.source_url:
+        by_url.setdefault(article.source_url, []).append(article)
+    if article.title:
+        by_title.setdefault(normalize_title(article.title), []).append(article)
 
 
 def markdown_body_blocks(body: str) -> list[str]:
@@ -2257,16 +2322,39 @@ class MatchResult:
 def match_existing_article(
     values: dict,
     html_path: Path | None,
+    by_id: dict[str, list[ExistingArticle]],
     by_url: dict[str, list[ExistingArticle]],
     by_title: dict[str, list[ExistingArticle]],
 ) -> MatchResult:
+    content_id = clean_text(values.get("ID"))
     source_url = normalize_url(values.get("Binance链接"))
+    if content_id:
+        id_matches = by_id.get(content_id, [])
+        if len(id_matches) > 1:
+            return MatchResult(None, "ID=content_id", f"content_id匹配到多个Markdown：{content_id}")
+        if len(id_matches) == 1:
+            article = id_matches[0]
+            if source_url and article.source_url and source_url != article.source_url:
+                return MatchResult(
+                    None,
+                    "ID=content_id",
+                    f"content_id匹配但source_url冲突：Excel={source_url}，Markdown={article.source_url}",
+                )
+            return MatchResult(article, "ID=content_id")
+
     if source_url:
         url_matches = by_url.get(source_url, [])
         if len(url_matches) > 1:
             return MatchResult(None, "Binance链接=source_url", f"source_url匹配到多个Markdown：{source_url}")
         if len(url_matches) == 1:
-            return MatchResult(url_matches[0], "Binance链接=source_url")
+            article = url_matches[0]
+            if article.content_id and article.content_id != content_id:
+                return MatchResult(
+                    None,
+                    "Binance链接=source_url",
+                    f"source_url匹配但content_id冲突：Excel={content_id}，Markdown={article.content_id}",
+                )
+            return MatchResult(article, "Binance链接=source_url")
 
     title_keys = {normalize_title(values.get("HTML文件名"))}
     if html_path:
@@ -2286,6 +2374,12 @@ def match_existing_article(
         return MatchResult(None, "严格标准化标题", f"严格标准化标题匹配到多个Markdown：{paths}")
     if len(title_matches) == 1:
         article = next(iter(title_matches.values()))
+        if article.content_id and article.content_id != content_id:
+            return MatchResult(
+                None,
+                "严格标准化标题",
+                f"标题严格匹配但content_id冲突：Excel={content_id}，Markdown={article.content_id}",
+            )
         if source_url and article.source_url and source_url != article.source_url:
             return MatchResult(
                 None,
@@ -2330,9 +2424,11 @@ def mirror_file(source: Path, destination: Path):
 
 def build_new_article(
     html_path: Path,
+    content_id: str,
     excel_url: str,
     category_label: str,
     featured: bool,
+    status: str,
     site_root: Path,
     dry_run: bool,
     allow_remote_images: bool = False,
@@ -2361,6 +2457,7 @@ def build_new_article(
         raise ValueError("提取到的正文过短，拒绝导入")
 
     category = CATEGORY_MAP[category_label]
+    classification = category_frontmatter(category_label)
     date_prefix = published.date().isoformat()
     content_dir = site_root / "content" / "zh-cn" / category["section"] / category["directory"]
     if not content_dir.is_dir():
@@ -2467,18 +2564,20 @@ def build_new_article(
     lines = [
         "---",
         f"title: {yaml_string(title)}",
+        f"content_id: {yaml_string(content_id)}",
         f"date: {yaml_string(published.isoformat(timespec='seconds'))}",
         f"slug: {yaml_string(slug)}",
-        f"category_key: {yaml_string(category['key'])}",
-        f"category_label: {yaml_string(category_label)}",
-        f"category: {yaml_string(category_label)}",
+        f"category: {yaml_string(classification['category'])}",
+        f"subcategory: {yaml_string(classification['subcategory'])}",
+        f"content_type: {yaml_string(classification['content_type'])}",
+        f"category_key: {yaml_string(classification['category_key'])}",
+        f"category_label: {yaml_string(classification['category_label'])}",
         "categories:",
         f"  - {yaml_string(category_label)}",
         f"featured: {str(featured).lower()}",
-        'status: "已发布"',
-        "draft: false",
+        f"status: {yaml_string(status)}",
+        f"draft: {str(draft_for_status(status)).lower()}",
         f"author: {yaml_string(AUTHOR)}",
-        f"content_type: {yaml_string(category['content_type'])}",
         'source: "Binance Square"',
         f"source_url: {yaml_string(source_url)}",
         f"cover: {yaml_string('/images/covers/' + cover_name)}",
@@ -2508,7 +2607,8 @@ def build_new_article(
             ]
     else:
         lines.append("faq: []")
-    lines += ["---", "", body_markdown, ""]
+    structured_body = render_structured_article_body(body_markdown)
+    lines += ["---", "", structured_body, ""]
 
     if not dry_run:
         safe_write_binary(cover_asset, cover_data)
@@ -2520,6 +2620,9 @@ def build_new_article(
 
     return {
         "title": title,
+        "content_id": content_id,
+        "source_url": source_url,
+        "status": status,
         "published_at": published.isoformat(timespec="seconds"),
         "article_path": article_path,
         "cover_asset": cover_asset,
@@ -2557,6 +2660,7 @@ def build_new_article(
         "generation_attempts": seo_geo["_attempts"],
         "seo_geo_final_status": seo_geo["_final_status"],
         "seo_geo_error": seo_geo.get("_error", ""),
+        "has_body_heading": "## 正文" in structured_body,
     }
 
 
@@ -2571,6 +2675,7 @@ class SyncReport:
     old_featured_updates: int = 0
     old_status_updates: int = 0
     imported_new: int = 0
+    skipped: int = 0
     real_covers: int = 0
     placeholder_covers: int = 0
     seo_generated: int = 0
@@ -2602,6 +2707,10 @@ class SyncReport:
             "旧文章状态调整数量": self.old_status_updates,
             "文章导入成功数量": self.imported_new,
             "新文章导入数量": self.imported_new,
+            "新增文章数量": self.imported_new,
+            "更新文章数量": self.matched_old,
+            "跳过数量": self.skipped,
+            "错误数量": self.processing_failed,
             "使用真实封面数量": self.real_covers,
             "使用占位封面数量": self.placeholder_covers,
             "SEO/GEO已完成数量": self.seo_completed,
@@ -2696,12 +2805,123 @@ def worksheet_values(sheet, headers: dict[str, int], row_number: int) -> dict:
     return result
 
 
+class PreflightValidationError(ValueError):
+    def __init__(self, errors: list[dict]):
+        self.errors = errors
+        super().__init__(f"同步前Excel检查失败，共 {len(errors)} 项错误")
+
+
+def _duplicate_field_errors(
+    rows: list[tuple[int, dict]],
+    field_name: str,
+    error_type: str,
+    normalizer,
+) -> list[dict]:
+    grouped: dict[str, list[int]] = {}
+    display_values: dict[str, str] = {}
+    for row_number, values in rows:
+        raw = clean_text(values.get(field_name))
+        if not raw:
+            continue
+        key = normalizer(raw)
+        if not key:
+            continue
+        grouped.setdefault(key, []).append(row_number)
+        display_values.setdefault(key, raw)
+    return [
+        {"类型": error_type, "字段": field_name, "值": display_values[key], "Excel行": numbers}
+        for key, numbers in grouped.items()
+        if len(numbers) > 1
+    ]
+
+
+def preflight_validate(
+    sheet,
+    headers: dict[str, int],
+    data_rows: list[int],
+    html_dir: Path,
+    by_id: dict[str, list[ExistingArticle]],
+    by_url: dict[str, list[ExistingArticle]],
+    by_title: dict[str, list[ExistingArticle]],
+) -> None:
+    """Fail atomically before any row is synchronized when control data is unsafe."""
+    rows = [(row_number, worksheet_values(sheet, headers, row_number)) for row_number in data_rows]
+    errors: list[dict] = []
+
+    for row_number, values in rows:
+        if not values["ID"]:
+            errors.append({"类型": "ID为空", **row_ref(row_number, values)})
+        if not values["HTML文件名"]:
+            errors.append({"类型": "空标题", **row_ref(row_number, values)})
+        if not values["目标分类"]:
+            errors.append({"类型": "空分类", **row_ref(row_number, values)})
+        elif values["目标分类"] not in CATEGORY_MAP:
+            errors.append(
+                {"类型": "无效分类", **row_ref(row_number, values), "目标分类": values["目标分类"]}
+            )
+        if values["状态"] and values["状态"] not in ALLOWED_STATUSES:
+            errors.append(
+                {"类型": "无效状态", **row_ref(row_number, values), "状态": values["状态"] or "（空）"}
+            )
+
+        html_path = resolve_html(values["HTML文件名"], html_dir)
+        if html_path:
+            try:
+                document = html_path.read_text(encoding="utf-8")
+                html_title = clean_text(meta(document, "og:title") or meta(document, "twitter:title"))
+            except (OSError, UnicodeDecodeError):
+                html_title = ""
+            if not html_title:
+                errors.append({"类型": "HTML空标题", **row_ref(row_number, values)})
+
+    errors += _duplicate_field_errors(rows, "ID", "ID重复", lambda value: value.casefold())
+    errors += _duplicate_field_errors(rows, "Binance链接", "Binance链接重复", normalize_url)
+    errors += _duplicate_field_errors(
+        rows,
+        "HTML文件名",
+        "HTML文件名重复",
+        lambda value: re.sub(r"\.html?$", "", unicodedata.normalize("NFKC", value), flags=re.I).casefold(),
+    )
+
+    for content_id, articles in by_id.items():
+        if len(articles) > 1:
+            errors.append(
+                {
+                    "类型": "Markdown content_id重复",
+                    "content_id": content_id,
+                    "Markdown": [str(article.path) for article in articles],
+                }
+            )
+    for source_url, articles in by_url.items():
+        if len(articles) > 1:
+            errors.append(
+                {
+                    "类型": "Markdown source_url重复",
+                    "source_url": source_url,
+                    "Markdown": [str(article.path) for article in articles],
+                }
+            )
+
+    # Detect cross-key conflicts before an update can attach an ID to the wrong article.
+    for row_number, values in rows:
+        if not values["ID"]:
+            continue
+        html_path = resolve_html(values["HTML文件名"], html_dir)
+        match = match_existing_article(values, html_path, by_id, by_url, by_title)
+        if match.error and ("冲突" in match.error or "多个Markdown" in match.error):
+            errors.append({"类型": "匹配键冲突", **row_ref(row_number, values), "原因": match.error})
+
+    if errors:
+        raise PreflightValidationError(errors)
+
+
 def run_normalize_excel(
     args,
     workbook,
     sheet,
     headers: dict[str, int],
     data_rows: list[int],
+    by_id: dict[str, list[ExistingArticle]],
     by_url: dict[str, list[ExistingArticle]],
     by_title: dict[str, list[ExistingArticle]],
     excel_path: Path,
@@ -2711,10 +2931,10 @@ def run_normalize_excel(
     for row_number in data_rows:
         values = worksheet_values(sheet, headers, row_number)
         html_path = resolve_html(values["HTML文件名"], args.html_dir_path)
-        match = match_existing_article(values, html_path, by_url, by_title)
+        match = match_existing_article(values, html_path, by_id, by_url, by_title)
         article = match.article if not match.error else None
         old_status = values["状态"]
-        new_status = normalize_status(old_status, bool(article))
+        new_status = normalize_status(old_status)
         old_featured = values["是否精选"]
         new_featured, _featured_bool = normalize_featured(old_featured)
         old_seo_status = values[SEO_STATUS_COLUMN]
@@ -2796,10 +3016,11 @@ def run_sync(args) -> SyncReport:
         raise ValueError(f"Excel 缺少字段：{', '.join(missing_headers)}")
     _seo_column, seo_column_added = ensure_seo_status_column(sheet, headers, args.dry_run)
     data_rows = worksheet_rows(sheet, headers)
-    by_url, by_title = content_index(site_root / "content" / "zh-cn")
+    by_id, by_url, by_title = content_index(site_root / "content" / "zh-cn")
+    preflight_validate(sheet, headers, data_rows, html_dir, by_id, by_url, by_title)
     if args.normalize_excel:
         report = run_normalize_excel(
-            args, workbook, sheet, headers, data_rows, by_url, by_title, excel_path
+            args, workbook, sheet, headers, data_rows, by_id, by_url, by_title, excel_path
         )
         if seo_column_added:
             report.details.insert(
@@ -2813,6 +3034,7 @@ def run_sync(args) -> SyncReport:
     selected_rows = data_rows if args.all else parse_rows(args.rows, sheet.max_row)
     report = SyncReport(excel_total_rows=len(data_rows), selected_rows=selected_rows)
     workbook_changed = False
+    planned_article_paths: set[Path] = set()
 
     def set_excel(row_number: int, column: str, value: str):
         nonlocal workbook_changed
@@ -2827,9 +3049,6 @@ def run_sync(args) -> SyncReport:
         if bucket:
             getattr(report, bucket).append(item)
         report.details.append({**item, "结果": "处理失败", "SEO/GEO最终状态": "处理失败"})
-        if not args.dry_run:
-            set_excel(row_number, "状态", "处理失败")
-            set_excel(row_number, SEO_STATUS_COLUMN, "处理失败")
 
     for row_number in selected_rows:
         values = worksheet_values(sheet, headers, row_number)
@@ -2841,26 +3060,28 @@ def run_sync(args) -> SyncReport:
             continue
         featured_text, featured = normalize_featured(values["是否精选"])
         html_path = resolve_html(values["HTML文件名"], html_dir)
-        match = match_existing_article(values, html_path, by_url, by_title)
+        match = match_existing_article(values, html_path, by_id, by_url, by_title)
         if match.error:
             mark_failed(row_number, values, match.error, "unmatched_articles")
             continue
         existing = match.article
-        desired_status = normalize_status(values["状态"], bool(existing))
+        desired_status = normalize_status(values["状态"])
         seo_status = normalize_seo_status(values[SEO_STATUS_COLUMN], existing)
 
         if existing:
             category = CATEGORY_MAP[category_label]
+            classification = category_frontmatter(category_label)
             old_category = scalar_from_frontmatter(existing.frontmatter, "category_label")
             if old_category is None:
                 old_category = scalar_from_frontmatter(existing.frontmatter, "category")
             old_featured = scalar_from_frontmatter(existing.frontmatter, "featured")
             old_status = scalar_from_frontmatter(existing.frontmatter, "status")
             updates: dict = {
-                "category_key": category["key"],
-                "category_label": category_label,
+                "content_id": values["ID"],
+                **classification,
                 "featured": featured,
                 "status": desired_status,
+                "draft": draft_for_status(desired_status),
             }
             seo_before = existing.seo_complete
             seo_generated = False
@@ -2889,7 +3110,6 @@ def run_sync(args) -> SyncReport:
                         if seo_status == "需重做" or not seo_field_complete(existing.frontmatter, key):
                             updates[key] = value
                     updates["author"] = AUTHOR
-                    updates["content_type"] = category["content_type"]
                     updates["seo_geo_status"] = "已完成"
                     seo_generated = True
                     seo_final_status = "已完成"
@@ -2901,7 +3121,10 @@ def run_sync(args) -> SyncReport:
                 args.dry_run,
             )
             report.matched_old += 1
-            if changes["category_key"][0] != category["key"] or changes["category_label"][0] != category_label:
+            if any(
+                changes[key][0] != classification[key]
+                for key in ("category", "subcategory", "content_type", "category_key", "category_label")
+            ):
                 report.old_category_updates += 1
             if changes["featured"][0] != featured:
                 report.old_featured_updates += 1
@@ -2913,7 +3136,6 @@ def run_sync(args) -> SyncReport:
             elif seo_before:
                 report.seo_completed += 1
             if not args.dry_run:
-                set_excel(row_number, "状态", desired_status)
                 set_excel(row_number, "是否精选", featured_text)
                 set_excel(row_number, SEO_STATUS_COLUMN, seo_final_status)
             detail = {
@@ -2922,6 +3144,8 @@ def run_sync(args) -> SyncReport:
                 "匹配方式": match.method,
                 "原状态": values["状态"] or "（空）",
                 "新状态": desired_status,
+                "Excel原状态": values["状态"] or "空白",
+                "标准化后状态": desired_status,
                 "原分类": old_category or "（空）",
                 "新分类": category_label,
                 "原featured": old_featured if old_featured is not None else "（空）",
@@ -2949,18 +3173,33 @@ def run_sync(args) -> SyncReport:
             report.generated_paths.append({**row_ref(row_number, values), "Markdown": str(existing.path)})
             continue
 
-        if desired_status != "待导入":
-            mark_failed(row_number, values, "按source_url及严格标准化标题均找不到旧Markdown", "unmatched_articles")
+        if desired_status == "处理失败":
+            report.skipped += 1
+            report.details.append(
+                {
+                    **row_ref(row_number, values),
+                    "结果": "跳过",
+                    "原因": "Excel状态为处理失败且没有可保留的旧Markdown",
+                    "新状态": desired_status,
+                    "Excel原状态": values["状态"] or "空白",
+                    "标准化后状态": desired_status,
+                    "是否会修改正文": "否",
+                    "是否会移动文件": "否",
+                }
+            )
             continue
         if not html_path:
             mark_failed(row_number, values, "HTML文件名无法精确匹配 .html 文件", "missing_html")
             continue
+        final_article_status = "已发布" if desired_status == "待导入" else desired_status
         try:
             result = build_new_article(
                 html_path,
+                values["ID"],
                 source_url,
                 category_label,
                 featured,
+                final_article_status,
                 site_root,
                 args.dry_run,
                 allow_remote_images=args.allow_remote_images,
@@ -2968,6 +3207,33 @@ def run_sync(args) -> SyncReport:
         except Exception as exc:
             mark_failed(row_number, values, str(exc))
             continue
+        article_path = Path(result["article_path"]).resolve()
+        if article_path in planned_article_paths:
+            mark_failed(row_number, values, f"本次同步已虚拟创建相同Markdown：{article_path}")
+            continue
+        planned_article_paths.add(article_path)
+        virtual_frontmatter = "\n".join(
+            [
+                f"content_id: {yaml_string(values['ID'])}",
+                f"title: {yaml_string(result['title'])}",
+                f"source_url: {yaml_string(result['source_url'])}",
+            ]
+        )
+        register_article_in_indexes(
+            ExistingArticle(
+                article_path,
+                values["ID"],
+                result["title"],
+                result["source_url"],
+                virtual_frontmatter,
+                "",
+                result["seo_geo_final_status"] == "已完成",
+                virtual=args.dry_run,
+            ),
+            by_id,
+            by_url,
+            by_title,
+        )
         report.imported_new += 1
         if result["cover_used_placeholder"]:
             report.placeholder_covers += 1
@@ -2987,7 +3253,7 @@ def run_sync(args) -> SyncReport:
                 }
             )
         if not args.dry_run:
-            set_excel(row_number, "状态", "已发布")
+            set_excel(row_number, "状态", final_article_status)
             set_excel(row_number, "是否精选", featured_text)
             set_excel(row_number, SEO_STATUS_COLUMN, result["seo_geo_final_status"])
         detail = {
@@ -2995,7 +3261,12 @@ def run_sync(args) -> SyncReport:
             "结果": "dry-run新文导入" if args.dry_run else "新文已导入",
             "匹配方式": "未匹配旧文；按HTML首次导入",
             "原状态": values["状态"] or "（空）",
-            "新状态": "已发布",
+            "新状态": final_article_status,
+            "Excel原状态": values["状态"] or "空白",
+            "标准化后状态": desired_status,
+            "导入成功后Excel状态": final_article_status,
+            "Markdown写入状态": final_article_status,
+            "Markdown写入draft": draft_for_status(final_article_status),
             "原分类": "（无旧Markdown）",
             "新分类": category_label,
             "原featured": "（无旧Markdown）",
@@ -3840,6 +4111,22 @@ def main() -> int:
             report = run_summary_maintenance(args)
         else:
             report = run_sync(args)
+    except PreflightValidationError as exc:
+        print(
+            json.dumps(
+                {
+                    "同步前检查": "失败，未处理任何文章",
+                    "新增文章数量": 0,
+                    "更新文章数量": 0,
+                    "跳过数量": 0,
+                    "错误数量": len(exc.errors),
+                    "错误明细": exc.errors,
+                },
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return 2
     except Exception as exc:
         print(json.dumps({"fatal": str(exc)}, ensure_ascii=False, indent=2))
         return 1

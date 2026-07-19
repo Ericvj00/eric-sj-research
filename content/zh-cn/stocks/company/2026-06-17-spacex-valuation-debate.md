@@ -3,7 +3,7 @@ title: "SpaceX估值争议：这是下一个英伟达，还是下一个马斯克
 date: "2026-06-17T22:09:20+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "个股研究"
+category: "美股"
 categories:
   - "个股研究"
 tags:
@@ -53,11 +53,12 @@ category_label: "个股研究"
 featured: true
 status: "已发布"
 cover_status: "正常"
+content_id: "066"
+subcategory: "个股研究"
+content_type: "company-research"
+draft: false
 ---
 
-## 文章摘要
-
-SpaceX估值分歧持续放大，商业模式兑现、现金流潜力与马斯克信仰溢价决定其定价边界。
 
 ## 核心观点
 

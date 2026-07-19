@@ -2,6 +2,7 @@
 {{- if and .IsPage (in $articleSections .Section) -}}
 {{- $author := .Params.author | default .Site.Params.author -}}
 {{- $description := .Params.summary | default .Params.description | default .Site.Params.description -}}
+{{- $authorEntity := dict "@type" "Person" "name" $author "url" .Site.BaseURL "sameAs" (slice "https://x.com/sjbtc9") -}}
 {{- $image := "" -}}
 {{- with .Params.cover -}}
   {{- $image = . | absURL -}}
@@ -11,7 +12,7 @@
   "@type" "Article"
   "headline" .Title
   "description" ($description | plainify)
-  "author" (dict "@type" "Person" "name" $author)
+  "author" $authorEntity
   "publisher" (dict "@type" "Organization" "name" .Site.Title)
   "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
   "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
@@ -29,6 +30,32 @@
   {{- $data = merge $data (dict "image" $image) -}}
 {{- end -}}
 <script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- $breadcrumbItems := slice (dict "@type" "ListItem" "position" 1 "name" .Site.Title "item" .Site.Home.Permalink) -}}
+{{- $sectionPage := .Site.GetPage "section" .Section -}}
+{{- $sectionName := .Section | title -}}
+{{- $sectionURL := (printf "%s/" .Section) | absLangURL -}}
+{{- with $sectionPage -}}
+  {{- $sectionName = .Title -}}
+  {{- $sectionURL = .Permalink -}}
+{{- end -}}
+{{- $breadcrumbItems = $breadcrumbItems | append (dict "@type" "ListItem" "position" 2 "name" $sectionName "item" $sectionURL) -}}
+{{- $subsection := "" -}}
+{{- with .File -}}
+  {{- $dir := replace .Dir "\\" "/" -}}
+  {{- $dir = strings.TrimSuffix "/" $dir -}}
+  {{- $parts := split $dir "/" -}}
+  {{- if ge (len $parts) 2 -}}
+    {{- $subsection = index $parts 1 -}}
+  {{- end -}}
+{{- end -}}
+{{- if and $subsection (ne $subsection .Section) -}}
+  {{- $subsectionName := partial "category-label.html" . -}}
+  {{- $subsectionURL := (printf "%s/%s/" .Section $subsection) | absLangURL -}}
+  {{- $breadcrumbItems = $breadcrumbItems | append (dict "@type" "ListItem" "position" 3 "name" $subsectionName "item" $subsectionURL) -}}
+{{- end -}}
+{{- $breadcrumbItems = $breadcrumbItems | append (dict "@type" "ListItem" "position" (add (len $breadcrumbItems) 1) "name" .Title "item" .Permalink) -}}
+{{- $breadcrumb := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $breadcrumbItems -}}
+<script type="application/ld+json">{{ $breadcrumb | jsonify | safeJS }}</script>
 {{- with .Params.faq -}}
   {{- $entities := slice -}}
   {{- range . -}}

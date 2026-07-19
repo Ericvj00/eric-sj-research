@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>DAO on Eric SJ Research</title>
+		<link>http://localhost:56121/zh-cn/tags/dao/</link>
+		<description>Recent content in DAO on Eric SJ Research</description>
+		<generator>Hugo</generator>
+		<language>zh-CN</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 13 Jun 2024 15:57:11 +0800</lastBuildDate>
+		
+			<atom:link href="http://localhost:56121/zh-cn/tags/dao/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>X To Earn赛道复盘:社交赛道在注意力聚拢的背景下，更应该思考通证的效用</title>
+				<link>http://localhost:56121/zh-cn/web3/2024-06-13-x-to-earn/</link>
+				<pubDate>Thu, 13 Jun 2024 15:57:11 +0800</pubDate>
+				<guid>http://localhost:56121/zh-cn/web3/2024-06-13-x-to-earn/</guid>
+				<description>Base的收入增长正在改变原有判断，商业模式成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
+			</item>
+	</channel>
+</rss>

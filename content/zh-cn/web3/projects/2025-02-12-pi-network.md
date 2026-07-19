@@ -4,7 +4,7 @@ date: "2025-02-12T12:55:12+08:00"
 slug: "2025-02-12-pi-network"
 category_key: "project"
 category_label: "项目分析"
-category: "项目分析"
+category: "Web3"
 categories:
   - "项目分析"
 featured: false
@@ -29,7 +29,11 @@ faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
+content_id: "029"
+subcategory: "项目分析"
 ---
+
+## 正文
 
 真的是大家口中的积分游戏？CX盘？自娱自乐？
 

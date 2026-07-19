@@ -3,7 +3,7 @@ title: "Solana新周期：第一批可能被重新定价的生态资产"
 date: "2026-06-24T19:21:34+08:00"
 importDate: "2026-07-11"
 updated: "2026-07-11"
-category: "板块研究"
+category: "Web3"
 categories:
   - "板块研究"
 tags:
@@ -53,11 +53,12 @@ category_label: "板块研究"
 featured: false
 status: "已发布"
 cover_status: "正常"
+content_id: "060"
+subcategory: "板块研究"
+content_type: "sector-research"
+draft: false
 ---
 
-## 文章摘要
-
-Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。
 
 ## 核心观点
 
