@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图 | Eric SJ Research</title>
@@ -8,24 +8,32 @@
 <meta name="author" content="Eric SJ">
 <link rel="icon" type="image/png" href="/images/avatar.png">
 <link rel="apple-touch-icon" href="/images/avatar.png">
-<link rel="canonical" href="http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/">
+<link rel="canonical" href="https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/">
 
-<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/">
+<link rel="alternate" hreflang="zh-CN" href="https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/">
 
 <meta property="og:site_name" content="Eric SJ Research">
 <meta property="og:title" content="链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图 | Eric SJ Research">
 <meta property="og:description" content="链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/">
-<meta property="og:image" content="http://localhost:1313/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png">
+<meta property="og:url" content="https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/">
+<meta property="og:image" content="https://ericsj.xyz/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图 | Eric SJ Research">
 <meta name="twitter:description" content="链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。">
-<meta name="twitter:image" content="http://localhost:1313/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png">
+<meta name="twitter:image" content="https://ericsj.xyz/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png">
 <link rel="stylesheet" href="/css/style.css?v=20260716-unified-cover-cards">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["目前的增量用户可能最先接触和Web3相关的产物就是交易所，毕竟作为行业现金流最大的一个赛道，中心交易所在品牌宣传和市场推广上所倾注的资源，是任何一个赛道都无法比拟的。","交易所的进入门槛本身就不太需要让传统的互联网用户有更多一层的门槛 ，但如何让交易所的用户更丝滑的过渡，账户抽象这一概念就应需求而生了。","这个就是意图的最简单用例，目前还有将意图与AI进行结合的，用于检索和聚合一个可供Web3用户使用的意图市场。","但是所有链上应用生态都跑去做链显然是不现实的，在并行EVM改善原生性能的新基础设施环境里，还有着一些改善应用环境的趋势：账户抽象、链抽象以及意图。"],"abstract":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"http://localhost:1313/"},"dateModified":"2024-07-12T20:42:52+08:00","datePublished":"2024-07-12T20:42:52+08:00","description":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。","headline":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图","image":"http://localhost:1313/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png","mainEntityOfPage":"http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/thesis/","name":"逻辑拆解","position":3},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/","name":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。"},"name":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"目前的增量用户可能最先接触和Web3相关的产物就是交易所，毕竟作为行业现金流最大的一个赛道，中心交易所在品牌宣传和市场推广上所倾注的资源，是任何一个赛道都无法比拟的。交易所的进入门槛本身就不太需要让传统的互联网用户有更多一层的门槛 ，但如何让交易所的用户更丝滑的过渡，账户抽象这一概念就应需求而生了。"},"name":"文章重点关注哪些关键变量？"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["目前的增量用户可能最先接触和Web3相关的产物就是交易所，毕竟作为行业现金流最大的一个赛道，中心交易所在品牌宣传和市场推广上所倾注的资源，是任何一个赛道都无法比拟的。","交易所的进入门槛本身就不太需要让传统的互联网用户有更多一层的门槛 ，但如何让交易所的用户更丝滑的过渡，账户抽象这一概念就应需求而生了。","这个就是意图的最简单用例，目前还有将意图与AI进行结合的，用于检索和聚合一个可供Web3用户使用的意图市场。","但是所有链上应用生态都跑去做链显然是不现实的，在并行EVM改善原生性能的新基础设施环境里，还有着一些改善应用环境的趋势：账户抽象、链抽象以及意图。"],"abstract":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"https://ericsj.xyz/"},"dateModified":"2024-07-12T20:42:52+08:00","datePublished":"2024-07-12T20:42:52+08:00","description":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。","headline":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图","image":"https://ericsj.xyz/images/covers/2024-07-12-binance-10699250167482-cover-placeholder.png","mainEntityOfPage":"https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/thesis/","name":"逻辑拆解","position":3},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/","name":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"链上应用实现指数增长的最后一英里的现金流正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。"},"name":"链上应用实现指数增长的最后一英里：账户抽象/链抽象/意图的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"目前的增量用户可能最先接触和Web3相关的产物就是交易所，毕竟作为行业现金流最大的一个赛道，中心交易所在品牌宣传和市场推广上所倾注的资源，是任何一个赛道都无法比拟的。交易所的进入门槛本身就不太需要让传统的互联网用户有更多一层的门槛 ，但如何让交易所的用户更丝滑的过渡，账户抽象这一概念就应需求而生了。"},"name":"文章重点关注哪些关键变量？"}]}</script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTL683LKHM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTL683LKHM');
+</script>
 
   </head>
   <body>

@@ -2,144 +2,144 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh-tw/categories/</loc>
+    <loc>https://ericsj.xyz/zh-tw/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/categories/"
+                href="https://ericsj.xyz/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/categories/"
+                href="https://ericsj.xyz/zh-tw/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/</loc>
+    <loc>https://ericsj.xyz/zh-tw/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/"
+                href="https://ericsj.xyz/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/"
+                href="https://ericsj.xyz/zh-tw/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/tags/</loc>
+    <loc>https://ericsj.xyz/zh-tw/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/tags/"
+                href="https://ericsj.xyz/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/tags/"
+                href="https://ericsj.xyz/zh-tw/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/web3/</loc>
+    <loc>https://ericsj.xyz/zh-tw/web3/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/web3/"
+                href="https://ericsj.xyz/zh-cn/web3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/web3/"
+                href="https://ericsj.xyz/zh-tw/web3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/articles/</loc>
+    <loc>https://ericsj.xyz/zh-tw/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/articles/"
+                href="https://ericsj.xyz/zh-cn/articles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/articles/"
+                href="https://ericsj.xyz/zh-tw/articles/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/guides/</loc>
+    <loc>https://ericsj.xyz/zh-tw/guides/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/guides/"
+                href="https://ericsj.xyz/zh-cn/guides/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/guides/"
+                href="https://ericsj.xyz/zh-tw/guides/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/disclosure/</loc>
+    <loc>https://ericsj.xyz/zh-tw/disclosure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/disclosure/"
+                href="https://ericsj.xyz/zh-cn/disclosure/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/disclosure/"
+                href="https://ericsj.xyz/zh-tw/disclosure/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/stocks/</loc>
+    <loc>https://ericsj.xyz/zh-tw/stocks/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/stocks/"
+                href="https://ericsj.xyz/zh-cn/stocks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/stocks/"
+                href="https://ericsj.xyz/zh-tw/stocks/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/privacy/</loc>
+    <loc>https://ericsj.xyz/zh-tw/privacy/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/privacy/"
+                href="https://ericsj.xyz/zh-cn/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/privacy/"
+                href="https://ericsj.xyz/zh-tw/privacy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-tw/about/</loc>
+    <loc>https://ericsj.xyz/zh-tw/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/about/"
+                href="https://ericsj.xyz/zh-cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/about/"
+                href="https://ericsj.xyz/zh-tw/about/"
                 />
   </url>
 </urlset>

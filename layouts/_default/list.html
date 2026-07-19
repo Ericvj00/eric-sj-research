@@ -98,19 +98,44 @@
       <div>
         <h2>{{ .Params.latest_title | default "Latest Reports" }}</h2>
       </div>
-      {{ if $isTopicPage }}
-        <a href="{{ printf "categories/%s/" .Params.topic_category | relLangURL }}">查看更多</a>
-      {{ end }}
     </div>
     <div id="{{ if $isTopicPage }}section-results{{ end }}" class="article-list research-grid">
       {{ $displayPages := first 10 $sortedSectionPages }}
-      {{ if $isTopicPage }}{{ $displayPages = $sortedSectionPages }}{{ end }}
+      {{ $paginator := false }}
+      {{ if $isTopicPage }}
+        {{ $paginator = .Paginate $sortedSectionPages 12 }}
+        {{ $displayPages = $paginator.Pages }}
+      {{ end }}
       {{ range $displayPages }}
         {{ partial "article-card.html" . }}
       {{ else }}
         <p class="empty-state">该栏目内容正在准备中。</p>
       {{ end }}
     </div>
+    {{ if and $isTopicPage (gt $paginator.TotalPages 1) }}
+      <nav class="pagination topic-pagination" aria-label="{{ .Title }}分页">
+        {{ with $paginator.Prev }}<a class="pagination-direction" href="{{ .URL }}" rel="prev">上一页</a>{{ end }}
+        <div class="pagination-pages">
+          {{ $currentPage := $paginator.PageNumber }}
+          {{ $totalPages := $paginator.TotalPages }}
+          {{ $lastShown := 0 }}
+          {{ range $paginator.Pagers }}
+            {{ $distance := sub .PageNumber $currentPage }}
+            {{ $showPage := or (eq .PageNumber 1) (eq .PageNumber $totalPages) (and (ge $distance -2) (le $distance 2)) }}
+            {{ if $showPage }}
+              {{ if gt (sub .PageNumber $lastShown) 1 }}<span class="pagination-ellipsis" aria-hidden="true">…</span>{{ end }}
+              {{ if eq .PageNumber $currentPage }}
+                <span class="pagination-current" aria-current="page">{{ .PageNumber }}</span>
+              {{ else }}
+                <a href="{{ .URL }}">{{ .PageNumber }}</a>
+              {{ end }}
+              {{ $lastShown = .PageNumber }}
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ with $paginator.Next }}<a class="pagination-direction" href="{{ .URL }}" rel="next">下一页</a>{{ end }}
+      </nav>
+    {{ end }}
   </div>
 </section>
 {{ if $isTopicPage }}

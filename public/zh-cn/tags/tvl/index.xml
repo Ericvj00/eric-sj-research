@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>TVL on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/tvl/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/tvl/</link>
 		<description>Recent content in TVL on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Sat, 14 Sep 2024 15:12:04 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/tvl/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/tvl/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>RWA：无风险的链上收益？稳稳的幸福？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-09-14-rwa/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-09-14-rwa/</link>
 				<pubDate>Sat, 14 Sep 2024 15:12:04 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-09-14-rwa/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-09-14-rwa/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>Defi的下一个趋势是什么？盘点时下主流的Defi趋势~</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-05-24-defi/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-05-24-defi/</link>
 				<pubDate>Fri, 24 May 2024 18:53:48 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-05-24-defi/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-05-24-defi/</guid>
 				<description>永续合约DEX的竞争焦点正从链上交易能否成立，转向流动性留存、持仓深度与用户长期迁移，交易体验将决定下一阶段格局。</description>
 			</item>
 	</channel>

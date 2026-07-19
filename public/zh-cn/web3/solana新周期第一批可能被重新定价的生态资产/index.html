@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Solana新周期：第一批可能被重新定价的生态资产 | Eric SJ Research</title>
@@ -8,24 +8,32 @@
 <meta name="author" content="Eric SJ">
 <link rel="icon" type="image/png" href="/images/avatar.png">
 <link rel="apple-touch-icon" href="/images/avatar.png">
-<link rel="canonical" href="http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
+<link rel="canonical" href="https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
 
-<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
+<link rel="alternate" hreflang="zh-CN" href="https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
 
 <meta property="og:site_name" content="Eric SJ Research">
 <meta property="og:title" content="Solana新周期：第一批可能被重新定价的生态资产 | Eric SJ Research">
 <meta property="og:description" content="Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
-<meta property="og:image" content="http://localhost:1313/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png">
+<meta property="og:url" content="https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/">
+<meta property="og:image" content="https://ericsj.xyz/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Solana新周期：第一批可能被重新定价的生态资产 | Eric SJ Research">
 <meta name="twitter:description" content="Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。">
-<meta name="twitter:image" content="http://localhost:1313/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png">
+<meta name="twitter:image" content="https://ericsj.xyz/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png">
 <link rel="stylesheet" href="/css/style.css?v=20260716-unified-cover-cards">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["从前几日开始，Solana @solana 在英文区重新有了不小的热度。","所以，与其把它们看成单个项目的短线反弹，我更倾向于把它们放在同一个框架里看：它们可能是Solana新周期里第一批被市场重新定价的生态资产","接下来本文会从四个角度展开：**它们是什么、怎么运作、核心机制是什么，以及它们分别处在 Solana 新周期的哪个位置。**","Meteora的表现是在我之前统计的例子中最为亮眼的，我认为其在Solana的生态就负责解决一件事情：**流动性应该放在哪里**","没有流动性就没有交易量，没有交易量收入就搞不上去"],"abstract":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"http://localhost:1313/"},"dateModified":"2026-06-24T19:21:34+08:00","datePublished":"2026-06-24T19:21:34+08:00","description":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。","headline":"Solana新周期：第一批可能被重新定价的生态资产","image":"http://localhost:1313/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png","mainEntityOfPage":"http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/sector/","name":"板块研究","position":3},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/","name":"Solana新周期：第一批可能被重新定价的生态资产","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。"},"name":"Solana新周期：第一批可能被重新定价的生态资产 的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"文章从收入、增长、分发或护城河等角度分析 Perp DEX 的长期价值与主要变量。"},"name":"为什么说 Perp DEX 值得关注？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"关键变化主要来自需求结构、竞争格局、商业模式和资金关注度的重新定价。"},"name":"Perp DEX 所在赛道的关键变化是什么？"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["从前几日开始，Solana @solana 在英文区重新有了不小的热度。","所以，与其把它们看成单个项目的短线反弹，我更倾向于把它们放在同一个框架里看：它们可能是Solana新周期里第一批被市场重新定价的生态资产","接下来本文会从四个角度展开：**它们是什么、怎么运作、核心机制是什么，以及它们分别处在 Solana 新周期的哪个位置。**","Meteora的表现是在我之前统计的例子中最为亮眼的，我认为其在Solana的生态就负责解决一件事情：**流动性应该放在哪里**","没有流动性就没有交易量，没有交易量收入就搞不上去"],"abstract":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"https://ericsj.xyz/"},"dateModified":"2026-06-24T19:21:34+08:00","datePublished":"2026-06-24T19:21:34+08:00","description":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。","headline":"Solana新周期：第一批可能被重新定价的生态资产","image":"https://ericsj.xyz/images/covers/2026-06-24-solana-new-cycle-ecosystem-assets-cover.png","mainEntityOfPage":"https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/sector/","name":"板块研究","position":3},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/","name":"Solana新周期：第一批可能被重新定价的生态资产","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。"},"name":"Solana新周期：第一批可能被重新定价的生态资产 的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"文章从收入、增长、分发或护城河等角度分析 Perp DEX 的长期价值与主要变量。"},"name":"为什么说 Perp DEX 值得关注？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"关键变化主要来自需求结构、竞争格局、商业模式和资金关注度的重新定价。"},"name":"Perp DEX 所在赛道的关键变化是什么？"}]}</script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTL683LKHM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTL683LKHM');
+</script>
 
   </head>
   <body>

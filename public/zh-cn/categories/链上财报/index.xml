@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>链上财报 on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/</link>
+		<link>https://ericsj.xyz/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/</link>
 		<description>Recent content in 链上财报 on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,26 +12,26 @@
 		
 			<lastBuildDate>Sat, 18 Jul 2026 20:20:31 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Hyperliquid的73.6%利润率背后，藏着一笔暴增639万美元的成本</title>
-				<link>http://localhost:56121/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</guid>
 				<description>Hyperliquid的收入增长正在改变原有判断，现金流成为主要驱动因素，而流动性与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Web3月度行业复盘~</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-08-web3/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-08-web3/</link>
 				<pubDate>Fri, 08 Nov 2024 17:16:42 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-08-web3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-08-web3/</guid>
 				<description>&lt;h2 id=&#34;正文&#34;&gt;正文&lt;/h2&gt;&#xA;&lt;p&gt;本文是基于BinanceResearch最新的月度报告中文翻译，我做了篇总结提炼&#xA;从市场表现、板块表现、链上表现到具体标的表现的维度去展开。&lt;/p&gt;&#xA;&lt;p&gt;没有华丽、生涩的辞藻堆砌，本篇文章，&lt;strong&gt;Vitalik他奶奶来看了都能看懂。正文👇🏻&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-月度市场表现&#34;&gt;&lt;strong&gt;-月度市场表现&lt;/strong&gt;🔻&lt;/h3&gt;&#xA;&lt;p&gt;10月的总市值增长了2.8%，一直以来10月在传统金融市场上都是一个市场比较强势的月份，在约540亿的现货 ETF 流入的推动下，BTC 10月收盘价接近历史高点，时至今日，受到大选的事件推动，已经顺利突破新高。&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>加密行业半年报(上)：基础设施的新旧更迭趋势</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-07-18-binance-10963777184553/</link>
 				<pubDate>Thu, 18 Jul 2024 20:13:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-07-18-binance-10963777184553/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 	</channel>

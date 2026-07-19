@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>APT on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/apt/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/apt/</link>
 		<description>Recent content in APT on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Tue, 12 Nov 2024 14:17:31 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/apt/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>SUI创下新高之际，Aptos行至半途，一览其生态格局，一个小规模的以太系？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</guid>
 				<description>Base的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

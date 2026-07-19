@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>TRUMP on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/trump/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/trump/</link>
 		<description>Recent content in TRUMP on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Fri, 14 Feb 2025 18:09:50 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/trump/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/trump/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>[Opensea将要发币，事件背后的正与反]</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-02-14-opensea/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-02-14-opensea/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-02-14-opensea/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-02-14-opensea/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 	</channel>

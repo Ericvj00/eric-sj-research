@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>CMC on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/cmc/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/cmc/</link>
 		<description>Recent content in CMC on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Fri, 29 Mar 2024 19:47:26 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/cmc/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/cmc/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>NEOPIN：日韩双链背景下的RWA叙事</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-03-29-neopin-rwa/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-03-29-neopin-rwa/</link>
 				<pubDate>Fri, 29 Mar 2024 19:47:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-03-29-neopin-rwa/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-03-29-neopin-rwa/</guid>
 				<description>NEOPIN的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>[AI抽象层&amp;链抽象思考] | Eric SJ Research</title>
@@ -8,24 +8,32 @@
 <meta name="author" content="Eric SJ">
 <link rel="icon" type="image/png" href="/images/avatar.png">
 <link rel="apple-touch-icon" href="/images/avatar.png">
-<link rel="canonical" href="http://localhost:1313/zh-cn/web3/2025-01-12-ai/">
+<link rel="canonical" href="https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/">
 
-<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh-cn/web3/2025-01-12-ai/">
+<link rel="alternate" hreflang="zh-CN" href="https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/">
 
 <meta property="og:site_name" content="Eric SJ Research">
 <meta property="og:title" content="[AI抽象层&amp;链抽象思考] | Eric SJ Research">
 <meta property="og:description" content="AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/zh-cn/web3/2025-01-12-ai/">
-<meta property="og:image" content="http://localhost:1313/images/covers/2025-01-12-ai-cover-fill.png">
+<meta property="og:url" content="https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/">
+<meta property="og:image" content="https://ericsj.xyz/images/covers/2025-01-12-ai-cover-fill.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="[AI抽象层&amp;链抽象思考] | Eric SJ Research">
 <meta name="twitter:description" content="AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。">
-<meta name="twitter:image" content="http://localhost:1313/images/covers/2025-01-12-ai-cover-fill.png">
+<meta name="twitter:image" content="https://ericsj.xyz/images/covers/2025-01-12-ai-cover-fill.png">
 <link rel="stylesheet" href="/css/style.css?v=20260716-unified-cover-cards">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["市场也时常将Orbit与Griffain拿出来做比较，Orbit也许要更加全面一些，因为它的开发商就是一个跨链的应用，但是在使用体验上。","我也是今天在返程的车上才看了其他KOL整理的AI面板的一些项目，市场节奏快的离谱了，我简单展开一下。","开头提及的Orbit和Hey Anon做的事情有点类似，使用Orbit，你可以很直观的看到你的链上资产变化，近期市场热门，比较直观且相似的方案例子就是Solv Protocol官方文档所提及的[抽象权益层(SAL)这个概念。","聊的有点杂，涉及几个重点的项目、相似的案例以及一些可能的变化，值得一读。"],"abstract":"AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"http://localhost:1313/"},"dateModified":"2025-01-12T18:44:35+08:00","datePublished":"2025-01-12T18:44:35+08:00","description":"AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。","headline":"[AI抽象层\u0026链抽象思考]","image":"http://localhost:1313/images/covers/2025-01-12-ai-cover-fill.png","mainEntityOfPage":"http://localhost:1313/zh-cn/web3/2025-01-12-ai/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/sector/","name":"板块研究","position":3},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/2025-01-12-ai/","name":"[AI抽象层\u0026链抽象思考]","position":4}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["市场也时常将Orbit与Griffain拿出来做比较，Orbit也许要更加全面一些，因为它的开发商就是一个跨链的应用，但是在使用体验上。","我也是今天在返程的车上才看了其他KOL整理的AI面板的一些项目，市场节奏快的离谱了，我简单展开一下。","开头提及的Orbit和Hey Anon做的事情有点类似，使用Orbit，你可以很直观的看到你的链上资产变化，近期市场热门，比较直观且相似的方案例子就是Solv Protocol官方文档所提及的[抽象权益层(SAL)这个概念。","聊的有点杂，涉及几个重点的项目、相似的案例以及一些可能的变化，值得一读。"],"abstract":"AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"https://ericsj.xyz/"},"dateModified":"2025-01-12T18:44:35+08:00","datePublished":"2025-01-12T18:44:35+08:00","description":"AI抽象层与链抽象正在共同降低资产和应用交互门槛，产品差异最终取决于数据整合、跨链能力与真实使用体验。","headline":"[AI抽象层\u0026链抽象思考]","image":"https://ericsj.xyz/images/covers/2025-01-12-ai-cover-fill.png","mainEntityOfPage":"https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/sector/","name":"板块研究","position":3},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/","name":"[AI抽象层\u0026链抽象思考]","position":4}]}</script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTL683LKHM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTL683LKHM');
+</script>
 
   </head>
   <body>

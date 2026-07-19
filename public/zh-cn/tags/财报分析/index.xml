@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>财报分析 on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</link>
 		<description>Recent content in 财报分析 on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Fri, 05 Jun 2026 17:45:54 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>老虎证券:4亿罚款、扭盈转亏，投资者看完很难不破防！</title>
-				<link>http://localhost:56121/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</link>
+				<link>https://ericsj.xyz/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</link>
 				<pubDate>Fri, 05 Jun 2026 17:45:54 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</guid>
+				<guid>https://ericsj.xyz/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</guid>
 				<description>老虎证券营收仍保持增长，但巨额监管罚款令季度利润由盈转亏，市场关注点已转向合规成本、业务修复与盈利恢复能力。</description>
 			</item>
 	</channel>

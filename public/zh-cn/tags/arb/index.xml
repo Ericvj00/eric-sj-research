@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>ARB on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/arb/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/arb/</link>
 		<description>Recent content in ARB on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Tue, 20 Feb 2024 22:05:20 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/arb/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/arb/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Starknet上线，长期来看对比ARB具备哪些优势？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-02-20-starknet-arb/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-02-20-starknet-arb/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-02-20-starknet-arb/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-02-20-starknet-arb/</guid>
 				<description>Starknet的竞争格局正在改变原有判断，估值成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

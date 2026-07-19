@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案 | Eric SJ Research</title>
@@ -8,24 +8,32 @@
 <meta name="author" content="Eric SJ">
 <link rel="icon" type="image/png" href="/images/avatar.png">
 <link rel="apple-touch-icon" href="/images/avatar.png">
-<link rel="canonical" href="http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/">
+<link rel="canonical" href="https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/">
 
-<link rel="alternate" hreflang="zh-CN" href="http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/">
+<link rel="alternate" hreflang="zh-CN" href="https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/">
 
 <meta property="og:site_name" content="Eric SJ Research">
 <meta property="og:title" content="链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案 | Eric SJ Research">
 <meta property="og:description" content="链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/">
-<meta property="og:image" content="http://localhost:1313/images/covers/2024-11-03-xion-usdc-cover-placeholder.png">
+<meta property="og:url" content="https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/">
+<meta property="og:image" content="https://ericsj.xyz/images/covers/2024-11-03-xion-usdc-cover-placeholder.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案 | Eric SJ Research">
 <meta name="twitter:description" content="链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。">
-<meta name="twitter:image" content="http://localhost:1313/images/covers/2024-11-03-xion-usdc-cover-placeholder.png">
+<meta name="twitter:image" content="https://ericsj.xyz/images/covers/2024-11-03-xion-usdc-cover-placeholder.png">
 <link rel="stylesheet" href="/css/style.css?v=20260716-unified-cover-cards">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["因为其原理也很好理解，XION就是在后端置入了一个自动化执行的XION/USDC的交易对池，前端用户消费USDC，后端的这个池子自动化交易成了XION。","XION就是市场上比较早的一批切入链抽象赛道的协议之一，其当前的整体进展，也是处于测试网和未TGE的阶段。","更直观的一点是，因为XION属于Cosmos的生态谱系，所以给XION在链上交易定价方面提供了转换支持的是Cosmos生态的Osmosis(Cosmos生态的一个多链DEX)。","(不过XION的单体链从架构似乎比较鲜明，又或是文档没有具体介绍，但无论如何，它因为IBC，都可以实现面向用户端的多链场景使用)。"],"abstract":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"http://localhost:1313/"},"dateModified":"2024-11-03T20:08:09+08:00","datePublished":"2024-11-03T20:08:09+08:00","description":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。","headline":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案","image":"http://localhost:1313/images/covers/2024-11-03-xion-usdc-cover-placeholder.png","mainEntityOfPage":"http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"http://localhost:1313/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/projects/","name":"项目分析","position":3},{"@type":"ListItem","item":"http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/","name":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。"},"name":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"因为其原理也很好理解，XION就是在后端置入了一个自动化执行的XION/USDC的交易对池，前端用户消费USDC，后端的这个池子自动化交易成了XION。XION就是市场上比较早的一批切入链抽象赛道的协议之一，其当前的整体进展，也是处于测试网和未TGE的阶段。"},"name":"文章重点关注哪些关键变量？"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","about":["因为其原理也很好理解，XION就是在后端置入了一个自动化执行的XION/USDC的交易对池，前端用户消费USDC，后端的这个池子自动化交易成了XION。","XION就是市场上比较早的一批切入链抽象赛道的协议之一，其当前的整体进展，也是处于测试网和未TGE的阶段。","更直观的一点是，因为XION属于Cosmos的生态谱系，所以给XION在链上交易定价方面提供了转换支持的是Cosmos生态的Osmosis(Cosmos生态的一个多链DEX)。","(不过XION的单体链从架构似乎比较鲜明，又或是文档没有具体介绍，但无论如何，它因为IBC，都可以实现面向用户端的多链场景使用)。"],"abstract":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。","author":{"@type":"Person","name":"Eric SJ","sameAs":["https://x.com/sjbtc9"],"url":"https://ericsj.xyz/"},"dateModified":"2024-11-03T20:08:09+08:00","datePublished":"2024-11-03T20:08:09+08:00","description":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。","headline":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案","image":"https://ericsj.xyz/images/covers/2024-11-03-xion-usdc-cover-placeholder.png","mainEntityOfPage":"https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/","publisher":{"@type":"Organization","name":"Eric SJ Research"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/","name":"Eric SJ Research","position":1},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/","name":"Web3 Research","position":2},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/projects/","name":"项目分析","position":3},{"@type":"ListItem","item":"https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/","name":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案","position":4}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"链抽象案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。"},"name":"链抽象案例研究丨XION：将 $USDC 作为交易结算的链抽象方案的核心结论是什么？"},{"@type":"Question","acceptedAnswer":{"@type":"Answer","text":"因为其原理也很好理解，XION就是在后端置入了一个自动化执行的XION/USDC的交易对池，前端用户消费USDC，后端的这个池子自动化交易成了XION。XION就是市场上比较早的一批切入链抽象赛道的协议之一，其当前的整体进展，也是处于测试网和未TGE的阶段。"},"name":"文章重点关注哪些关键变量？"}]}</script>
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTL683LKHM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HTL683LKHM');
+</script>
 
   </head>
   <body>

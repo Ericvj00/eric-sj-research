@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>APP on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/app/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/app/</link>
 		<description>Recent content in APP on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Thu, 28 Nov 2024 12:43:09 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/app/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/app/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>思考：币安钱包、交易所链上业务以及链抽象结合所带来的潜在产品变革</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-28-binance-16833428227482/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-28-binance-16833428227482/</link>
 				<pubDate>Thu, 28 Nov 2024 12:43:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-28-binance-16833428227482/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-28-binance-16833428227482/</guid>
 				<description>思考的现金流正在改变原有判断，流动性成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Web3零基础到入门再到精通</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-10-30-web3/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-10-30-web3/</link>
 				<pubDate>Wed, 30 Oct 2024 13:46:25 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-10-30-web3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-10-30-web3/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 	</channel>

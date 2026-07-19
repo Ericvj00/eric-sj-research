@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>GPT on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/gpt/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/gpt/</link>
 		<description>Recent content in GPT on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Thu, 07 Nov 2024 19:24:36 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/gpt/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>解析DePin丨Aethir如何作为赛道基础设施？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-07-depin-aethir/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-07-depin-aethir/</link>
 				<pubDate>Thu, 07 Nov 2024 19:24:36 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-07-depin-aethir/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-07-depin-aethir/</guid>
 				<description>解析DePin的收入增长正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

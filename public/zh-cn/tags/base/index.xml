@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>BASE on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/base/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/base/</link>
 		<description>Recent content in BASE on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,103 +12,103 @@
 		
 			<lastBuildDate>Wed, 15 Jul 2026 12:28:12 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/base/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/base/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>大部分代币卖的是未来，稳定币卖的是现在</title>
-				<link>http://localhost:56121/zh-cn/web3/2026-07-15-binance-344877025391106/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2026-07-15-binance-344877025391106/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2026-07-15-binance-344877025391106/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2026-07-15-binance-344877025391106/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>Perp DEX：下一代交易所“战争”</title>
-				<link>http://localhost:56121/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</link>
 				<pubDate>Sat, 20 Jun 2026 18:02:56 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</guid>
 				<description>Perp DEX竞争已进入新阶段，流动性深度、交易体验与费用结构正在重塑下一代交易所格局。</description>
 			</item>
 			<item>
 				<title>Coinbase分发权：Base真正护城河是“入口垄断”</title>
-				<link>http://localhost:56121/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</link>
 				<pubDate>Tue, 16 Jun 2026 20:41:33 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</guid>
 				<description>Base的长期壁垒不只来自L2性能，而是Coinbase用户入口、稳定币流动性和应用分发共同形成的链上转化能力。</description>
 			</item>
 			<item>
 				<title>你可能忽略了，币安一些水上和水下的动作~</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-26-binance-22067731207393/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-26-binance-22067731207393/</link>
 				<pubDate>Wed, 26 Mar 2025 20:30:37 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-26-binance-22067731207393/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-26-binance-22067731207393/</guid>
 				<description>Base的现金流正在改变原有判断，流动性成为主要驱动因素，而市场份额与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>解构Pharos丨从硬件加速到RWA拓展</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-25-pharos-rwa/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-25-pharos-rwa/</link>
 				<pubDate>Tue, 25 Mar 2025 18:15:14 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-25-pharos-rwa/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-25-pharos-rwa/</guid>
 				<description>Base的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>如何在其他链跨入Sonic参与生态？</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-19-sonic/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-19-sonic/</link>
 				<pubDate>Wed, 19 Mar 2025 20:12:15 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-19-sonic/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-19-sonic/</guid>
 				<description>Base的收入增长正在改变原有判断，流动性成为主要驱动因素，而估值与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>怎么看Base和Arbitrum?</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</link>
 				<pubDate>Sun, 09 Mar 2025 18:49:27 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>为什么有些项目会有离奇的高估值？</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-02-18-binance-20459006834586/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-02-18-binance-20459006834586/</link>
 				<pubDate>Tue, 18 Feb 2025 11:43:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-02-18-binance-20459006834586/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-02-18-binance-20459006834586/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>盘点市场上热门的&#34;索尼链&#34;</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-12-30-binance-18259219945938/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-12-30-binance-18259219945938/</link>
 				<pubDate>Mon, 30 Dec 2024 18:15:38 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-12-30-binance-18259219945938/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-12-30-binance-18259219945938/</guid>
 				<description>Base的估值正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>一览今日币安Alpha上线的10个标的</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-12-18-alpha-10/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-12-18-alpha-10/</link>
 				<pubDate>Wed, 18 Dec 2024 21:01:23 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-12-18-alpha-10/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-12-18-alpha-10/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>SUI创下新高之际，Aptos行至半途，一览其生态格局，一个小规模的以太系？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</guid>
 				<description>Base的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Meme赛道的兴起，给Web3整个行业带来了什么样的影响？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-05-meme-web3/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-05-meme-web3/</link>
 				<pubDate>Tue, 05 Nov 2024 18:39:57 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-05-meme-web3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-05-meme-web3/</guid>
 				<description>Base的现金流正在改变原有判断，流动性成为主要驱动因素，而估值与基础设施仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>加密行业半年报(上)：基础设施的新旧更迭趋势</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-07-18-binance-10963777184553/</link>
 				<pubDate>Thu, 18 Jul 2024 20:13:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-07-18-binance-10963777184553/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-07-18-binance-10963777184553/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>X To Earn赛道复盘:社交赛道在注意力聚拢的背景下，更应该思考通证的效用</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-06-13-x-to-earn/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-06-13-x-to-earn/</link>
 				<pubDate>Thu, 13 Jun 2024 15:57:11 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-06-13-x-to-earn/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-06-13-x-to-earn/</guid>
 				<description>Base的收入增长正在改变原有判断，商业模式成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

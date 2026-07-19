@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>ALT on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/alt/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/alt/</link>
 		<description>Recent content in ALT on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Tue, 24 Sep 2024 18:38:29 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/alt/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/alt/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>全景分析丨RaaS头部生态一员，DODO Layer3将如何整合DEX生态？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</link>
 				<pubDate>Tue, 24 Sep 2024 18:38:29 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</guid>
 				<description>全景分析的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

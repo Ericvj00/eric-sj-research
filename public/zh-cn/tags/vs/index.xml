@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>VS on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/vs/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/vs/</link>
 		<description>Recent content in VS on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Sun, 10 Nov 2024 01:31:03 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/vs/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/vs/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>链抽象案例研究丨Particle Network [VS] XION Network</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-10-particle-network-vs-xion/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-10-particle-network-vs-xion/</link>
 				<pubDate>Sun, 10 Nov 2024 01:31:03 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-10-particle-network-vs-xion/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-10-particle-network-vs-xion/</guid>
 				<description>链抽象案例研究的流动性正在改变原有判断，估值成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>浅聊个话题：生态在构建选择上的意识冲突</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-08-02-binance-11616385257482/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-08-02-binance-11616385257482/</link>
 				<pubDate>Fri, 02 Aug 2024 14:17:32 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-08-02-binance-11616385257482/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-08-02-binance-11616385257482/</guid>
 				<description>浅聊个话题的估值正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

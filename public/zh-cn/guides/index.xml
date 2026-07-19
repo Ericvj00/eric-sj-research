@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>自用工具 on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/guides/</link>
+		<link>https://ericsj.xyz/zh-cn/guides/</link>
 		<description>Recent content in 自用工具 on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:56121/zh-cn/guides/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/guides/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

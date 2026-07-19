@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>VC on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/vc/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/vc/</link>
 		<description>Recent content in VC on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Mon, 29 Jul 2024 23:04:17 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/vc/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/vc/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Layer1研究：4条游戏链的横向对比，哪个更值得关注？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-07-29-layer1-4/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-07-29-layer1-4/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-07-29-layer1-4/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-07-29-layer1-4/</guid>
 				<description>Layer1研究的流动性正在改变原有判断，估值成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

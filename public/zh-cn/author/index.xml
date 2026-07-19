@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Authors on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/author/</link>
+		<link>https://ericsj.xyz/zh-cn/author/</link>
 		<description>Recent content in Authors on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -10,12 +10,12 @@
 		
 		
 		
-			<atom:link href="http://localhost:56121/zh-cn/author/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/author/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Eric SJ</title>
-				<link>http://localhost:56121/zh-cn/author/eric-sj/</link>
+				<link>https://ericsj.xyz/zh-cn/author/eric-sj/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:56121/zh-cn/author/eric-sj/</guid>
+				<guid>https://ericsj.xyz/zh-cn/author/eric-sj/</guid>
 				<description>&lt;p&gt;Eric SJ Research 是一个中文 Web3 + 美股研究网站，长期沉淀公开研究、商业模式分析和投资者教育内容。&lt;/p&gt;&#xA;&lt;h2 id=&#34;研究方向&#34;&gt;研究方向&lt;/h2&gt;&#xA;&lt;p&gt;关注 Web3 基础设施、RWA、稳定币、DeFi、交易平台、美股公司价值、AI 产业链和长期商业模式。&lt;/p&gt;&#xA;&lt;h2 id=&#34;web3研究&#34;&gt;Web3研究&lt;/h2&gt;&#xA;&lt;p&gt;围绕区块链基础设施、链上数据、协议商业模式和项目基本面进行长期研究。&lt;/p&gt;&#xA;&lt;h2 id=&#34;美股研究&#34;&gt;美股研究&lt;/h2&gt;&#xA;&lt;p&gt;围绕美国上市公司、财报质量、行业结构和企业长期竞争优势进行分析。&lt;/p&gt;</description>
 			</item>
 	</channel>

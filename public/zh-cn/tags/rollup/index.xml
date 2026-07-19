@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Rollup on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/rollup/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/rollup/</link>
 		<description>Recent content in Rollup on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,82 +12,82 @@
 		
 			<lastBuildDate>Sun, 09 Mar 2025 18:49:27 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/rollup/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/rollup/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>怎么看Base和Arbitrum?</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</link>
 				<pubDate>Sun, 09 Mar 2025 18:49:27 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>关于Solayer上线后，你不知道的事～</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-02-13-solayer/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-02-13-solayer/</link>
 				<pubDate>Thu, 13 Feb 2025 21:35:18 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-02-13-solayer/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-02-13-solayer/</guid>
 				<description>Solayer的估值正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Contentos：探讨创作者经济与有“价值”的公链</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-20-contentos/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-20-contentos/</link>
 				<pubDate>Wed, 20 Nov 2024 23:58:35 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-20-contentos/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-20-contentos/</guid>
 				<description>Contentos的收入增长正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>基础设施研究丨BTC生态谱系下的基础设施在干什么？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-16-btc/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-16-btc/</link>
 				<pubDate>Sat, 16 Nov 2024 19:29:15 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-16-btc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-16-btc/</guid>
 				<description>基础设施研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>全景分析丨RaaS头部生态一员，DODO Layer3将如何整合DEX生态？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</link>
 				<pubDate>Tue, 24 Sep 2024 18:38:29 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</guid>
 				<description>全景分析的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>以太萎靡的背景下，Rollup方案的破局之路在哪？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-08-31-rollup/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-08-31-rollup/</link>
 				<pubDate>Sat, 31 Aug 2024 18:45:40 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-08-31-rollup/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-08-31-rollup/</guid>
 				<description>Rollup的收入增长正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>意图协议中的求解器挑战：释放基于意图系统的真正潜力的关键</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-07-14-binance-10782364618081/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-07-14-binance-10782364618081/</link>
 				<pubDate>Sun, 14 Jul 2024 17:48:25 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-07-14-binance-10782364618081/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-07-14-binance-10782364618081/</guid>
 				<description>意图协议中的求解器挑战的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>BTC L2研究报告： L2整体的市值仅有BTC市值的0.1%盘点时下主流解决方案</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-06-01-btc-l2-0-1/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-06-01-btc-l2-0-1/</link>
 				<pubDate>Sat, 01 Jun 2024 21:22:41 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-06-01-btc-l2-0-1/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-06-01-btc-l2-0-1/</guid>
 				<description>永续合约DEX的竞争焦点正从链上交易能否成立，转向流动性留存、持仓深度与用户长期迁移，交易体验将决定下一阶段格局。</description>
 			</item>
 			<item>
 				<title>BounceBit：BTC基础设施的究极缝合怪，套娃王中王！</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-05-10-bouncebit-btc/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-05-10-bouncebit-btc/</link>
 				<pubDate>Fri, 10 May 2024 20:46:01 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-05-10-bouncebit-btc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-05-10-bouncebit-btc/</guid>
 				<description>BounceBit的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>新币挖矿第48期：AEVO——模块化应用Rollup范式</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-03-10-48-aevo-rollup/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-03-10-48-aevo-rollup/</link>
 				<pubDate>Sun, 10 Mar 2024 18:37:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-03-10-48-aevo-rollup/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-03-10-48-aevo-rollup/</guid>
 				<description>永续合约DEX的竞争焦点正从链上交易能否成立，转向流动性留存、持仓深度与用户长期迁移，交易体验将决定下一阶段格局。</description>
 			</item>
 			<item>
 				<title>Starknet上线，长期来看对比ARB具备哪些优势？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-02-20-starknet-arb/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-02-20-starknet-arb/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-02-20-starknet-arb/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-02-20-starknet-arb/</guid>
 				<description>Starknet的竞争格局正在改变原有判断，估值成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

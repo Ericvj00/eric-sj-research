@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>标签 on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/</link>
 		<description>Recent content in 标签 on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,1111 +12,1111 @@
 		
 			<lastBuildDate>Sat, 18 Jul 2026 20:20:31 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>DeFi</title>
-				<link>http://localhost:56121/zh-cn/tags/defi/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/defi/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/defi/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/defi/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>HYPE</title>
-				<link>http://localhost:56121/zh-cn/tags/hype/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/hype/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/hype/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/hype/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Hyperliquid</title>
-				<link>http://localhost:56121/zh-cn/tags/hyperliquid/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/hyperliquid/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/hyperliquid/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/hyperliquid/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Q1</title>
-				<link>http://localhost:56121/zh-cn/tags/q1/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/q1/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/q1/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/q1/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Q2</title>
-				<link>http://localhost:56121/zh-cn/tags/q2/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/q2/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/q2/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/q2/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Web3</title>
-				<link>http://localhost:56121/zh-cn/tags/web3/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/web3/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/web3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/web3/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>利润</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%88%A9%E6%B6%A6/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%88%A9%E6%B6%A6/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%88%A9%E6%B6%A6/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%88%A9%E6%B6%A6/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>收入</title>
-				<link>http://localhost:56121/zh-cn/tags/%E6%94%B6%E5%85%A5/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E6%94%B6%E5%85%A5/</link>
 				<pubDate>Sat, 18 Jul 2026 20:20:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E6%94%B6%E5%85%A5/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E6%94%B6%E5%85%A5/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BASE</title>
-				<link>http://localhost:56121/zh-cn/tags/base/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/base/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/base/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/base/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Tether</title>
-				<link>http://localhost:56121/zh-cn/tags/tether/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tether/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tether/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tether/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>商业模式</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>稳定币</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>现金流</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</link>
 				<pubDate>Wed, 15 Jul 2026 12:28:12 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Aave</title>
-				<link>http://localhost:56121/zh-cn/tags/aave/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/aave/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/aave/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/aave/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ethena</title>
-				<link>http://localhost:56121/zh-cn/tags/ethena/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ethena/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ethena/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ethena/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Ethereum</title>
-				<link>http://localhost:56121/zh-cn/tags/ethereum/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ethereum/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ethereum/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ethereum/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Perp DEX</title>
-				<link>http://localhost:56121/zh-cn/tags/perp-dex/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/perp-dex/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/perp-dex/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/perp-dex/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Solana</title>
-				<link>http://localhost:56121/zh-cn/tags/solana/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/solana/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/solana/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/solana/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>USDC</title>
-				<link>http://localhost:56121/zh-cn/tags/usdc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/usdc/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/usdc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/usdc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>USDT</title>
-				<link>http://localhost:56121/zh-cn/tags/usdt/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/usdt/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/usdt/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/usdt/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>NIKE</title>
-				<link>http://localhost:56121/zh-cn/tags/nike/</link>
+				<title>Nike</title>
+				<link>https://ericsj.xyz/zh-cn/tags/nike/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/nike/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/nike/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>NIKE直营退潮</title>
-				<link>http://localhost:56121/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>NKE</title>
-				<link>http://localhost:56121/zh-cn/tags/nke/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/nke/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/nke/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/nke/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>翻了一下</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>分销</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%88%86%E9%94%80/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%88%86%E9%94%80/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>分销渠道重新上桌</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>估值</title>
-				<link>http://localhost:56121/zh-cn/tags/%E4%BC%B0%E5%80%BC/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E4%BC%B0%E5%80%BC/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E4%BC%B0%E5%80%BC/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E4%BC%B0%E5%80%BC/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>美股</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%BE%8E%E8%82%A1/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E8%82%A1/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%BE%8E%E8%82%A1/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E8%82%A1/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>直营</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%9B%B4%E8%90%A5/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%9B%B4%E8%90%A5/</link>
 				<pubDate>Thu, 02 Jul 2026 12:04:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%9B%B4%E8%90%A5/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%9B%B4%E8%90%A5/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MU</title>
-				<link>http://localhost:56121/zh-cn/tags/mu/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/mu/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/mu/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/mu/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MUUSDT</title>
-				<link>http://localhost:56121/zh-cn/tags/muusdt/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/muusdt/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/muusdt/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/muusdt/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>变了</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%8F%98%E4%BA%86/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%8F%98%E4%BA%86/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%8F%98%E4%BA%86/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%8F%98%E4%BA%86/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>护城河</title>
-				<link>http://localhost:56121/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>美光</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%BE%8E%E5%85%89/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E5%85%89/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%BE%8E%E5%85%89/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E5%85%89/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>英伟达</title>
-				<link>http://localhost:56121/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</link>
 				<pubDate>Thu, 25 Jun 2026 13:22:13 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>交易所</title>
-				<link>http://localhost:56121/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</link>
 				<pubDate>Wed, 24 Jun 2026 19:21:34 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>生态资产</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</link>
 				<pubDate>Wed, 24 Jun 2026 19:21:34 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Coinbase</title>
-				<link>http://localhost:56121/zh-cn/tags/coinbase/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/coinbase/</link>
 				<pubDate>Sat, 20 Jun 2026 18:02:56 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/coinbase/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/coinbase/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DEX</title>
-				<link>http://localhost:56121/zh-cn/tags/dex/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/dex/</link>
 				<pubDate>Sat, 20 Jun 2026 18:02:56 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/dex/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/dex/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Perp</title>
-				<link>http://localhost:56121/zh-cn/tags/perp/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/perp/</link>
 				<pubDate>Sat, 20 Jun 2026 18:02:56 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/perp/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/perp/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>AI</title>
-				<link>http://localhost:56121/zh-cn/tags/ai/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ai/</link>
 				<pubDate>Thu, 18 Jun 2026 23:01:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ai/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ai/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>GPU</title>
-				<link>http://localhost:56121/zh-cn/tags/gpu/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/gpu/</link>
 				<pubDate>Thu, 18 Jun 2026 23:01:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/gpu/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/gpu/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>JBL</title>
-				<link>http://localhost:56121/zh-cn/tags/jbl/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/jbl/</link>
 				<pubDate>Thu, 18 Jun 2026 23:01:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/jbl/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/jbl/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>财报</title>
-				<link>http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</link>
 				<pubDate>Thu, 18 Jun 2026 23:01:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>人工智能</title>
-				<link>http://localhost:56121/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link>
 				<pubDate>Thu, 18 Jun 2026 23:01:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SpaceX</title>
-				<link>http://localhost:56121/zh-cn/tags/spacex/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/spacex/</link>
 				<pubDate>Wed, 17 Jun 2026 22:09:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/spacex/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/spacex/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SpaceX估值争议</title>
-				<link>http://localhost:56121/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</link>
 				<pubDate>Wed, 17 Jun 2026 22:09:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>还是下一个马斯克信仰溢价</title>
-				<link>http://localhost:56121/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</link>
 				<pubDate>Wed, 17 Jun 2026 22:09:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>同样一个亏损项目</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</link>
 				<pubDate>Wed, 17 Jun 2026 22:09:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>这是下一个英伟达</title>
-				<link>http://localhost:56121/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</link>
 				<pubDate>Wed, 17 Jun 2026 22:09:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Coinbase分发权</title>
-				<link>http://localhost:56121/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</link>
 				<pubDate>Tue, 16 Jun 2026 20:41:33 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>分发</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%88%86%E5%8F%91/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E5%8F%91/</link>
 				<pubDate>Tue, 16 Jun 2026 20:41:33 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%88%86%E5%8F%91/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E5%8F%91/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>入口垄断</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</link>
 				<pubDate>Tue, 16 Jun 2026 20:41:33 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>RWA</title>
-				<link>http://localhost:56121/zh-cn/tags/rwa/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/rwa/</link>
 				<pubDate>Thu, 11 Jun 2026 14:07:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/rwa/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/rwa/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BTC</title>
-				<link>http://localhost:56121/zh-cn/tags/btc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/btc/</link>
 				<pubDate>Fri, 05 Jun 2026 17:45:54 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/btc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/btc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TIGR</title>
-				<link>http://localhost:56121/zh-cn/tags/tigr/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tigr/</link>
 				<pubDate>Fri, 05 Jun 2026 17:45:54 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tigr/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tigr/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>财报分析</title>
-				<link>http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</link>
 				<pubDate>Fri, 05 Jun 2026 17:45:54 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>EBay</title>
-				<link>http://localhost:56121/zh-cn/tags/ebay/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ebay/</link>
 				<pubDate>Fri, 05 Jun 2026 12:49:38 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ebay/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ebay/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>GME</title>
-				<link>http://localhost:56121/zh-cn/tags/gme/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/gme/</link>
 				<pubDate>Fri, 05 Jun 2026 12:49:38 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/gme/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/gme/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>游戏驿站</title>
-				<link>http://localhost:56121/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</link>
 				<pubDate>Fri, 05 Jun 2026 12:49:38 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ATOM</title>
-				<link>http://localhost:56121/zh-cn/tags/atom/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/atom/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/atom/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/atom/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>CESS</title>
-				<link>http://localhost:56121/zh-cn/tags/cess/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/cess/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/cess/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/cess/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>IBC</title>
-				<link>http://localhost:56121/zh-cn/tags/ibc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ibc/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ibc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ibc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ICE</title>
-				<link>http://localhost:56121/zh-cn/tags/ice/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ice/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ice/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ice/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>L1</title>
-				<link>http://localhost:56121/zh-cn/tags/l1/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/l1/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/l1/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/l1/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>L2</title>
-				<link>http://localhost:56121/zh-cn/tags/l2/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/l2/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/l2/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/l2/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>OP</title>
-				<link>http://localhost:56121/zh-cn/tags/op/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/op/</link>
 				<pubDate>Sun, 30 Mar 2025 19:40:28 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/op/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/op/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>PARTI</title>
-				<link>http://localhost:56121/zh-cn/tags/parti/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/parti/</link>
 				<pubDate>Wed, 26 Mar 2025 20:30:37 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/parti/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/parti/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>EVM</title>
-				<link>http://localhost:56121/zh-cn/tags/evm/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/evm/</link>
 				<pubDate>Tue, 25 Mar 2025 18:15:14 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/evm/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/evm/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TPS</title>
-				<link>http://localhost:56121/zh-cn/tags/tps/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tps/</link>
 				<pubDate>Tue, 25 Mar 2025 18:15:14 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tps/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tps/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>基础设施</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</link>
 				<pubDate>Tue, 25 Mar 2025 18:15:14 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SVM</title>
-				<link>http://localhost:56121/zh-cn/tags/svm/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/svm/</link>
 				<pubDate>Wed, 19 Mar 2025 20:12:15 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/svm/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/svm/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>INJ</title>
-				<link>http://localhost:56121/zh-cn/tags/inj/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/inj/</link>
 				<pubDate>Mon, 10 Mar 2025 19:28:19 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/inj/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/inj/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>POS</title>
-				<link>http://localhost:56121/zh-cn/tags/pos/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/pos/</link>
 				<pubDate>Mon, 10 Mar 2025 19:28:19 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/pos/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/pos/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Arbitrum</title>
-				<link>http://localhost:56121/zh-cn/tags/arbitrum/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/arbitrum/</link>
 				<pubDate>Sun, 09 Mar 2025 18:49:27 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/arbitrum/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/arbitrum/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Rollup</title>
-				<link>http://localhost:56121/zh-cn/tags/rollup/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/rollup/</link>
 				<pubDate>Sun, 09 Mar 2025 18:49:27 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/rollup/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/rollup/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>Q4</title>
-				<link>http://localhost:56121/zh-cn/tags/q4/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/q4/</link>
 				<pubDate>Tue, 18 Feb 2025 11:43:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/q4/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/q4/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>YZ</title>
-				<link>http://localhost:56121/zh-cn/tags/yz/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/yz/</link>
 				<pubDate>Tue, 18 Feb 2025 11:43:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/yz/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/yz/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>逻辑拆解</title>
-				<link>http://localhost:56121/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</link>
 				<pubDate>Tue, 18 Feb 2025 11:43:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>NFT</title>
-				<link>http://localhost:56121/zh-cn/tags/nft/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/nft/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/nft/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/nft/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>OKX</title>
-				<link>http://localhost:56121/zh-cn/tags/okx/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/okx/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/okx/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/okx/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SEC</title>
-				<link>http://localhost:56121/zh-cn/tags/sec/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/sec/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/sec/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/sec/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TGE</title>
-				<link>http://localhost:56121/zh-cn/tags/tge/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tge/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tge/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tge/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TRUMP</title>
-				<link>http://localhost:56121/zh-cn/tags/trump/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/trump/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/trump/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/trump/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>项目分析</title>
-				<link>http://localhost:56121/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</link>
 				<pubDate>Fri, 14 Feb 2025 18:09:50 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>EIGEN</title>
-				<link>http://localhost:56121/zh-cn/tags/eigen/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/eigen/</link>
 				<pubDate>Thu, 13 Feb 2025 21:35:18 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/eigen/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/eigen/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LAYER</title>
-				<link>http://localhost:56121/zh-cn/tags/layer/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/layer/</link>
 				<pubDate>Thu, 13 Feb 2025 21:35:18 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/layer/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/layer/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BEP-20</title>
-				<link>http://localhost:56121/zh-cn/tags/bep-20/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/bep-20/</link>
 				<pubDate>Thu, 13 Feb 2025 17:35:07 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/bep-20/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/bep-20/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BNB</title>
-				<link>http://localhost:56121/zh-cn/tags/bnb/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/bnb/</link>
 				<pubDate>Thu, 13 Feb 2025 17:35:07 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/bnb/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/bnb/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BNBC</title>
-				<link>http://localhost:56121/zh-cn/tags/bnbc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/bnbc/</link>
 				<pubDate>Thu, 13 Feb 2025 17:35:07 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/bnbc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/bnbc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TMD</title>
-				<link>http://localhost:56121/zh-cn/tags/tmd/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tmd/</link>
 				<pubDate>Thu, 13 Feb 2025 17:35:07 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tmd/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tmd/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ENA</title>
-				<link>http://localhost:56121/zh-cn/tags/ena/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ena/</link>
 				<pubDate>Wed, 08 Jan 2025 23:55:54 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ena/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ena/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DePIN</title>
-				<link>http://localhost:56121/zh-cn/tags/depin/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/depin/</link>
 				<pubDate>Mon, 30 Dec 2024 14:06:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/depin/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/depin/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>KOMA</title>
-				<link>http://localhost:56121/zh-cn/tags/koma/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/koma/</link>
 				<pubDate>Wed, 18 Dec 2024 21:01:23 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/koma/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/koma/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SHIB</title>
-				<link>http://localhost:56121/zh-cn/tags/shib/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/shib/</link>
 				<pubDate>Wed, 18 Dec 2024 21:01:23 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/shib/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/shib/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>APP</title>
-				<link>http://localhost:56121/zh-cn/tags/app/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/app/</link>
 				<pubDate>Thu, 28 Nov 2024 12:43:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/app/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/app/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DEXX</title>
-				<link>http://localhost:56121/zh-cn/tags/dexx/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/dexx/</link>
 				<pubDate>Thu, 28 Nov 2024 12:43:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/dexx/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/dexx/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>IPO</title>
-				<link>http://localhost:56121/zh-cn/tags/ipo/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ipo/</link>
 				<pubDate>Thu, 28 Nov 2024 12:43:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ipo/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ipo/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ROI</title>
-				<link>http://localhost:56121/zh-cn/tags/roi/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/roi/</link>
 				<pubDate>Thu, 28 Nov 2024 12:43:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/roi/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/roi/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>COS.TV</title>
-				<link>http://localhost:56121/zh-cn/tags/cos.tv/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/cos.tv/</link>
 				<pubDate>Wed, 20 Nov 2024 23:58:35 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/cos.tv/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/cos.tv/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>去中心化</title>
-				<link>http://localhost:56121/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</link>
 				<pubDate>Wed, 20 Nov 2024 23:58:35 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BB</title>
-				<link>http://localhost:56121/zh-cn/tags/bb/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/bb/</link>
 				<pubDate>Sat, 16 Nov 2024 19:29:15 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/bb/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/bb/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>APT</title>
-				<link>http://localhost:56121/zh-cn/tags/apt/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/apt/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/apt/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/apt/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MOVE</title>
-				<link>http://localhost:56121/zh-cn/tags/move/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/move/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/move/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/move/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SUI</title>
-				<link>http://localhost:56121/zh-cn/tags/sui/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/sui/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/sui/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/sui/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>VS</title>
-				<link>http://localhost:56121/zh-cn/tags/vs/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/vs/</link>
 				<pubDate>Sun, 10 Nov 2024 01:31:03 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/vs/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/vs/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>XION</title>
-				<link>http://localhost:56121/zh-cn/tags/xion/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/xion/</link>
 				<pubDate>Sun, 10 Nov 2024 01:31:03 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/xion/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/xion/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>GPT</title>
-				<link>http://localhost:56121/zh-cn/tags/gpt/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/gpt/</link>
 				<pubDate>Thu, 07 Nov 2024 19:24:36 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/gpt/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/gpt/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>算力</title>
-				<link>http://localhost:56121/zh-cn/tags/%E7%AE%97%E5%8A%9B/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E7%AE%97%E5%8A%9B/</link>
 				<pubDate>Thu, 07 Nov 2024 19:24:36 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E7%AE%97%E5%8A%9B/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E7%AE%97%E5%8A%9B/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DOGE</title>
-				<link>http://localhost:56121/zh-cn/tags/doge/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/doge/</link>
 				<pubDate>Tue, 05 Nov 2024 18:39:57 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/doge/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/doge/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MEME</title>
-				<link>http://localhost:56121/zh-cn/tags/meme/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/meme/</link>
 				<pubDate>Tue, 05 Nov 2024 18:39:57 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/meme/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/meme/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BFT</title>
-				<link>http://localhost:56121/zh-cn/tags/bft/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/bft/</link>
 				<pubDate>Sun, 03 Nov 2024 20:08:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/bft/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/bft/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>GAS</title>
-				<link>http://localhost:56121/zh-cn/tags/gas/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/gas/</link>
 				<pubDate>Sun, 03 Nov 2024 20:08:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/gas/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/gas/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ALT</title>
-				<link>http://localhost:56121/zh-cn/tags/alt/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/alt/</link>
 				<pubDate>Tue, 24 Sep 2024 18:38:29 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/alt/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/alt/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DODO</title>
-				<link>http://localhost:56121/zh-cn/tags/dodo/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/dodo/</link>
 				<pubDate>Tue, 24 Sep 2024 18:38:29 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/dodo/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/dodo/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TVL</title>
-				<link>http://localhost:56121/zh-cn/tags/tvl/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tvl/</link>
 				<pubDate>Sat, 14 Sep 2024 15:12:04 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tvl/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tvl/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>板块研究</title>
-				<link>http://localhost:56121/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</link>
 				<pubDate>Sat, 14 Sep 2024 15:12:04 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>P2P</title>
-				<link>http://localhost:56121/zh-cn/tags/p2p/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/p2p/</link>
 				<pubDate>Fri, 06 Sep 2024 19:26:09 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/p2p/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/p2p/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>GOAT</title>
-				<link>http://localhost:56121/zh-cn/tags/goat/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/goat/</link>
 				<pubDate>Sat, 31 Aug 2024 18:45:40 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/goat/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/goat/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ZKX</title>
-				<link>http://localhost:56121/zh-cn/tags/zkx/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/zkx/</link>
 				<pubDate>Fri, 02 Aug 2024 14:17:32 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/zkx/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/zkx/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ACE</title>
-				<link>http://localhost:56121/zh-cn/tags/ace/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ace/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ace/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ace/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>RON</title>
-				<link>http://localhost:56121/zh-cn/tags/ron/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ron/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ron/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ron/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SAGA</title>
-				<link>http://localhost:56121/zh-cn/tags/saga/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/saga/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/saga/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/saga/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>VC</title>
-				<link>http://localhost:56121/zh-cn/tags/vc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/vc/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/vc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/vc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>XPLA</title>
-				<link>http://localhost:56121/zh-cn/tags/xpla/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/xpla/</link>
 				<pubDate>Mon, 29 Jul 2024 23:04:17 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/xpla/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/xpla/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>L2TVL</title>
-				<link>http://localhost:56121/zh-cn/tags/l2tvl/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/l2tvl/</link>
 				<pubDate>Thu, 18 Jul 2024 20:13:47 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/l2tvl/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/l2tvl/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SOL</title>
-				<link>http://localhost:56121/zh-cn/tags/sol/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/sol/</link>
 				<pubDate>Fri, 12 Jul 2024 20:42:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/sol/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/sol/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>TG</title>
-				<link>http://localhost:56121/zh-cn/tags/tg/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/tg/</link>
 				<pubDate>Fri, 12 Jul 2024 20:42:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/tg/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/tg/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DAO</title>
-				<link>http://localhost:56121/zh-cn/tags/dao/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/dao/</link>
 				<pubDate>Thu, 13 Jun 2024 15:57:11 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/dao/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/dao/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>POW</title>
-				<link>http://localhost:56121/zh-cn/tags/pow/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/pow/</link>
 				<pubDate>Thu, 13 Jun 2024 15:57:11 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/pow/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/pow/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BRC-20</title>
-				<link>http://localhost:56121/zh-cn/tags/brc-20/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/brc-20/</link>
 				<pubDate>Sat, 01 Jun 2024 21:22:41 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/brc-20/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/brc-20/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>OG</title>
-				<link>http://localhost:56121/zh-cn/tags/og/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/og/</link>
 				<pubDate>Sat, 01 Jun 2024 21:22:41 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/og/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/og/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LSDFI</title>
-				<link>http://localhost:56121/zh-cn/tags/lsdfi/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/lsdfi/</link>
 				<pubDate>Fri, 10 May 2024 20:46:01 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/lsdfi/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/lsdfi/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>FIL</title>
-				<link>http://localhost:56121/zh-cn/tags/fil/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/fil/</link>
 				<pubDate>Sun, 31 Mar 2024 13:25:56 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/fil/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/fil/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ETH</title>
-				<link>http://localhost:56121/zh-cn/tags/eth/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/eth/</link>
 				<pubDate>Sat, 30 Mar 2024 18:16:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/eth/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/eth/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LSD</title>
-				<link>http://localhost:56121/zh-cn/tags/lsd/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/lsd/</link>
 				<pubDate>Sat, 30 Mar 2024 18:16:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/lsd/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/lsd/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LSDF</title>
-				<link>http://localhost:56121/zh-cn/tags/lsdf/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/lsdf/</link>
 				<pubDate>Sat, 30 Mar 2024 18:16:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/lsdf/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/lsdf/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>USD</title>
-				<link>http://localhost:56121/zh-cn/tags/usd/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/usd/</link>
 				<pubDate>Sat, 30 Mar 2024 18:16:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/usd/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/usd/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BUIDL</title>
-				<link>http://localhost:56121/zh-cn/tags/buidl/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/buidl/</link>
 				<pubDate>Fri, 29 Mar 2024 19:47:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/buidl/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/buidl/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>CMC</title>
-				<link>http://localhost:56121/zh-cn/tags/cmc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/cmc/</link>
 				<pubDate>Fri, 29 Mar 2024 19:47:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/cmc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/cmc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>NEOPIN</title>
-				<link>http://localhost:56121/zh-cn/tags/neopin/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/neopin/</link>
 				<pubDate>Fri, 29 Mar 2024 19:47:26 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/neopin/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/neopin/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>AEVO</title>
-				<link>http://localhost:56121/zh-cn/tags/aevo/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/aevo/</link>
 				<pubDate>Sun, 10 Mar 2024 18:37:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/aevo/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/aevo/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>DA</title>
-				<link>http://localhost:56121/zh-cn/tags/da/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/da/</link>
 				<pubDate>Sun, 10 Mar 2024 18:37:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/da/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/da/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>MANTA</title>
-				<link>http://localhost:56121/zh-cn/tags/manta/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/manta/</link>
 				<pubDate>Sun, 10 Mar 2024 18:37:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/manta/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/manta/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>PIXEL</title>
-				<link>http://localhost:56121/zh-cn/tags/pixel/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/pixel/</link>
 				<pubDate>Sat, 24 Feb 2024 17:36:00 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/pixel/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/pixel/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ARB</title>
-				<link>http://localhost:56121/zh-cn/tags/arb/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/arb/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/arb/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/arb/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>L3</title>
-				<link>http://localhost:56121/zh-cn/tags/l3/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/l3/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/l3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/l3/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>PUA</title>
-				<link>http://localhost:56121/zh-cn/tags/pua/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/pua/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/pua/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/pua/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>STRK</title>
-				<link>http://localhost:56121/zh-cn/tags/strk/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/strk/</link>
 				<pubDate>Tue, 20 Feb 2024 22:05:20 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/strk/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/strk/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>API3</title>
-				<link>http://localhost:56121/zh-cn/tags/api3/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/api3/</link>
 				<pubDate>Sun, 04 Feb 2024 17:40:42 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/api3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/api3/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>LINK</title>
-				<link>http://localhost:56121/zh-cn/tags/link/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/link/</link>
 				<pubDate>Sun, 04 Feb 2024 17:40:42 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/link/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/link/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>PYTH</title>
-				<link>http://localhost:56121/zh-cn/tags/pyth/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/pyth/</link>
 				<pubDate>Sun, 04 Feb 2024 17:40:42 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/pyth/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/pyth/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>UMA</title>
-				<link>http://localhost:56121/zh-cn/tags/uma/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/uma/</link>
 				<pubDate>Sun, 04 Feb 2024 17:40:42 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/uma/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/uma/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ARC</title>
-				<link>http://localhost:56121/zh-cn/tags/arc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/arc/</link>
 				<pubDate>Fri, 15 Dec 2023 16:04:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/arc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/arc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>BRC20</title>
-				<link>http://localhost:56121/zh-cn/tags/brc20/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/brc20/</link>
 				<pubDate>Fri, 15 Dec 2023 16:04:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/brc20/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/brc20/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ORC</title>
-				<link>http://localhost:56121/zh-cn/tags/orc/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/orc/</link>
 				<pubDate>Fri, 15 Dec 2023 16:04:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/orc/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/orc/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>ORDI</title>
-				<link>http://localhost:56121/zh-cn/tags/ordi/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/ordi/</link>
 				<pubDate>Fri, 15 Dec 2023 16:04:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/ordi/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/ordi/</guid>
 				<description></description>
 			</item>
 			<item>
 				<title>SATS</title>
-				<link>http://localhost:56121/zh-cn/tags/sats/</link>
+				<link>https://ericsj.xyz/zh-cn/tags/sats/</link>
 				<pubDate>Fri, 15 Dec 2023 16:04:53 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/tags/sats/</guid>
+				<guid>https://ericsj.xyz/zh-cn/tags/sats/</guid>
 				<description></description>
 			</item>
 	</channel>

@@ -7,5 +7,5 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
-Sitemap: http://localhost:56121/zh-cn/sitemap.xml
-Sitemap: http://localhost:56121/zh-tw/sitemap.xml
+Sitemap: https://ericsj.xyz/zh-cn/sitemap.xml
+Sitemap: https://ericsj.xyz/zh-tw/sitemap.xml

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Solana on Eric SJ Research</title>
-		<link>http://localhost:56121/zh-cn/tags/solana/</link>
+		<link>https://ericsj.xyz/zh-cn/tags/solana/</link>
 		<description>Recent content in Solana on Eric SJ Research</description>
 		<generator>Hugo</generator>
 		<language>zh-CN</language>
@@ -12,117 +12,117 @@
 		
 			<lastBuildDate>Fri, 10 Jul 2026 00:34:58 +0800</lastBuildDate>
 		
-			<atom:link href="http://localhost:56121/zh-cn/tags/solana/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://ericsj.xyz/zh-cn/tags/solana/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>从交易费到稳定币:Web3商业模式背后的收入驱动力与护城河</title>
-				<link>http://localhost:56121/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</link>
 				<pubDate>Fri, 10 Jul 2026 00:34:58 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</guid>
 				<description>Web3收入模型正在接受现金流检验，交易费、稳定币与基础设施收入决定商业模式的质量和壁垒。</description>
 			</item>
 			<item>
 				<title>Solana新周期：第一批可能被重新定价的生态资产</title>
-				<link>http://localhost:56121/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</link>
 				<pubDate>Wed, 24 Jun 2026 19:21:34 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</guid>
 				<description>Solana生态进入新一轮重估窗口，资金流向、应用落地与风险偏好变化正在筛选率先定价的资产。</description>
 			</item>
 			<item>
 				<title>RWA报告：赛道的叙事演进与增长周期</title>
-				<link>http://localhost:56121/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</link>
 				<pubDate>Thu, 11 Jun 2026 14:07:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</guid>
 				<description>RWA正从概念叙事迈向真实采用，资产上链、稳定币需求与可持续收益共同驱动新增长周期。</description>
 			</item>
 			<item>
 				<title>你可能忽略了，币安一些水上和水下的动作~</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-26-binance-22067731207393/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-26-binance-22067731207393/</link>
 				<pubDate>Wed, 26 Mar 2025 20:30:37 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-26-binance-22067731207393/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-26-binance-22067731207393/</guid>
 				<description>Base的现金流正在改变原有判断，流动性成为主要驱动因素，而市场份额与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>解构Pharos丨从硬件加速到RWA拓展</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-25-pharos-rwa/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-25-pharos-rwa/</link>
 				<pubDate>Tue, 25 Mar 2025 18:15:14 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-25-pharos-rwa/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-25-pharos-rwa/</guid>
 				<description>Base的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>如何在其他链跨入Sonic参与生态？</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-19-sonic/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-19-sonic/</link>
 				<pubDate>Wed, 19 Mar 2025 20:12:15 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-19-sonic/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-19-sonic/</guid>
 				<description>Base的收入增长正在改变原有判断，流动性成为主要驱动因素，而估值与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>怎么看Base和Arbitrum?</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</link>
 				<pubDate>Sun, 09 Mar 2025 18:49:27 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>关于Solayer上线后，你不知道的事～</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-02-13-solayer/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-02-13-solayer/</link>
 				<pubDate>Thu, 13 Feb 2025 21:35:18 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-02-13-solayer/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-02-13-solayer/</guid>
 				<description>Solayer的估值正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>用户友好！用户友好！还是TMD用户友好！</title>
-				<link>http://localhost:56121/zh-cn/web3/2025-02-13-tmd/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2025-02-13-tmd/</link>
 				<pubDate>Thu, 13 Feb 2025 17:35:07 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2025-02-13-tmd/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2025-02-13-tmd/</guid>
 				<description>用户友好的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>盘点市场上热门的&#34;索尼链&#34;</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-12-30-binance-18259219945938/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-12-30-binance-18259219945938/</link>
 				<pubDate>Mon, 30 Dec 2024 18:15:38 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-12-30-binance-18259219945938/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-12-30-binance-18259219945938/</guid>
 				<description>Base的估值正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>基础设施案例研究丨Roam：广积粮、高筑墙</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-12-30-roam/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-12-30-roam/</link>
 				<pubDate>Mon, 30 Dec 2024 14:06:52 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-12-30-roam/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-12-30-roam/</guid>
 				<description>基础设施案例研究的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>一览今日币安Alpha上线的10个标的</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-12-18-alpha-10/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-12-18-alpha-10/</link>
 				<pubDate>Wed, 18 Dec 2024 21:01:23 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-12-18-alpha-10/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-12-18-alpha-10/</guid>
 				<description>Base的核心壁垒并非单纯依赖链上性能，而是Coinbase掌握的用户入口、分发能力与稳定币流动性共同形成增长飞轮。</description>
 			</item>
 			<item>
 				<title>SUI创下新高之际，Aptos行至半途，一览其生态格局，一个小规模的以太系？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</link>
 				<pubDate>Tue, 12 Nov 2024 14:17:31 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-12-sui-aptos/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</guid>
 				<description>Base的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Meme赛道的兴起，给Web3整个行业带来了什么样的影响？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-11-05-meme-web3/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-11-05-meme-web3/</link>
 				<pubDate>Tue, 05 Nov 2024 18:39:57 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-11-05-meme-web3/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-11-05-meme-web3/</guid>
 				<description>Base的现金流正在改变原有判断，流动性成为主要驱动因素，而估值与基础设施仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>意图协议中的求解器挑战：释放基于意图系统的真正潜力的关键</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-07-14-binance-10782364618081/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-07-14-binance-10782364618081/</link>
 				<pubDate>Sun, 14 Jul 2024 17:48:25 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-07-14-binance-10782364618081/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-07-14-binance-10782364618081/</guid>
 				<description>意图协议中的求解器挑战的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 			<item>
 				<title>Binance新币Portal如何加码全链游戏场景？散户机会在哪？</title>
-				<link>http://localhost:56121/zh-cn/web3/2024-02-24-binance-portal/</link>
+				<link>https://ericsj.xyz/zh-cn/web3/2024-02-24-binance-portal/</link>
 				<pubDate>Sat, 24 Feb 2024 17:36:00 +0800</pubDate>
-				<guid>http://localhost:56121/zh-cn/web3/2024-02-24-binance-portal/</guid>
+				<guid>https://ericsj.xyz/zh-cn/web3/2024-02-24-binance-portal/</guid>
 				<description>Binance的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。</description>
 			</item>
 	</channel>

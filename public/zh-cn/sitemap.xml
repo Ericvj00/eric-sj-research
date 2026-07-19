@@ -2,1790 +2,1790 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/zh-cn/tags/defi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/defi/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/hype/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/hyperliquid/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/q1/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/q2/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/web3/</loc>
-    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/web3/"
+                href="https://ericsj.xyz/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/web3/"
+                href="https://ericsj.xyz/zh-tw/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/hype/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/tags/hyperliquid/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/web3/2026-07-18-hyperliquid-73-6-639/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/tags/q1/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/tags/q2/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/tags/web3/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/web3/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/tags/"
+                href="https://ericsj.xyz/zh-cn/web3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/tags/"
+                href="https://ericsj.xyz/zh-tw/web3/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/categories/"
+                href="https://ericsj.xyz/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/categories/"
+                href="https://ericsj.xyz/zh-tw/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%88%A9%E6%B6%A6/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/</loc>
+    <lastmod>2026-07-18T20:20:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://ericsj.xyz/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://ericsj.xyz/zh-tw/categories/"
+                />
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%88%A9%E6%B6%A6/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E9%93%BE%E4%B8%8A%E8%B4%A2%E6%8A%A5/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/onchain-financials/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/onchain-financials/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E6%94%B6%E5%85%A5/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E6%94%B6%E5%85%A5/</loc>
     <lastmod>2026-07-18T20:20:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/</loc>
     <lastmod>2026-07-16T22:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/stocks/"
+                href="https://ericsj.xyz/zh-cn/stocks/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/stocks/"
+                href="https://ericsj.xyz/zh-tw/stocks/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/2026-07-16-binance-345382525384738/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/2026-07-16-binance-345382525384738/</loc>
     <lastmod>2026-07-16T22:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</loc>
     <lastmod>2026-07-16T22:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/earnings/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/earnings/</loc>
     <lastmod>2026-07-16T22:45:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/base/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/base/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tether/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tether/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2026-07-15-binance-344877025391106/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2026-07-15-binance-344877025391106/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/thesis/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/thesis/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%8E%B0%E9%87%91%E6%B5%81/</loc>
     <lastmod>2026-07-15T12:28:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/2026-07-11-binance-343456542109922/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/2026-07-11-binance-343456542109922/</loc>
     <lastmod>2026-07-11T12:08:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/aave/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/aave/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ethena/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ethena/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ethereum/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ethereum/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/perp-dex/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/perp-dex/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/solana/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/solana/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/usdc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/usdc/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/usdt/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/usdt/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/%E4%BB%8E%E4%BA%A4%E6%98%93%E8%B4%B9%E5%88%B0%E7%A8%B3%E5%AE%9A%E5%B8%81web3%E5%95%86%E4%B8%9A%E6%A8%A1%E5%BC%8F%E8%83%8C%E5%90%8E%E7%9A%84%E6%94%B6%E5%85%A5%E9%A9%B1%E5%8A%A8%E5%8A%9B%E4%B8%8E%E6%8A%A4%E5%9F%8E%E6%B2%B3/</loc>
     <lastmod>2026-07-10T00:34:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/%E4%BB%8Ehyperliquid%E5%88%B0tetherweb3%E5%B7%B2%E9%AA%8C%E8%AF%81%E7%9A%845%E5%BC%A0%E7%8E%B0%E9%87%91%E6%B5%81%E8%A1%A8/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/%E4%BB%8Ehyperliquid%E5%88%B0tetherweb3%E5%B7%B2%E9%AA%8C%E8%AF%81%E7%9A%845%E5%BC%A0%E7%8E%B0%E9%87%91%E6%B5%81%E8%A1%A8/</loc>
     <lastmod>2026-07-06T14:34:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/nike/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/nike/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/nike%E7%9B%B4%E8%90%A5%E9%80%80%E6%BD%AE%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/nke/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/nke/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%BF%BB%E4%BA%86%E4%B8%80%E4%B8%8B/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%88%86%E9%94%80/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E9%94%80%E6%B8%A0%E9%81%93%E9%87%8D%E6%96%B0%E4%B8%8A%E6%A1%8C/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E4%B8%AA%E8%82%A1%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/company/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/company/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E4%BC%B0%E5%80%BC/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E4%BC%B0%E5%80%BC/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%BE%8E%E8%82%A1/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E8%82%A1/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%9B%B4%E8%90%A5/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%9B%B4%E8%90%A5/</loc>
     <lastmod>2026-07-02T12:04:58+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/mu/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/mu/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/muusdt/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/muusdt/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%8F%98%E4%BA%86/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%8F%98%E4%BA%86/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E6%8A%A4%E5%9F%8E%E6%B2%B3/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%BE%8E%E5%85%89/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%BE%8E%E5%85%89/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/%E7%BE%8E%E5%85%89mu%E5%8F%98%E4%BA%86/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/%E7%BE%8E%E5%85%89mu%E5%8F%98%E4%BA%86/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
     <lastmod>2026-06-25T13:22:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/solana%E6%96%B0%E5%91%A8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%89%B9%E5%8F%AF%E8%83%BD%E8%A2%AB%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BB%B7%E7%9A%84%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</loc>
     <lastmod>2026-06-24T19:21:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2026-06-24T19:21:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/sector/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/sector/</loc>
     <lastmod>2026-06-24T19:21:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E4%BA%A4%E6%98%93%E6%89%80/</loc>
     <lastmod>2026-06-24T19:21:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%94%9F%E6%80%81%E8%B5%84%E4%BA%A7/</loc>
     <lastmod>2026-06-24T19:21:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/coinbase/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/coinbase/</loc>
     <lastmod>2026-06-20T18:02:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/dex/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/dex/</loc>
     <lastmod>2026-06-20T18:02:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/perp/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/perp/</loc>
     <lastmod>2026-06-20T18:02:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/perp-dex%E4%B8%8B%E4%B8%80%E4%BB%A3%E4%BA%A4%E6%98%93%E6%89%80%E6%88%98%E4%BA%89/</loc>
     <lastmod>2026-06-20T18:02:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ai/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ai/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/gpu/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/gpu/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/jbl/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/jbl/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/%E5%B8%82%E5%9C%BA%E8%BF%98%E5%9C%A8%E6%8A%8Ajbl%E5%BD%93%E4%BB%A3%E5%B7%A5%E5%8E%82%E4%BD%86%E5%AE%83%E5%8F%AF%E8%83%BD%E6%AD%A3%E5%9C%A8%E5%8F%98%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E5%BB%BA%E9%93%B2%E5%AD%90%E8%82%A1/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/%E5%B8%82%E5%9C%BA%E8%BF%98%E5%9C%A8%E6%8A%8Ajbl%E5%BD%93%E4%BB%A3%E5%B7%A5%E5%8E%82%E4%BD%86%E5%AE%83%E5%8F%AF%E8%83%BD%E6%AD%A3%E5%9C%A8%E5%8F%98%E6%88%90%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9F%BA%E5%BB%BA%E9%93%B2%E5%AD%90%E8%82%A1/</loc>
     <lastmod>2026-06-18T23:01:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/spacex/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/spacex/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/spacex%E4%BC%B0%E5%80%BC%E4%BA%89%E8%AE%AE%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E8%BF%98%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BF%A1%E4%BB%B0%E6%BA%A2%E4%BB%B7/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%90%8C%E6%A0%B7%E4%B8%80%E4%B8%AA%E4%BA%8F%E6%8D%9F%E9%A1%B9%E7%9B%AE/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E8%BF%99%E6%98%AF%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8B%B1%E4%BC%9F%E8%BE%BE/</loc>
     <lastmod>2026-06-17T22:09:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/coinbase%E5%88%86%E5%8F%91%E6%9D%83/</loc>
     <lastmod>2026-06-16T20:41:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/coinbase%E5%88%86%E5%8F%91%E6%9D%83base%E7%9C%9F%E6%AD%A3%E6%8A%A4%E5%9F%8E%E6%B2%B3%E6%98%AF%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</loc>
     <lastmod>2026-06-16T20:41:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%88%86%E5%8F%91/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%88%86%E5%8F%91/</loc>
     <lastmod>2026-06-16T20:41:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%85%A5%E5%8F%A3%E5%9E%84%E6%96%AD/</loc>
     <lastmod>2026-06-16T20:41:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/rwa/</loc>
     <lastmod>2026-06-11T14:07:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/rwa%E6%8A%A5%E5%91%8A%E8%B5%9B%E9%81%93%E7%9A%84%E5%8F%99%E4%BA%8B%E6%BC%94%E8%BF%9B%E4%B8%8E%E5%A2%9E%E9%95%BF%E5%91%A8%E6%9C%9F/</loc>
     <lastmod>2026-06-11T14:07:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/btc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/btc/</loc>
     <lastmod>2026-06-05T17:45:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tigr/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tigr/</loc>
     <lastmod>2026-06-05T17:45:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E8%B4%A2%E6%8A%A5%E5%88%86%E6%9E%90/</loc>
     <lastmod>2026-06-05T17:45:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/2026-06-05-tiger-brokers-earnings-4/</loc>
     <lastmod>2026-06-05T17:45:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ebay/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ebay/</loc>
     <lastmod>2026-06-05T12:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/gme/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/gme/</loc>
     <lastmod>2026-06-05T12:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99/</loc>
     <lastmod>2026-06-05T12:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99%E5%8E%86%E5%8F%B2%E6%9C%80%E9%AB%98%E5%AD%A3%E5%BA%A6%E5%87%80%E5%88%A9%E4%BD%86%E9%92%B1%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/%E6%B8%B8%E6%88%8F%E9%A9%BF%E7%AB%99%E5%8E%86%E5%8F%B2%E6%9C%80%E9%AB%98%E5%AD%A3%E5%BA%A6%E5%87%80%E5%88%A9%E4%BD%86%E9%92%B1%E4%BB%8E%E5%93%AA%E9%87%8C%E6%9D%A5/</loc>
     <lastmod>2026-06-05T12:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-30-6/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-30-6/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/atom/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/atom/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/cess/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/cess/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ibc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ibc/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ice/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ice/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/l1/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/l1/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/l2/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/l2/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/op/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/op/</loc>
     <lastmod>2025-03-30T19:40:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-27-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-27-rwa/</loc>
     <lastmod>2025-03-27T14:47:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/parti/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/parti/</loc>
     <lastmod>2025-03-26T20:30:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-26-binance-22067731207393/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-26-binance-22067731207393/</loc>
     <lastmod>2025-03-26T20:30:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/evm/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/evm/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tps/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tps/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-25-pharos-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-25-pharos-rwa/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/categories/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</loc>
+    <loc>https://ericsj.xyz/zh-cn/categories/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/projects/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/projects/</loc>
     <lastmod>2025-03-25T18:15:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-22-binance-21890984752466/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-22-binance-21890984752466/</loc>
     <lastmod>2025-03-22T20:37:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-22-launchpool-nillion/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-22-launchpool-nillion/</loc>
     <lastmod>2025-03-22T01:52:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/svm/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/svm/</loc>
     <lastmod>2025-03-19T20:12:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-19-sonic/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-19-sonic/</loc>
     <lastmod>2025-03-19T20:12:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-18-binance-21702982030618/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-18-binance-21702982030618/</loc>
     <lastmod>2025-03-18T14:37:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-15-binance-21576651114778/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-15-binance-21576651114778/</loc>
     <lastmod>2025-03-15T18:04:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-14-zksync-20/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-14-zksync-20/</loc>
     <lastmod>2025-03-14T20:45:45+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/inj/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/inj/</loc>
     <lastmod>2025-03-10T19:28:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/pos/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/pos/</loc>
     <lastmod>2025-03-10T19:28:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-10-2025-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-10-2025-rwa/</loc>
     <lastmod>2025-03-10T19:28:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-10-web3-pmf/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-10-web3-pmf/</loc>
     <lastmod>2025-03-10T00:49:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/arbitrum/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/arbitrum/</loc>
     <lastmod>2025-03-09T18:49:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/rollup/</loc>
     <lastmod>2025-03-09T18:49:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-09-base-arbitrum/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-09-base-arbitrum/</loc>
     <lastmod>2025-03-09T18:49:27+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-03-07-gps/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-03-07-gps/</loc>
     <lastmod>2025-03-07T01:36:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/2025-03-02-nvidia-nvda-gpu/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/2025-03-02-nvidia-nvda-gpu/</loc>
     <lastmod>2025-03-02T19:20:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-28-24-myshell-binance/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-28-24-myshell-binance/</loc>
     <lastmod>2025-02-28T18:55:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-28-roam-tge/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-28-roam-tge/</loc>
     <lastmod>2025-02-28T12:10:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-26-solana-time-fun/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-26-solana-time-fun/</loc>
     <lastmod>2025-02-26T17:39:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-23-12-tge/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-23-12-tge/</loc>
     <lastmod>2025-02-23T19:32:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-20-atom/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-20-atom/</loc>
     <lastmod>2025-02-20T18:41:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/q4/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/q4/</loc>
     <lastmod>2025-02-18T11:43:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/yz/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/yz/</loc>
     <lastmod>2025-02-18T11:43:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E9%80%BB%E8%BE%91%E6%8B%86%E8%A7%A3/</loc>
     <lastmod>2025-02-18T11:43:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-18-binance-20459006834586/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-18-binance-20459006834586/</loc>
     <lastmod>2025-02-18T11:43:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-14-opensea/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-14-opensea/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/nft/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/nft/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/okx/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/okx/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/sec/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/sec/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tge/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tge/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/trump/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/trump/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/</loc>
     <lastmod>2025-02-14T18:09:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/eigen/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/eigen/</loc>
     <lastmod>2025-02-13T21:35:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/layer/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/layer/</loc>
     <lastmod>2025-02-13T21:35:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-13-solayer/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-13-solayer/</loc>
     <lastmod>2025-02-13T21:35:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/bep-20/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/bep-20/</loc>
     <lastmod>2025-02-13T17:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/bnb/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/bnb/</loc>
     <lastmod>2025-02-13T17:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/bnbc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/bnbc/</loc>
     <lastmod>2025-02-13T17:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tmd/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tmd/</loc>
     <lastmod>2025-02-13T17:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-13-tmd/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-13-tmd/</loc>
     <lastmod>2025-02-13T17:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-12-pi-network/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-12-pi-network/</loc>
     <lastmod>2025-02-12T12:55:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-08-solana-pump-fun2-0-pumpkin-fun/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-08-solana-pump-fun2-0-pumpkin-fun/</loc>
     <lastmod>2025-02-08T16:46:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-06-megaeth/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-06-megaeth/</loc>
     <lastmod>2025-02-06T19:07:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-05-depin-bless-nnapp/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-05-depin-bless-nnapp/</loc>
     <lastmod>2025-02-05T18:46:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-04-odin-fun/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-04-odin-fun/</loc>
     <lastmod>2025-02-04T20:36:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-03-yzi-labs/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-03-yzi-labs/</loc>
     <lastmod>2025-02-03T17:07:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-02-01-aethir-gpu-nodefi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-02-01-aethir-gpu-nodefi/</loc>
     <lastmod>2025-02-01T19:44:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-29-desci/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-29-desci/</loc>
     <lastmod>2025-01-29T19:49:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-24-binance-19355006124497/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-24-binance-19355006124497/</loc>
     <lastmod>2025-01-24T12:45:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-22-booster-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-22-booster-rollup/</loc>
     <lastmod>2025-01-22T19:04:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-21-3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-21-3/</loc>
     <lastmod>2025-01-21T18:47:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-13-binance-18845998934201/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-13-binance-18845998934201/</loc>
     <lastmod>2025-01-13T00:36:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-12-ai/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-12-ai/</loc>
     <lastmod>2025-01-12T18:44:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ena/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ena/</loc>
     <lastmod>2025-01-08T23:55:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-08-solv/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-08-solv/</loc>
     <lastmod>2025-01-08T23:55:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-08-depin-multiple/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-08-depin-multiple/</loc>
     <lastmod>2025-01-08T19:30:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-06-pow-4/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-06-pow-4/</loc>
     <lastmod>2025-01-06T16:29:55+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2025-01-01-20/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2025-01-01-20/</loc>
     <lastmod>2025-01-01T17:58:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-30-solana-l2/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-30-solana-l2/</loc>
     <lastmod>2024-12-30T21:31:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-30-binance-18259219945938/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-30-binance-18259219945938/</loc>
     <lastmod>2024-12-30T18:15:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/depin/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/depin/</loc>
     <lastmod>2024-12-30T14:06:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-30-roam/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-30-roam/</loc>
     <lastmod>2024-12-30T14:06:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-29-dappos-30/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-29-dappos-30/</loc>
     <lastmod>2024-12-29T15:27:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-28-binance-18175601282290/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-28-binance-18175601282290/</loc>
     <lastmod>2024-12-28T20:53:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-26-bio-before-launch/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-26-bio-before-launch/</loc>
     <lastmod>2024-12-26T23:50:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-20-compute-decentralized-depin-spheron-ai/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-20-compute-decentralized-depin-spheron-ai/</loc>
     <lastmod>2024-12-20T19:12:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-20-pengu/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-20-pengu/</loc>
     <lastmod>2024-12-20T01:21:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-19-cat/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-19-cat/</loc>
     <lastmod>2024-12-19T01:01:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/koma/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/koma/</loc>
     <lastmod>2024-12-18T21:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/shib/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/shib/</loc>
     <lastmod>2024-12-18T21:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-18-alpha-10/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-18-alpha-10/</loc>
     <lastmod>2024-12-18T21:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-18-binance-17718746563425/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-18-binance-17718746563425/</loc>
     <lastmod>2024-12-18T13:02:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-17-rwa-plume-l2-l1/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-17-rwa-plume-l2-l1/</loc>
     <lastmod>2024-12-17T20:20:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-16-depin-roam/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-16-depin-roam/</loc>
     <lastmod>2024-12-16T19:30:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-14-eth/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-14-eth/</loc>
     <lastmod>2024-12-14T18:27:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-10-move/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-10-move/</loc>
     <lastmod>2024-12-10T23:47:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-12-05-11-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-12-05-11-web3/</loc>
     <lastmod>2024-12-05T15:00:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/app/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/app/</loc>
     <lastmod>2024-11-28T12:43:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/dexx/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/dexx/</loc>
     <lastmod>2024-11-28T12:43:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ipo/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ipo/</loc>
     <lastmod>2024-11-28T12:43:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/roi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/roi/</loc>
     <lastmod>2024-11-28T12:43:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-28-binance-16833428227482/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-28-binance-16833428227482/</loc>
     <lastmod>2024-11-28T12:43:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-25-raas-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-25-raas-rollup/</loc>
     <lastmod>2024-11-25T15:15:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-20-contentos/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-20-contentos/</loc>
     <lastmod>2024-11-20T23:58:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/cos.tv/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/cos.tv/</loc>
     <lastmod>2024-11-20T23:58:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96/</loc>
     <lastmod>2024-11-20T23:58:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-19-binance-16447078772234/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-19-binance-16447078772234/</loc>
     <lastmod>2024-11-19T19:06:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-17-dexx/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-17-dexx/</loc>
     <lastmod>2024-11-17T20:35:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/bb/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/bb/</loc>
     <lastmod>2024-11-16T19:29:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-16-btc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-16-btc/</loc>
     <lastmod>2024-11-16T19:29:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-13-ai/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-13-ai/</loc>
     <lastmod>2024-11-13T20:54:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/apt/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/apt/</loc>
     <lastmod>2024-11-12T14:17:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/move/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/move/</loc>
     <lastmod>2024-11-12T14:17:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/sui/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/sui/</loc>
     <lastmod>2024-11-12T14:17:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-12-sui-aptos/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-12-sui-aptos/</loc>
     <lastmod>2024-11-12T14:17:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/vs/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/vs/</loc>
     <lastmod>2024-11-10T01:31:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/xion/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/xion/</loc>
     <lastmod>2024-11-10T01:31:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-10-particle-network-vs-xion/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-10-particle-network-vs-xion/</loc>
     <lastmod>2024-11-10T01:31:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-09-binance-16011690288313/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-09-binance-16011690288313/</loc>
     <lastmod>2024-11-09T22:53:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-08-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-08-web3/</loc>
     <lastmod>2024-11-08T17:16:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/gpt/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/gpt/</loc>
     <lastmod>2024-11-07T19:24:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-07-depin-aethir/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-07-depin-aethir/</loc>
     <lastmod>2024-11-07T19:24:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E7%AE%97%E5%8A%9B/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E7%AE%97%E5%8A%9B/</loc>
     <lastmod>2024-11-07T19:24:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/doge/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/doge/</loc>
     <lastmod>2024-11-05T18:39:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/meme/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/meme/</loc>
     <lastmod>2024-11-05T18:39:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-05-meme-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-05-meme-web3/</loc>
     <lastmod>2024-11-05T18:39:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/bft/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/bft/</loc>
     <lastmod>2024-11-03T20:08:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/gas/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/gas/</loc>
     <lastmod>2024-11-03T20:08:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-11-03-xion-usdc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-11-03-xion-usdc/</loc>
     <lastmod>2024-11-03T20:08:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-10-30-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-10-30-web3/</loc>
     <lastmod>2024-10-30T13:46:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-10-27-etf/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-10-27-etf/</loc>
     <lastmod>2024-10-27T19:31:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-10-24-binance-15296812313273/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-10-24-binance-15296812313273/</loc>
     <lastmod>2024-10-24T19:03:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-10-21-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-10-21-web3/</loc>
     <lastmod>2024-10-21T20:23:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-10-13-lista/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-10-13-lista/</loc>
     <lastmod>2024-10-13T23:39:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-27-binance-14105245362530/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-27-binance-14105245362530/</loc>
     <lastmod>2024-09-27T20:35:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/alt/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/alt/</loc>
     <lastmod>2024-09-24T18:38:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/dodo/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/dodo/</loc>
     <lastmod>2024-09-24T18:38:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-24-raas-dodo-layer3-dex/</loc>
     <lastmod>2024-09-24T18:38:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-23-binance-13926280647121/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-23-binance-13926280647121/</loc>
     <lastmod>2024-09-23T19:29:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-19-binance-13744790462138/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-19-binance-13744790462138/</loc>
     <lastmod>2024-09-19T17:01:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-14-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-14-rwa/</loc>
     <lastmod>2024-09-14T15:12:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tvl/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tvl/</loc>
     <lastmod>2024-09-14T15:12:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/%E6%9D%BF%E5%9D%97%E7%A0%94%E7%A9%B6/</loc>
     <lastmod>2024-09-14T15:12:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/p2p/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/p2p/</loc>
     <lastmod>2024-09-06T19:26:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-06-binance-13174154059842/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-06-binance-13174154059842/</loc>
     <lastmod>2024-09-06T19:26:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-09-03-binance-13039047414793/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-09-03-binance-13039047414793/</loc>
     <lastmod>2024-09-03T18:08:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/goat/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/goat/</loc>
     <lastmod>2024-08-31T18:45:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-31-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-31-rollup/</loc>
     <lastmod>2024-08-31T18:45:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-28-move-aptos-sui-linera/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-28-move-aptos-sui-linera/</loc>
     <lastmod>2024-08-28T19:36:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-25-telegram-ton/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-25-telegram-ton/</loc>
     <lastmod>2024-08-25T11:33:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-19-23/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-19-23/</loc>
     <lastmod>2024-08-19T19:35:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-15-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-15-web3/</loc>
     <lastmod>2024-08-15T23:13:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-14-launchpool/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-14-launchpool/</loc>
     <lastmod>2024-08-14T17:04:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-09-4/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-09-4/</loc>
     <lastmod>2024-08-09T19:47:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/zkx/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/zkx/</loc>
     <lastmod>2024-08-02T14:17:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-08-02-binance-11616385257482/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-08-02-binance-11616385257482/</loc>
     <lastmod>2024-08-02T14:17:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ace/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ace/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-29-layer1-4/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-29-layer1-4/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ron/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ron/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/saga/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/saga/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/vc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/vc/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/xpla/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/xpla/</loc>
     <lastmod>2024-07-29T23:04:17+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-27-particle/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-27-particle/</loc>
     <lastmod>2024-07-27T17:58:16+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-23-nostr-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-23-nostr-web3/</loc>
     <lastmod>2024-07-23T19:09:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-20-binance-11049412403385/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-20-binance-11049412403385/</loc>
     <lastmod>2024-07-20T18:41:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/l2tvl/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/l2tvl/</loc>
     <lastmod>2024-07-18T20:13:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-18-binance-10963777184553/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-18-binance-10963777184553/</loc>
     <lastmod>2024-07-18T20:13:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-14-binance-10782364618081/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-14-binance-10782364618081/</loc>
     <lastmod>2024-07-14T17:48:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-13-binance-10742929891906/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-13-binance-10742929891906/</loc>
     <lastmod>2024-07-13T20:24:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/sol/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/sol/</loc>
     <lastmod>2024-07-12T20:42:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/tg/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/tg/</loc>
     <lastmod>2024-07-12T20:42:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-12-binance-10699250167482/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-12-binance-10699250167482/</loc>
     <lastmod>2024-07-12T20:42:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-07-apple-vision/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-07-apple-vision/</loc>
     <lastmod>2024-07-07T18:27:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-06-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-06-rollup/</loc>
     <lastmod>2024-07-06T18:15:06+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-03-layer2-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-03-layer2-rollup/</loc>
     <lastmod>2024-07-03T18:43:46+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-07-02-web3-10/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-07-02-web3-10/</loc>
     <lastmod>2024-07-02T18:31:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-06-22-binance-9806449058369/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-06-22-binance-9806449058369/</loc>
     <lastmod>2024-06-22T16:20:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/dao/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/dao/</loc>
     <lastmod>2024-06-13T15:57:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/pow/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/pow/</loc>
     <lastmod>2024-06-13T15:57:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-06-13-x-to-earn/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-06-13-x-to-earn/</loc>
     <lastmod>2024-06-13T15:57:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-06-10-bnb-makerdao-lista-ena-luna/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-06-10-bnb-makerdao-lista-ena-luna/</loc>
     <lastmod>2024-06-10T21:00:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-06-07-web3-6-6800/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-06-07-web3-6-6800/</loc>
     <lastmod>2024-06-07T23:31:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/brc-20/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/brc-20/</loc>
     <lastmod>2024-06-01T21:22:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-06-01-btc-l2-0-1/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-06-01-btc-l2-0-1/</loc>
     <lastmod>2024-06-01T21:22:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/og/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/og/</loc>
     <lastmod>2024-06-01T21:22:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-05-24-defi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-05-24-defi/</loc>
     <lastmod>2024-05-24T18:53:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-05-10-bouncebit-btc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-05-10-bouncebit-btc/</loc>
     <lastmod>2024-05-10T20:46:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/lsdfi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/lsdfi/</loc>
     <lastmod>2024-05-10T20:46:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-05-09-3-binance-megadrop/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-05-09-3-binance-megadrop/</loc>
     <lastmod>2024-05-09T19:15:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-05-08-web3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-05-08-web3/</loc>
     <lastmod>2024-05-08T18:04:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-04-26-renzo-lrt-lsdfi-53/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-04-26-renzo-lrt-lsdfi-53/</loc>
     <lastmod>2024-04-26T15:39:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-04-12-omni-52/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-04-12-omni-52/</loc>
     <lastmod>2024-04-12T17:32:50+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-04-06-51-saga/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-04-06-51-saga/</loc>
     <lastmod>2024-04-06T19:22:05+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/fil/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/fil/</loc>
     <lastmod>2024-03-31T13:25:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-31-depin/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-31-depin/</loc>
     <lastmod>2024-03-31T13:25:56+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/eth/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/eth/</loc>
     <lastmod>2024-03-30T18:16:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/lsd/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/lsd/</loc>
     <lastmod>2024-03-30T18:16:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/lsdf/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/lsdf/</loc>
     <lastmod>2024-03-30T18:16:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/usd/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/usd/</loc>
     <lastmod>2024-03-30T18:16:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-30-binance-50-ethena/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-30-binance-50-ethena/</loc>
     <lastmod>2024-03-30T18:16:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/buidl/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/buidl/</loc>
     <lastmod>2024-03-29T19:47:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/cmc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/cmc/</loc>
     <lastmod>2024-03-29T19:47:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/neopin/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/neopin/</loc>
     <lastmod>2024-03-29T19:47:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-29-neopin-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-29-neopin-rwa/</loc>
     <lastmod>2024-03-29T19:47:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-29-binance-6049434708210/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-29-binance-6049434708210/</loc>
     <lastmod>2024-03-29T18:01:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-26-binance-5919135623178/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-26-binance-5919135623178/</loc>
     <lastmod>2024-03-26T19:20:11+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-25-chainzoom/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-25-chainzoom/</loc>
     <lastmod>2024-03-25T23:56:22+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-23-3-2-q2-tge/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-23-3-2-q2-tge/</loc>
     <lastmod>2024-03-23T23:49:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-15-binance-49-ether-fi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-15-binance-49-ether-fi/</loc>
     <lastmod>2024-03-15T20:19:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/aevo/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/aevo/</loc>
     <lastmod>2024-03-10T18:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/da/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/da/</loc>
     <lastmod>2024-03-10T18:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/manta/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/manta/</loc>
     <lastmod>2024-03-10T18:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-03-10-48-aevo-rollup/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-03-10-48-aevo-rollup/</loc>
     <lastmod>2024-03-10T18:37:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-29-ace-2-0-bnb/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-29-ace-2-0-bnb/</loc>
     <lastmod>2024-02-29T19:18:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-24-binance-portal/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-24-binance-portal/</loc>
     <lastmod>2024-02-24T17:36:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/pixel/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/pixel/</loc>
     <lastmod>2024-02-24T17:36:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-24-smart-layer-rwa/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-24-smart-layer-rwa/</loc>
     <lastmod>2024-02-24T16:59:43+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-22-eth-l2/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-22-eth-l2/</loc>
     <lastmod>2024-02-22T23:21:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/arb/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/arb/</loc>
     <lastmod>2024-02-20T22:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/l3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/l3/</loc>
     <lastmod>2024-02-20T22:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/pua/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/pua/</loc>
     <lastmod>2024-02-20T22:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-20-starknet-arb/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-20-starknet-arb/</loc>
     <lastmod>2024-02-20T22:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/strk/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/strk/</loc>
     <lastmod>2024-02-20T22:05:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/api3/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/api3/</loc>
     <lastmod>2024-02-04T17:40:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/link/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/link/</loc>
     <lastmod>2024-02-04T17:40:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/pyth/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/pyth/</loc>
     <lastmod>2024-02-04T17:40:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/uma/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/uma/</loc>
     <lastmod>2024-02-04T17:40:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-02-04-link/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-02-04-link/</loc>
     <lastmod>2024-02-04T17:40:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-01-18-l2-manta/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-01-18-l2-manta/</loc>
     <lastmod>2024-01-18T21:01:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2024-01-13-layer2-metis-l2/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2024-01-13-layer2-metis-l2/</loc>
     <lastmod>2024-01-13T23:10:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-31-2023-2024/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-31-2023-2024/</loc>
     <lastmod>2023-12-31T23:24:33+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-31-manta-network/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-31-manta-network/</loc>
     <lastmod>2023-12-31T11:03:42+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/arc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/arc/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/brc20/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/brc20/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/orc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/orc/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/ordi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/ordi/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/tags/sats/</loc>
+    <loc>https://ericsj.xyz/zh-cn/tags/sats/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-15-20ex-ordi-sats/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-15-20ex-ordi-sats/</loc>
     <lastmod>2023-12-15T16:04:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-14-ice/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-14-ice/</loc>
     <lastmod>2023-12-14T19:57:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-11-defi/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-11-defi/</loc>
     <lastmod>2023-12-11T16:35:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-09-binance-1140158014705/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-09-binance-1140158014705/</loc>
     <lastmod>2023-12-09T18:34:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/web3/2023-12-06-btc/</loc>
+    <loc>https://ericsj.xyz/zh-cn/web3/2023-12-06-btc/</loc>
     <lastmod>2023-12-06T12:30:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/author/</loc>
+    <loc>https://ericsj.xyz/zh-cn/author/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/author/eric-sj/</loc>
+    <loc>https://ericsj.xyz/zh-cn/author/eric-sj/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/stocks/industry/</loc>
+    <loc>https://ericsj.xyz/zh-cn/stocks/industry/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/about/</loc>
+    <loc>https://ericsj.xyz/zh-cn/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/about/"
+                href="https://ericsj.xyz/zh-cn/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/about/"
+                href="https://ericsj.xyz/zh-tw/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/disclosure/</loc>
+    <loc>https://ericsj.xyz/zh-cn/disclosure/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/disclosure/"
+                href="https://ericsj.xyz/zh-cn/disclosure/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/disclosure/"
+                href="https://ericsj.xyz/zh-tw/disclosure/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/search/</loc>
+    <loc>https://ericsj.xyz/zh-cn/search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>http://localhost:1313/zh-cn/articles/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/articles/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/articles/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/privacy/</loc>
+    <loc>https://ericsj.xyz/zh-cn/articles/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/privacy/"
+                href="https://ericsj.xyz/zh-cn/articles/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/privacy/"
+                href="https://ericsj.xyz/zh-tw/articles/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh-cn/guides/</loc>
+    <loc>https://ericsj.xyz/zh-cn/privacy/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
-                href="http://localhost:1313/zh-cn/guides/"
+                href="https://ericsj.xyz/zh-cn/privacy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
-                href="http://localhost:1313/zh-tw/guides/"
+                href="https://ericsj.xyz/zh-tw/privacy/"
+                />
+  </url><url>
+    <loc>https://ericsj.xyz/zh-cn/guides/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://ericsj.xyz/zh-cn/guides/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://ericsj.xyz/zh-tw/guides/"
                 />
   </url>
 </urlset>
