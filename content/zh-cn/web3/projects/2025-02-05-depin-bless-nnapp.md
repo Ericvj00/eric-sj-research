@@ -16,21 +16,34 @@ source: "Binance Square"
 source_url: "https://www.binance.com/zh-CN/square/post/19896922916929"
 cover: "/images/covers/2025-02-05-depin-bless-nnapp-cover-fill.png"
 seo_geo_status: "处理失败"
-summary: "Bless以共享计算节点为nnAPP提供随用户增长扩展的算力，低门槛节点网络带来冷启动优势，也需要真实应用消化供给。"
-description: "Bless以共享计算节点为nnAPP提供随用户增长扩展的算力，低门槛节点网络带来冷启动优势，也需要真实应用消化供给。这种应用构建思路很新颖，也是我在Bless这个项目上面所看到的亮点，它能做到这一点的原因也是和之前的业务主线有关系，Bless是后来才转向的DePIN赛道并迅速实现快速的增长。"
+summary: "Bless用浏览器节点组织闲置算力，并通过nnAPP让应用随用户增长获得计算资源，需求验证仍是关键。"
+description: "Bless以共享计算节点和浏览器插件切入DePIN算力市场，提出nnAPP应用范式，让用户访问应用时同步提供计算能力。文章重点评估低门槛节点、供需匹配和真实应用消化能力。"
 key_points:
-  - "这种应用构建思路很新颖，也是我在Bless这个项目上面所看到的亮点，它能做到这一点的原因也是和之前的业务主线有关系，Bless是后来才转向的DePIN赛道并迅速实现快速的增长。"
-  - "顺带也调了一下目前市场上未TGE且同模式的DePIN项目，Bless是在近期就有空投预期的项目。"
-  - "一款nnAPP会因为用户的增长而拥有更高的计算能力。"
-  - "因此预期中Bless也应该有非常多的节点，他们自己是宣称每天有超过百万个以上的节点在运行。"
-seo_keywords: []
+  - "Bless的核心不是单纯挂机，而是用大量低门槛浏览器节点组织闲置计算资源。"
+  - "nnAPP让应用在用户访问时获得计算能力，试图把用户增长转化为算力增长。"
+  - "低门槛节点有利于网络冷启动，但长期价值取决于是否存在真实应用需求。"
+  - "DePIN项目不能只看节点数量，还要看资源供给能否被下游任务持续消化。"
+seo_keywords:
+  - "Bless"
+  - "DePIN"
+  - "nnAPP"
+  - "共享计算"
+  - "浏览器节点"
+  - "闲置算力"
+  - "Solana"
+  - "空投"
 tags: []
-faq: []
+faq:
+  - question: "Bless的nnAPP是什么？"
+    answer: "文章解释，nnAPP是一种应用范式，用户打开应用时会为应用提供算力支持，使应用计算能力随用户增长而扩展。"
+  - question: "Bless为什么属于DePIN项目？"
+    answer: "因为Bless通过浏览器插件节点聚合闲置计算资源，再把这些资源分配给有计算需求的应用。"
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "032"
 subcategory: "项目分析"
+
 ---
 
 ## 正文

@@ -16,21 +16,34 @@ source: "Binance Square"
 source_url: "https://www.binance.com/zh-CN/square/post/17642205995074"
 cover: "/images/covers/2024-12-16-depin-roam-cover-fill.png"
 seo_geo_status: "处理失败"
-summary: "Roam以免费WiFi、硬件节点和代币激励连接无线网络供需，设备规模领先，但长期价值仍取决于补贴退坡后的自给能力。"
-description: "Roam通过硬件节点、WiFi地图、eSIM和代币激励构建全球无线网络，设备数量在DePIN项目中居前。其供需循环依赖免费连接和用户激励，网络扩张能否逐步摆脱补贴并形成持续的资源供给与运营收益，是长期价值的关键。"
+summary: "Roam以开放无线网络和硬件节点切入DePIN，设备规模领先后仍需验证补贴退坡后的自给能力。"
+description: "Roam通过免费WiFi、硬件节点和代币激励构建开放式无线网络。文章重点讨论DePIN设备规模、网络效应、用户增长、激励补贴和长期商业可持续性。"
 key_points:
-  - "但在日渐降低的网络费用面前，一个分布式的无线网络并不是其最核心的亮点，在 Web3 市场 中，在用户无门槛使用的商业模式下，安全性和隐私是一种始终都不会错的战略目标。"
-  - "能够实际供应资源+切实的下游需求+代币激励=合理的 DePIN 供需市场。"
-  - "根据 depinscan 上的数据，DePIN 在大约 196 个国家或地区共有近 410 万台设备，市值达到了870 万美元，其中 Roam占据的 DePIN 设备数量是最多的，有 93 万台。"
-  - "之前我曾就这个论点发表过 AI+Web3 为什么会大行其道的观点，其中有一点在DePIN 以及Roam上面是适用的:Web3 的通证经济革新了一个供需市场的各方利益。"
-seo_keywords: []
+  - "Roam的优势在于设备数量和开放无线网络覆盖，具备较强的DePIN冷启动基础。"
+  - "免费WiFi与硬件节点能快速扩大网络，但补贴退坡后仍需要真实使用需求支撑。"
+  - "DePIN网络不能只看节点规模，还要看供给是否带来稳定服务和可持续收入。"
+  - "Roam长期价值取决于用户、设备和商业合作能否形成正向循环。"
+seo_keywords:
+  - "Roam"
+  - "DePIN"
+  - "开放无线网络"
+  - "WiFi"
+  - "硬件节点"
+  - "设备网络"
+  - "Web3基础设施"
+  - "代币激励"
 tags: []
-faq: []
+faq:
+  - question: "Roam为什么属于DePIN项目？"
+    answer: "文章认为Roam通过硬件节点和开放无线网络提供现实世界连接服务，符合DePIN资源网络逻辑。"
+  - question: "Roam最需要验证什么？"
+    answer: "需要验证设备规模之外，网络是否能在补贴下降后依靠真实用户需求和商业合作持续运转。"
 cover_status: "正常"
 summary_status: "已完成"
 key_points_status: "已完成"
 content_id: "058"
 subcategory: "项目分析"
+
 ---
 
 ## 正文

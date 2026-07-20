@@ -23,7 +23,15 @@ key_points:
   - "整体营收仍保持增长，但增速已较此前高位明显放缓。"
   - "毛利率回落主要与Blackwell新品爬坡和供应链成本有关，而非需求突然消失。"
   - "推理模型提升计算需求，DeepSeek带来的效率变化尚不足以证明GPU需求进入平台期。"
-seo_keywords: []
+seo_keywords:
+  - "英伟达"
+  - "NVDA"
+  - "GPU需求"
+  - "AI芯片"
+  - "数据中心收入"
+  - "英伟达财报"
+  - "美股财报"
+  - "GPU平台期"
 tags: []
 faq: []
 cover_status: "正常"
@@ -31,6 +39,7 @@ summary_status: "已完成"
 key_points_status: "已完成"
 content_id: "019"
 subcategory: "财报分析"
+
 ---
 
 ## 正文

@@ -1,1 +1,5 @@
 import/
+public/
+resources/
+.codex-backups/
+.hugo_build.lock

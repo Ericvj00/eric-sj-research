@@ -23,7 +23,15 @@ key_points:
   - "基于它的官方文档描述，如果对标Pump fun的历史数据标准至 2024年12月5日，Pumpkin基金的价值可能会超过5亿美元。"
   - "DEV通常无视社区，为了微薄的利润就进行代币抛售，Pumpkin引入了和市值挂钩的激励设计，以确保DEV能够以更加可持续的方式推动项目。"
   - "年初五被一个给安利了一个Solana上的代币 $PKIN ，一开始以为又是什么劳什子Meme，前几天一看才知道是Pump。"
-seo_keywords: []
+seo_keywords:
+  - "Pumpkin fun"
+  - "Pump fun2.0"
+  - "Solana Meme"
+  - "发币平台"
+  - "Meme发行"
+  - "Solana生态"
+  - "代币发行工具"
+  - "链上投机"
 tags: []
 faq: []
 key_points_status: "已完成"
@@ -31,6 +39,7 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "030"
 subcategory: "项目分析"
+
 ---
 
 ## 正文

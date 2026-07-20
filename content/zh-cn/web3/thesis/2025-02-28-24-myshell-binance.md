@@ -23,7 +23,15 @@ key_points:
   - "这些份额的市场价值根据供求关系而波动。"
   - "每个AIpp都为创作者提供优先购买权，让创作者可以以最低的成本优先赞助他们的AIpp。"
   - "出售已升值的股份可以为创作者带来即时收入，这是一种AI创作者经济货币化方法。"
-seo_keywords: []
+seo_keywords:
+  - "Myshell"
+  - "Binance上市"
+  - "AI应用"
+  - "Web3项目判断"
+  - "币安上币预期"
+  - "项目预判"
+  - "AI代理"
+  - "代币上市"
 tags: []
 faq: []
 key_points_status: "已完成"
@@ -31,6 +39,7 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "020"
 subcategory: "逻辑拆解"
+
 ---
 
 ## 正文

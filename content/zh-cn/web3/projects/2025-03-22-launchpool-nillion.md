@@ -23,7 +23,15 @@ key_points:
   - "嗯这同样也是看市场的相关消息所得出的，#nillion 空投的核心就是两个字：贡献。"
   - "喂给AI的数据，可以在保证隐私的前提下，让AI获得结果，这一个非常重要，因为目前在AI数据这一块，有非常大的falv灰色地带，Nillion其实是提供了一个解决方案的。"
   - "这就是盲计算的核心思想：在加密的数据上进行计算，得到结果后解密，从而保护数据的隐私。"
-seo_keywords: []
+seo_keywords:
+  - "Nillion"
+  - "Binance Launchpool"
+  - "隐私计算"
+  - "盲计算"
+  - "数据隐私"
+  - "去中心化计算"
+  - "AI数据隐私"
+  - "NIL代币"
 tags: []
 faq: []
 key_points_status: "已完成"
@@ -31,6 +39,7 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "010"
 subcategory: "项目分析"
+
 ---
 
 ## 正文

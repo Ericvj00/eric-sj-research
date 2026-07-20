@@ -16,21 +16,34 @@ source: "Binance Square"
 source_url: "https://www.binance.com/zh-CN/square/post/18659644442921"
 cover: "/images/covers/2025-01-08-depin-multiple-cover-fill.png"
 seo_geo_status: "处理失败"
-summary: "Multiple聚焦网络数据传输并以节点插件扩展资源供给，低门槛部署有利于规模增长，但实际传输需求仍需持续验证。"
-description: "Multiple聚焦网络数据传输并以节点插件扩展资源供给，低门槛部署有利于规模增长，但实际传输需求仍需持续验证。接着会跳转页面进行钱包的链接，因为我网页插件有小狐狸钱包，就使用小狐狸链接了，然后按照步骤完成邮箱的认证与连接以及设置好昵称即可进入到界面。需要注意的是，我们需要添加节点插件才可以。"
+summary: "Multiple聚焦数据传输网络，通过插件节点扩展资源供给，但价值兑现仍取决于真实传输需求。"
+description: "Multiple是专注数据传输领域的DePIN网络，试图通过低门槛节点和插件模式扩大资源供给。文章重点分析其网络层定位、节点参与方式、未TGE预期和需求验证问题。"
 key_points:
-  - "接着会跳转页面进行钱包的链接，因为我网页插件有小狐狸钱包，就使用小狐狸链接了，然后按照步骤完成邮箱的认证与连接以及设置好昵称即可进入到界面。"
-  - "需要注意的是，我们需要添加节点插件才可以，因此登录进去之后最上面会有个提示，我们可以跳转下载节点插件。"
-  - "高效传输这件事，也让Multiple发展AI生态提供了坚实基础，哎反正他们这些做DePIN的这会都这么说的，本身DePIN的概念，大多数也能和AI沾上关系。"
-  - "Multiple本身的概念有点抽象，我一贯不爱照搬这些生涩的技术概念进行产出。"
-seo_keywords: []
+  - "Multiple的定位不是通用算力，而是服务于数据传输领域的DePIN网络层。"
+  - "插件式节点降低了参与门槛，有助于早期扩大网络覆盖和资源供给。"
+  - "未TGE预期能带来用户增长，但不能替代真实数据传输需求的验证。"
+  - "DePIN项目长期价值取决于供给侧资源能否被下游持续调用和付费。"
+seo_keywords:
+  - "Multiple"
+  - "DePIN"
+  - "数据传输"
+  - "网络层"
+  - "插件节点"
+  - "TGE"
+  - "空投"
+  - "Web3基础设施"
 tags: []
-faq: []
+faq:
+  - question: "Multiple属于什么类型的DePIN项目？"
+    answer: "文章将Multiple定位为专注数据传输的网络层项目，而不是单纯算力或存储类DePIN。"
+  - question: "Multiple的主要观察点是什么？"
+    answer: "需要观察节点增长之外，是否有真实的数据传输需求和稳定的下游使用场景。"
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "043"
 subcategory: "项目分析"
+
 ---
 
 ## 正文

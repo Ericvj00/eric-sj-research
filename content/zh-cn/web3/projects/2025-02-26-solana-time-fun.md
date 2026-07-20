@@ -23,7 +23,15 @@ key_points:
   - "Time fun 能否在Solana上再复制一个Pump fun，难度还是非常大的，毕竟相比较Pump fun，time fun的产品逻辑还是不太够简单粗暴，市场普遍更关注投机而非所谓的价值，Pump fun的很多盘子推出一开始甚至没有推特。"
   - "平台的定价的模式有两种，一种是基于市场的定价，一种是自己定价，比如固定跟我聊天需要花费多少钱，我设置5美元每分钟就无论市场定价如何，都得支付给我每分钟5美元的报酬。"
   - "平台的联合创始人曾在公开场合表示过以太的生态系统相比Solana的整体表现是弱非常多的，即使是在相对活跃的Base也是这样。"
-seo_keywords: []
+seo_keywords:
+  - "Time fun"
+  - "Solana"
+  - "时间代币化"
+  - "创作者经济"
+  - "Pump fun"
+  - "Friend.tech"
+  - "SocialFi"
+  - "联合曲线定价"
 tags: []
 faq: []
 key_points_status: "已完成"
@@ -31,6 +39,7 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "022"
 subcategory: "项目分析"
+
 ---
 
 ## 正文
