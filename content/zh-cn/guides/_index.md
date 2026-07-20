@@ -1,197 +1,131 @@
 +++
 title = "自用工具"
-description = "交易平台、数据指标和链上基础设施工具使用指南。"
-section_label = "工具知识库"
+description = "Eric SJ 长期使用的自用/研究工具箱，包含交易平台、稳定币支付工具、链上数据网站、RWA数据和学习资源。"
+section_label = "工具箱"
 hero_title = "自用工具"
-hero_description = "交易平台、数据指标和链上基础设施工具使用指南。"
+hero_description = "Eric SJ 长期使用的自用/研究工具箱，包含交易平台、稳定币支付工具、链上数据网站、RWA数据和学习资源。"
 
-filters = [
-  "交易平台",
-  "数据指标",
-  "其他工具",
-]
-
-[[tools]]
-title = "Binance交易平台使用指南"
-category = "交易平台"
-description = "Binance基础介绍、核心功能和使用注意事项。"
-what = "Binance 是全球主流加密资产交易平台之一，覆盖现货、合约、理财、支付和 Web3 钱包等功能。"
-users = [
-  "需要高流动性交易环境的用户",
-  "需要多资产、多市场入口的用户",
-  "希望集中管理交易和工具入口的用户",
+[[recommended_tools]]
+title = "Kuli云 VPN"
+description = "稳定访问全球互联网的网络工具。"
+scenes = [
+  "海外研究",
+  "访问 AI 工具",
+  "浏览海外网站",
+  "获取全球市场信息",
 ]
 features = [
-  "现货与合约交易",
-  "资产充值、提现与账户安全设置",
-  "行情、订单、资金账户和 Web3 钱包入口",
+  "多节点线路",
+  "使用简单",
+  "连接稳定",
+  "适合长期使用",
 ]
-steps = [
-  "先完成账号安全设置和身份验证。",
-  "熟悉现货、合约、资金账户和充值提现路径。",
-  "小额测试充值和提现后，再进行正式资金操作。",
-]
-notes = [
-  "谨慎使用高杠杆产品。",
-  "开启双重验证并检查防钓鱼码。",
-  "不同地区的产品可用性和规则可能不同。",
-]
+button_label = "立即体验 →"
+url = "https://kuli1.kuli-online.guru/#/register?code=5jTBMaeF"
 
-[[tools]]
-title = "OKX交易平台使用指南"
-category = "交易平台"
-description = "OKX账户、交易、钱包和链上工具入口整理。"
-what = "OKX 是加密交易平台和 Web3 钱包工具组合，适合同时使用中心化交易和链上资产管理的用户。"
-users = [
-  "需要交易平台和 Web3 钱包结合的用户",
-  "关注链上资产和 DeFi 入口的用户",
-  "需要多终端交易和工具入口的用户",
+[[recommended_tools]]
+title = "Binance"
+description = "全球领先的跨资产交易平台，作为全球成交量最大的加密货币交易平台，支持加密货币、美股及衍生品交易。"
+scenes = [
+  "BTC/ETH交易",
+  "美股交易",
+  "合约交易",
+  "Web3生态参与",
+]
+features_title = "为什么推荐"
+features = [
+  "超3亿用户的选择，覆盖180+个国家和地区",
+  "Binance拥有全球领先流动性和交易量，适合进行大额买卖",
+  "手续费低廉，行业内属于领先水平，尤其适合频繁交易用户",
+  "不只是交易所，也是一个完整的加密生态系统，一个平台可以满足多种需求",
+]
+button_label = "注册领取新人福利 →"
+url = "https://www.bsmkweb.cc/register?ref=SJSJSJSJ"
+
+[[recommended_tools]]
+title = "PokePay U卡"
+description = "低门槛的稳定币支付工具。"
+scenes = [
+  "海外消费",
+  "数字资产支付",
+  "日常小额支出",
 ]
 features = [
-  "现货、合约与策略交易",
-  "Web3 钱包、DApp 与链上资产入口",
-  "行情、资金账户和安全设置",
+  "开卡门槛较低",
+  "使用流程简单",
+  "支持多场景支付",
 ]
-steps = [
-  "完成账号安全设置。",
-  "区分交易账户、资金账户和 Web3 钱包。",
-  "链上操作前先确认网络、地址和授权范围。",
-]
-notes = [
-  "Web3 钱包授权需要定期检查。",
-  "跨链和提现前必须确认网络一致。",
-  "交易功能需要结合自身风险承受能力使用。",
-]
+button_label = "注册申请 →"
+url = "https://app.pokepay.cc/pages/invitation/regist?r=537547"
 
-[[tools]]
-title = "Coinbase基础使用指南"
-category = "交易平台"
-description = "Coinbase账户、合规入口和基础交易流程说明。"
-what = "Coinbase 是面向合规市场的加密资产交易和托管平台，适合关注法币入口、合规和长期持有的用户。"
-users = [
-  "需要合规法币入口的用户",
-  "偏好简洁交易体验的用户",
-  "关注托管和长期持有体验的用户",
+[[recommended_tools]]
+title = "优选视频网"
+description = "个人学习资源平台，拥有海量网课资源。"
+coverage_title = "覆盖"
+coverage = [
+  "编程",
+  "AI",
+  "商业",
+  "投资",
+  "技能提升",
+  "...",
 ]
-features = [
-  "基础买卖与资产托管",
-  "法币出入金入口",
-  "账户安全和税务记录辅助",
+scenes_title = "适合"
+scenes = [
+  "想系统学习新领域的用户",
+  "希望持续提升专业能力的用户",
 ]
-steps = [
-  "完成身份验证和支付方式绑定。",
-  "熟悉买入、卖出、提现和资产记录路径。",
-  "长期持有资产需区分平台托管和自托管。",
-]
-notes = [
-  "费用结构可能高于部分交易平台。",
-  "不同地区支持的资产和功能不同。",
-  "大额资产应评估自托管方案。",
-]
+button_label = "进入学习资源库 →"
+url = "http://m.youxuan68.com/users/reg.asp?action=apply&yhh=30426"
 
-[[tools]]
-title = "TradingView指标使用方法"
-category = "数据指标"
-description = "常用行情图表、指标查询和技术分析流程。"
-what = "TradingView 是行情图表和指标分析工具，适合观察价格结构、趋势、成交量和跨市场资产表现。"
-users = [
-  "需要统一查看多市场行情的用户",
-  "关注价格趋势和成交量变化的用户",
-  "需要保存图表模板和观察列表的用户",
+[[research_tools]]
+title = "RootData"
+description = "Web3项目研究数据库。"
+usage = "查询项目融资信息、投资机构、团队背景和生态关系。"
+suitable = [
+  "发现早期项目",
+  "研究行业趋势",
 ]
-features = [
-  "K线图、成交量和常用技术指标",
-  "观察列表、提醒和多图表布局",
-  "跨市场资产对比",
-]
-steps = [
-  "建立自己的观察列表。",
-  "统一常用周期和指标模板。",
-  "结合基本面和链上数据，不单独依赖技术指标。",
-]
-notes = [
-  "指标只能辅助判断，不能替代研究。",
-  "不同交易所价格和成交量可能存在差异。",
-  "过多指标会降低决策清晰度。",
-]
+url = "https://rootdata.com/"
 
-[[tools]]
-title = "DeFiLlama数据查询指南"
-category = "数据指标"
-description = "DeFi TVL、协议收入、费用和链上生态数据查询方法。"
-what = "DeFiLlama 是 DeFi 和链上协议数据聚合平台，适合跟踪 TVL、费用、收入、稳定币和跨链生态数据。"
-users = [
-  "研究 DeFi 协议经营数据的用户",
-  "关注链上资金流向的用户",
-  "需要比较不同协议和公链表现的用户",
+[[research_tools]]
+title = "CoinGlass"
+description = "加密市场衍生品数据平台。"
+usage = "查询资金费率、爆仓数据、持仓变化和ETF资金流。"
+suitable = [
+  "市场情绪分析",
+  "交易辅助",
 ]
-features = [
-  "TVL、Fees、Revenue 和 Stablecoins 数据",
-  "协议、链和赛道维度对比",
-  "历史趋势和排名变化",
-]
-steps = [
-  "先确认数据口径和协议分类。",
-  "结合 TVL、费用、收入和用户活跃度交叉观察。",
-  "避免只看单一排名做结论。",
-]
-notes = [
-  "不同协议的数据统计口径可能不同。",
-  "TVL 不等于真实收入。",
-  "短期数据波动需要结合市场环境理解。",
-]
+url = "https://coinglass.com/"
 
-[[tools]]
-title = "Glassnode链上指标入门"
-category = "数据指标"
-description = "链上周期、持币结构和资金行为指标的基础使用方式。"
-what = "Glassnode 是链上数据分析平台，常用于观察比特币、以太坊等资产的持币结构、交易所流入流出和周期指标。"
-users = [
-  "关注链上周期指标的用户",
-  "研究长期持有人行为的用户",
-  "需要辅助判断市场结构的用户",
+[[research_tools]]
+title = "DeFiLlama"
+description = "DeFi数据聚合平台。"
+usage = "查询TVL、协议收入、链生态排名和稳定币数据。"
+suitable = [
+  "研究DeFi生态",
+  "分析行业趋势",
 ]
-features = [
-  "交易所余额和流入流出数据",
-  "长期/短期持有人指标",
-  "链上估值和周期相关指标",
-]
-steps = [
-  "先理解每个指标的计算方式。",
-  "使用多个指标交叉验证市场状态。",
-  "把链上指标作为辅助变量，而不是交易信号本身。",
-]
-notes = [
-  "链上数据存在滞后和口径差异。",
-  "指标极值不代表价格一定反转。",
-  "不同资产的链上指标适用性不同。",
-]
+url = "https://defillama.com/"
 
-[[tools]]
-title = "钱包安全检查清单"
-category = "其他工具"
-description = "链上钱包授权、私钥管理和常见安全检查流程。"
-what = "钱包安全检查清单用于降低链上操作中的授权、钓鱼和私钥管理风险。"
-users = [
-  "经常使用链上钱包的用户",
-  "参与 DeFi、NFT 或跨链操作的用户",
-  "需要定期检查授权风险的用户",
+[[research_tools]]
+title = "SoSoValue"
+description = "加密市场综合数据平台。"
+usage = "查询ETF资金流、市场数据和行业趋势。"
+suitable = [
+  "追踪机构资金变化",
+  "观察市场周期",
 ]
-features = [
-  "授权检查和撤销",
-  "私钥、助记词和硬件钱包管理",
-  "钓鱼链接和合约交互风险识别",
+url = "https://sosovalue.com/zh/assets/etf/"
+
+[[research_tools]]
+title = "RWA.xyz"
+description = "RWA数据分析平台。"
+usage = "查询现实世界资产规模、链上资产发行和机构参与情况。"
+suitable = [
+  "研究RWA行业发展趋势",
 ]
-steps = [
-  "定期检查钱包授权。",
-  "重要资产使用冷钱包或硬件钱包隔离。",
-  "交互前确认域名、合约地址和授权范围。",
-]
-notes = [
-  "不要把助记词输入任何网页。",
-  "不要盲目签名不理解的消息。",
-  "高价值资产应和日常交互钱包分离。",
-]
+url = "https://app.rwa.xyz/"
 +++
 
-自用工具页面用于沉淀 Eric SJ Research 日常研究、交易和链上数据观察过程中反复使用的工具说明。所有内容在当前页面展开，不跳转详情页。
+自用工具页面用于沉淀 Eric SJ Research 日常研究、交易和链上数据观察过程中反复使用的工具入口。推荐工具带有个人邀请码，以实际使用和转化为目标；研究数据工具用于分享研究价值和提高信息检索效率。

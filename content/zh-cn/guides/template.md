@@ -22,6 +22,10 @@ source = { name = "", url = "" }
 updated_note = ""
 disclaimer = "本文仅用于工具和流程说明，不构成投资建议。"
 draft = true
+
+[build]
+render = "never"
+list = "never"
 +++
 
 ## 使用场景
