@@ -1010,10 +1010,6 @@ h3 {
   gap: 8px;
 }
 
-.research-tool-keywords {
-  display: none;
-}
-
 .research-tool-meta p {
   margin: 0;
 }
@@ -1964,69 +1960,12 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .toolbox-section {
-    padding-top: 34px;
-  }
-
-  .recommended-tools-grid {
-    gap: 14px;
-  }
-
   .recommend-tool-card {
-    gap: 16px;
-    padding: 18px;
-  }
-
-  .recommend-tool-card h3,
-  .research-tool-row h3 {
-    font-size: 1.18rem;
-  }
-
-  .tool-card-description {
-    margin-top: 6px;
-    font-size: 0.92rem;
-    line-height: 1.5;
-  }
-
-  .tool-card-block {
-    margin-top: 14px;
-  }
-
-  .tool-card-block h4 {
-    margin-bottom: 7px;
-    font-size: 0.72rem;
-  }
-
-  .tool-card-block ul {
-    gap: 5px;
-  }
-
-  .tool-card-block li {
-    font-size: 0.88rem;
-    line-height: 1.42;
-  }
-
-  .tool-detail-block {
-    display: none;
-  }
-
-  .tool-coverage-block {
-    display: none;
-  }
-
-  .tool-scene-list li:nth-child(n+4),
-  .tool-chip-list li:nth-child(n+4) {
-    display: none;
+    padding: 22px;
   }
 
   .tool-chip-list {
     grid-template-columns: 1fr;
-  }
-
-  .tool-primary-link,
-  .tool-secondary-link {
-    min-height: 42px;
-    font-size: 0.9rem;
   }
 
   .research-tools-heading,
@@ -2034,46 +1973,12 @@ h3 {
     gap: 18px;
   }
 
-  .research-tools-heading > p {
-    font-size: 0.92rem;
-  }
-
-  .research-tools-list {
-    display: grid;
-    gap: 12px;
-    border-top: 0;
-  }
-
   .research-tool-row {
     align-items: start;
-    gap: 10px;
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.5);
-    padding: 16px;
-  }
-
-  .research-tool-description {
-    margin-top: 4px;
-    font-size: 0.88rem;
-    line-height: 1.45;
-  }
-
-  .research-tool-meta {
-    display: none;
-  }
-
-  .research-tool-keywords {
-    display: block;
-    margin: 0;
-    color: var(--accent-2);
-    font-size: 0.82rem;
-    font-weight: 700;
-    line-height: 1.4;
   }
 
   .tool-secondary-link {
     justify-self: start;
-    min-height: auto;
   }
 
   .article-info-grid {

@@ -29,7 +29,7 @@
             {{ with $tool.description }}<p class="tool-card-description">{{ . }}</p>{{ end }}
 
             {{ with $tool.coverage }}
-              <div class="tool-card-block tool-coverage-block">
+              <div class="tool-card-block">
                 <h4>{{ $tool.coverage_title | default "覆盖" }}</h4>
                 <ul class="tool-chip-list">
                   {{ range . }}<li>{{ . }}</li>{{ end }}
@@ -40,14 +40,14 @@
             {{ with $tool.scenes }}
               <div class="tool-card-block">
                 <h4>{{ $tool.scenes_title | default "适合场景" }}</h4>
-                <ul class="tool-scene-list">
+                <ul>
                   {{ range . }}<li>{{ . }}</li>{{ end }}
                 </ul>
               </div>
             {{ end }}
 
             {{ with $tool.features }}
-              <div class="tool-card-block tool-detail-block">
+              <div class="tool-card-block">
                 <h4>{{ $tool.features_title | default "特点" }}</h4>
                 <ul>
                   {{ range . }}<li>✓ {{ . }}</li>{{ end }}
@@ -84,7 +84,6 @@
             <p><strong>用途：</strong>{{ .usage }}</p>
             <p><strong>适合：</strong>{{ delimit .suitable " / " }}</p>
           </div>
-          <p class="research-tool-keywords">{{ delimit .suitable " / " }}</p>
           <a class="tool-secondary-link" href="{{ .url }}" target="_blank" rel="noopener noreferrer">访问网站 →</a>
         </article>
       {{ end }}
