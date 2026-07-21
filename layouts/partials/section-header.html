@@ -1,4 +1,5 @@
 <section class="section-hero">
+  {{ $isTW := eq .Site.Language.Lang "zh-tw" }}
   <div class="container section-hero-grid">
     <div>
       <p class="eyebrow">{{ .Params.section_label | default .Title }}</p>
@@ -13,7 +14,7 @@
       {{ if .Params.topic_category }}
         <label class="section-search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="section-search" type="search" placeholder="搜索当前专题文章" autocomplete="off">
+          <input id="section-search" type="search" placeholder="{{ if $isTW }}搜尋目前專題文章{{ else }}搜索当前专题文章{{ end }}" autocomplete="off">
         </label>
       {{ else }}
         {{ with .Params.focus_items }}

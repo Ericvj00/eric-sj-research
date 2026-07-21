@@ -1,4 +1,5 @@
 <header class="site-header">
+  {{ $isTW := eq .Site.Language.Lang "zh-tw" }}
   <div class="container header-inner">
     <div class="site-brand" aria-label="Eric SJ Research">
       <a class="brand-mark" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="Eric SJ on X">
@@ -10,23 +11,23 @@
       <details class="nav-group" data-href="{{ "web3/" | relLangURL }}">
         <summary>Web3</summary>
         <div class="nav-submenu" aria-label="Web3 categories">
-          <a href="{{ "web3/sector/" | relLangURL }}">板块研究</a>
-          <a href="{{ "web3/onchain-financials/" | relLangURL }}">链上财报</a>
-          <a href="{{ "web3/projects/" | relLangURL }}">项目分析</a>
-          <a href="{{ "web3/thesis/" | relLangURL }}">逻辑拆解</a>
+          <a href="{{ "web3/sector/" | relLangURL }}">{{ if $isTW }}板塊研究{{ else }}板块研究{{ end }}</a>
+          <a href="{{ "web3/onchain-financials/" | relLangURL }}">{{ if $isTW }}鏈上財報{{ else }}链上财报{{ end }}</a>
+          <a href="{{ "web3/projects/" | relLangURL }}">{{ if $isTW }}項目分析{{ else }}项目分析{{ end }}</a>
+          <a href="{{ "web3/thesis/" | relLangURL }}">{{ if $isTW }}邏輯拆解{{ else }}逻辑拆解{{ end }}</a>
         </div>
       </details>
       <details class="nav-group" data-href="{{ "stocks/" | relLangURL }}">
         <summary>美股</summary>
         <div class="nav-submenu" aria-label="Stocks categories">
-          <a href="{{ "stocks/earnings/" | relLangURL }}">财报分析</a>
-          <a href="{{ "stocks/company/" | relLangURL }}">个股研究</a>
-          <a href="{{ "stocks/industry/" | relLangURL }}">产业报告</a>
+          <a href="{{ "stocks/earnings/" | relLangURL }}">{{ if $isTW }}財報分析{{ else }}财报分析{{ end }}</a>
+          <a href="{{ "stocks/company/" | relLangURL }}">{{ if $isTW }}個股研究{{ else }}个股研究{{ end }}</a>
+          <a href="{{ "stocks/industry/" | relLangURL }}">{{ if $isTW }}產業報告{{ else }}产业报告{{ end }}</a>
         </div>
       </details>
       <a href="{{ "guides/" | relLangURL }}">自用工具</a>
-      <a href="{{ .Site.Home.RelPermalink }}#about">关于</a>
-      <a href="{{ "search/" | relLangURL }}">搜索</a>
+      <a href="{{ .Site.Home.RelPermalink }}#about">{{ if $isTW }}關於{{ else }}关于{{ end }}</a>
+      <a href="{{ "search/" | relLangURL }}">{{ if $isTW }}搜尋{{ else }}搜索{{ end }}</a>
     </nav>
     <nav class="language-switcher" aria-label="Language switcher">
       {{ range .AllTranslations }}

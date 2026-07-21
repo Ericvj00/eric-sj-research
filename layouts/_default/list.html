@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $isTW := eq .Site.Language.Lang "zh-tw" }}
+{{ $emptyText := cond $isTW "繁體內容正在準備中。" "该栏目内容正在准备中。" }}
 {{ partial "section-header.html" . }}
 {{ $sectionPages := slice }}
 {{ range .RegularPagesRecursive }}
@@ -85,7 +87,7 @@
         {{ range first 3 $featured }}
           {{ partial "article-card.html" . }}
         {{ else }}
-          <p class="empty-state">重点研究内容正在准备中。</p>
+          <p class="empty-state">{{ if $isTW }}繁體內容正在準備中。{{ else }}重点研究内容正在准备中。{{ end }}</p>
         {{ end }}
       </div>
     </div>
@@ -98,6 +100,11 @@
       <div>
         <h2>{{ .Params.latest_title | default "Latest Reports" }}</h2>
       </div>
+      {{ if and $isTopicPage $isTW }}
+        <a href="{{ .Params.more_url | default "articles/" | relLangURL }}">查看更多</a>
+      {{ else }}
+        {{ with .Params.more_url }}<a href="{{ . | relLangURL }}">查看更多</a>{{ end }}
+      {{ end }}
     </div>
     <div id="{{ if $isTopicPage }}section-results{{ end }}" class="article-list research-grid">
       {{ $displayPages := first 10 $sortedSectionPages }}
@@ -109,12 +116,12 @@
       {{ range $displayPages }}
         {{ partial "article-card.html" . }}
       {{ else }}
-        <p class="empty-state">该栏目内容正在准备中。</p>
+        <p class="empty-state">{{ $emptyText }}</p>
       {{ end }}
     </div>
     {{ if and $isTopicPage (gt $paginator.TotalPages 1) }}
-      <nav class="pagination topic-pagination" aria-label="{{ .Title }}分页">
-        {{ with $paginator.Prev }}<a class="pagination-direction" href="{{ .URL }}" rel="prev">上一页</a>{{ end }}
+      <nav class="pagination topic-pagination" aria-label="{{ .Title }}{{ if $isTW }}分頁{{ else }}分页{{ end }}">
+        {{ with $paginator.Prev }}<a class="pagination-direction" href="{{ .URL }}" rel="prev">{{ if $isTW }}上一頁{{ else }}上一页{{ end }}</a>{{ end }}
         <div class="pagination-pages">
           {{ $currentPage := $paginator.PageNumber }}
           {{ $totalPages := $paginator.TotalPages }}
@@ -133,7 +140,7 @@
             {{ end }}
           {{ end }}
         </div>
-        {{ with $paginator.Next }}<a class="pagination-direction" href="{{ .URL }}" rel="next">下一页</a>{{ end }}
+        {{ with $paginator.Next }}<a class="pagination-direction" href="{{ .URL }}" rel="next">{{ if $isTW }}下一頁{{ else }}下一页{{ end }}</a>{{ end }}
       </nav>
     {{ end }}
   </div>
@@ -148,7 +155,7 @@
     const normalize = value => String(value || "").toLowerCase().trim();
     const empty = document.createElement("p");
     empty.className = "empty-state";
-    empty.textContent = "没有找到匹配内容。";
+    empty.textContent = "{{ if $isTW }}沒有找到符合內容。{{ else }}没有找到匹配内容。{{ end }}";
 
     input.addEventListener("input", () => {
       const terms = normalize(input.value).split(/\s+/).filter(Boolean);

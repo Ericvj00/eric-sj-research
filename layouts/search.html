@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isTW := eq .Site.Language.Lang "zh-tw" }}
 <section class="page-hero">
   <div class="container narrow">
     <p class="eyebrow">Search</p>
@@ -10,8 +11,8 @@
 <section class="section">
   <div class="container search-layout">
     <label class="search-box">
-      <span>搜索研究内容</span>
-      <input id="research-search" type="search" placeholder="输入标题、标签、分类或正文关键词" autocomplete="off">
+      <span>{{ if $isTW }}搜尋研究內容{{ else }}搜索研究内容{{ end }}</span>
+      <input id="research-search" type="search" placeholder="{{ if $isTW }}搜尋文章、標籤、分類或關鍵詞{{ else }}输入标题、标签、分类或正文关键词{{ end }}" autocomplete="off">
     </label>
     <div id="search-results" class="latest-research-list" aria-live="polite"></div>
   </div>
@@ -47,7 +48,7 @@ function score(item, terms) {
 
 function render(items) {
   if (!items.length) {
-    results.innerHTML = '<p class="empty-state">没有找到匹配内容。</p>';
+    results.innerHTML = '<p class="empty-state">{{ if $isTW }}沒有找到符合內容。{{ else }}没有找到匹配内容。{{ end }}</p>';
     return;
   }
 
@@ -89,7 +90,7 @@ fetch("{{ "index.json" | relLangURL }}")
     render(searchIndex.slice(0, 10));
   })
   .catch(() => {
-    results.innerHTML = '<p class="empty-state">搜索索引加载失败。</p>';
+    results.innerHTML = '<p class="empty-state">{{ if $isTW }}搜尋索引載入失敗。{{ else }}搜索索引加载失败。{{ end }}</p>';
   });
 
 input.addEventListener("input", runSearch);

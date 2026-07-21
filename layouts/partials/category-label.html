@@ -1,6 +1,6 @@
 {{- $page := . -}}
 {{- $label := "" -}}
-{{- $labels := dict
+{{- $labelsCN := dict
   "sector" "板块研究"
   "onchain-earnings" "链上财报"
   "project" "项目分析"
@@ -15,6 +15,22 @@
   "articles" "文章"
   "guides" "自用工具"
 -}}
+{{- $labelsTW := dict
+  "sector" "板塊研究"
+  "onchain-earnings" "鏈上財報"
+  "project" "項目分析"
+  "thesis" "邏輯拆解"
+  "earnings" "財報分析"
+  "company" "個股研究"
+  "industry" "產業報告"
+  "onchain-financials" "鏈上財報"
+  "projects" "項目分析"
+  "web3" "Web3"
+  "stocks" "美股"
+  "articles" "文章"
+  "guides" "自用工具"
+-}}
+{{- $labels := cond (eq $page.Site.Language.Lang "zh-tw") $labelsTW $labelsCN -}}
 {{- with $page.Params.category_label -}}
   {{- $label = . -}}
 {{- end -}}

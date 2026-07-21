@@ -1,7 +1,49 @@
 {{ define "main" }}
+{{ $isTW := eq .Site.Language.Lang "zh-tw" }}
 {{ $recommended := .Params.recommended_tools | default slice }}
 {{ $research := .Params.research_tools | default slice }}
 
+{{ if $isTW }}
+<section class="section-hero tools-hero toolbox-hero">
+  <div class="container section-hero-grid">
+    <div>
+      <p class="eyebrow">{{ .Params.section_label | default .Title }}</p>
+      <h1>{{ .Params.hero_title | default .Title }}</h1>
+    </div>
+    <div class="section-hero-copy">
+      {{ with .Params.hero_description }}<p>{{ . }}</p>{{ end }}
+      {{ with .Params.tool_filters }}
+        <div class="section-tags" aria-label="工具分類">
+          {{ range . }}<span>{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section toolbox-section">
+  <div class="container">
+    {{ with .Params.tool_groups }}
+      <div class="guide-groups tool-knowledge-base">
+        {{ range . }}
+          <section class="guide-group">
+            <h2>{{ .title }}</h2>
+            {{ range .items }}
+              <details class="tool-entry">
+                <summary>{{ .title }}</summary>
+                {{ with .description }}<p>{{ . }}</p>{{ end }}
+                {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">訪問網站 →</a>{{ end }}
+              </details>
+            {{ end }}
+          </section>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="empty-state">繁體工具內容正在準備中。</p>
+    {{ end }}
+  </div>
+</section>
+{{ else }}
 <section class="section-hero tools-hero toolbox-hero">
   <div class="container section-hero-grid">
     <div>
@@ -98,5 +140,6 @@
     <div class="toolbox-note">{{ . }}</div>
   </div>
 </section>
+{{ end }}
 {{ end }}
 {{ end }}

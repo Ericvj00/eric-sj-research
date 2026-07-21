@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isTW := eq .Site.Language.Lang "zh-tw" }}
 {{ $researchPages := where .Site.RegularPages "Section" "in" (slice "articles" "web3" "stocks" "guides") }}
 {{ $featuredResearch := slice }}
 {{ range $researchPages }}
@@ -13,13 +14,13 @@
       <p class="eyebrow">Independent Market Research</p>
       <h1>Eric SJ</h1>
       <p class="hero-positioning">Crypto + US Stock Research</p>
-      <p class="hero-subtitle">专注 Web3板块研究、链上财报、项目分析和逻辑拆解，以及美股财报观点、产业趋势。</p>
+      <p class="hero-subtitle">{{ if $isTW }}專注 Web3 板塊研究、鏈上財報、項目分析和邏輯拆解，以及美股財報觀點、產業趨勢。{{ else }}专注 Web3板块研究、链上财报、项目分析和逻辑拆解，以及美股财报观点、产业趋势。{{ end }}</p>
       <div class="hero-actions">
         <a class="button primary" href="{{ "web3/" | relLangURL }}">Web3</a>
         <a class="button secondary" href="{{ "stocks/" | relLangURL }}">美股</a>
-        <a class="button secondary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="访问 Eric SJ 的 X">
+        <a class="button secondary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="{{ if $isTW }}訪問{{ else }}访问{{ end }} Eric SJ 的 X">
           <img class="x-logo" src="/images/x-logo.png" alt="X" width="32" height="32">
-          <span>访问</span>
+          <span>{{ if $isTW }}訪問 X{{ else }}访问{{ end }}</span>
         </a>
       </div>
     </div>
@@ -28,16 +29,18 @@
       <dl>
         <div>
           <dt>Web3</dt>
-          <dd>板块研究、链上财报、项目分析、逻辑拆解</dd>
+          <dd>{{ if $isTW }}板塊研究、鏈上財報、項目分析、邏輯拆解{{ else }}板块研究、链上财报、项目分析、逻辑拆解{{ end }}</dd>
         </div>
         <div>
           <dt>美股</dt>
-          <dd>财报观点、个股研究、产业趋势</dd>
+          <dd>{{ if $isTW }}財報觀點、個股研究、產業趨勢{{ else }}财报观点、个股研究、产业趋势{{ end }}</dd>
         </div>
-        <div>
-          <dt>Tools</dt>
-          <dd>自用工具、研究流程与长期跟踪入口</dd>
-        </div>
+        {{ if not $isTW }}
+          <div>
+            <dt>Tools</dt>
+            <dd>自用工具、研究流程与长期跟踪入口</dd>
+          </div>
+        {{ end }}
       </dl>
     </aside>
   </div>
@@ -48,31 +51,31 @@
     <div class="section-heading">
       <div>
         <p class="eyebrow">Research Direction</p>
-        <h2>研究方向</h2>
+        <h2>{{ if $isTW }}研究方向{{ else }}研究方向{{ end }}</h2>
       </div>
-      <p class="single-line-copy">围绕 Crypto、US Stock 建立长期可沉淀的内容入口</p>
+      <p class="single-line-copy">{{ if $isTW }}圍繞 Crypto、US Stock 建立長期可沉澱的內容入口{{ else }}围绕 Crypto、US Stock 建立长期可沉淀的内容入口{{ end }}</p>
     </div>
     <div class="entry-grid direction-grid">
       <article class="entry-card direction-card">
         <span>Web3</span>
         <h3>Web3</h3>
         <ul>
-          <li><a href="{{ "web3/sector/" | relLangURL }}">板块研究</a></li>
-          <li><a href="{{ "web3/onchain-financials/" | relLangURL }}">链上财报</a></li>
-          <li><a href="{{ "web3/projects/" | relLangURL }}">项目分析</a></li>
-          <li><a href="{{ "web3/thesis/" | relLangURL }}">逻辑拆解</a></li>
+          <li><a href="{{ "web3/sector/" | relLangURL }}">{{ if $isTW }}板塊研究{{ else }}板块研究{{ end }}</a></li>
+          <li><a href="{{ "web3/onchain-financials/" | relLangURL }}">{{ if $isTW }}鏈上財報{{ else }}链上财报{{ end }}</a></li>
+          <li><a href="{{ "web3/projects/" | relLangURL }}">{{ if $isTW }}項目分析{{ else }}项目分析{{ end }}</a></li>
+          <li><a href="{{ "web3/thesis/" | relLangURL }}">{{ if $isTW }}邏輯拆解{{ else }}逻辑拆解{{ end }}</a></li>
         </ul>
-        <a class="button secondary" href="{{ "web3/" | relLangURL }}">进入 Web3</a>
+        <a class="button secondary" href="{{ "web3/" | relLangURL }}">{{ if $isTW }}進入 Web3{{ else }}进入 Web3{{ end }}</a>
       </article>
       <article class="entry-card direction-card">
         <span>Stocks</span>
         <h3>美股</h3>
         <ul>
-          <li><a href="{{ "stocks/earnings/" | relLangURL }}">财报分析</a></li>
-          <li><a href="{{ "stocks/company/" | relLangURL }}">个股研究</a></li>
-          <li><a href="{{ "stocks/industry/" | relLangURL }}">产业报告</a></li>
+          <li><a href="{{ "stocks/earnings/" | relLangURL }}">{{ if $isTW }}財報分析{{ else }}财报分析{{ end }}</a></li>
+          <li><a href="{{ "stocks/company/" | relLangURL }}">{{ if $isTW }}個股研究{{ else }}个股研究{{ end }}</a></li>
+          <li><a href="{{ "stocks/industry/" | relLangURL }}">{{ if $isTW }}產業報告{{ else }}产业报告{{ end }}</a></li>
         </ul>
-        <a class="button secondary" href="{{ "stocks/" | relLangURL }}">进入美股</a>
+        <a class="button secondary" href="{{ "stocks/" | relLangURL }}">{{ if $isTW }}進入美股{{ else }}进入美股{{ end }}</a>
       </article>
     </div>
   </div>
@@ -83,15 +86,15 @@
     <div class="section-heading">
       <div>
         <p class="eyebrow">Selected Research</p>
-        <h2>精选文章</h2>
+        <h2>{{ if $isTW }}精選文章{{ else }}精选文章{{ end }}</h2>
       </div>
-      <a href="{{ "articles/" | relLangURL }}">全部文章</a>
+      <a href="{{ "articles/" | relLangURL }}">{{ if $isTW }}全部文章{{ else }}全部文章{{ end }}</a>
     </div>
     <div class="latest-research-list featured-list home-research-grid">
       {{ range first 6 $homeResearch }}
         {{ partial "article-card.html" . }}
       {{ else }}
-        <p class="empty-state">精选文章正在准备中。</p>
+        <p class="empty-state">{{ if $isTW }}繁體內容正在準備中。{{ else }}精选文章正在准备中。{{ end }}</p>
       {{ end }}
     </div>
   </div>
@@ -101,9 +104,9 @@
   <div class="container about-panel">
     <div>
       <p class="eyebrow">About Eric SJ</p>
-      <h2>关于 Eric SJ</h2>
+      <h2>{{ if $isTW }}關於 Eric SJ{{ else }}关于 Eric SJ{{ end }}</h2>
     </div>
-    <p>Eric SJ长期关注Web3 与美股市场，产出链上财报、项目/个股分析、逻辑拆解、产业/板块报告和财报观点。本网站用于沉淀公开研究、跟踪产业变化，持续输出可检索、可复盘的长期内容资产。</p>
+    <p>{{ if $isTW }}Eric SJ 長期關注 Web3 與美股市場，產出鏈上財報、項目／個股分析、邏輯拆解、產業／板塊報告和財報觀點。本網站用於沉澱公開研究、跟蹤產業變化，持續輸出可檢索、可復盤的長期內容資產。{{ else }}Eric SJ长期关注Web3 与美股市场，产出链上财报、项目/个股分析、逻辑拆解、产业/板块报告和财报观点。本网站用于沉淀公开研究、跟踪产业变化，持续输出可检索、可复盘的长期内容资产。{{ end }}</p>
   </div>
 </section>
 
@@ -111,11 +114,11 @@
   <div class="container x-panel">
     <div>
       <p class="eyebrow">Follow</p>
-      <h2>关注我的 <img class="x-inline-logo" src="/images/x-logo.png" alt="X" width="24" height="24"> 最新动向</h2>
+      <h2>{{ if $isTW }}關注我的{{ else }}关注我的{{ end }} <img class="x-inline-logo" src="/images/x-logo.png" alt="X" width="24" height="24"> {{ if $isTW }}最新動向{{ else }}最新动向{{ end }}</h2>
     </div>
-    <a class="button primary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="关注 Eric SJ 的 X">
+    <a class="button primary icon-button" href="https://x.com/sjbtc9" target="_blank" rel="noopener noreferrer" aria-label="{{ if $isTW }}關注{{ else }}关注{{ end }} Eric SJ 的 X">
       <img class="x-logo" src="/images/x-logo.png" alt="X" width="32" height="32">
-      <span>关注</span>
+      <span>{{ if $isTW }}關注{{ else }}关注{{ end }}</span>
     </a>
   </div>
 </section>
