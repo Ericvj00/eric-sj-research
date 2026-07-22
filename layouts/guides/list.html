@@ -12,37 +12,109 @@
     </div>
     <div class="section-hero-copy">
       {{ with .Params.hero_description }}<p>{{ . }}</p>{{ end }}
-      {{ with .Params.tool_filters }}
-        <div class="section-tags" aria-label="工具分類">
-          {{ range . }}<span>{{ . }}</span>{{ end }}
-        </div>
-      {{ end }}
     </div>
   </div>
 </section>
 
 <section class="section toolbox-section">
-  <div class="container">
-    {{ with .Params.tool_groups }}
-      <div class="guide-groups tool-knowledge-base">
-        {{ range . }}
-          <section class="guide-group">
-            <h2>{{ .title }}</h2>
-            {{ range .items }}
-              <details class="tool-entry">
-                <summary>{{ .title }}</summary>
-                {{ with .description }}<p>{{ . }}</p>{{ end }}
-                {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">訪問網站 →</a>{{ end }}
-              </details>
+  <div class="container tool-knowledge-base" data-tool-knowledge-base>
+    <div class="tool-filter-bar" role="group" aria-label="工具分類篩選">
+      <button class="tool-filter-button is-active" type="button" data-tool-filter="all" aria-pressed="true">全部工具</button>
+      {{ range .Params.tool_filters }}
+        <button class="tool-filter-button" type="button" data-tool-filter="{{ . }}" aria-pressed="false">{{ . }}</button>
+      {{ end }}
+    </div>
+
+    <div class="tool-knowledge-list">
+      {{ range $tool := $recommended }}
+        {{ $category := "其他工具" }}
+        {{ if or (eq $tool.title "Binance") (in $tool.title "PokePay") }}{{ $category = "交易平台" }}{{ end }}
+        <details class="tool-knowledge-entry" data-tool-category="{{ $category }}">
+          <summary>
+            <span><small>{{ $category }}</small>{{ $tool.title }}</span>
+            <span class="tool-entry-arrow" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="tool-entry-content">
+            {{ with $tool.description }}<p class="tool-entry-description">{{ . }}</p>{{ end }}
+            {{ with $tool.coverage }}
+              <div class="tool-entry-block">
+                <h3>{{ $tool.coverage_title | default "涵蓋範圍" }}</h3>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </div>
             {{ end }}
-          </section>
-        {{ end }}
-      </div>
-    {{ else }}
-      <p class="empty-state">繁體工具內容正在準備中。</p>
-    {{ end }}
+            {{ with $tool.scenes }}
+              <div class="tool-entry-block">
+                <h3>{{ $tool.scenes_title | default "適合場景" }}</h3>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </div>
+            {{ end }}
+            {{ with $tool.features }}
+              <div class="tool-entry-block">
+                <h3>{{ $tool.features_title | default "特點" }}</h3>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </div>
+            {{ end }}
+            {{ with $tool.url }}<a class="tool-entry-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $tool.button_label | default "訪問網站 →" }}</a>{{ end }}
+          </div>
+        </details>
+      {{ end }}
+
+      {{ range $tool := $research }}
+        <details class="tool-knowledge-entry" data-tool-category="數據指標">
+          <summary>
+            <span><small>數據指標</small>{{ $tool.title }}</span>
+            <span class="tool-entry-arrow" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="tool-entry-content">
+            {{ with $tool.description }}<p class="tool-entry-description">{{ . }}</p>{{ end }}
+            {{ with $tool.usage }}
+              <div class="tool-entry-block">
+                <h3>用途</h3>
+                <p>{{ . }}</p>
+              </div>
+            {{ end }}
+            {{ with $tool.suitable }}
+              <div class="tool-entry-block">
+                <h3>適合場景</h3>
+                <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+              </div>
+            {{ end }}
+            {{ with $tool.url }}<a class="tool-entry-link" href="{{ . }}" target="_blank" rel="noopener noreferrer">訪問網站 →</a>{{ end }}
+          </div>
+        </details>
+      {{ end }}
+    </div>
+    <p class="empty-state tool-filter-empty" data-tool-filter-empty hidden>目前分類暫無工具。</p>
   </div>
 </section>
+<script>
+(() => {
+  const root = document.querySelector("[data-tool-knowledge-base]");
+  if (!root) return;
+  const buttons = Array.from(root.querySelectorAll("[data-tool-filter]"));
+  const entries = Array.from(root.querySelectorAll("[data-tool-category]"));
+  const empty = root.querySelector("[data-tool-filter-empty]");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const filter = button.dataset.toolFilter;
+      let visible = 0;
+      buttons.forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      entries.forEach(entry => {
+        const show = filter === "all" || entry.dataset.toolCategory === filter;
+        entry.hidden = !show;
+        if (!show) entry.open = false;
+        if (show) visible += 1;
+      });
+      if (empty) empty.hidden = visible !== 0;
+    });
+  });
+})();
+</script>
 {{ else }}
 <section class="section-hero tools-hero toolbox-hero">
   <div class="container section-hero-grid">

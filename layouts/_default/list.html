@@ -100,9 +100,7 @@
       <div>
         <h2>{{ .Params.latest_title | default "Latest Reports" }}</h2>
       </div>
-      {{ if and $isTopicPage $isTW }}
-        <a href="{{ .Params.more_url | default "articles/" | relLangURL }}">查看更多</a>
-      {{ else }}
+      {{ if not (and $isTopicPage $isTW) }}
         {{ with .Params.more_url }}<a href="{{ . | relLangURL }}">查看更多</a>{{ end }}
       {{ end }}
     </div>

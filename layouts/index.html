@@ -8,6 +8,15 @@
   {{ end }}
 {{ end }}
 {{ $homeResearch := sort $featuredResearch "Date" "desc" }}
+{{ $recentResearch := slice }}
+{{ range where .Site.RegularPages "Section" "in" (slice "web3" "stocks") }}
+  {{ if partial "is-public-page.html" . }}
+    {{ $recentResearch = $recentResearch | append . }}
+  {{ end }}
+{{ end }}
+{{ $recentResearch = sort $recentResearch "Date" "desc" }}
+{{ $recentResearch = sort $recentResearch "Lastmod" "desc" }}
+{{ $latestInsights := first 9 $recentResearch }}
 <section class="home-hero personal-hero">
   <div class="container personal-hero-grid">
     <div class="home-hero-copy">
@@ -29,57 +38,99 @@
       <dl>
         <div>
           <dt>Web3</dt>
-          <dd>{{ if $isTW }}板塊研究、鏈上財報、項目分析、邏輯拆解{{ else }}板块研究、链上财报、项目分析、逻辑拆解{{ end }}</dd>
+          <dd class="hero-focus-links">
+            <a href="{{ "web3/sector/" | relLangURL }}">{{ if $isTW }}板塊研究{{ else }}板块研究{{ end }}</a>
+            <a href="{{ "web3/onchain-financials/" | relLangURL }}">{{ if $isTW }}鏈上財報{{ else }}链上财报{{ end }}</a>
+            <a href="{{ "web3/projects/" | relLangURL }}">{{ if $isTW }}項目分析{{ else }}项目分析{{ end }}</a>
+            <a href="{{ "web3/thesis/" | relLangURL }}">{{ if $isTW }}邏輯拆解{{ else }}逻辑拆解{{ end }}</a>
+          </dd>
         </div>
         <div>
           <dt>美股</dt>
-          <dd>{{ if $isTW }}財報觀點、個股研究、產業趨勢{{ else }}财报观点、个股研究、产业趋势{{ end }}</dd>
+          <dd class="hero-focus-links">
+            <a href="{{ "stocks/earnings/" | relLangURL }}">{{ if $isTW }}財報分析{{ else }}财报分析{{ end }}</a>
+            <a href="{{ "stocks/company/" | relLangURL }}">{{ if $isTW }}個股研究{{ else }}个股研究{{ end }}</a>
+            <a href="{{ "stocks/industry/" | relLangURL }}">{{ if $isTW }}產業報告{{ else }}产业报告{{ end }}</a>
+          </dd>
         </div>
-        {{ if not $isTW }}
-          <div>
-            <dt>Tools</dt>
-            <dd>自用工具、研究流程与长期跟踪入口</dd>
-          </div>
-        {{ end }}
       </dl>
     </aside>
   </div>
 </section>
 
-<section class="section home-directions">
+<section class="section latest-insights-section" data-latest-insights>
   <div class="container">
     <div class="section-heading">
       <div>
-        <p class="eyebrow">Research Direction</p>
-        <h2>{{ if $isTW }}研究方向{{ else }}研究方向{{ end }}</h2>
+        <p class="eyebrow">Latest Insights</p>
+        <h2>{{ if $isTW }}最新觀點{{ else }}最新观点{{ end }}</h2>
       </div>
-      <p class="single-line-copy">{{ if $isTW }}圍繞 Crypto、US Stock 建立長期可沉澱的內容入口{{ else }}围绕 Crypto、US Stock 建立长期可沉淀的内容入口{{ end }}</p>
+      <div class="latest-insights-actions">
+        <a class="latest-insights-all" href="{{ "articles/" | relLangURL }}">所有文章</a>
+        <div class="latest-insights-controls" aria-label="{{ if $isTW }}最新觀點切換{{ else }}最新观点切换{{ end }}">
+          <button type="button" data-insights-prev aria-label="{{ if $isTW }}上一組{{ else }}上一组{{ end }}" hidden>‹</button>
+          <button type="button" data-insights-next aria-label="{{ if $isTW }}下一組{{ else }}下一组{{ end }}">›</button>
+        </div>
+      </div>
     </div>
-    <div class="entry-grid direction-grid">
-      <article class="entry-card direction-card">
-        <span>Web3</span>
-        <h3>Web3</h3>
-        <ul>
-          <li><a href="{{ "web3/sector/" | relLangURL }}">{{ if $isTW }}板塊研究{{ else }}板块研究{{ end }}</a></li>
-          <li><a href="{{ "web3/onchain-financials/" | relLangURL }}">{{ if $isTW }}鏈上財報{{ else }}链上财报{{ end }}</a></li>
-          <li><a href="{{ "web3/projects/" | relLangURL }}">{{ if $isTW }}項目分析{{ else }}项目分析{{ end }}</a></li>
-          <li><a href="{{ "web3/thesis/" | relLangURL }}">{{ if $isTW }}邏輯拆解{{ else }}逻辑拆解{{ end }}</a></li>
-        </ul>
-        <a class="button secondary" href="{{ "web3/" | relLangURL }}">{{ if $isTW }}進入 Web3{{ else }}进入 Web3{{ end }}</a>
-      </article>
-      <article class="entry-card direction-card">
-        <span>Stocks</span>
-        <h3>美股</h3>
-        <ul>
-          <li><a href="{{ "stocks/earnings/" | relLangURL }}">{{ if $isTW }}財報分析{{ else }}财报分析{{ end }}</a></li>
-          <li><a href="{{ "stocks/company/" | relLangURL }}">{{ if $isTW }}個股研究{{ else }}个股研究{{ end }}</a></li>
-          <li><a href="{{ "stocks/industry/" | relLangURL }}">{{ if $isTW }}產業報告{{ else }}产业报告{{ end }}</a></li>
-        </ul>
-        <a class="button secondary" href="{{ "stocks/" | relLangURL }}">{{ if $isTW }}進入美股{{ else }}进入美股{{ end }}</a>
-      </article>
+    <div class="latest-insights-grid" aria-live="polite">
+      {{ range $index, $page := $latestInsights }}
+        <div class="latest-insight-slide" data-insight-index="{{ $index }}">
+          {{ partial "article-card.html" $page }}
+        </div>
+      {{ else }}
+        <p class="empty-state">{{ if $isTW }}暫無最新觀點。{{ else }}暂无最新观点。{{ end }}</p>
+      {{ end }}
     </div>
+    <p class="latest-insights-status" data-insights-status aria-live="polite"></p>
   </div>
 </section>
+
+<script>
+(() => {
+  const root = document.querySelector("[data-latest-insights]");
+  if (!root) return;
+  const items = Array.from(root.querySelectorAll("[data-insight-index]"));
+  const previous = root.querySelector("[data-insights-prev]");
+  const next = root.querySelector("[data-insights-next]");
+  const status = root.querySelector("[data-insights-status]");
+  if (!items.length || !previous || !next) return;
+
+  const compact = window.matchMedia("(max-width: 900px)");
+  let start = 0;
+  const pageSize = () => compact.matches ? 1 : 3;
+  const render = () => {
+    const size = pageSize();
+    const maxStart = Math.floor((items.length - 1) / size) * size;
+    start = Math.max(0, Math.min(start, maxStart));
+    items.forEach((item, index) => {
+      item.hidden = index < start || index >= start + size;
+    });
+    previous.hidden = start === 0;
+    previous.disabled = start === 0;
+    next.hidden = start + size >= items.length;
+    next.disabled = start + size >= items.length;
+    if (status) {
+      const end = Math.min(start + size, items.length);
+      status.textContent = `{{ if $isTW }}顯示第{{ else }}显示第{{ end }} ${start + 1}-${end} {{ if $isTW }}篇，共{{ else }}篇，共{{ end }} ${items.length} {{ if $isTW }}篇{{ else }}篇{{ end }}`;
+    }
+  };
+
+  previous.addEventListener("click", () => {
+    start -= pageSize();
+    render();
+  });
+  next.addEventListener("click", () => {
+    start += pageSize();
+    render();
+  });
+  compact.addEventListener("change", () => {
+    start = 0;
+    render();
+  });
+  render();
+})();
+</script>
 
 <section class="section latest-section">
   <div class="container">
