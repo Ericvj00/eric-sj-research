@@ -60,27 +60,25 @@
 
 <section class="section latest-insights-section" data-latest-insights>
   <div class="container">
-    <div class="section-heading">
+    <div class="section-heading latest-insights-header">
       <div>
         <p class="eyebrow">Latest Insights</p>
         <h2>{{ if $isTW }}最新觀點{{ else }}最新观点{{ end }}</h2>
       </div>
-      <div class="latest-insights-actions">
-        <a class="latest-insights-all" href="{{ "articles/" | relLangURL }}">所有文章</a>
-        <div class="latest-insights-controls" aria-label="{{ if $isTW }}最新觀點切換{{ else }}最新观点切换{{ end }}">
-          <button type="button" data-insights-prev aria-label="{{ if $isTW }}上一組{{ else }}上一组{{ end }}" hidden>‹</button>
-          <button type="button" data-insights-next aria-label="{{ if $isTW }}下一組{{ else }}下一组{{ end }}">›</button>
-        </div>
-      </div>
+      <a class="latest-insights-all" href="{{ "articles/" | relLangURL }}">所有文章</a>
     </div>
-    <div class="latest-insights-grid" aria-live="polite">
-      {{ range $index, $page := $latestInsights }}
-        <div class="latest-insight-slide" data-insight-index="{{ $index }}">
-          {{ partial "article-card.html" $page }}
-        </div>
-      {{ else }}
-        <p class="empty-state">{{ if $isTW }}暫無最新觀點。{{ else }}暂无最新观点。{{ end }}</p>
-      {{ end }}
+    <div class="latest-insights-carousel">
+      <button class="latest-insights-arrow latest-insights-arrow-left" type="button" data-insights-prev aria-label="{{ if $isTW }}向左滑動{{ else }}向左滑动{{ end }}" hidden>‹</button>
+      <div class="latest-insights-track" data-insights-track aria-label="{{ if $isTW }}最新觀點文章{{ else }}最新观点文章{{ end }}" tabindex="0">
+        {{ range $index, $page := $latestInsights }}
+          <div class="latest-insights-card" data-insight-index="{{ $index }}">
+            {{ partial "article-card.html" $page }}
+          </div>
+        {{ else }}
+          <p class="empty-state">{{ if $isTW }}暫無最新觀點。{{ else }}暂无最新观点。{{ end }}</p>
+        {{ end }}
+      </div>
+      <button class="latest-insights-arrow latest-insights-arrow-right" type="button" data-insights-next aria-label="{{ if $isTW }}向右滑動{{ else }}向右滑动{{ end }}">›</button>
     </div>
     <p class="latest-insights-status" data-insights-status aria-live="polite"></p>
   </div>
@@ -91,44 +89,103 @@
   const root = document.querySelector("[data-latest-insights]");
   if (!root) return;
   const items = Array.from(root.querySelectorAll("[data-insight-index]"));
+  const track = root.querySelector("[data-insights-track]");
   const previous = root.querySelector("[data-insights-prev]");
   const next = root.querySelector("[data-insights-next]");
   const status = root.querySelector("[data-insights-status]");
-  if (!items.length || !previous || !next) return;
+  if (!items.length || !track || !previous || !next) return;
 
   const compact = window.matchMedia("(max-width: 900px)");
-  let start = 0;
-  const pageSize = () => compact.matches ? 1 : 3;
-  const render = () => {
-    const size = pageSize();
-    const maxStart = Math.floor((items.length - 1) / size) * size;
-    start = Math.max(0, Math.min(start, maxStart));
-    items.forEach((item, index) => {
-      item.hidden = index < start || index >= start + size;
-    });
-    previous.hidden = start === 0;
-    previous.disabled = start === 0;
-    next.hidden = start + size >= items.length;
-    next.disabled = start + size >= items.length;
+  let scrollFrame = 0;
+  const update = () => {
+    const tolerance = 4;
+    const atStart = track.scrollLeft <= tolerance;
+    const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - tolerance;
+    previous.hidden = atStart;
+    previous.disabled = atStart;
+    next.hidden = atEnd;
+    next.disabled = atEnd;
+
     if (status) {
-      const end = Math.min(start + size, items.length);
-      status.textContent = `{{ if $isTW }}顯示第{{ else }}显示第{{ end }} ${start + 1}-${end} {{ if $isTW }}篇，共{{ else }}篇，共{{ end }} ${items.length} {{ if $isTW }}篇{{ else }}篇{{ end }}`;
+      const first = items[0];
+      const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || "0");
+      const step = first ? first.getBoundingClientRect().width + gap : track.clientWidth;
+      const start = step > 0 ? Math.round(track.scrollLeft / step) : 0;
+      const visible = compact.matches ? 1 : 3;
+      const end = Math.min(start + visible, items.length);
+      status.textContent = `{{ if $isTW }}目前顯示第{{ else }}当前显示第{{ end }} ${start + 1}-${end} {{ if $isTW }}篇，共{{ else }}篇，共{{ end }} ${items.length} {{ if $isTW }}篇{{ else }}篇{{ end }}`;
     }
   };
 
+  const requestUpdate = () => {
+    cancelAnimationFrame(scrollFrame);
+    scrollFrame = requestAnimationFrame(update);
+  };
+
+  const scrollGroup = direction => {
+    const first = items[0];
+    const gap = parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap || "0");
+    const step = first ? first.getBoundingClientRect().width + gap : track.clientWidth;
+    const groupSize = compact.matches ? 1 : 3;
+    const currentIndex = step > 0 ? Math.round(track.scrollLeft / step) : 0;
+    const currentGroup = Math.round(currentIndex / groupSize);
+    const maxStart = Math.max(0, items.length - groupSize);
+    const targetIndex = Math.max(0, Math.min((currentGroup + direction) * groupSize, maxStart));
+    track.scrollTo({ left: targetIndex * step, behavior: "smooth" });
+  };
+
   previous.addEventListener("click", () => {
-    start -= pageSize();
-    render();
+    scrollGroup(-1);
   });
   next.addEventListener("click", () => {
-    start += pageSize();
-    render();
+    scrollGroup(1);
   });
+  track.addEventListener("scroll", requestUpdate, { passive: true });
+
+  let dragging = false;
+  let dragged = false;
+  let dragStartX = 0;
+  let dragStartScroll = 0;
+
+  track.addEventListener("pointerdown", event => {
+    if (event.pointerType !== "mouse" || event.button !== 0) return;
+    dragging = true;
+    dragged = false;
+    dragStartX = event.clientX;
+    dragStartScroll = track.scrollLeft;
+    track.setPointerCapture(event.pointerId);
+    track.classList.add("is-dragging");
+  });
+  track.addEventListener("pointermove", event => {
+    if (!dragging) return;
+    const distance = event.clientX - dragStartX;
+    if (Math.abs(distance) > 5) dragged = true;
+    track.scrollLeft = dragStartScroll - distance;
+    if (dragged) event.preventDefault();
+  });
+  const finishDrag = event => {
+    if (!dragging) return;
+    dragging = false;
+    track.classList.remove("is-dragging");
+    if (track.hasPointerCapture(event.pointerId)) track.releasePointerCapture(event.pointerId);
+    requestUpdate();
+    if (dragged) window.setTimeout(() => { dragged = false; }, 0);
+  };
+  track.addEventListener("pointerup", finishDrag);
+  track.addEventListener("pointercancel", finishDrag);
+  track.addEventListener("click", event => {
+    if (!dragged) return;
+    event.preventDefault();
+    event.stopPropagation();
+    dragged = false;
+  }, true);
+
   compact.addEventListener("change", () => {
-    start = 0;
-    render();
+    track.scrollTo({ left: 0, behavior: "auto" });
+    requestUpdate();
   });
-  render();
+  window.addEventListener("resize", requestUpdate, { passive: true });
+  update();
 })();
 </script>
 
