@@ -82,14 +82,10 @@
           <h2>{{ .Params.featured_title | default "Featured Research" }}</h2>
         </div>
       </div>
-      <div class="featured-grid">
-        {{ $featured := where $sectionPages "Params.featured" true }}
-        {{ range first 3 $featured }}
-          {{ partial "article-card.html" . }}
-        {{ else }}
-          <p class="empty-state">{{ if $isTW }}繁體內容正在準備中。{{ else }}重点研究内容正在准备中。{{ end }}</p>
-        {{ end }}
-      </div>
+      {{ $featured := where $sectionPages "Params.featured" true }}
+      {{ $featured = sort $featured "Date" "desc" }}
+      {{ $featured = sort $featured "Lastmod" "desc" }}
+      {{ partial "research-carousel.html" (dict "pages" $featured "isTW" $isTW) }}
     </div>
   </section>
 {{ end }}

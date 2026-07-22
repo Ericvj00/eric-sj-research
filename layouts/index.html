@@ -198,8 +198,8 @@
       </div>
       <a href="{{ "articles/" | relLangURL }}">{{ if $isTW }}全部文章{{ else }}全部文章{{ end }}</a>
     </div>
-    <div class="latest-research-list featured-list home-research-grid">
-      {{ range first 6 $homeResearch }}
+    <div class="latest-research-list featured-list home-research-grid home-featured-carousel">
+      {{ range first 9 $homeResearch }}
         {{ partial "article-card.html" . }}
       {{ else }}
         <p class="empty-state">{{ if $isTW }}繁體內容正在準備中。{{ else }}精选文章正在准备中。{{ end }}</p>
