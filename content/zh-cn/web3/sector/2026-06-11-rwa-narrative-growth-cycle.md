@@ -52,6 +52,16 @@ content_id: "063"
 subcategory: "板块研究"
 content_type: "sector-research"
 draft: false
+lastmod: "2026-06-11T14:07:52+08:00"
+keywords:
+  - "RWA"
+  - "真实资产上链"
+  - "稳定币"
+  - "链上收益"
+  - "资产代币化"
+  - "行业报告"
+  - "Web3金融"
+  - "增长周期"
 
 ---
 

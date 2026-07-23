@@ -45,6 +45,17 @@ faq: []
 cover_status: "正常"
 content_id: "003"
 subcategory: "财报分析"
+lastmod: "2026-06-05T17:45:54+08:00"
+keywords:
+  - "美股"
+  - "收入"
+  - "利润"
+  - "财报"
+  - "TIGR"
+  - "BTC"
+  - "Q1"
+  - "财报分析"
+
 ---
 
 ## 正文

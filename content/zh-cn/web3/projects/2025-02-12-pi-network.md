@@ -32,13 +32,26 @@ seo_keywords:
   - "Layer1网络"
   - "主网上线"
   - "用户网络"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "AI"
 faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "029"
 subcategory: "项目分析"
+lastmod: "2025-02-12T12:55:12+08:00"
+keywords:
+  - "Pi Network"
+  - "PI币"
+  - "移动挖矿"
+  - "联邦拜占庭共识"
+  - "Pi节点"
+  - "Layer1网络"
+  - "主网上线"
+  - "用户网络"
 
 ---
 

@@ -46,6 +46,16 @@ cover_status: "正常"
 content_id: "002"
 subcategory: "财报分析"
 content_type: "earnings-analysis"
+lastmod: "2026-06-18T23:01:47+08:00"
+keywords:
+  - "JBL"
+  - "捷普"
+  - "AI基础设施"
+  - "人工智能数据中心"
+  - "美股财报"
+  - "服务器供应链"
+  - "利润率"
+  - "代工厂重估"
 
 ---
 

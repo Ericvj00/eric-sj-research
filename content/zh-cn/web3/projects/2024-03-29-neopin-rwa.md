@@ -48,6 +48,16 @@ faq:
     answer: "文章认为Klaytn与Finschia背后的日韩互联网资源和监管预期，使NEOPIN具备切入RWA的叙事基础。"
   - question: "RWA项目最需要解决什么问题？"
     answer: "需要解决资产合规、收益真实性和链上流动性问题，否则很难从叙事走向可持续业务。"
+lastmod: "2024-03-29T19:47:26+08:00"
+keywords:
+  - "NEOPIN"
+  - "RWA"
+  - "Klaytn"
+  - "Finschia"
+  - "日韩区块链"
+  - "BUIDL"
+  - "资产代币化"
+  - "合规"
 
 ---
 

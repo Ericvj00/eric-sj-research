@@ -32,13 +32,25 @@ seo_keywords:
   - "Friend.tech"
   - "SocialFi"
   - "联合曲线定价"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
 faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "022"
 subcategory: "项目分析"
+lastmod: "2025-02-26T17:39:00+08:00"
+keywords:
+  - "Time fun"
+  - "Solana"
+  - "时间代币化"
+  - "创作者经济"
+  - "Pump fun"
+  - "Friend.tech"
+  - "SocialFi"
+  - "联合曲线定价"
 
 ---
 

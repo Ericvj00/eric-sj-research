@@ -49,6 +49,16 @@ faq:
 cover_status: "正常"
 content_id: "008"
 subcategory: "项目分析"
+lastmod: "2025-03-25T18:15:14+08:00"
+keywords:
+  - "Pharos"
+  - "RWA"
+  - "高性能公链"
+  - "硬件加速"
+  - "金融基础设施"
+  - "EVM"
+  - "现实世界资产"
+  - "Web3项目分析"
 
 ---
 

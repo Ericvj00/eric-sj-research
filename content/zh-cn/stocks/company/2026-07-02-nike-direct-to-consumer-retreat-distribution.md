@@ -57,6 +57,17 @@ content_id: "064"
 subcategory: "财报分析"
 content_type: "earnings-analysis"
 draft: false
+lastmod: "2026-07-02T12:04:58+08:00"
+keywords:
+  - "美股"
+  - "收入"
+  - "估值"
+  - "Nike"
+  - "NIKE"
+  - "分销"
+  - "直营"
+  - "NIKE直营退潮"
+
 ---
 
 

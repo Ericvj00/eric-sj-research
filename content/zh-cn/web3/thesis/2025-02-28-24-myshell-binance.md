@@ -32,13 +32,26 @@ seo_keywords:
   - "项目预判"
   - "AI代理"
   - "代币上市"
-tags: []
+tags:
+  - "Web3"
+  - "逻辑拆解"
+  - "AI"
 faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "020"
 subcategory: "逻辑拆解"
+lastmod: "2025-02-28T18:55:01+08:00"
+keywords:
+  - "Myshell"
+  - "Binance上市"
+  - "AI应用"
+  - "Web3项目判断"
+  - "币安上币预期"
+  - "项目预判"
+  - "AI代理"
+  - "代币上市"
 
 ---
 

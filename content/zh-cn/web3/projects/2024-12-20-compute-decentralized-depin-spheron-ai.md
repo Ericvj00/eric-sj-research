@@ -32,7 +32,13 @@ seo_keywords:
   - "节点网络"
   - "Web3基础设施"
   - "算力市场"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "RWA"
+  - "AI"
+  - "DePIN"
+  - "Layer2"
 faq:
   - question: "Spheron主要提供什么能力？"
     answer: "文章将Spheron定位为去中心化AI算力网络，通过节点提供GPU和计算资源。"
@@ -43,6 +49,16 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "052"
 subcategory: "项目分析"
+lastmod: "2024-12-20T19:12:54+08:00"
+keywords:
+  - "Spheron"
+  - "DePIN"
+  - "AI算力"
+  - "GPU网络"
+  - "去中心化计算"
+  - "节点网络"
+  - "Web3基础设施"
+  - "算力市场"
 
 ---
 

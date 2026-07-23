@@ -32,13 +32,25 @@ seo_keywords:
   - "Solana生态"
   - "代币发行工具"
   - "链上投机"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
 faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
 cover_status: "正常"
 content_id: "030"
 subcategory: "项目分析"
+lastmod: "2025-02-08T16:46:30+08:00"
+keywords:
+  - "Pumpkin fun"
+  - "Pump fun2.0"
+  - "Solana Meme"
+  - "发币平台"
+  - "Meme发行"
+  - "Solana生态"
+  - "代币发行工具"
+  - "链上投机"
 
 ---
 

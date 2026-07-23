@@ -33,12 +33,24 @@ seo_keywords:
   - "规模一览"
   - "逻辑拆解"
   - "商业模式"
-tags: []
+tags:
+  - "Web3"
+  - "逻辑拆解"
 faq:
   - question: "Launchpool为什么值得关注？"
     answer: "因为文章认为Launchpool涉及逻辑拆解中的关键变量，能够反映需求、机制与市场定价的变化。"
   - question: "判断Launchpool时最重要的因素是什么？"
     answer: "重点不是单一价格或热点，而是结构变化、真实使用、生态协同和价值捕获能否持续。"
+lastmod: "2024-08-14T17:04:32+08:00"
+keywords:
+  - "Web3"
+  - "Launchpool"
+  - "TON"
+  - "流动性"
+  - "往期币安"
+  - "规模一览"
+  - "逻辑拆解"
+  - "商业模式"
 
 ---
 

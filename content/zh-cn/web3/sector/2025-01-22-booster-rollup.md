@@ -32,7 +32,10 @@ seo_keywords:
   - "互操作性"
   - "Taiko"
   - "Layer2"
-tags: []
+tags:
+  - "Web3"
+  - "板块研究"
+  - "链抽象"
 faq:
   - question: "Booster Rollup主要解决什么问题？"
     answer: "文章认为它试图降低EVM应用跨多个L2部署和扩展的成本，并缓解以太系生态割裂。"
@@ -43,6 +46,16 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "038"
 subcategory: "板块研究"
+lastmod: "2025-01-22T19:04:02+08:00"
+keywords:
+  - "Booster Rollup"
+  - "Rollup"
+  - "以太坊L2"
+  - "EVM"
+  - "链抽象"
+  - "互操作性"
+  - "Taiko"
+  - "Layer2"
 
 ---
 

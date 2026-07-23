@@ -32,7 +32,10 @@ seo_keywords:
   - "闲置算力"
   - "Solana"
   - "空投"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "DePIN"
 faq:
   - question: "Bless的nnAPP是什么？"
     answer: "文章解释，nnAPP是一种应用范式，用户打开应用时会为应用提供算力支持，使应用计算能力随用户增长而扩展。"
@@ -43,6 +46,16 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "032"
 subcategory: "项目分析"
+lastmod: "2025-02-05T18:46:17+08:00"
+keywords:
+  - "Bless"
+  - "DePIN"
+  - "nnAPP"
+  - "共享计算"
+  - "浏览器节点"
+  - "闲置算力"
+  - "Solana"
+  - "空投"
 
 ---
 

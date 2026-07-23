@@ -47,6 +47,16 @@ cover_status: "正常"
 content_id: "004"
 subcategory: "财报分析"
 content_type: "earnings-analysis"
+lastmod: "2026-06-05T12:49:38+08:00"
+keywords:
+  - "游戏驿站"
+  - "GME"
+  - "GameStop财报"
+  - "eBay收购"
+  - "收藏品业务"
+  - "美股财报"
+  - "股份回购"
+  - "利润质量"
 
 ---
 

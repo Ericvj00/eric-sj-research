@@ -52,6 +52,16 @@ content_id: "066"
 subcategory: "个股研究"
 content_type: "company-research"
 draft: false
+lastmod: "2026-06-17T22:09:20+08:00"
+keywords:
+  - "SpaceX"
+  - "Starlink"
+  - "Starship"
+  - "马斯克"
+  - "估值争议"
+  - "商业航天"
+  - "国防基础设施"
+  - "现金流"
 
 ---
 

@@ -32,7 +32,12 @@ seo_keywords:
   - "GPUaaS"
   - "节点质押"
   - "去中心化算力"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "RWA"
+  - "AI"
+  - "DePIN"
 faq:
   - question: "Aethir为什么和AI算力有关？"
     answer: "文章认为Aethir提供的是分布式GPU供应源，AI训练和推理需求增长会提升这类算力市场的重要性。"
@@ -43,6 +48,16 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "035"
 subcategory: "项目分析"
+lastmod: "2025-02-01T19:44:33+08:00"
+keywords:
+  - "Aethir"
+  - "GPU"
+  - "NodeFi"
+  - "DePIN"
+  - "AI算力"
+  - "GPUaaS"
+  - "节点质押"
+  - "去中心化算力"
 
 ---
 

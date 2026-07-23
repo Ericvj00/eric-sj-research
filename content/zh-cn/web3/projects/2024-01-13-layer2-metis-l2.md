@@ -33,12 +33,25 @@ seo_keywords:
   - "完全体"
   - "如何抢滩"
   - "L2"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "Layer2"
 faq:
   - question: "Layer2为什么值得关注？"
     answer: "因为文章认为Layer2涉及项目分析中的关键变量，能够反映需求、机制与市场定价的变化。"
   - question: "判断Layer2时最重要的因素是什么？"
     answer: "重点不是单一价格或热点，而是结构变化、真实使用、生态协同和价值捕获能否持续。"
+lastmod: "2024-01-13T23:10:09+08:00"
+keywords:
+  - "Layer2"
+  - "Rollup"
+  - "AI"
+  - "Manta"
+  - "Metis"
+  - "完全体"
+  - "如何抢滩"
+  - "L2"
 
 ---
 

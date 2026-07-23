@@ -32,7 +32,11 @@ seo_keywords:
   - "TGE"
   - "空投"
   - "Web3基础设施"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "AI"
+  - "DePIN"
 faq:
   - question: "Multiple属于什么类型的DePIN项目？"
     answer: "文章将Multiple定位为专注数据传输的网络层项目，而不是单纯算力或存储类DePIN。"
@@ -43,6 +47,16 @@ summary_status: "已完成"
 cover_status: "正常"
 content_id: "043"
 subcategory: "项目分析"
+lastmod: "2025-01-08T19:30:18+08:00"
+keywords:
+  - "Multiple"
+  - "DePIN"
+  - "数据传输"
+  - "网络层"
+  - "插件节点"
+  - "TGE"
+  - "空投"
+  - "Web3基础设施"
 
 ---
 

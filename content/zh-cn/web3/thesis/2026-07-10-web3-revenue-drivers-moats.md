@@ -56,6 +56,17 @@ content_id: "059"
 subcategory: "逻辑拆解"
 content_type: "thesis"
 draft: false
+lastmod: "2026-07-10T00:34:58+08:00"
+keywords:
+  - "Web3"
+  - "Perp DEX"
+  - "Solana"
+  - "Hyperliquid"
+  - "Tether"
+  - "USDT"
+  - "USDC"
+  - "Ethena"
+
 ---
 
 

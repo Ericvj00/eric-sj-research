@@ -57,6 +57,17 @@ content_id: "060"
 subcategory: "板块研究"
 content_type: "sector-research"
 draft: false
+lastmod: "2026-06-24T19:21:34+08:00"
+keywords:
+  - "Web3"
+  - "Perp DEX"
+  - "Solana"
+  - "Hyperliquid"
+  - "USDT"
+  - "USDC"
+  - "Ethena"
+  - "稳定币"
+
 ---
 
 

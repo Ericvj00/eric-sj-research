@@ -32,13 +32,28 @@ seo_keywords:
   - "英伟达财报"
   - "美股财报"
   - "GPU平台期"
-tags: []
+tags:
+  - "美股"
+  - "财报分析"
+  - "AI"
+  - "云计算"
+  - "DePIN"
 faq: []
 cover_status: "正常"
 summary_status: "已完成"
 key_points_status: "已完成"
 content_id: "019"
 subcategory: "财报分析"
+lastmod: "2025-03-02T19:20:24+08:00"
+keywords:
+  - "英伟达"
+  - "NVDA"
+  - "GPU需求"
+  - "AI芯片"
+  - "数据中心收入"
+  - "英伟达财报"
+  - "美股财报"
+  - "GPU平台期"
 
 ---
 

@@ -58,6 +58,17 @@ cover_status: "正常"
 content_id: "001"
 subcategory: "逻辑拆解"
 draft: false
+lastmod: "2026-07-06T14:34:19+08:00"
+keywords:
+  - "Web3商业模式"
+  - "Web3现金流"
+  - "Hyperliquid收入"
+  - "Tether盈利"
+  - "稳定币储备收益"
+  - "Aave协议收入"
+  - "Ethereum区块空间"
+  - "Web3基础设施"
+
 ---
 
 ## 正文

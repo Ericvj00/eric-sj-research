@@ -1,0 +1,218 @@
+# Content SEO Audit Report
+
+- 扫描文章总数：155
+- 已补齐 SEO 字段的文章数量：155
+- 跳过文件数量：13
+
+## 跳过文件
+- `content/zh-cn/web3/example.md`：missing front matter
+- `content/zh-cn/web3/template.md`：missing front matter
+- `content/zh-cn/web3/_index.md`：_index.md
+- `content/zh-cn/web3/onchain-financials/_index.md`：_index.md
+- `content/zh-cn/web3/projects/_index.md`：_index.md
+- `content/zh-cn/web3/sector/_index.md`：_index.md
+- `content/zh-cn/web3/thesis/template.md`：missing front matter
+- `content/zh-cn/web3/thesis/_index.md`：_index.md
+- `content/zh-cn/stocks/template.md`：missing front matter
+- `content/zh-cn/stocks/_index.md`：_index.md
+- `content/zh-cn/stocks/company/_index.md`：_index.md
+- `content/zh-cn/stocks/earnings/_index.md`：_index.md
+- `content/zh-cn/stocks/industry/_index.md`：_index.md
+
+## 每篇文章补齐字段
+- `content/zh-cn/web3/onchain-financials/2024-07-18-binance-10963777184553.md`：lastmod, keywords
+- `content/zh-cn/web3/onchain-financials/2024-11-08-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/onchain-financials/2026-07-18-hyperliquid-73-6-639.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2023-12-11-defi.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2023-12-14-ice.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2023-12-31-manta-network.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-01-13-layer2-metis-l2.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-01-18-l2-manta.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-02-20-starknet-arb.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-02-24-binance-portal.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-02-24-smart-layer-rwa.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-02-29-ace-2-0-bnb.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-03-10-48-aevo-rollup.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-03-15-binance-49-ether-fi.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-03-25-chainzoom.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-03-29-binance-6049434708210.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-03-29-neopin-rwa.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-03-30-binance-50-ethena.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-04-06-51-saga.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-04-12-omni-52.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-04-26-renzo-lrt-lsdfi-53.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-05-10-bouncebit-btc.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-06-10-bnb-makerdao-lista-ena-luna.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-07-23-nostr-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-07-27-particle.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-07-29-layer1-4.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-08-28-move-aptos-sui-linera.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-09-24-raas-dodo-layer3-dex.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-10-13-lista.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-11-03-xion-usdc.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-11-07-depin-aethir.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-11-10-particle-network-vs-xion.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-11-20-contentos.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-12-10-move.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-16-depin-roam.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-17-rwa-plume-l2-l1.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-18-alpha-10.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-12-19-cat.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-20-compute-decentralized-depin-spheron-ai.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-20-pengu.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-26-bio.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-28-binance-18175601282290.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2024-12-30-binance-18259219945938.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2024-12-30-roam.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-01-08-depin-multiple.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-01-08-solv.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-01-21-3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-01-aethir-gpu-nodefi.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-04-odin-fun.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-05-depin-bless-nnapp.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-06-megaeth.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-08-solana-pump-fun2-0-pumpkin-fun.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-12-pi-network.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-13-solayer.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-02-14-opensea.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-02-20-atom.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-26-solana-time-fun.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-02-28-roam-tge.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-03-07-gps.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-03-09-base-arbitrum.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-03-14-zksync-20.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-03-19-sonic.md`：lastmod, keywords
+- `content/zh-cn/web3/projects/2025-03-22-launchpool-nillion.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/projects/2025-03-25-pharos-rwa.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2023-12-06-btc.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2024-02-04-link.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-06-01-btc-l2-0-1.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-06-13-x-to-earn.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-07-03-layer2-rollup.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2024-07-14-binance-10782364618081.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-08-09-4.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2024-08-19-23.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2024-09-14-rwa.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-11-09-binance-16011690288313.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2024-11-12-sui-aptos.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2024-11-16-btc.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2025-01-01-20.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-01-06-pow-4.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-01-12-ai.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-01-22-booster-rollup.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-01-29-desci.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-02-23-12-tge.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-03-10-2025-rwa.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2025-03-15-binance-21576651114778.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2025-03-27-rwa.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/sector/2026-06-11-rwa-narrative-growth-cycle.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2026-06-20-perp-dex-next-exchange-war.md`：lastmod, keywords
+- `content/zh-cn/web3/sector/2026-06-24-solana-new-cycle-ecosystem-assets.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2023-12-09-binance-1140158014705.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2023-12-15-20ex-ordi-sats.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2023-12-31-2023-2024.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-02-22-eth-l2.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-03-23-3-2-q2-tge.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-03-26-binance-5919135623178.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-03-31-depin.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-05-08-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-05-09-3-binance-megadrop.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-05-24-defi.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-06-07-web3-6-6800.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-06-22-binance-9806449058369.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-07-02-web3-10.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-07-06-rollup.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-07-07-apple-vision.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-07-12-binance-10699250167482.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-07-13-binance-10742929891906.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-07-20-binance-11049412403385.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-08-02-binance-11616385257482.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-08-14-launchpool.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-08-15-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-08-25-telegram-ton.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-08-31-rollup.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-09-03-binance-13039047414793.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-09-06-binance-13174154059842.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-09-19-binance-13744790462138.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-09-23-binance-13926280647121.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-09-27-binance-14105245362530.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-10-21-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-10-24-binance-15296812313273.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-10-27-etf.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-10-30-web3.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-11-05-meme-web3.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-11-13-ai.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-11-17-dexx.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-11-19-binance-16447078772234.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-11-25-raas-rollup.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-11-28-binance-16833428227482.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2024-12-05-11-web3.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-12-14-eth.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-12-18-binance-17718746563425.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-12-29-dappos-30.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2024-12-30-solana-l2.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-01-13-binance-18845998934201.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-01-24-binance-19355006124497.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-02-03-yzi-labs.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-02-13-tmd.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2025-02-18-binance-20459006834586.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2025-02-28-24-myshell-binance.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-03-10-web3-pmf.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-03-18-binance-21702982030618.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-03-22-binance-21890984752466.md`：lastmod, keywords, tags
+- `content/zh-cn/web3/thesis/2025-03-26-binance-22067731207393.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2025-03-30-6.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2026-06-16-coinbase-distribution-base-entry-monopoly.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2026-07-06-web3-verified-cash-flow-models.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2026-07-10-web3-revenue-drivers-moats.md`：lastmod, keywords
+- `content/zh-cn/web3/thesis/2026-07-15-binance-344877025391106.md`：lastmod, keywords
+- `content/zh-cn/stocks/company/2026-06-17-spacex-valuation-debate.md`：lastmod, keywords
+- `content/zh-cn/stocks/company/2026-07-02-nike-direct-to-consumer-retreat-distribution.md`：lastmod, keywords
+- `content/zh-cn/stocks/earnings/2025-03-02-nvidia-nvda-gpu.md`：lastmod, keywords, tags
+- `content/zh-cn/stocks/earnings/2026-06-05-gamestop-earnings.md`：lastmod, keywords
+- `content/zh-cn/stocks/earnings/2026-06-05-tiger-brokers-earnings-4.md`：lastmod, keywords
+- `content/zh-cn/stocks/earnings/2026-06-18-ai-infrastructure-jbl.md`：lastmod, keywords
+- `content/zh-cn/stocks/earnings/2026-06-25-micron-mu-changed.md`：lastmod, keywords
+- `content/zh-cn/stocks/earnings/2026-07-11-binance-343456542109922.md`：lastmod, keywords, tags
+- `content/zh-cn/stocks/earnings/2026-07-16-binance-345382525384738.md`：lastmod, keywords, tags
+
+## 缺少封面图或封面路径异常
+- 无
+
+## description 仍可能需要人工复核
+- 无
+
+## featured 精选候选
+- `content/zh-cn/web3/onchain-financials/2024-07-18-binance-10963777184553.md`：加密行业半年报(上)：基础设施的新旧更迭趋势
+- `content/zh-cn/web3/onchain-financials/2024-11-08-web3.md`：Web3月度行业复盘~
+- `content/zh-cn/web3/onchain-financials/2026-07-18-hyperliquid-73-6-639.md`：Hyperliquid的73.6%利润率背后，藏着一笔暴增639万美元的成本
+- `content/zh-cn/web3/sector/2023-12-06-btc.md`：二级市场BTC生态基础设施一览
+- `content/zh-cn/web3/sector/2024-02-04-link.md`：预言机赛道风再起？LINK真那么容易“杀”吗？
+- `content/zh-cn/web3/sector/2024-06-01-btc-l2-0-1.md`：BTC L2研究报告： L2整体的市值仅有BTC市值的0.1%盘点时下主流解决方案
+- `content/zh-cn/web3/sector/2024-06-13-x-to-earn.md`：X To Earn赛道复盘:社交赛道在注意力聚拢的背景下，更应该思考通证的效用
+- `content/zh-cn/web3/sector/2024-07-03-layer2-rollup.md`：Layer2的Rollup究竟卷到什么阶段了？
+- `content/zh-cn/web3/sector/2024-07-14-binance-10782364618081.md`：意图协议中的求解器挑战：释放基于意图系统的真正潜力的关键
+- `content/zh-cn/web3/sector/2024-08-09-4.md`：预测市场研究：新兴的(4年)周期性赛道？
+- `content/zh-cn/web3/sector/2024-08-19-23.md`：23个协议，通览当下的链抽象协议格局
+- `content/zh-cn/web3/sector/2024-09-14-rwa.md`：RWA：无风险的链上收益？稳稳的幸福？
+- `content/zh-cn/web3/sector/2024-11-09-binance-16011690288313.md`：基础设施研究丨如何让比特币具备图灵完备环境？
+- `content/zh-cn/web3/sector/2024-11-12-sui-aptos.md`：SUI创下新高之际，Aptos行至半途，一览其生态格局，一个小规模的以太系？
+- `content/zh-cn/web3/sector/2024-11-16-btc.md`：基础设施研究丨BTC生态谱系下的基础设施在干什么？
+- `content/zh-cn/web3/sector/2025-01-01-20.md`：市场上正有20个项目正在创造有用的产品！
+- `content/zh-cn/web3/sector/2025-01-06-pow-4.md`：POW赛道研究丨4个值得关注的基础设施
+- `content/zh-cn/web3/sector/2025-01-12-ai.md`：[AI抽象层&链抽象思考]
+- `content/zh-cn/web3/sector/2025-01-22-booster-rollup.md`：[什么是Booster Rollup？？？]
+- `content/zh-cn/web3/sector/2025-01-29-desci.md`：关于DeSci赛道的二三事~
+- `content/zh-cn/web3/sector/2025-02-23-12-tge.md`：盘点12个还未TGE的链抽象协议
+- `content/zh-cn/web3/sector/2025-03-10-2025-rwa.md`：如何看2025的RWA市场？
+- `content/zh-cn/web3/sector/2025-03-15-binance-21576651114778.md`：比特币生态的未来在哪里？
+- `content/zh-cn/web3/sector/2025-03-27-rwa.md`：关于RWA赛道证券代币化概念的动向
+- `content/zh-cn/web3/sector/2026-06-24-solana-new-cycle-ecosystem-assets.md`：Solana新周期：第一批可能被重新定价的生态资产
+- `content/zh-cn/stocks/company/2026-07-02-nike-direct-to-consumer-retreat-distribution.md`：NIKE直营退潮，分销渠道重新上桌？
+- `content/zh-cn/stocks/earnings/2025-03-02-nvidia-nvda-gpu.md`：英伟达(NVDA)：业绩增速收缓，GPU需求将进入平台期？
+- `content/zh-cn/stocks/earnings/2026-06-05-gamestop-earnings.md`：游戏驿站：历史最高季度净利！但钱从哪里来？
+- `content/zh-cn/stocks/earnings/2026-06-05-tiger-brokers-earnings-4.md`：老虎证券:4亿罚款、扭盈转亏，投资者看完很难不破防！
+- `content/zh-cn/stocks/earnings/2026-06-18-ai-infrastructure-jbl.md`：市场还在把JBL当代工厂，但它可能正在变成人工智能基建铲子股
+- `content/zh-cn/stocks/earnings/2026-06-25-micron-mu-changed.md`：美光($MU)，变了
+- `content/zh-cn/stocks/earnings/2026-07-11-binance-343456542109922.md`：百事，不止可乐~
+- `content/zh-cn/stocks/earnings/2026-07-16-binance-345382525384738.md`：阿斯麦过去卖出去的光刻机，成了未来的收入入口

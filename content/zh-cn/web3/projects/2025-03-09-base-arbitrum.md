@@ -45,6 +45,17 @@ faq: []
 cover_status: "正常"
 content_id: "017"
 subcategory: "项目分析"
+lastmod: "2025-03-09T18:49:27+08:00"
+keywords:
+  - "Web3"
+  - "L2"
+  - "Rollup"
+  - "Ethereum"
+  - "Solana"
+  - "Base"
+  - "Arbitrum"
+  - "基础设施"
+
 ---
 
 ## 正文

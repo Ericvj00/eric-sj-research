@@ -57,6 +57,17 @@ content_id: "062"
 subcategory: "项目分析"
 content_type: "project-analysis"
 draft: false
+lastmod: "2026-06-16T20:41:33+08:00"
+keywords:
+  - "Web3"
+  - "Base"
+  - "Coinbase"
+  - "稳定币"
+  - "收入"
+  - "护城河"
+  - "分发"
+  - "入口垄断"
+
 ---
 
 

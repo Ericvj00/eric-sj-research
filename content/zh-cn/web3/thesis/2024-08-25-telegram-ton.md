@@ -33,12 +33,25 @@ seo_keywords:
   - "TON"
   - "创始人被捕"
   - "盘面恐慌情绪蔓延"
-tags: []
+tags:
+  - "Web3"
+  - "逻辑拆解"
+  - "Layer2"
 faq:
   - question: "Layer2为什么值得关注？"
     answer: "因为文章认为Layer2涉及逻辑拆解中的关键变量，能够反映需求、机制与市场定价的变化。"
   - question: "判断Layer2时最重要的因素是什么？"
     answer: "重点不是单一价格或热点，而是结构变化、真实使用、生态协同和价值捕获能否持续。"
+lastmod: "2024-08-25T11:33:07+08:00"
+keywords:
+  - "Layer2"
+  - "BTC"
+  - "ETH"
+  - "Launchpool"
+  - "Telegram"
+  - "TON"
+  - "创始人被捕"
+  - "盘面恐慌情绪蔓延"
 
 ---
 

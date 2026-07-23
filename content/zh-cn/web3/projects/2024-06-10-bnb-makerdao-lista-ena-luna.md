@@ -33,12 +33,26 @@ seo_keywords:
   - "MakerDAO"
   - "Lista"
   - "ENA"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "稳定币"
+  - "AI"
 faq:
   - question: "稳定币为什么值得关注？"
     answer: "因为文章认为稳定币涉及项目分析中的关键变量，能够反映需求、机制与市场定价的变化。"
   - question: "判断稳定币时最重要的因素是什么？"
     answer: "重点不是单一价格或热点，而是结构变化、真实使用、生态协同和价值捕获能否持续。"
+lastmod: "2024-06-10T21:00:25+08:00"
+keywords:
+  - "Web3"
+  - "AI"
+  - "稳定币"
+  - "ETH"
+  - "BNB"
+  - "MakerDAO"
+  - "Lista"
+  - "ENA"
 
 ---
 

@@ -32,7 +32,11 @@ seo_keywords:
   - "设备网络"
   - "Web3基础设施"
   - "代币激励"
-tags: []
+tags:
+  - "Web3"
+  - "项目分析"
+  - "AI"
+  - "DePIN"
 faq:
   - question: "Roam为什么属于DePIN项目？"
     answer: "文章认为Roam通过硬件节点和开放无线网络提供现实世界连接服务，符合DePIN资源网络逻辑。"
@@ -43,6 +47,16 @@ summary_status: "已完成"
 key_points_status: "已完成"
 content_id: "058"
 subcategory: "项目分析"
+lastmod: "2024-12-16T19:30:33+08:00"
+keywords:
+  - "Roam"
+  - "DePIN"
+  - "开放无线网络"
+  - "WiFi"
+  - "硬件节点"
+  - "设备网络"
+  - "Web3基础设施"
+  - "代币激励"
 
 ---
 

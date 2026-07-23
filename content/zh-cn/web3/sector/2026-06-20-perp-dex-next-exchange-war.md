@@ -52,6 +52,16 @@ content_id: "061"
 subcategory: "板块研究"
 content_type: "sector-research"
 draft: false
+lastmod: "2026-06-20T18:02:56+08:00"
+keywords:
+  - "Perp DEX"
+  - "永续合约DEX"
+  - "链上交易所"
+  - "流动性深度"
+  - "交易体验"
+  - "费用结构"
+  - "DeFi"
+  - "下一代交易所"
 
 ---
 

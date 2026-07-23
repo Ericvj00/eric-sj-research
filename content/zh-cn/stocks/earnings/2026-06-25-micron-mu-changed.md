@@ -52,6 +52,16 @@ content_id: "065"
 subcategory: "财报分析"
 content_type: "earnings-analysis"
 draft: false
+lastmod: "2026-06-25T13:22:13+08:00"
+keywords:
+  - "美光"
+  - "MU"
+  - "Micron"
+  - "HBM"
+  - "存储周期"
+  - "AI服务器"
+  - "美股财报"
+  - "利润率"
 
 ---
 
