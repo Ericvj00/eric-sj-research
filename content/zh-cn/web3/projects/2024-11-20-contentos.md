@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,8 @@ seo_keywords:
   - "Web3社交"
 tags:
   - "Web3"
-  - "L1"
-  - "L2"
-  - "Rollup"
-  - "收入"
+  - "项目分析"
   - "基础设施"
-  - "去中心化"
-  - "COS.TV"
 faq:
   - question: "Contentos主要解决什么问题？"
     answer: "文章认为Contentos试图用通证激励和去中心化平台机制，改善创作者、读者和广告商之间的收益分配。"

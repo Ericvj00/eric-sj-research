@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -34,13 +35,11 @@ seo_keywords:
   - "基础设施"
 tags:
   - "Web3"
-  - "L2"
-  - "Rollup"
-  - "Ethereum"
-  - "Solana"
-  - "Base"
-  - "Arbitrum"
+  - "项目分析"
   - "基础设施"
+  - "稳定币"
+  - "Base"
+  - "Coinbase"
 faq: []
 cover_status: "正常"
 content_id: "017"

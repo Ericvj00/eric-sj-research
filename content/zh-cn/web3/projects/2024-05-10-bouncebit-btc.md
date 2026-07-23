@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,9 @@ seo_keywords:
   - "套娃结构"
 tags:
   - "Web3"
-  - "DeFi"
-  - "L1"
-  - "L2"
-  - "Rollup"
+  - "项目分析"
   - "基础设施"
   - "BTC"
-  - "LSDFI"
 faq:
   - question: "BounceBit为什么被称为BTC基础设施？"
     answer: "文章认为它围绕BTC资产构建再质押、收益和流动性结构，试图扩展比特币链上金融用途。"

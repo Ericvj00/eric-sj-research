@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -34,11 +35,11 @@ seo_keywords:
   - "项目分析"
 tags:
   - "Web3"
-  - "AI"
-  - "Solana"
-  - "PIXEL"
-  - "NFT"
   - "项目分析"
+  - "基础设施"
+  - "Solana"
+  - "AI"
+  - "NFT"
 faq:
   - question: "Binance新币Portal如何加码全链游戏场景？散户机会在哪的核心结论是什么？"
     answer: "Binance的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。"

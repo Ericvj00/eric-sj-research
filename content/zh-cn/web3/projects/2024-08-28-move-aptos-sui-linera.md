@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,11 @@ seo_keywords:
   - "GAS"
 tags:
   - "Web3"
-  - "L1"
+  - "项目分析"
+  - "基础设施"
+  - "稳定币"
   - "Tether"
-  - "估值"
-  - "MOVE"
-  - "SUI"
-  - "USDT"
-  - "GAS"
+  - "ETH"
 faq:
   - question: "过去的MOVE系(Aptos、Sui、Linera)三雄，现在都如何了的核心结论是什么？"
     answer: "MOVE的流动性正在改变原有判断，估值成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。"

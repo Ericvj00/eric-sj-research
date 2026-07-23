@@ -6,6 +6,7 @@ category_key: "earnings"
 category_label: "财报分析"
 category: "美股"
 categories:
+  - "美股"
   - "财报分析"
 featured: false
 status: "已发布"
@@ -35,9 +36,10 @@ seo_keywords:
 tags:
   - "美股"
   - "财报分析"
+  - "收入结构"
+  - "协议收入"
   - "AI"
-  - "云计算"
-  - "DePIN"
+  - "英伟达"
 faq: []
 cover_status: "正常"
 summary_status: "已完成"

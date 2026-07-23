@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,7 +37,9 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
+  - "基础设施"
   - "稳定币"
+  - "ETH"
   - "AI"
 faq:
   - question: "稳定币为什么值得关注？"

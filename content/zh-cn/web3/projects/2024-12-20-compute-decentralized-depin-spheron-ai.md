@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -35,10 +36,9 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
-  - "RWA"
+  - "基础设施"
   - "AI"
   - "DePIN"
-  - "Layer2"
 faq:
   - question: "Spheron主要提供什么能力？"
     answer: "文章将Spheron定位为去中心化AI算力网络，通过节点提供GPU和计算资源。"

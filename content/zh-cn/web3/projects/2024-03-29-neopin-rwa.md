@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,10 @@ seo_keywords:
   - "合规"
 tags:
   - "Web3"
-  - "DeFi"
-  - "RWA"
-  - "L1"
+  - "项目分析"
   - "基础设施"
-  - "NEOPIN"
-  - "CMC"
-  - "BUIDL"
+  - "RWA"
+  - "代币化"
 faq:
   - question: "NEOPIN为什么和RWA叙事有关？"
     answer: "文章认为Klaytn与Finschia背后的日韩互联网资源和监管预期，使NEOPIN具备切入RWA的叙事基础。"

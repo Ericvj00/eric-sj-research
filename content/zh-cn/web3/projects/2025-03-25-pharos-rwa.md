@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -34,13 +35,10 @@ seo_keywords:
   - "Web3项目分析"
 tags:
   - "Web3"
-  - "RWA"
-  - "L1"
-  - "Solana"
-  - "Base"
+  - "项目分析"
   - "基础设施"
-  - "TPS"
-  - "EVM"
+  - "RWA"
+  - "代币化"
 faq:
   - question: "Pharos为什么和RWA有关？"
     answer: "文章认为Pharos试图用高性能和硬件加速能力承接现实世界资产上链后的发行、交易和结算需求。"

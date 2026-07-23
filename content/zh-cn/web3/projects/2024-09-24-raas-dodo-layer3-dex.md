@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,11 @@ seo_keywords:
   - "ALT"
 tags:
   - "Web3"
-  - "L1"
-  - "L2"
-  - "Rollup"
+  - "项目分析"
   - "基础设施"
-  - "DODO"
-  - "DEX"
-  - "ALT"
+  - "DeFi"
+  - "交易所"
+  - "Layer2"
 faq:
   - question: "全景分析丨RaaS头部生态一员，DODO Layer3将如何整合DEX生态的核心结论是什么？"
     answer: "全景分析的流动性正在改变原有判断，基础设施成为主要驱动因素，而生态增长与生态增长仍决定长期表现和价值空间。"

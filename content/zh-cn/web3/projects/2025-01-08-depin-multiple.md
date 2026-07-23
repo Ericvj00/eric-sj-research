@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -35,8 +36,10 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
-  - "AI"
+  - "基础设施"
   - "DePIN"
+  - "美光"
+  - "半导体"
 faq:
   - question: "Multiple属于什么类型的DePIN项目？"
     answer: "文章将Multiple定位为专注数据传输的网络层项目，而不是单纯算力或存储类DePIN。"

@@ -5,6 +5,7 @@ category_key: "earnings"
 category_label: "财报分析"
 category: "美股"
 categories:
+  - "美股"
   - "财报分析"
 featured: false
 status: "已发布"
@@ -30,13 +31,10 @@ seo_keywords:
   - "利润质量"
 tags:
   - "美股"
-  - "现金流"
-  - "收入"
-  - "利润"
-  - "财报"
-  - "游戏驿站"
-  - "eBay"
-  - "GME"
+  - "财报分析"
+  - "收入结构"
+  - "GameStop"
+  - "消费股"
 faq:
   - question: "游戏驿站这次利润为什么大幅增长？"
     answer: "文章指出利润增长不仅来自经营改善，也受到eBay收购相关衍生品未实现收益的明显影响。"

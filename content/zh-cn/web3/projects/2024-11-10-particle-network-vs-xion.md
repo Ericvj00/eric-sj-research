@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,10 @@ seo_keywords:
   - "TGE"
 tags:
   - "Web3"
-  - "AI"
-  - "L1"
-  - "估值"
+  - "项目分析"
   - "基础设施"
-  - "VS"
-  - "XION"
-  - "TGE"
+  - "AI"
+  - "链抽象"
 faq:
   - question: "链抽象案例研究丨Particle Network [VS] XION Network的核心结论是什么？"
     answer: "链抽象案例研究的流动性正在改变原有判断，估值成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。"

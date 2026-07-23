@@ -6,6 +6,7 @@ category_key: "sector"
 category_label: "板块研究"
 category: "Web3"
 categories:
+  - "Web3"
   - "板块研究"
 featured: false
 status: "已发布"
@@ -35,7 +36,10 @@ seo_keywords:
 tags:
   - "Web3"
   - "板块研究"
-  - "链抽象"
+  - "基础设施"
+  - "Layer2"
+  - "Rollup"
+  - "ETH"
 faq:
   - question: "Booster Rollup主要解决什么问题？"
     answer: "文章认为它试图降低EVM应用跨多个L2部署和扩展的成本，并缓解以太系生态割裂。"

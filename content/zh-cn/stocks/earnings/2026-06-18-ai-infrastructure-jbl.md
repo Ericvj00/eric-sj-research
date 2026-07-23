@@ -5,6 +5,7 @@ category_key: "earnings"
 category_label: "财报分析"
 category: "美股"
 categories:
+  - "美股"
   - "财报分析"
 featured: false
 status: "已发布"
@@ -30,13 +31,11 @@ seo_keywords:
   - "代工厂重估"
 tags:
   - "美股"
+  - "财报分析"
+  - "收入结构"
+  - "协议收入"
   - "AI"
-  - "GPU"
   - "JBL"
-  - "收入"
-  - "财报"
-  - "估值"
-  - "人工智能"
 faq:
   - question: "JBL为什么可能被视为AI基础设施公司？"
     answer: "文章认为JBL参与的是AI数据中心背后的硬件系统、供应链和集成环节，而不仅是传统电子代工。"

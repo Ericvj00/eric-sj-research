@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -35,7 +36,7 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
-  - "AI"
+  - "基础设施"
   - "DePIN"
 faq:
   - question: "Roam为什么属于DePIN项目？"

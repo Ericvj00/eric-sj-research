@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,10 @@ seo_keywords:
   - "GAS"
 tags:
   - "Web3"
+  - "项目分析"
+  - "基础设施"
+  - "Layer2"
   - "Rollup"
-  - "估值"
-  - "ARB"
-  - "STRK"
-  - "L3"
-  - "PUA"
-  - "GAS"
 faq: []
 lastmod: "2024-02-20T22:05:20+08:00"
 keywords:

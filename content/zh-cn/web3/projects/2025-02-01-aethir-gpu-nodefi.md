@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -35,9 +36,10 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
-  - "RWA"
+  - "基础设施"
+  - "DeFi"
+  - "ETH"
   - "AI"
-  - "DePIN"
 faq:
   - question: "Aethir为什么和AI算力有关？"
     answer: "文章认为Aethir提供的是分布式GPU供应源，AI训练和推理需求增长会提升这类算力市场的重要性。"

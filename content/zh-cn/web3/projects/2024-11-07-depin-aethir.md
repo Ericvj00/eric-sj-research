@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,11 @@ seo_keywords:
   - "GPT"
 tags:
   - "Web3"
-  - "DePIN"
-  - "AI"
-  - "GPU"
+  - "项目分析"
   - "基础设施"
-  - "算力"
-  - "NFT"
-  - "GPT"
+  - "协议收入"
+  - "ETH"
+  - "AI"
 faq:
   - question: "解析DePin丨Aethir如何作为赛道基础设施的核心结论是什么？"
     answer: "解析DePin的收入增长正在改变原有判断，流动性成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。"

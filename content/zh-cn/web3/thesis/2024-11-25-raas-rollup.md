@@ -9,6 +9,7 @@ content_type: "thesis"
 category_key: "thesis"
 category_label: "逻辑拆解"
 categories:
+  - "Web3"
   - "逻辑拆解"
 featured: false
 status: "已发布"
@@ -36,7 +37,10 @@ seo_keywords:
 tags:
   - "Web3"
   - "逻辑拆解"
-  - "链抽象"
+  - "商业模式"
+  - "DeFi"
+  - "交易所"
+  - "Solana"
 faq:
   - question: "Rollup为什么值得关注？"
     answer: "因为文章认为Rollup涉及逻辑拆解中的关键变量，能够反映需求、机制与市场定价的变化。"

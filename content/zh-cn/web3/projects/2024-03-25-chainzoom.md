@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,11 @@ seo_keywords:
   - "TG"
 tags:
   - "Web3"
-  - "DeFi"
-  - "AI"
-  - "L1"
-  - "L2"
-  - "估值"
+  - "项目分析"
   - "基础设施"
-  - "TG"
+  - "DeFi"
+  - "Layer2"
+  - "AI"
 faq:
   - question: "Chainzoom：交易场景向社交场景的植入~的核心结论是什么？"
     answer: "Chainzoom的流动性正在改变原有判断，估值成为主要驱动因素，而基础设施与生态增长仍决定长期表现和价值空间。"

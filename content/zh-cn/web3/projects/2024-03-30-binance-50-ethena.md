@@ -9,6 +9,7 @@ content_type: "project-analysis"
 category_key: "project"
 category_label: "项目分析"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -36,13 +37,10 @@ seo_keywords:
   - "对冲机制"
 tags:
   - "Web3"
+  - "项目分析"
+  - "基础设施"
   - "稳定币"
-  - "ENA"
-  - "USD"
   - "ETH"
-  - "USDT"
-  - "LSD"
-  - "LSDF"
 faq:
   - question: "Ethena的USDe为什么被称为合成美元？"
     answer: "文章解释，USDe并非简单依赖法币储备，而是通过抵押资产和对应空头仓位组合来模拟美元稳定价值。"

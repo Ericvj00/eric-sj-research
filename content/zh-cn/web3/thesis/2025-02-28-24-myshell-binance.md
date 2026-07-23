@@ -6,6 +6,7 @@ category_key: "thesis"
 category_label: "逻辑拆解"
 category: "Web3"
 categories:
+  - "Web3"
   - "逻辑拆解"
 featured: false
 status: "已发布"
@@ -35,6 +36,7 @@ seo_keywords:
 tags:
   - "Web3"
   - "逻辑拆解"
+  - "商业模式"
   - "AI"
 faq: []
 key_points_status: "已完成"

@@ -6,6 +6,7 @@ category_key: "project"
 category_label: "项目分析"
 category: "Web3"
 categories:
+  - "Web3"
   - "项目分析"
 featured: false
 status: "已发布"
@@ -35,7 +36,10 @@ seo_keywords:
 tags:
   - "Web3"
   - "项目分析"
+  - "基础设施"
   - "AI"
+  - "Launchpool"
+  - "Nillion"
 faq: []
 key_points_status: "已完成"
 summary_status: "已完成"
