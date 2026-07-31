@@ -3,3 +3,6 @@ public/
 resources/
 .codex-backups/
 .hugo_build.lock
+__pycache__/
+*.pyc
+logs/*.log
