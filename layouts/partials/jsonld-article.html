@@ -1,5 +1,5 @@
 {{- $articleSections := slice "articles" "web3" "stocks" "guides" -}}
-{{- if and .IsPage (in $articleSections .Section) -}}
+{{- if and .IsPage (in $articleSections .Section) (not .Params.tool_page) -}}
 {{- $author := .Params.author | default .Site.Params.author -}}
 {{- $description := .Params.summary | default .Params.description | default .Site.Params.description -}}
 {{- $authorEntity := dict "@type" "Person" "name" $author "url" .Site.BaseURL "sameAs" (slice "https://x.com/sjbtc9") -}}

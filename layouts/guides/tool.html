@@ -1,0 +1,97 @@
+{{ define "main" }}
+{{- $isTraditional := eq .Site.Language.Lang "zh-tw" -}}
+<article class="tool-detail-page">
+  <div class="container">
+    <nav class="tool-breadcrumb" aria-label="{{ if $isTraditional }}麵包屑{{ else }}面包屑{{ end }}">
+      <a href="{{ "" | relLangURL }}">{{ if $isTraditional }}首頁{{ else }}首页{{ end }}</a>
+      <span aria-hidden="true">/</span>
+      <a href="{{ "guides/" | relLangURL }}">{{ if $isTraditional }}自用工具{{ else }}自用工具{{ end }}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{{ .Params.tool_name }}</span>
+    </nav>
+  </div>
+
+  <header class="tool-detail-hero">
+    <div class="container tool-detail-hero-grid">
+      <div>
+        <p class="eyebrow">{{ if $isTraditional }}上手教學{{ else }}上手教程{{ end }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.lead }}<p class="tool-detail-lead">{{ . }}</p>{{ end }}
+        <div class="tool-detail-hero-actions">
+          {{ partial "tool-detail-cta.html" (dict "page" . "location" "hero") }}
+          <a class="tool-detail-back-link" href="{{ "guides/" | relLangURL }}">{{ if $isTraditional }}返回自用工具{{ else }}返回自用工具{{ end }}</a>
+        </div>
+      </div>
+
+      <div class="tool-fit-panel">
+        <section aria-labelledby="tool-best-for">
+          <h2 id="tool-best-for">{{ if $isTraditional }}適合哪些人{{ else }}适合哪些人{{ end }}</h2>
+          <ul>{{ range .Params.best_for }}<li>{{ . }}</li>{{ end }}</ul>
+        </section>
+        <section aria-labelledby="tool-not-for">
+          <h2 id="tool-not-for">{{ if $isTraditional }}哪些人不適合{{ else }}哪些人不适合{{ end }}</h2>
+          <ul>{{ range .Params.not_for }}<li>{{ . }}</li>{{ end }}</ul>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <div class="container tool-detail-layout">
+    <div class="tool-detail-content">
+      {{- $content := .Content -}}
+      {{- $content = replaceRE `<a href="(https?://[^"]+)">` `<a href="$1" target="_blank" rel="noopener noreferrer">` $content -}}
+      {{ $content | safeHTML }}
+
+      {{ with .Params.howto_steps }}
+        <section class="tool-howto" aria-labelledby="tool-howto-title">
+          <h2 id="tool-howto-title">{{ $.Params.howto_title }}</h2>
+          {{ with $.Params.howto_intro }}<p>{{ . }}</p>{{ end }}
+          <ol>
+            {{ range . }}
+              <li>
+                <h3>{{ .name }}</h3>
+                <p>{{ .text }}</p>
+              </li>
+            {{ end }}
+          </ol>
+        </section>
+      {{ end }}
+
+      {{ with .Params.official_sources }}
+        <section class="tool-sources" aria-labelledby="tool-sources-title">
+          <h2 id="tool-sources-title">{{ if $isTraditional }}官方資料來源{{ else }}官方资料来源{{ end }}</h2>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>{{ with .note }}：{{ . }}{{ end }}</li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+      {{ with .Params.faq }}
+        <section class="tool-detail-faq" aria-labelledby="tool-detail-faq-title">
+          <h2 id="tool-detail-faq-title">{{ if $isTraditional }}常見問題{{ else }}常见问题{{ end }}</h2>
+          <div>
+            {{ range . }}
+              <details>
+                <summary>{{ .question }}</summary>
+                <p>{{ .answer }}</p>
+              </details>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+
+      <footer class="tool-detail-footer-cta">
+        <div>
+          <p class="eyebrow">{{ .Params.tool_name }}</p>
+          <h2>{{ .Params.footer_cta_title }}</h2>
+          {{ with .Params.footer_cta_note }}<p>{{ . }}</p>{{ end }}
+        </div>
+        {{ partial "tool-detail-cta.html" (dict "page" . "location" "footer") }}
+      </footer>
+    </div>
+  </div>
+</article>
+<script src="{{ "js/recommended-tools.js" | relURL }}" defer></script>
+{{ end }}

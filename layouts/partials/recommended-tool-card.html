@@ -1,0 +1,71 @@
+{{- $page := .page -}}
+{{- $tool := .tool -}}
+{{- $position := .position -}}
+{{- $detailURL := (printf "guides/%s/" $tool.slug) | relLangURL -}}
+{{- $language := $page.Site.Language.Lang -}}
+{{- $sponsored := $tool.sponsored_status | default "unknown" -}}
+<article id="tool-{{ $tool.slug }}" class="recommend-tool-card" data-tool-item data-tool-category="{{ $tool.category }}">
+  <div class="tool-card-body">
+    <div class="tool-card-title-row">
+      <h3>{{ $tool.title }}</h3>
+      {{ with $tool.category }}<span class="compact-tool-category">{{ . }}</span>{{ end }}
+    </div>
+    {{ with $tool.description }}<p class="tool-card-description">{{ . }}</p>{{ end }}
+
+    {{ with $tool.coverage }}
+      <div class="tool-card-block tool-coverage-block">
+        <h4>{{ $tool.coverage_title | default "覆盖" }}</h4>
+        <ul class="tool-chip-list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+    {{ with $tool.scenes }}
+      <div class="tool-card-block">
+        <h4>{{ $tool.scenes_title | default ($page.Params.scenes_label | default "适合场景") }}</h4>
+        <ul class="tool-scene-list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+    {{ with $tool.features }}
+      <div class="tool-card-block tool-detail-block">
+        <h4>{{ $tool.features_title | default ($page.Params.features_label | default "特点") }}</h4>
+        <ul>
+          {{ range . }}<li>✓ {{ . }}</li>{{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+    {{ with $tool.caution }}<p class="tool-card-caution">{{ . }}</p>{{ end }}
+  </div>
+
+  <div class="tool-card-actions">
+    <a
+      class="tool-detail-link"
+      href="{{ $detailURL }}"
+      data-recommended-event="recommended_tool_detail_click"
+      data-tool-slug="{{ $tool.slug }}"
+      data-card-position="{{ $position }}"
+      data-language="{{ $language }}"
+      data-destination-type="internal_detail"
+      data-cta-location="collection_card"
+      data-is-sponsored="{{ $sponsored }}"
+    >{{ $page.Params.tutorial_label | default "查看上手教程" }} →</a>
+    <a
+      class="tool-primary-link"
+      href="{{ $tool.url }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      data-recommended-event="recommended_tool_outbound_click"
+      data-tool-slug="{{ $tool.slug }}"
+      data-card-position="{{ $position }}"
+      data-language="{{ $language }}"
+      data-destination-type="external_service"
+      data-cta-location="collection_card"
+      data-is-sponsored="{{ $sponsored }}"
+    >{{ $tool.button_label | default ($page.Params.visit_default_label | default "访问网站 →") }}</a>
+  </div>
+</article>

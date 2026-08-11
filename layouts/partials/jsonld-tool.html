@@ -1,0 +1,86 @@
+{{- if or .Params.tool_page .Params.tool_hub -}}
+  {{- $isTraditional := eq .Site.Language.Lang "zh-tw" -}}
+  {{- $graph := slice -}}
+  {{- $pageID := printf "%s#webpage" .Permalink -}}
+  {{- $page := dict
+    "@type" "WebPage"
+    "@id" $pageID
+    "name" (.Params.seo_title | default .Title)
+    "headline" .Title
+    "description" (.Params.description | plainify)
+    "url" .Permalink
+    "inLanguage" .Site.Language.Locale
+    "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+  -}}
+
+  {{- if .Params.tool_page -}}
+    {{- $about := dict "@type" "Thing" "name" .Params.tool_name -}}
+    {{- with .Params.alternate_name }}{{ $about = merge $about (dict "alternateName" .) }}{{ end -}}
+    {{- $page = merge $page (dict "about" $about) -}}
+  {{- end -}}
+  {{- $graph = $graph | append $page -}}
+
+  {{- $homeName := cond $isTraditional "首頁" "首页" -}}
+  {{- $guideName := "自用工具" -}}
+  {{- $crumbs := slice
+    (dict "@type" "ListItem" "position" 1 "name" $homeName "item" .Site.Home.Permalink)
+  -}}
+  {{- if .Params.tool_page -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" $guideName "item" ("guides/" | absLangURL)) -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" .Params.tool_name "item" .Permalink) -}}
+  {{- else -}}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" $guideName "item" .Permalink) -}}
+  {{- end -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) -}}
+
+  {{- if .Params.tool_hub -}}
+    {{- $items := slice -}}
+    {{- range $index, $tool := .Params.recommended_tools -}}
+      {{- $items = $items | append (dict
+        "@type" "ListItem"
+        "position" (add $index 1)
+        "name" $tool.title
+        "url" ((printf "guides/%s/" $tool.slug) | absLangURL)
+      ) -}}
+    {{- end -}}
+    {{- $graph = $graph | append (dict "@type" "ItemList" "name" .Params.recommended_label "itemListElement" $items) -}}
+  {{- end -}}
+
+  {{- if and .Params.tool_page .Params.howto_steps -}}
+    {{- $steps := slice -}}
+    {{- range $index, $step := .Params.howto_steps -}}
+      {{- $steps = $steps | append (dict
+        "@type" "HowToStep"
+        "position" (add $index 1)
+        "name" $step.name
+        "text" $step.text
+      ) -}}
+    {{- end -}}
+    {{- $graph = $graph | append (dict
+      "@type" "HowTo"
+      "name" .Params.howto_title
+      "description" (.Params.howto_intro | default .Params.description)
+      "step" $steps
+    ) -}}
+  {{- end -}}
+
+  {{- $faqItems := .Params.faq | default .Params.recommended_faq -}}
+  {{- with $faqItems -}}
+    {{- $questions := slice -}}
+    {{- range . -}}
+      {{- if and .question .answer -}}
+        {{- $questions = $questions | append (dict
+          "@type" "Question"
+          "name" .question
+          "acceptedAnswer" (dict "@type" "Answer" "text" .answer)
+        ) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt (len $questions) 0 -}}
+      {{- $graph = $graph | append (dict "@type" "FAQPage" "mainEntity" $questions) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $data := dict "@context" "https://schema.org" "@graph" $graph -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end -}}

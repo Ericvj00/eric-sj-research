@@ -1,0 +1,16 @@
+{{- $page := .page -}}
+{{- $location := .location -}}
+{{- $sponsored := $page.Params.sponsored_status | default "unknown" -}}
+<a
+  class="tool-detail-primary-cta"
+  href="{{ $page.Params.external_url }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-recommended-event="recommended_tool_cta_click"
+  data-tool-slug="{{ $page.Params.tool_slug }}"
+  data-card-position="detail_page"
+  data-language="{{ $page.Site.Language.Lang }}"
+  data-destination-type="external_service"
+  data-cta-location="{{ $location }}"
+  data-is-sponsored="{{ $sponsored }}"
+>{{ $page.Params.external_cta }}</a>
