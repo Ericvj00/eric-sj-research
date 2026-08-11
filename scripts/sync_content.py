@@ -1132,6 +1132,28 @@ def infer_subject(title: str, body_text: str) -> str:
 def synthesis_profile(title: str, category: str, blocks: list[str], attempt: int) -> dict | None:
     body_text = " ".join(blocks)
     haystack = f"{title}\n{body_text}".casefold()
+    if title == "Pump Fun最大的手续费来源，早已不是“发Meme”":
+        if attempt == 1:
+            return {
+                "summary": "Pump Fun的收入重心正从发币阶段转向PumpSwap交易手续费，代币全生命周期捕获能力成为二季度营收增长的关键。",
+                "description": "Pump Fun二季度链上收入显示，平台最大的手续费来源已由Bonding Curve发币环节转向PumpSwap交易。协议通过覆盖代币发行、迁移与持续交易延长收入周期，但更高的流动性激励与创作者分成也会压低利润率，收入结构改善仍需结合交易活跃度判断。",
+                "key_points": [
+                    "PumpSwap贡献的交易手续费已超过单纯发币收入，成为Pump Fun当前最重要的收入来源。",
+                    "从Launchpad延伸至持续交易环节，使平台能够覆盖Meme代币更长的生命周期并扩大收入空间。",
+                    "Bonding Curve收入更受市场情绪影响，而PumpSwap的增长曲线相对平滑，增强了收入稳定性。",
+                    "Swap业务需要向流动性提供者和创作者分配更多价值，因此收入增长并不等同于利润率同步提升。",
+                ],
+            }
+        return {
+            "summary": "Pump Fun正由依赖Meme发币手续费转向PumpSwap交易收入，业务覆盖代币全生命周期后，收入稳定性提高但利润率受到分成约束。",
+            "description": "Pump Fun的二季度数据表明，手续费结构正在由Launchpad和Bonding Curve驱动转向PumpSwap持续交易。覆盖发币、迁移和二级交易扩大了协议的收入周期，也降低了对单一市场情绪的依赖；与此同时，流动性激励和创作者分成意味着协议仍需在规模增长与利润率之间取得平衡。",
+            "key_points": [
+                "PumpSwap交易手续费已经取代发币环节，成为Pump Fun收入结构中的核心组成部分。",
+                "代币全生命周期覆盖延长了收费周期，也使平台收入不再只依赖新币发行热度。",
+                "交易业务的增长更平滑，但向流动性提供者和创作者分成会限制协议利润率。",
+                "评估Pump Fun经营质量需要同时观察交易活跃度、手续费流向与协议实际留存收入。",
+            ],
+        }
     if title == "同样押注AI，为什么这次微软涨了，Meta跌了":
         if attempt == 1:
             return {
@@ -1379,6 +1401,17 @@ def generate_key_points(blocks: list[str]) -> list[str]:
 
 def generate_keywords(title: str, blocks: list[str], category: str) -> list[str]:
     haystack = f"{title}\n{' '.join(blocks[:20])}"
+    if title == "Pump Fun最大的手续费来源，早已不是“发Meme”":
+        return [
+            "Pump Fun",
+            "PumpSwap",
+            "Solana",
+            "Meme币",
+            "Bonding Curve",
+            "链上收入",
+            "手续费结构",
+            "代币生命周期",
+        ]
     if "2026加密半年报" in title or "谁造出来船" in title:
         return [
             "加密行业半年报",
