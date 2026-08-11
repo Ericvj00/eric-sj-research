@@ -1161,6 +1161,25 @@ h3 {
   margin-top: 24px;
 }
 
+.compact-tool-category {
+  border: 1px solid var(--line);
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  font-weight: 760;
+  padding: 4px 9px;
+}
+
+.tool-card-title-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.tool-card-title-row h3 {
+  margin: 0;
+}
+
 .recommended-tools-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
