@@ -1104,6 +1104,9 @@ def sentence_score(value: str, title: str = "") -> int:
 
 def infer_subject(title: str, body_text: str) -> str:
     known = (
+        ("Amazon", "亚马逊（Amazon）"),
+        ("AWS", "亚马逊（Amazon）"),
+        ("亚马逊", "亚马逊（Amazon）"),
         ("Intel", "Intel（英特尔）"),
         ("英特尔", "Intel（英特尔）"),
         ("JBL", "捷普（JBL）"),
@@ -1129,6 +1132,72 @@ def infer_subject(title: str, body_text: str) -> str:
 def synthesis_profile(title: str, category: str, blocks: list[str], attempt: int) -> dict | None:
     body_text = " ".join(blocks)
     haystack = f"{title}\n{body_text}".casefold()
+    if title == "同样押注AI，为什么这次微软涨了，Meta跌了":
+        if attempt == 1:
+            return {
+                "summary": "微软与Meta同样加码AI，前者已通过Azure与Copilot验证商业化，后者资本开支吞噬自由现金流，短期估值反应因此分化。",
+                "description": "微软和Meta本期营收均保持增长，但市场对两份财报给出相反反应。微软已把Azure算力、Copilot付费与云收入连接起来，AI投入进入商业化验收；Meta主营业务仍稳健，却因资本开支接近经营现金流、自由现金流骤降而承受短期估值压力。",
+                "key_points": [
+                    "微软的Azure、Copilot与云收入形成商业闭环，AI投入已经出现可验证的收入增量。",
+                    "Meta广告业务仍保持增长，但资本开支大幅上升使自由现金流明显收缩。",
+                    "市场并非单纯惩罚AI投入，而是在区分资本开支是否已经转化为产品和收入。",
+                    "两家公司长期都具备用户与分发优势，短期股价分化主要来自商业化阶段不同。",
+                ],
+            }
+        return {
+            "summary": "微软率先兑现AI商业化收入，Meta则因资本开支挤压自由现金流而受到质疑，两者股价分化反映市场更重视投入回报。",
+            "description": "微软与Meta都在扩大AI投入，收入端也没有明显恶化，但资本回报的验证进度不同。Azure、Microsoft Cloud与Copilot已为微软提供付费结果，Meta的广告基本盘依然稳健，却尚未把新增资本开支转化为独立可验证的AI收入和自由现金流。",
+            "key_points": [
+                "微软已经通过云服务和Copilot证明AI投入能够嵌入原有商业模式。",
+                "Meta的核心业务没有恶化，但资本开支增长速度显著快于现金回报。",
+                "自由现金流差异揭示两家公司AI商业化所处阶段不同。",
+                "短期预期差影响股价，长期价值仍取决于用户、数据和分发能力的变现。",
+            ],
+        }
+    if title == "自由现金流转负，亚马逊云业务为何创18季最快增速？":
+        if attempt == 1:
+            return {
+                "summary": "亚马逊云业务重回高增长，但AI基础设施投入令自由现金流转负，增长质量仍取决于AWS增量能否覆盖资本开支压力。",
+                "description": "亚马逊最新财报显示AWS创下十八个季度以来最快增速，AI与云计算需求正在强化收入动能；与此同时，高额数据中心投入使自由现金流转负，市场需要继续验证云业务增长能否转化为更稳定的利润和现金回报。",
+                "key_points": [
+                    "AWS增速明显回升，说明企业云迁移与AI算力需求正在重新拉动亚马逊云业务。",
+                    "自由现金流转负主要受到数据中心资本开支上升影响，而非核心业务收入失速。",
+                    "AI基础设施投入能否形成持续收入和利润，是判断本轮资本开支质量的关键。",
+                    "零售与云业务共同支撑增长，但AWS的盈利贡献仍决定亚马逊整体估值弹性。",
+                ],
+            }
+        return {
+            "summary": "AWS加速增长验证云计算与AI需求韧性，但资本开支吞噬自由现金流，亚马逊仍需证明投入能够持续转化为利润和现金回报。",
+            "description": "亚马逊财报的积极信号来自AWS收入重新加速，云计算和AI基础设施需求为增长提供支撑；风险则集中在数据中心投入快速扩张，自由现金流因此承压。后续估值取决于新增资本开支能否带来可持续的收入、利润与现金回报。",
+            "key_points": [
+                "AWS重新加速是本期财报的核心改善，云计算和AI需求仍具备较强韧性。",
+                "资本开支扩张使自由现金流承压，短期现金表现不能单独代表业务需求走弱。",
+                "亚马逊需要证明AI基础设施投入可以转化为持续收入，而非长期停留在建设阶段。",
+                "AWS利润贡献与资本效率将共同决定市场对亚马逊增长质量的重新定价。",
+            ],
+        }
+    if title == "我建了一个网站，才看懂已千亿美元的Cloudflare":
+        if attempt == 1:
+            return {
+                "summary": "Cloudflare正从CDN与网络安全平台延伸至AI Agent流量入口，收入加速与开发者增长验证方向，但高估值仍要求商业化持续兑现。",
+                "description": "Cloudflare依托全球网络、流量入口和多产品平台，从传统CDN与网络安全业务延伸至AI Agent访问、开发者工具和机器流量控制。收入增速、DBNR及大客户数量同步改善，但当前估值已计入较高增长预期，Agent流量能否形成规模收入仍需验证。",
+                "key_points": [
+                    "Cloudflare复用同一全球网络提供安全、计算与数据服务，平台化正在提升客户支出。",
+                    "收入增速、DBNR和大客户数量同步改善，说明增长并非只来自免费或小型用户。",
+                    "AI Agent正在增加机器访问互联网的频率，为流量控制和按请求收费创造新场景。",
+                    "开发者增长是未来使用量的先行指标，但付费转化与高估值仍需持续验证。",
+                ],
+            }
+        return {
+            "summary": "Cloudflare的平台价值正在由网站加速扩展到AI Agent时代的网络入口，增长指标持续改善，但商业化速度必须支撑当前高估值。",
+            "description": "Cloudflare正在把全球网络入口、网络安全、边缘计算和开发者平台整合到同一请求路径，并尝试承接快速增长的AI Agent流量。财报中的收入、客户扩张与开发者增长支持平台化逻辑，但机器流量收费尚在早期，估值安全边际仍是主要约束。",
+            "key_points": [
+                "Cloudflare的竞争力来自全球网络和同一流量路径上的多产品复用。",
+                "存量客户扩张与大客户增长表明平台化正在转化为更多收入。",
+                "AI Agent流量扩大了网络请求规模，也带来新的控制与收费机会。",
+                "开发者生态提供增长线索，但高估值需要未来收入持续兑现。",
+            ],
+        }
     if "intel" in haystack or "英特尔" in haystack:
         if attempt == 1:
             return {
@@ -1332,6 +1401,50 @@ def generate_keywords(title: str, blocks: list[str], category: str) -> list[str]
             "制造业务",
             "财报分析",
         ]
+    if title == "自由现金流转负，亚马逊云业务为何创18季最快增速？":
+        return [
+            "Amazon",
+            "亚马逊",
+            "AWS",
+            "亚马逊财报",
+            "云计算",
+            "AI基础设施",
+            "自由现金流",
+            "资本开支",
+        ]
+    if title == "同样押注AI，为什么这次微软涨了，Meta跌了":
+        return [
+            "Microsoft",
+            "微软",
+            "MSFT",
+            "Meta",
+            "META",
+            "Azure",
+            "Copilot",
+            "AI资本开支",
+        ]
+    if "四家收入全部下滑" in title and "perp dex" in title.lower():
+        return [
+            "Perp DEX",
+            "Hyperliquid",
+            "Lighter",
+            "edgeX",
+            "ApeX",
+            "协议收入",
+            "利润率",
+            "代币价值捕获",
+        ]
+    if title == "我建了一个网站，才看懂已千亿美元的Cloudflare":
+        return [
+            "Cloudflare",
+            "NET.US",
+            "CDN",
+            "网络安全",
+            "AI Agent",
+            "开发者平台",
+            "DBNR",
+            "互联网基础设施",
+        ]
     keywords: list[str] = []
     for word in KEYWORD_VOCABULARY:
         if word.lower() in haystack.lower() and word not in keywords:
@@ -1352,6 +1465,34 @@ def generate_keywords(title: str, blocks: list[str], category: str) -> list[str]
         if word not in keywords:
             keywords.append(word)
     return keywords[:8]
+
+
+TAG_FALLBACKS = {
+    "板块研究": "行业研究",
+    "链上财报": "协议收入",
+    "项目分析": "Web3项目",
+    "逻辑拆解": "商业模式",
+    "财报分析": "公司财报",
+    "个股研究": "公司研究",
+    "产业报告": "产业链",
+}
+
+
+def generate_tags(category: str, seo_keywords: list[str]) -> list[str]:
+    """Build a stable 3-6 item tag set even when full SEO generation fails."""
+    category_config = CATEGORY_MAP[category]
+    primary = PRIMARY_CATEGORY_LABELS[category_config["section"]]
+    candidates = [primary, category, *seo_keywords, TAG_FALLBACKS[category]]
+    tags: list[str] = []
+    for candidate in candidates:
+        value = clean_text(str(candidate))
+        if value and value not in tags:
+            tags.append(value)
+        if len(tags) == 6:
+            break
+    if len(tags) < 3:
+        raise ValueError(f"无法为{category}生成至少3个标签")
+    return tags
 
 
 def generate_faq(title: str, category: str, summary: str, points: list[str], body: str) -> list[dict[str, str]]:
@@ -1528,6 +1669,62 @@ def failed_seo_geo(reason: str) -> dict:
     }
 
 
+def description_quality_errors(description: str, blocks: list[str]) -> list[str]:
+    pool = sentences(blocks)
+    first_sentence = pool[0] if pool else ""
+    errors: list[str] = []
+    if not 80 <= visible_length(description) <= 160:
+        errors.append(f"description长度不合规：{visible_length(description)}")
+    if contains_banned_language(description) or "币安" in description:
+        errors.append("description包含禁用模板、提示性表达或来源信息")
+    if has_abnormal_punctuation(description):
+        errors.append("description存在异常标点")
+    if text_similarity(description, first_sentence) >= 0.72:
+        errors.append("description与正文第一句高度相似")
+    if max((text_similarity(description, item) for item in pool), default=0.0) >= 0.84:
+        errors.append("description疑似直接复制正文句子")
+    return errors
+
+
+def recover_partial_seo_geo(
+    blocks: list[str],
+    title: str,
+    category: str,
+    reason: str,
+) -> dict:
+    """Recover safe standalone fields while keeping the overall SEO status failed."""
+    result = failed_seo_geo(reason)
+    recovery_errors: list[str] = []
+
+    try:
+        keywords = generate_keywords(title, blocks, category)
+        if 5 <= len(keywords) <= 8 and len(set(keywords)) == len(keywords):
+            result["seo_keywords"] = keywords
+        else:
+            recovery_errors.append("独立keywords生成后数量不合规或存在重复")
+    except Exception as exc:
+        recovery_errors.append(f"独立keywords生成失败：{exc}")
+
+    for attempt in (1, 2):
+        try:
+            synthesis = build_synthesis(title, category, blocks, attempt)
+        except Exception as exc:
+            recovery_errors.append(f"独立description第{attempt}次生成失败：{exc}")
+            continue
+        errors = description_quality_errors(synthesis["description"], blocks)
+        if not errors:
+            result["description"] = synthesis["description"]
+            break
+        recovery_errors.extend(f"独立description第{attempt}次：{error}" for error in errors)
+
+    result["_quality"]["errors"] = [reason, *recovery_errors]
+    result["_partial_recovery"] = {
+        "description": bool(result["description"]),
+        "seo_keywords": bool(result["seo_keywords"]),
+    }
+    return result
+
+
 WINDOWS_RESERVED_NAMES = {
     "con",
     "prn",
@@ -1614,6 +1811,8 @@ def slugify(title: str, source_url: str) -> str:
     tokens = re.findall(r"[a-z0-9]+", normalized)
     aliases = []
     named_aliases = (
+        ("亚马逊", ["amazon", "aws", "earnings"]),
+        ("微软", ["microsoft", "meta", "ai-earnings"]),
         ("游戏驿站", ["gamestop", "earnings"]),
         ("老虎证券", ["tiger-brokers", "earnings"]),
         ("美光", ["micron", "mu"]),
@@ -2611,18 +2810,25 @@ def build_new_article(
     try:
         seo_geo = generate_seo_geo(body_blocks, title, category_label, body_markdown)
     except Exception as exc:
-        seo_geo = failed_seo_geo(str(exc))
+        seo_geo = recover_partial_seo_geo(
+            body_blocks,
+            title,
+            category_label,
+            str(exc),
+        )
     summary = seo_geo["summary"]
     description = seo_geo["description"]
     key_points = seo_geo["key_points"]
     seo_keywords = seo_geo["seo_keywords"]
     faq = seo_geo["faq"]
+    tag_values = generate_tags(category_label, seo_keywords)
 
     lines = [
         "---",
         f"title: {yaml_string(title)}",
         f"content_id: {yaml_string(content_id)}",
         f"date: {yaml_string(published.isoformat(timespec='seconds'))}",
+        f"lastmod: {yaml_string(published.isoformat(timespec='seconds'))}",
         f"slug: {yaml_string(slug)}",
         f"category: {yaml_string(classification['category'])}",
         f"subcategory: {yaml_string(classification['subcategory'])}",
@@ -2630,6 +2836,7 @@ def build_new_article(
         f"category_key: {yaml_string(classification['category_key'])}",
         f"category_label: {yaml_string(classification['category_label'])}",
         "categories:",
+        f"  - {yaml_string(classification['category'])}",
         f"  - {yaml_string(category_label)}",
         f"featured: {str(featured).lower()}",
         f"status: {yaml_string(status)}",
@@ -2650,11 +2857,12 @@ def build_new_article(
         lines += [
             "seo_keywords:",
             *[f"  - {yaml_string(word)}" for word in seo_keywords],
-            "tags:",
+            "keywords:",
             *[f"  - {yaml_string(word)}" for word in seo_keywords],
         ]
     else:
-        lines += ["seo_keywords: []", "tags: []"]
+        lines += ["seo_keywords: []", "keywords: []"]
+    lines += ["tags:", *[f"  - {yaml_string(word)}" for word in tag_values]]
     if faq:
         lines.append("faq:")
         for item in faq:
